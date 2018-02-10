@@ -131,9 +131,9 @@ else {
     
     <label>Typ elementu</label>
     <br />
-    <input type="radio" name="entry.1334297973" value="Newsletter" aria-required="true" required />Newsletter
+    <input type="radio" name="entry.1334297973" value="Newsletter" aria-required="true" required />Newsletter (nie popup)
     <br />
-    <input type="radio" name="entry.1334297973" value="Popup"/>Popup
+    <input type="radio" name="entry.1334297973" value="Popup"/>Popup (wyskakujące okienko)
     <br />
     <input type="radio" name="entry.1334297973" value="Push"/>Powiadomienie typu webpush
     <br />
@@ -155,7 +155,7 @@ else {
     <input name="entry.412846605" type="url" size="80" minlength="5" maxlength="80" placeholder="http://www.strona.pl/recenzja" aria-required="true" required>
     <p />
     
-    <label>Adres URL do zrzutu ekranu</label> (polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>).
+    <label>Adres URL do zrzutu ekranu</label> (polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>)
     <br />
     <input name="entry.449338657" type="url" size="80" minlength="5" maxlength="80" placeholder="http://www.sourcecertain.com/img/Example.png" aria-required="true" required>
     <p />
