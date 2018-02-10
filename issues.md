@@ -214,7 +214,7 @@ else {
     <br />              
     <input type="radio" name="entry.1847630274" value="AdBlock"/>AdBlock
     <br />    
-    <input type="radio" name="entry.1847630274" value="AdBlock Plus"/>Vivald
+    <input type="radio" name="entry.1847630274" value="Adblock Plus"/>Adblock Plus
     <br /> 
     <input type="radio" name="entry.1847630274" value="__other_option__">Inny: <input type="text" name="entry.1847630274.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
     <br />
