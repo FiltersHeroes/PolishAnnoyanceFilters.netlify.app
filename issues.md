@@ -143,7 +143,7 @@ else {
     <br />
     <input type="checkbox" name="entry.1334297973" value="widget"/>Widget
     <br />
-    <input type="checkbox" name="entry.1334297973" value="błąd"/>Widget
+    <input type="checkbox" name="entry.1334297973" value="błąd"/>Błąd
     <br />
     <p />
     
