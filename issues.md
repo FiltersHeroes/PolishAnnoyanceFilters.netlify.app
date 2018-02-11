@@ -131,19 +131,19 @@ else {
     
     <label>Typ elementu</label>
     <br />
-    <input type="checkbox" name="entry.1334297973" value="newsletter" aria-required="true" required />Newsletter (nie popup)
+    <input type="checkbox" name="entry.1334297973" value="newsletter" aria-required="true" required /> Newsletter (nie popup)
     <br />
-    <input type="checkbox" name="entry.1334297973" value="popup"/>Popup (wyskakujące okienko)
+    <input type="checkbox" name="entry.1334297973" value="popup"/> Popup (wyskakujące okienko)
     <br />
-    <input type="checkbox" name="entry.1334297973" value="push"/>Powiadomienie typu webpush
+    <input type="checkbox" name="entry.1334297973" value="push"/> Powiadomienie typu webpush
     <br />
-    <input type="checkbox" name="entry.1334297973" value="scrollujący filmik"/>Scrollujący filmik
+    <input type="checkbox" name="entry.1334297973" value="scrollujący filmik"/> Scrollujący filmik
     <br />
-    <input type="checkbox" name="entry.1334297973" value="strzałka"/>Strzałka
+    <input type="checkbox" name="entry.1334297973" value="strzałka"/> Strzałka
     <br />
-    <input type="checkbox" name="entry.1334297973" value="widget"/>Widget
+    <input type="checkbox" name="entry.1334297973" value="widget"/> Widget
     <br />
-    <input type="checkbox" name="entry.1334297973" value="błąd"/>Błąd
+    <input type="checkbox" name="entry.1334297973" value="błąd"/> Błąd
     <br />
     <p />
     
@@ -167,15 +167,15 @@ else {
     
     <label>System operacyjny</label>
     <br />
-    <input type="radio" name="entry.634915560" id="linux" value="Linux" aria-required="true" required />Linux
+    <input type="radio" name="entry.634915560" id="linux" value="Linux" aria-required="true" required /> Linux
     <br />
-    <input type="radio" name="entry.634915560" id="windows" value="Windows"/>Windows
+    <input type="radio" name="entry.634915560" id="windows" value="Windows"/> Windows
     <br />              
-    <input type="radio" name="entry.634915560" id="mac" value="Mac"/>Mac
+    <input type="radio" name="entry.634915560" id="mac" value="Mac"/> Mac
     <br />              
-    <input type="radio" name="entry.634915560" id="android" value="Android"/>Android
+    <input type="radio" name="entry.634915560" id="android" value="Android"/> Android
     <br />           
-    <input type="radio" name="entry.634915560" id="inny" value="__other_option__">Inny: <input type="text" name="entry.634915560.other_option_response" id="platf" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    <input type="radio" name="entry.634915560" id="inny" value="__other_option__"> Inny: <input type="text" name="entry.634915560.other_option_response" id="platf" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
     <!--<button onclick="platformDetect()">Wykryj i wpisz za mnie</button>-->
     <br />
     <p />
@@ -183,23 +183,23 @@ else {
     <label>Przeglądarka internetowa</label>
     <!--<button onclick="browserDetect()">Wykryj i uzupełnij za mnie</button>-->
     <br />
-    <input type="radio" name="entry.1077613316" id="firefox" value="Mozilla Firefox" aria-required="true" required />Firefox
+    <input type="radio" name="entry.1077613316" id="firefox" value="Mozilla Firefox" aria-required="true" required /> Firefox
     <br />
-    <input type="radio" name="entry.1077613316" id="waterfox" value="Waterfox"/>Waterfox
+    <input type="radio" name="entry.1077613316" id="waterfox" value="Waterfox"/> Waterfox
     <br />              
-    <input type="radio" name="entry.1077613316" id="chrome" value="Google Chrome"/>Chrome
+    <input type="radio" name="entry.1077613316" id="chrome" value="Google Chrome"/> Chrome
     <br />              
-    <input type="radio" name="entry.1077613316" id="opera" value="Opera"/>Opera
+    <input type="radio" name="entry.1077613316" id="opera" value="Opera"/> Opera
     <br />    
-    <input type="radio" name="entry.1077613316" id="vivaldi" value="Vivaldi"/>Vivaldi
+    <input type="radio" name="entry.1077613316" id="vivaldi" value="Vivaldi"/> Vivaldi
     <br />  
-    <input type="radio" name="entry.1077613316" id="edge" value="Microsoft Edge"/>Edge
+    <input type="radio" name="entry.1077613316" id="edge" value="Microsoft Edge"/> Edge
     <br /> 
-    <input type="radio" name="entry.1077613316" id="yandex" value="Yandex Browser"/>Yandex
+    <input type="radio" name="entry.1077613316" id="yandex" value="Yandex Browser"/> Yandex
     <br /> 
-    <input type="radio" name="entry.1077613316" id="safari" value="Safari"/>Safari
+    <input type="radio" name="entry.1077613316" id="safari" value="Safari"/> Safari
     <br /> 
-    <input type="radio" name="entry.1077613316" id="inna" value="__other_option__">Inna: <input type="text" name="entry.1077613316.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    <input type="radio" name="entry.1077613316" id="inna" value="__other_option__"> Inna: <input type="text" name="entry.1077613316.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
     <br />
     <p />
     
@@ -210,17 +210,17 @@ else {
     
     <label>Bloker</label>
     <br />
-    <input type="radio" name="entry.1847630274" value="Nano Adblocker" aria-required="true" required />Nano Adblocker
+    <input type="radio" name="entry.1847630274" value="Nano Adblocker" aria-required="true" required /> Nano Adblocker
     <br />
-    <input type="radio" name="entry.1847630274" value="uBlock Origin"/>uBlock Origin
+    <input type="radio" name="entry.1847630274" value="uBlock Origin"/> uBlock Origin
     <br />              
-    <input type="radio" name="entry.1847630274" value="AdGuard"/>AdGuard
+    <input type="radio" name="entry.1847630274" value="AdGuard"/> AdGuard
     <br />              
-    <input type="radio" name="entry.1847630274" value="AdBlock"/>AdBlock
+    <input type="radio" name="entry.1847630274" value="AdBlock"/> AdBlock
     <br />    
-    <input type="radio" name="entry.1847630274" value="Adblock Plus"/>Adblock Plus
+    <input type="radio" name="entry.1847630274" value="Adblock Plus"/> Adblock Plus
     <br /> 
-    <input type="radio" name="entry.1847630274" value="__other_option__">Inny: <input type="text" name="entry.1847630274.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    <input type="radio" name="entry.1847630274" value="__other_option__"> Inny: <input type="text" name="entry.1847630274.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
     <br />
     <p />
     
