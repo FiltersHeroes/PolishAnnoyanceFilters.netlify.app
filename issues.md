@@ -131,17 +131,19 @@ else {
     
     <label>Typ elementu</label>
     <br />
-    <input type="radio" name="entry.1334297973" value="Newsletter" aria-required="true" required />Newsletter (nie popup)
+    <input type="checkbox" name="entry.1334297973" value="newsletter" aria-required="true" required />Newsletter (nie popup)
     <br />
-    <input type="radio" name="entry.1334297973" value="Popup"/>Popup (wyskakujące okienko)
+    <input type="checkbox" name="entry.1334297973" value="popup"/>Popup (wyskakujące okienko)
     <br />
-    <input type="radio" name="entry.1334297973" value="Push"/>Powiadomienie typu webpush
+    <input type="checkbox" name="entry.1334297973" value="push"/>Powiadomienie typu webpush
     <br />
-    <input type="radio" name="entry.1334297973" value="Scrollujący filmik"/>Scrollujący filmik
+    <input type="checkbox" name="entry.1334297973" value="scrollujący filmik"/>Scrollujący filmik
     <br />
-    <input type="radio" name="entry.1334297973" value="Strzałka"/>Strzałka
+    <input type="checkbox" name="entry.1334297973" value="strzałka"/>Strzałka
     <br />
-    <input type="radio" name="entry.1334297973" value="Widget"/>Widget
+    <input type="checkbox" name="entry.1334297973" value="widget"/>Widget
+    <br />
+    <input type="checkbox" name="entry.1334297973" value="błąd"/>Widget
     <br />
     <p />
     
@@ -158,9 +160,11 @@ else {
     <label>Adres URL do zrzutu ekranu</label> (polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>)
     <br />
     <input name="entry.449338657" type="url" size="80" minlength="5" maxlength="80" placeholder="http://www.sourcecertain.com/img/Example.png" aria-required="true" required>
+    
     <p />
     <button onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
     <p />
+    
     <label>System operacyjny</label>
     <br />
     <input type="radio" name="entry.634915560" id="linux" value="Linux" aria-required="true" required />Linux
