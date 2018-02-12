@@ -3,6 +3,7 @@ title: Zgłoszenia
 permalink: issues
 layout: default
 ---
+ <script src="/js/autosize_rows_textarea.js"></script> 
 <script type="text/javascript">var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
 style="display:none;" onload="if(submitted)
@@ -149,17 +150,17 @@ else {
     
     <label>Opis zgłoszenia</label>
     <br />
-    <textarea rows="8" cols="80" name="entry.523048601" form="usrform" placeholder="Co trzeba zrobić, aby pojawił się element?" required></textarea>
+    <textarea class="autoExpand" rows="3" data-min-rows="3" name="entry.523048601" form="usrform" placeholder="Co trzeba zrobić, aby pojawił się element?" required></textarea>
     <p />
     
     <label>Link bezpośredni do strony zawierającej element</label>
     <br />
-    <input name="entry.412846605" type="url" size="80" minlength="5" maxlength="80" placeholder="http://www.strona.pl/recenzja" aria-required="true" required>
+    <input name="entry.412846605" type="url" minlength="5" placeholder="http://www.strona.pl/recenzja" aria-required="true" required>
     <p />
     
     <label>Adres URL do zrzutu ekranu</label> (polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>)
     <br />
-    <input name="entry.449338657" type="url" size="80" minlength="5" maxlength="80" placeholder="http://www.sourcecertain.com/img/Example.png" aria-required="true" required>
+    <input name="entry.449338657" type="url" minlength="5" placeholder="http://www.sourcecertain.com/img/Example.png" aria-required="true" required>
     
     <p />
     <button onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
@@ -231,7 +232,7 @@ else {
     
     <label>Używane filtry</label> (możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano)
     <br />
-    <textarea rows="8" cols="80" name="entry.1553187432" form="usrform" placeholder="Polskie filtry elementów irytujących, Polskie filtry ciasteczkowe, Oficjalne polskie filtry do AdBlocka, uBlocka i AdGuarda " required></textarea>
+    <textarea class="autoExpand" rows="5" data-min-rows="5" name="entry.1553187432" form="usrform" placeholder="Polskie filtry elementów irytujących, Polskie filtry ciasteczkowe, Oficjalne polskie filtry do AdBlocka, uBlocka i AdGuarda " required></textarea>
     <br />
     <p />
     
