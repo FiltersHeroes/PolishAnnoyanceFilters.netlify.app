@@ -4,3 +4,10 @@ theme: jekyll-theme-architect
 lang: pl-PL
 github:
     owner_url: https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters
+sass:
+  sass_dir: _sass
+  style: compressed
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all

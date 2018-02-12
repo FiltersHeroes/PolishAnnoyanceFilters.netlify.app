@@ -3,6 +3,7 @@
 
 
 @import 'jekyll-theme-architect';
+@import 'bootstrap';
 
 input[type="url"]
 {
@@ -21,4 +22,12 @@ textarea {
     padding: 10px;
     width: 90%;
     display: block;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+header a.button {
+    color: white;
 }
