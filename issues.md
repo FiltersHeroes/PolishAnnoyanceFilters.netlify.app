@@ -3,115 +3,12 @@ title: Zgłoszenia
 permalink: issues
 layout: default
 ---
- <script src="/js/autosize_rows_textarea.js"></script> 
+ <script src="/assets/js/autosize_rows_textarea.js"></script> 
 <script type="text/javascript">var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
 style="display:none;" onload="if(submitted)
 {window.location='issues/thanks';}"></iframe>
-
-<script>
-// Modified code from http://www.javascripter.net/faq/browsern.htm
-
-function browserOSDetect() {
-var nAgt = navigator.userAgent;
-var fullVersion  = ''+parseFloat(navigator.appVersion); 
-var nameOffset,verOffset,ix;
-
-var firefox = document.getElementById('firefox');
-var waterfox = document.getElementById('waterfox');
-var chrome = document.getElementById('chrome');
-var opera = document.getElementById('opera');
-var vivaldi = document.getElementById('vivaldi');
-var edge = document.getElementById('edge');
-var yandex = document.getElementById('yandex');
-var safari = document.getElementById('safari');
-var inna = document.getElementById('inna');
-
-// In Opera 15+, the true version is after "OPR/" 
-if ((verOffset=nAgt.indexOf("OPR/"))!=-1) {
-    fullVersion = nAgt.substring(verOffset+4);
-    opera.checked = true;
-}
-// In older Opera, the true version is after "Opera" or after "Version"
-else if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
-    opera.checked = true;
-    fullVersion = nAgt.substring(verOffset+6);
- if ((verOffset=nAgt.indexOf("Version"))!=-1) 
-    fullVersion = nAgt.substring(verOffset+8);
-}
-else if ((verOffset=nAgt.indexOf("Vivaldi"))!=-1) {
-    fullVersion = nAgt.substring(verOffset+8);
-    vivaldi.checked = true;
-}
-else if ((verOffset=nAgt.indexOf("YaBrowser"))!=-1) {
-    fullVersion = nAgt.substring(verOffset+10);
-    yandex.checked = true;
-}
-else if ((verOffset=nAgt.indexOf("Edge"))!=-1) {
-    fullVersion = nAgt.substring(verOffset+8);
-    edge.checked = true;
-}
-// In Chrome, the true version is after "Chrome" 
-else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
-    fullVersion = nAgt.substring(verOffset+7);
-    chrome.checked = true;
-}
-// In Safari, the true version is after "Safari" or after "Version" 
-else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
-    safari.checked = true;
-    fullVersion = nAgt.substring(verOffset+7);
- if ((verOffset=nAgt.indexOf("Version"))!=-1) 
-    fullVersion = nAgt.substring(verOffset+8);
-}
-else if ((verOffset=nAgt.indexOf("Waterfox"))!=-1) {
-    fullVersion = nAgt.substring(verOffset+9);
-    waterfox.checked = true;
-}
-// In Firefox, the true version is after "Firefox" 
-else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
-    fullVersion = nAgt.substring(verOffset+8);
-    firefox.checked = true;
-}
-// In most other browsers, "name/version" is at the end of userAgent 
-else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) < 
-          (verOffset=nAgt.lastIndexOf('/')) ) 
-{
-    fullVersion = nAgt.substring(verOffset+1);
-    inna.checked=true;
-}
-// trim the fullVersion string at semicolon/space if present
-if ((ix=fullVersion.indexOf(";"))!=-1){
-    fullVersion=fullVersion.substring(0,ix)
-};
-if ((ix=fullVersion.indexOf(" "))!=-1){
-    fullVersion=fullVersion.substring(0,ix);
-}
-    document.getElementById('wersja').value = fullVersion;
-
-var linux = document.getElementById('linux');
-var windows = document.getElementById('windows');
-var mac = document.getElementById('mac');
-var android = document.getElementById('android');
-var inny = document.getElementById('inny');
-
-if (nAgt.indexOf("Android")!=-1){
-    android.checked = true;
-}
-else if (nAgt.indexOf("Windows NT")!=-1){ 
-    windows.checked = true;
-}
-else if (nAgt.indexOf("Mac")!=-1) {
-    mac.checked = true;
-}
-else if (nAgt.indexOf("Linux")!=-1) {
-    linux.checked = true;
-}
-else {
-    inny.checked = true;
-}
-
-}
-</script>
+ <script src="/assets/js/browserOSDetect.js"></script> 
 
 <p>Przed zgłoszeniem sprawdź czy masz włączone listy: <a href="abp:subscribe?location=https%3A%2F%2Feasylist.to%2Feasylist%2Feasylist.txt&amp;title=EasyList">EasyList</a>, <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fpolish-adblock-filters%2Fadblock.txt&amp;title=Oficjalne%20polskie%20filtry%20do%20AdBlocka%2C%20uBlocka%20i%20AdGuarda">Oficjalne polskie filtry do AdBlocka, uBlocka i AdGuarda</a> oraz <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fcookies_filters%2Fadblock_cookies.txt&amp;title=Polskie%20filtry%20ciasteczkowe">Polskie filtry ciasteczkowe</a>. A jeżeli posiadasz uBlocka w wersji niższej niż 1.14.25rc0, to musisz dodatkowo zasubskrybować <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FPolishFiltersTeam%2FPolishAnnoyanceFilters%2Fmaster%2FPPB_uBlock_AdGuard.txt&amp;title=Polskie%20filtry%20element%C3%B3w%20irytuj%C4%85cych%20-%20uzupe%C5%82nienie%20do%20uBlocka%20i%20AdGuarda">Polskie filtry elementów irytujących - uzupełnienie do uBlocka i AdGuarda</a> i <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fcookies_filters%2Fcookies_uB_AG.txt&amp;title=Polskie%20filtry%20ciasteczkowe%20-%20uzupe%C5%82nienie%20do%20uBlocka%20i%20AdGuarda">Polskie filtry ciasteczkowe - uzupełnienie do uBlocka i AdGuarda</a>.</p>
 
@@ -122,10 +19,12 @@ else {
 <form class="form" id="usrform" action="https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
 <label>Adres e-mail</label>
+<br />
 <input name="emailAddress" type="email" placeholder="Twój adres e-mail" aria-required="true" required/>
     <p />
     <p />
     <label>Tytuł zgłoszenia</label>
+    <br />
     <input name="entry.1884702034" type="text" placeholder="Strona.pl" aria-required="true" required/>
     <br />
     <p />
@@ -236,5 +135,5 @@ else {
     <br />
     <p />
     
-    <button type="submit" class="btn">Wyślij</button>
+    <button type="submit" class="btn btn-primary">Wyślij</button>
 </form>

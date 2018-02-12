@@ -369,19 +369,6 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-// My modification for input types text, url and email
-input[type="url"]
-{
-    width: 90%;
-    padding: 5px;
-}
-input[type="text"],
-input[type="email"],
-{
-    width: 70%;
-    padding: 5px;
-}
-
 /**
  * Define consistent border, margin, and padding.
  */
@@ -402,11 +389,11 @@ legend {
   padding: 0; /* 2 */
 }
 
-// Modified textarea style
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
 textarea {
-    padding: 10px;
-    width: 90%;
-    display: block;
     overflow: auto;
 }
 
