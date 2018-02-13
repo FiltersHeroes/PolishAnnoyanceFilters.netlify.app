@@ -5,29 +5,28 @@
 @import 'jekyll-theme-architect';
 @import 'bootstrap';
 
-input[type="url"]
-{
+input {
+  &[type="url"] {
     width: 90%;
     padding: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-{
+  }
+  &[type="text"], &[type="email"] {
     width: 70%;
     padding: 5px;
+  }
 }
 
 textarea {
-    padding: 10px;
-    width: 90%;
-    display: block;
+  padding: 10px;
+  width: 90%;
+  display: block;
 }
 
-header a:hover {
+header a {
+  &:hover {
     text-decoration: none;
-}
-
-header a.button {
+  }
+  &.button {
     color: white;
+  }
 }

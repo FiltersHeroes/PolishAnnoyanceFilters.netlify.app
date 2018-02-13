@@ -18,14 +18,10 @@ style="display:none;" onload="if(submitted)
       
 <form class="form" id="usrform" action="https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
-<label>Adres e-mail</label>
-<br />
-<input name="emailAddress" type="email" placeholder="Twój adres e-mail" aria-required="true" required/>
-    <p />
     <p />
     <label>Tytuł zgłoszenia</label>
     <br />
-    <input name="entry.1884702034" type="text" placeholder="Strona.pl" aria-required="true" required/>
+    <input class="input-lg" name="entry.1884702034" type="text" placeholder="Strona.pl" aria-required="true" required/>
     <br />
     <p />
     
@@ -132,8 +128,13 @@ style="display:none;" onload="if(submitted)
     <label>Używane filtry</label> (możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano)
     <br />
     <textarea class="autoExpand" rows="5" data-min-rows="5" name="entry.1553187432" form="usrform" placeholder="Polskie filtry elementów irytujących, Polskie filtry ciasteczkowe, Oficjalne polskie filtry do AdBlocka, uBlocka i AdGuarda " required></textarea>
-    <br />
     <p />
     
+    <label>Adres e-mail</label>
+    <br />
+    <input name="emailAddress" type="email" placeholder="Twój adres e-mail" aria-required="true" required/>
+
+    <p />
+    <br />
     <button type="submit" class="btn btn-primary">Wyślij</button>
 </form>
