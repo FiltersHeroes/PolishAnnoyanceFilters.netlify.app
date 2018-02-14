@@ -29,7 +29,7 @@ $(document).ready(function(){
     <br />
     </p>
     
-    <label>Typ elementu</label>
+    <label>Typ(y) elementu(ów)</label>
     <br />
     <input type="checkbox" name="entry.1334297973" value="newsletter" aria-required="true" required /> Newsletter (nie popup)
     <br />
