@@ -45,11 +45,11 @@ $(document).ready(function(){
     <br />
     <input type="checkbox" name="entry.1334297973" value="błąd"/> Błąd
     <br />
-    <input type="checkbox" name="entry.1334297973" value="grupa"/> Grupa
-    <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Kilka serwisów z tej samej grupy, np. Grupa WP."></span> 
+    <input type="checkbox" name="entry.1334297973" value="grupa stron"/> Grupa stron
+    <span class="glyphicon glyphicon-info-sign" style="color: gray" data-toggle="tooltip" data-placement="right" title="Kilka serwisów z tej samej grupy, np. Grupa WP."></span> 
     <br />
     <input type="checkbox" name="entry.1334297973" value="NSFW"/> NSFW 
-    <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Treści o charakterze erotycznym."></span> 
+    <span class="glyphicon glyphicon-info-sign" style="color: gray" data-toggle="tooltip" data-placement="right" title="Treści o charakterze erotycznym."></span> 
     <br />
     
     <p>
@@ -147,7 +147,7 @@ $(document).ready(function(){
     <textarea class="autoExpand" rows="5" data-min-rows="5" name="entry.1553187432" form="usrform" placeholder="Polskie filtry elementów irytujących, Polskie filtry ciasteczkowe, Oficjalne polskie filtry do AdBlocka, uBlocka i AdGuarda " required></textarea>
     
     <p>
-    <label>Adres e-mail</label> <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Potrzebujemy twojego adresu e-mail, by móc się w razie czego skontaktować. Jednakże twój adres e-mail zostanie udostępniony jedynie dla właściciela repozytorium."></span>
+    <label>Adres e-mail</label> <span class="glyphicon glyphicon-info-sign" style="color: gray" data-toggle="tooltip" data-placement="right" title="Potrzebujemy twojego adresu e-mail, by móc się w razie czego skontaktować. Jednakże twój adres e-mail zostanie udostępniony jedynie dla właściciela repozytorium."></span>
     <br />
     <input name="emailAddress" type="email" placeholder="Twój adres e-mail" aria-required="true" required/>
     </p>
