@@ -45,12 +45,15 @@ $(document).ready(function(){
     <br />
     <input type="checkbox" name="entry.1334297973" value="błąd"/> Błąd
     <br />
-    <input type="checkbox" name="entry.1334297973" value="grupa stron"/> Grupa stron
-    <span class="glyphicon glyphicon-info-sign" style="color: gray" data-toggle="tooltip" data-placement="right" title="Kilka serwisów z tej samej grupy, np. Grupa WP."></span> 
+    
+    <p>
+    <label>Tryb(y) zgłoszenia</label>
     <br />
-    <input type="checkbox" name="entry.1334297973" value="NSFW"/> NSFW 
-    <span class="glyphicon glyphicon-info-sign" style="color: gray" data-toggle="tooltip" data-placement="right" title="Treści o charakterze erotycznym."></span> 
+    <input type="checkbox" name="entry.1334297973" value="grupa"/> Grupa stron (kilka serwisów z tej samej grupy, np. Grupa WP.)
     <br />
+    <input type="checkbox" name="entry.1334297973" value="NSFW"/> Treści o charakterze erotycznym
+    <br />
+    </p>
     
     <p>
     <label>Opis zgłoszenia</label>
