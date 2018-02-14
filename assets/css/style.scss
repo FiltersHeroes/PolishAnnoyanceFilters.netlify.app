@@ -3,7 +3,27 @@
 
 
 @import 'jekyll-theme-architect';
-@import 'bootstrap';
+
+/*!
+ * Bootstrap v4.0 (http://getbootstrap.com)
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+@import 'bootstrap_functions';
+@import 'bootstrap_variables';
+@import "bootstrap_mixins_breakpoints";
+@import "bootstrap_mixins_hover";
+@import "bootstrap_mixins_buttons";
+@import "bootstrap_mixins_forms";
+@import "bootstrap_mixins_transition";
+@import "bootstrap_mixins_box-shadow";
+@import "bootstrap_mixins_gradients";
+@import "bootstrap_mixins_border-radius";
+@import 'bootstrap_buttons';
+@import 'bootstrap_forms';
+@import "bootstrap_mixins_reset-text";
+@import 'bootstrap_custom-forms';
+@import 'bootstrap_tooltip';
 
 input {
   &[type="url"] {
@@ -35,6 +55,6 @@ header a {
   background-color: gray;
 }
 
-$border-radius-base: 0px;
-$border-radius-small: 0px;
-$border-radius-large: 0px;
+label {
+    font-weight: bold;
+}
