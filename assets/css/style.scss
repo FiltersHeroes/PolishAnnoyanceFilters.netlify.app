@@ -30,3 +30,7 @@ header a {
     color: white;
   }
 }
+
+.gray-tooltip + .tooltip > .tooltip-inner {
+  background-color: gray;
+}

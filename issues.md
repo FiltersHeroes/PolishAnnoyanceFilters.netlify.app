@@ -49,7 +49,7 @@ $(document).ready(function(){
     <p>
     <label>Tryb(y) zgłoszenia</label>
     <br />
-    <input type="checkbox" name="entry.1334297973" value="grupa"/> Grupa stron (kilka serwisów z tej samej grupy, np. Grupa WP.)
+    <input type="checkbox" name="entry.1334297973" value="grupa"/> Grupa stron (kilka serwisów z tej samej grupy, np. Grupa WP)
     <br />
     <input type="checkbox" name="entry.1334297973" value="NSFW"/> Treści o charakterze erotycznym
     <br />
@@ -150,7 +150,7 @@ $(document).ready(function(){
     <textarea class="autoExpand" rows="5" data-min-rows="5" name="entry.1553187432" form="usrform" placeholder="Polskie filtry elementów irytujących, Polskie filtry ciasteczkowe, Oficjalne polskie filtry do AdBlocka, uBlocka i AdGuarda " required></textarea>
     
     <p>
-    <label>Adres e-mail</label> <span class="glyphicon glyphicon-info-sign" style="color: gray" data-toggle="tooltip" data-placement="right" title="Potrzebujemy twojego adresu e-mail, by móc się w razie czego skontaktować. Jednakże twój adres e-mail zostanie udostępniony jedynie dla właściciela repozytorium."></span>
+    <label>Adres e-mail</label> <span class="glyphicon glyphicon-info-sign gray-glyphicon gray-tooltip" style="color: gray" data-toggle="tooltip" data-placement="right" title="Potrzebujemy twojego adresu e-mail, by móc się w razie czego skontaktować. Jednakże twój adres e-mail zostanie udostępniony jedynie dla właściciela repozytorium."></span>
     <br />
     <input name="emailAddress" type="email" placeholder="Twój adres e-mail" aria-required="true" required/>
     </p>
