@@ -21,12 +21,10 @@ $(document).ready(function(){
       
 <form class="form" id="usrform" action="https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
-    <p>
-    <label>Tytuł zgłoszenia</label>
-    <br />
-    <input class="input-lg" name="entry.1884702034" type="text" placeholder="Strona.pl" aria-required="true" required/>
-    <br />
-    </p>
+    <div class="form-group">
+    <label for="title">Tytuł zgłoszenia</label>
+    <input class="input-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" aria-required="true" required/>
+    </div>
     
     <p>
     <label>Tryb(y) zgłoszenia</label>

@@ -1,30 +1,9 @@
 ---
 ---
 
-
 @import 'jekyll-theme-architect';
 
-/*!
- * Bootstrap v4.0 (http://getbootstrap.com)
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-@import 'bootstrap_custom';
-@import 'bootstrap_functions';
-@import 'bootstrap_variables';
-@import "bootstrap_mixins_breakpoints";
-@import "bootstrap_mixins_hover";
-@import "bootstrap_mixins_buttons";
-@import "bootstrap_mixins_forms";
-@import "bootstrap_mixins_transition";
-@import "bootstrap_mixins_box-shadow";
-@import "bootstrap_mixins_gradients";
-@import "bootstrap_mixins_border-radius";
-@import 'bootstrap_buttons';
-@import 'bootstrap_forms';
-@import "bootstrap_mixins_reset-text";
-@import 'bootstrap_custom-forms';
-@import 'bootstrap_tooltip';
+$tooltip-bg: gray;
 
 input {
   &[type="url"] {
@@ -52,6 +31,27 @@ header a {
   }
 }
 
-label {
+bold-font {
     font-weight: bold;
 }
+
+/*!
+ * Bootstrap v4.0 (http://getbootstrap.com)
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+@import 'bootstrap/_functions';
+@import 'bootstrap/_variables';
+@import "bootstrap/mixins/_breakpoints";
+@import "bootstrap/mixins/_hover";
+@import "bootstrap/mixins/_buttons";
+@import "bootstrap/mixins/_forms";
+@import "bootstrap/mixins/_transition";
+@import "bootstrap/mixins/_box-shadow";
+@import "bootstrap/mixins/_gradients";
+@import "bootstrap/mixins/_border-radius";
+@import 'bootstrap/_buttons';
+@import 'bootstrap/_forms';
+@import "bootstrap/mixins/_reset-text";
+@import 'bootstrap/_custom-forms';
+@import 'bootstrap/_tooltip';
