@@ -4,7 +4,7 @@ permalink: issues
 layout: default
 ---
 <script src="/assets/js/autosize_rows_textarea.js"></script> 
-<script type="text/javascript">var submitted=false;</script>
+<script>var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
 style="display:none;" onload="if(submitted)
 {window.location='issues/thanks';}"></iframe>
@@ -18,12 +18,13 @@ style="display:none;" onload="if(submitted)
       
 <form class="form" id="usrform" action="https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
-    <p />
+    <p>
     <label>Tytuł zgłoszenia</label>
     <br />
     <input class="input-lg" name="entry.1884702034" type="text" placeholder="Strona.pl" aria-required="true" required/>
     <br />
-    <p />
+    <br />
+    </p>
     
     <label>Typ elementu</label>
     <br />
@@ -41,26 +42,30 @@ style="display:none;" onload="if(submitted)
     <br />
     <input type="checkbox" name="entry.1334297973" value="błąd"/> Błąd
     <br />
-    <p />
     
+    <p>
     <label>Opis zgłoszenia</label>
     <br />
     <textarea class="autoExpand" rows="3" data-min-rows="3" name="entry.523048601" form="usrform" placeholder="Co trzeba zrobić, aby pojawił się element?" required></textarea>
-    <p />
+    </p>
     
+    <br />
     <label>Link bezpośredni do strony zawierającej element</label>
     <br />
     <input name="entry.412846605" type="url" minlength="5" placeholder="http://www.strona.pl/recenzja" aria-required="true" required>
-    <p />
     
+    <p>
     <label>Adres URL do zrzutu ekranu</label> (polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>)
     <br />
     <input name="entry.449338657" type="url" minlength="5" placeholder="http://www.sourcecertain.com/img/Example.png" aria-required="true" required>
+    </p>
+    <br />
     
-    <p />
+    <p>
     <button onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
-    <p />
+    </p>
     
+    <p>
     <label>System operacyjny</label>
     <br />
     <input type="radio" name="entry.634915560" id="linux" value="Linux" aria-required="true" required /> Linux
@@ -72,12 +77,11 @@ style="display:none;" onload="if(submitted)
     <input type="radio" name="entry.634915560" id="android" value="Android"/> Android
     <br />           
     <input type="radio" name="entry.634915560" id="inny" value="__other_option__"> Inny: <input type="text" name="entry.634915560.other_option_response" id="platf" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-    <!--<button onclick="platformDetect()">Wykryj i wpisz za mnie</button>-->
     <br />
-    <p />
+    </p>
     
+    <br />
     <label>Przeglądarka internetowa</label>
-    <!--<button onclick="browserDetect()">Wykryj i uzupełnij za mnie</button>-->
     <br />
     <input type="radio" name="entry.1077613316" id="firefox" value="Mozilla Firefox" aria-required="true" required /> Firefox
     <br />
@@ -97,13 +101,15 @@ style="display:none;" onload="if(submitted)
     <br /> 
     <input type="radio" name="entry.1077613316" id="inna" value="__other_option__"> Inna: <input type="text" name="entry.1077613316.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
     <br />
-    <p />
     
+    <p>
     <label>Wersja przeglądarki internetowej</label>
+    <br />
     <input name="entry.1188003910" id="wersja" type="text" placeholder="56.0" aria-required="true" required/>
     <br />
-    <p />
-    
+    </p>
+    <br />
+
     <label>Bloker</label>
     <br />
     <input type="radio" name="entry.1847630274" value="Nano Adblocker" aria-required="true" required /> Nano Adblocker
@@ -118,23 +124,26 @@ style="display:none;" onload="if(submitted)
     <br /> 
     <input type="radio" name="entry.1847630274" value="__other_option__"> Inny: <input type="text" name="entry.1847630274.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
     <br />
-    <p />
     
+    <p>
     <label>Wersja blokera</label>
+    <br />
     <input name="entry.1171563019" type="text" placeholder="1.0.0.29" aria-required="true" required/>
     <br />
-    <p />
+    </p>
     
+    <br />
     <label>Używane filtry</label> (możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano)
     <br />
     <textarea class="autoExpand" rows="5" data-min-rows="5" name="entry.1553187432" form="usrform" placeholder="Polskie filtry elementów irytujących, Polskie filtry ciasteczkowe, Oficjalne polskie filtry do AdBlocka, uBlocka i AdGuarda " required></textarea>
-    <p />
     
+    <p>
     <label>Adres e-mail</label>
     <br />
     <input name="emailAddress" type="email" placeholder="Twój adres e-mail" aria-required="true" required/>
-
-    <p />
+    </p>
+    <br />
+    
     <br />
     <button type="submit" class="btn btn-primary">Wyślij</button>
 </form>
