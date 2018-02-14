@@ -22,57 +22,77 @@ $(document).ready(function(){
 <form class="form" id="usrform" action="https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
     <div class="form-group">
-    <label for="title">Tytuł zgłoszenia</label>
-    <input class="input-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" aria-required="true" required/>
+    <label for="title" class="bold-font">Tytuł zgłoszenia</label>
+    <input class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" aria-required="true" required/>
     </div>
     
-    <p>
-    <label>Tryb(y) zgłoszenia</label>
-    <br />
-    <input type="checkbox" name="entry.1334297973" value="PILNE"/> Pilna sprawa
-    <br />
-    <input type="checkbox" name="entry.1334297973" value="GRUPA"/> Grupa stron (kilka serwisów z tej samej grupy, np. Grupa WP)
-    <br />
-    <input type="checkbox" name="entry.1334297973" value="NSFW"/> Treści o charakterze erotycznym
-    <br />
-    </p>
+    <div class="form-group">
+    <label class="bold-font">Tryb(y) zgłoszenia</label> 
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="urgent" value="PILNE">
+        <label class="custom-control-label" for="urgent">Pilna sprawa</label>
+      </div>
+      
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="group" value="GRUPA">
+        <label class="custom-control-label" for="group">Grupa stron (kilka serwisów z tej samej grupy, np. Grupa WP)</label>
+      </div>
+
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="nsfw" value="NSFW">
+        <label class="custom-control-label" for="nsfw">Treści o charakterze erotycznym</label>
+      </div>
+    </div>
     
-    <p>
-    <label>Typ(y) elementu(ów)</label>
-    <br />
-    <input type="checkbox" name="entry.1334297973" value="newsletter" aria-required="true" required /> Newsletter (nie popup)
-    <br />
-    <input type="checkbox" name="entry.1334297973" value="popup"/> Popup (wyskakujące okienko)
-    <br />
-    <input type="checkbox" name="entry.1334297973" value="push"/> Powiadomienie typu webpush
-    <br />
-    <input type="checkbox" name="entry.1334297973" value="scrollujący filmik"/> Scrollujący filmik
-    <br />
-    <input type="checkbox" name="entry.1334297973" value="strzałka"/> Strzałka
-    <br />
-    <input type="checkbox" name="entry.1334297973" value="widget"/> Widget
-    <br />
-    <input type="checkbox" name="entry.1334297973" value="błąd"/> Błąd
-    <br />
-    </p>
+    <div class="form-group">
+    <label class="bold-font">Typ(y) elementu(ów)</label> 
     
-    <p>
-    <label>Opis zgłoszenia</label>
-    <br />
-    <textarea class="autoExpand" rows="3" data-min-rows="3" name="entry.523048601" form="usrform" placeholder="Co trzeba zrobić, aby pojawił się element?" required></textarea>
-    </p>
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="newsletter-type" value="newsletter" aria-required="true" required>
+        <label class="custom-control-label" for="newsletter-type">Newsletter (nie popup)</label>
+    </div>
+      
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="popup-type" value="popup">
+        <label class="custom-control-label" for="popup-type">Popup (wyskakujące okienko)</label>
+    </div>
+      
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="push-type" value="push">
+        <label class="custom-control-label" for="push-type">Powiadomienie typu webpush</label>
+    </div>
+
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="scroll_movie-type" value="scrollujący filmik">
+        <label class="custom-control-label" for="scroll_movie-type">Scrollujący filmik</label>
+    </div>
+
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="widget-type" value="widget">
+        <label class="custom-control-label" for="widget-type">Widget</label>
+    </div>
+
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="error-type" value="błąd">
+        <label class="custom-control-label" for="error-type">Błąd</label>
+    </div>
+    </div>
     
-    <br />
-    <label>Link bezpośredni do strony zawierającej element</label>
-    <br />
-    <input name="entry.412846605" type="url" minlength="5" placeholder="http://www.strona.pl/recenzja" aria-required="true" required>
+    <div class="form-group">
+        <label for="entry.523048601" class="bold-font">Opis zgłoszenia</label> 
+        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="autoExpand form-control" aria-required="true" required></textarea>
+    </div>
     
-    <p>
-    <label>Adres URL do zrzutu ekranu</label> (polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>)
-    <br />
-    <input name="entry.449338657" type="url" minlength="5" placeholder="http://www.sourcecertain.com/img/Example.png" aria-required="true" required>
-    </p>
-    <br />
+    <div class="form-group">
+        <label for="entry.412846605" class="bold-font">Link bezpośredni do strony zawierającej element</label> 
+        <input id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here" aria-required="true" required>
+    </div> 
+
+    <div class="form-group">
+        <label for="entry.449338657" class="bold-font">Adres URL do zrzutu ekranu</label> 
+        <input id="entry.449338657" name="entry.449338657" minlength="5" placeholder="http://www.img.pl/Example.png" type="url" class="form-control here" aria-describedby="entry.449338657HelpBlock" aria-required="true" required>
+        <small id="entry.449338657HelpBlock" class="form-text text-muted">Polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a></small> 
+    </div> 
     
     <p>
     <button onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
@@ -159,4 +179,4 @@ $(document).ready(function(){
     
     <br />
     <button type="submit" class="btn btn-primary">Wyślij</button>
-</form>
+    </form>

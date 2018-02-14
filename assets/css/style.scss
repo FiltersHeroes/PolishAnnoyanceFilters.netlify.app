@@ -17,9 +17,7 @@ input {
 }
 
 textarea {
-  padding: 10px;
-  width: 90%;
-  display: block;
+  max-width: 90%;
 }
 
 header a {
@@ -31,7 +29,7 @@ header a {
   }
 }
 
-bold-font {
+.bold-font {
     font-weight: bold;
 }
 
