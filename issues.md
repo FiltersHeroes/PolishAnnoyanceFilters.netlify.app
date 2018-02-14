@@ -22,12 +22,12 @@ $(document).ready(function(){
 <form class="form" id="usrform" action="https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
     <div class="form-group">
-    <label for="title" class="bold-font">Tytuł zgłoszenia</label>
+    <label for="title" class="font-weight-bold">Tytuł zgłoszenia</label>
     <input class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" aria-required="true" required/>
     </div>
     
     <div class="form-group">
-    <label class="bold-font">Tryb(y) zgłoszenia</label> 
+    <label class="font-weight-bold">Tryb(y) zgłoszenia</label> 
       <div class="custom-control custom-checkbox">
         <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="urgent" value="PILNE">
         <label class="custom-control-label" for="urgent">Pilna sprawa</label>
@@ -45,7 +45,7 @@ $(document).ready(function(){
     </div>
     
     <div class="form-group">
-    <label class="bold-font">Typ(y) elementu(ów)</label> 
+    <label class="font-weight-bold">Typ(y) elementu(ów)</label> 
     
       <div class="custom-control custom-checkbox">
         <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="newsletter-type" value="newsletter" aria-required="true" required>
@@ -79,17 +79,17 @@ $(document).ready(function(){
     </div>
     
     <div class="form-group">
-        <label for="entry.523048601" class="bold-font">Opis zgłoszenia</label> 
+        <label for="entry.523048601" class="font-weight-bold">Opis zgłoszenia</label> 
         <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="autoExpand form-control" aria-required="true" required></textarea>
     </div>
     
     <div class="form-group">
-        <label for="entry.412846605" class="bold-font">Link bezpośredni do strony zawierającej element</label> 
+        <label for="entry.412846605" class="font-weight-bold">Link bezpośredni do strony zawierającej element</label> 
         <input id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here" aria-required="true" required>
     </div> 
 
     <div class="form-group">
-        <label for="entry.449338657" class="bold-font">Adres URL do zrzutu ekranu</label> 
+        <label for="entry.449338657" class="font-weight-bold">Adres URL do zrzutu ekranu</label> 
         <input id="entry.449338657" name="entry.449338657" minlength="5" placeholder="http://www.img.pl/Example.png" type="url" class="form-control here" aria-describedby="entry.449338657HelpBlock" aria-required="true" required>
         <small id="entry.449338657HelpBlock" class="form-text text-muted">Polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a></small> 
     </div> 

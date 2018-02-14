@@ -29,9 +29,6 @@ header a {
   }
 }
 
-.bold-font {
-    font-weight: bold;
-}
 
 /*!
  * Bootstrap v4.0 (http://getbootstrap.com)
@@ -52,4 +49,8 @@ header a {
 @import 'bootstrap/_forms';
 @import "bootstrap/mixins/_reset-text";
 @import 'bootstrap/_custom-forms';
+@import "bootstrap/mixins/_text-truncate";
+@import "bootstrap/mixins/_text-emphasis";
+@import "bootstrap/mixins/_text-hide";
+@import 'bootstrap/utilities/_text';
 @import 'bootstrap/_tooltip';
