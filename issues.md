@@ -17,9 +17,7 @@ $(document).ready(function(){
 
 <p>Przed zgłoszeniem sprawdź czy masz włączone listy: <a href="abp:subscribe?location=https%3A%2F%2Feasylist.to%2Feasylist%2Feasylist.txt&amp;title=EasyList">EasyList</a>, <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fpolish-adblock-filters%2Fadblock.txt&amp;title=Oficjalne%20polskie%20filtry%20do%20AdBlocka%2C%20uBlocka%20i%20AdGuarda">Oficjalne polskie filtry do AdBlocka, uBlocka i AdGuarda</a> oraz <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fcookies_filters%2Fadblock_cookies.txt&amp;title=Polskie%20filtry%20ciasteczkowe">Polskie filtry ciasteczkowe</a>. A jeżeli posiadasz uBlocka w wersji niższej niż 1.14.25rc0, to musisz dodatkowo zasubskrybować <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FPolishFiltersTeam%2FPolishAnnoyanceFilters%2Fmaster%2FPPB_uBlock_AdGuard.txt&amp;title=Polskie%20filtry%20element%C3%B3w%20irytuj%C4%85cych%20-%20uzupe%C5%82nienie%20do%20uBlocka%20i%20AdGuarda">Polskie filtry elementów irytujących - uzupełnienie do uBlocka i AdGuarda</a> i <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fcookies_filters%2Fcookies_uB_AG.txt&amp;title=Polskie%20filtry%20ciasteczkowe%20-%20uzupe%C5%82nienie%20do%20uBlocka%20i%20AdGuarda">Polskie filtry ciasteczkowe - uzupełnienie do uBlocka i AdGuarda</a>.</p>
 
-<p>Jeśli tworzysz zgłoszenie grupowe i chcesz w nim umieścić kilka serwisów, to dopisz <b>GROUP</b> na początku tytułu. A jeżeli twoja sprawa jest pilna i nie cierpiąca zwłoki, to dopisz <b>URGENT</b> na początku tytułu. Natomiast jeśli dodajesz treści o charakterze erotycznym, to dopisz <b>NSFW</b> na początku tytułu.
-
-<p>Twoje zgłoszenie zostanie opublikowane na GitHubie. Potrzebujemy twojego adresu e-mail, by móc się w razie czego skontaktować. Jednakże twój adres e-mail zostanie udostępniony jedynie dla właściciela repozytorium.</p>
+<p>Twoje zgłoszenie zostanie opublikowane na GitHubie.</p>
       
 <form class="form" id="usrform" action="https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
@@ -46,6 +44,12 @@ $(document).ready(function(){
     <input type="checkbox" name="entry.1334297973" value="widget"/> Widget
     <br />
     <input type="checkbox" name="entry.1334297973" value="błąd"/> Błąd
+    <br />
+    <input type="checkbox" name="entry.1334297973" value="grupa"/> Grupa
+    <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Kilka serwisów z tej samej grupy, np. Grupa WP."></span> 
+    <br />
+    <input type="checkbox" name="entry.1334297973" value="NSFW"/> NSFW 
+    <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Treści o charakterze erotycznym."></span> 
     <br />
     
     <p>
