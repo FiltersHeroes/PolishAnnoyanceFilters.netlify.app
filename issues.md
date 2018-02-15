@@ -104,22 +104,23 @@ $(document).ready(function(){
         <label class="font-weight-bold">System operacyjny</label> 
 
         <div class="custom-control custom-radio">
-            <input name="entry.634915560" type="radio" id="linux" class="custom-control-input" value="Linux" aria-required="true" required>
+            <img class="img-rbtn" src="https://png.icons8.com/color/24/000000/linux.png" alt="Linux"> <input name="entry.634915560" type="radio" id="linux" class="custom-control-input" value="Linux" aria-required="true" required>
             <label class="custom-control-label" for="linux">Linux</label>
         </div>
 
         <div class="custom-control custom-radio">
+            <img class="img-rbtn" src="https://png.icons8.com/color/24/000000/windows8.png" alt="Windows">
             <input name="entry.634915560" type="radio" class="custom-control-input" id="windows" value="Windows">
             <label class="custom-control-label" for="windows">Windows</label>
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.634915560" type="radio" class="custom-control-input" id="mac" value="Mac">
+            <img class="img-rbtn" src="https://png.icons8.com/color/24/000000/mac-os.png" alt="Mac"> <input name="entry.634915560" type="radio" class="custom-control-input" id="mac" value="Mac">
             <label class="custom-control-label" for="mac">Mac</label>
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.634915560" type="radio" class="custom-control-input" id="android" value="Android">
+            <img class="img-rbtn" src="https://png.icons8.com/color/24/000000/android-os.png" alt="Android"> <input name="entry.634915560" type="radio" class="custom-control-input" id="android" value="Android">
             <label class="custom-control-label" for="android">Android</label>
         </div>
 
@@ -134,42 +135,42 @@ $(document).ready(function(){
         <label class="font-weight-bold">Przeglądarka internetowa</label> 
 
         <div class="custom-control custom-radio">
-            <input name="entry.1077613316" type="radio" id="firefox" class="custom-control-input" value="Mozilla Firefox" aria-required="true" required>
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/firefox/firefox_24x24.png" alt="Firefox"> <input name="entry.1077613316" type="radio" id="firefox" class="custom-control-input" value="Mozilla Firefox" aria-required="true" required>
             <label class="custom-control-label" for="firefox">Firefox</label>
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.1077613316" type="radio" class="custom-control-input" id="waterfox" value="Waterfox">
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/waterfox/waterfox_24x24.png" alt="Waterfox"> <input name="entry.1077613316" type="radio" class="custom-control-input" id="waterfox" value="Waterfox">
             <label class="custom-control-label" for="waterfox">Waterfox</label>
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.1077613316" type="radio" class="custom-control-input" id="chrome" value="Google Chrome">
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/chrome/chrome_24x24.png" alt="Chrome"> <input name="entry.1077613316" type="radio" class="custom-control-input" id="chrome" value="Google Chrome">
             <label class="custom-control-label" for="chrome">Chrome</label>
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.1077613316" type="radio" class="custom-control-input" id="opera" value="Opera">
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/opera/opera_24x24.png" alt="Opera"> <input name="entry.1077613316" type="radio" class="custom-control-input" id="opera" value="Opera">
             <label class="custom-control-label" for="opera">Opera</label>
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.1077613316" type="radio" class="custom-control-input" id="vivaldi" value="Vivaldi">
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/vivaldi/vivaldi_24x24.png" alt="Vivaldi"> <input name="entry.1077613316" type="radio" class="custom-control-input" id="vivaldi" value="Vivaldi">
             <label class="custom-control-label" for="vivaldi">Vivaldi</label>
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.1077613316" type="radio" class="custom-control-input" id="edge" value="Microsoft Edge">
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/edge/edge_24x24.png" alt="Edge"> <input name="entry.1077613316" type="radio" class="custom-control-input" id="edge" value="Microsoft Edge">
             <label class="custom-control-label" for="edge">Edge</label>
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.1077613316" type="radio" class="custom-control-input" id="yandex" value="Yandex Browser">
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/yandex/yandex_24x24.png" alt="Yandex"> <input name="entry.1077613316" type="radio" class="custom-control-input" id="yandex" value="Yandex Browser">
             <label class="custom-control-label" for="yandex">Yandex</label>
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.1077613316" type="radio" class="custom-control-input" id="safari" value="Safari">
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/safari/safari_24x24.png" alt="Safari"> <input name="entry.1077613316" type="radio" class="custom-control-input" id="safari" value="Safari">
             <label class="custom-control-label" for="safari">Safari</label>
         </div>
 
@@ -205,8 +206,8 @@ $(document).ready(function(){
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.1847630274" type="radio" class="custom-control-input" id="AdBlock" value="AdBlock">
-            <label class="custom-control-label" for="AdBlock">AdBlock</label>
+            <input name="entry.1847630274" type="radio" class="custom-control-input" id="AB" value="AdBlock">
+            <label class="custom-control-label" for="AB">AdBlock</label>
         </div>
 
         <div class="custom-control custom-radio">
@@ -250,3 +251,4 @@ $(document).ready(function(){
     <button type="submit" class="btn btn-primary">Wyślij</button>    
     
 </form>
+
