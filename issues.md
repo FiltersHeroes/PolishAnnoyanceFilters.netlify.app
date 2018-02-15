@@ -243,7 +243,7 @@ $(document).ready(function(){
     <div class="form-group">
         <label for="mail" class="font-weight-bold">Adres e-mail</label>
         <input class="form-control" id="mail" name="entry.1171563019" type="text" placeholder="jan@gmail.com" aria-describedby="mailHelp" aria-required="true" required>
-        <small id="mailHelp" class="form-text text-muted">Potrzebujemy twojego adresu e-mail, by móc się w razie czego skontaktować. <p>Jednakże twój adres e-mail zostanie udostępniony jedynie dla właściciela repozytorium.</p></small> 
+        <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small> 
     </div>
     
 <!--Wyślij-->
