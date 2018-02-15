@@ -91,7 +91,7 @@ $(document).ready(function(){
     <div class="form-group">
         <label for="entry.449338657" class="font-weight-bold">Adres URL do zrzutu ekranu</label> 
         <input id="entry.449338657" name="entry.449338657" minlength="5" placeholder="http://www.img.pl/Example.png" type="url" class="form-control here" aria-describedby="entry.449338657HelpBlock" aria-required="true" required>
-        <small id="entry.449338657HelpBlock" class="form-text text-muted">Polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a></small> 
+        <small id="entry.449338657HelpBlock" class="form-text text-muted">Polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>.</small> 
     </div> 
     
     <p>
@@ -127,35 +127,59 @@ $(document).ready(function(){
         </div>
     </div> 
     
-    <br />
-    <label>Przeglądarka internetowa</label>
-    <br />
-    <input type="radio" name="entry.1077613316" id="firefox" value="Mozilla Firefox" aria-required="true" required /> Firefox
-    <br />
-    <input type="radio" name="entry.1077613316" id="waterfox" value="Waterfox"/> Waterfox
-    <br />              
-    <input type="radio" name="entry.1077613316" id="chrome" value="Google Chrome"/> Chrome
-    <br />              
-    <input type="radio" name="entry.1077613316" id="opera" value="Opera"/> Opera
-    <br />    
-    <input type="radio" name="entry.1077613316" id="vivaldi" value="Vivaldi"/> Vivaldi
-    <br />  
-    <input type="radio" name="entry.1077613316" id="edge" value="Microsoft Edge"/> Edge
-    <br /> 
-    <input type="radio" name="entry.1077613316" id="yandex" value="Yandex Browser"/> Yandex
-    <br /> 
-    <input type="radio" name="entry.1077613316" id="safari" value="Safari"/> Safari
-    <br /> 
-    <input type="radio" name="entry.1077613316" id="inna" value="__other_option__"> Inna: <input type="text" name="entry.1077613316.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-    <br />
+    <div class="form-group">
+        <label class="font-weight-bold">Przeglądarka internetowa</label> 
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" id="firefox" class="custom-control-input" value="Mozilla Firefox" aria-required="true" required>
+            <label class="custom-control-label" for="firefox">Firefox</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="waterfox" value="Waterfox">
+            <label class="custom-control-label" for="waterfox">Waterfox</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="chrome" value="Chrome">
+            <label class="custom-control-label" for="chrome">Google Chrome</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="opera" value="Opera">
+            <label class="custom-control-label" for="opera">Opera</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="vivaldi" value="Vivaldi">
+            <label class="custom-control-label" for="vivaldi">Vivaldi</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="edge" value="Microsoft Edge">
+            <label class="custom-control-label" for="edge">Edge</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="yandex" value="Yandex Browser">
+            <label class="custom-control-label" for="yandex">Yandex</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="safari" value="Safari">
+            <label class="custom-control-label" for="safari">Safari</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="inna" value="__other_option__">
+            <label class="custom-control-label" for="inna">Inna:</label> <input type="text" name="entry.1077613316.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+        </div>
+    </div> 
     
-    <p>
-    <label>Wersja przeglądarki internetowej</label>
-    <br />
-    <input name="entry.1188003910" id="wersja" type="text" placeholder="56.0" aria-required="true" required/>
-    <br />
-    </p>
-    <br />
+    <div class="form-group">
+        <label for="wersja" class="font-weight-bold">Wersja przeglądarki internetowej</label>
+        <input class="form-control" id="wersja" name="entry.1188003910" type="text" placeholder="56.0" aria-required="true" required/>
+    </div>
 
     <label>Bloker</label>
     <br />
