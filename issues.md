@@ -80,12 +80,6 @@ $(document).ready(function(){
         <label class="custom-control-label" for="error-type">Błąd</label>
     </div>
     </div>
- 
-<!--Opis zgłoszenia-->
-    <div class="form-group">
-        <label for="entry.523048601" class="font-weight-bold">Opis zgłoszenia</label> 
-        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="autoExpand form-control" aria-required="true" required></textarea>
-    </div>
     
 <!--Link bezpośredni do strony zawierającej element--> 
     <div class="form-group">
@@ -102,7 +96,7 @@ $(document).ready(function(){
     
 <!--Przycisk-->
     <p>
-    <button onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
+    <button class="btn wrap" onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
     </p>
 
 <!--System operacyjny-->
@@ -239,6 +233,12 @@ $(document).ready(function(){
         <small id="filtersHelp" class="form-text text-muted">Możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano.</small> 
     </div>
 
+<!--Opis zgłoszenia-->
+    <div class="form-group">
+        <label for="entry.523048601" class="font-weight-bold">Opis zgłoszenia</label> 
+        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="autoExpand form-control" aria-required="true" required></textarea>
+    </div>
+    
 <!--Adres e-mail-->
     <div class="form-group">
         <label for="mail" class="font-weight-bold">Adres e-mail</label>
