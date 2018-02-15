@@ -24,11 +24,7 @@ header a {
   &:hover {
     text-decoration: none;
   }
-  &.button {
-    color: white;
-  }
 }
-
 
 /*!
  * Bootstrap v4.0 (http://getbootstrap.com)
@@ -55,3 +51,8 @@ header a {
 @import 'bootstrap/utilities/_text';
 @import 'bootstrap/_tooltip';
 @import 'bootstrap/_input-group';
+
+
+.inline {
+    display: inline;
+}

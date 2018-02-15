@@ -74,7 +74,7 @@ function browserOSDetect() {
     if ((ix=fullVersion.indexOf(" "))!=-1){
         fullVersion=fullVersion.substring(0,ix);
     }
-        document.getElementById('wersja').value = fullVersion;
+        document.getElementById('browser_version').value = fullVersion;
 
     var linux = document.getElementById('linux');
     var windows = document.getElementById('windows');
