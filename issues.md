@@ -98,20 +98,34 @@ $(document).ready(function(){
     <button onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
     </p>
     
-    <p>
-    <label>System operacyjny</label>
-    <br />
-    <input type="radio" name="entry.634915560" id="linux" value="Linux" aria-required="true" required /> Linux
-    <br />
-    <input type="radio" name="entry.634915560" id="windows" value="Windows"/> Windows
-    <br />              
-    <input type="radio" name="entry.634915560" id="mac" value="Mac"/> Mac
-    <br />              
-    <input type="radio" name="entry.634915560" id="android" value="Android"/> Android
-    <br />           
-    <input type="radio" name="entry.634915560" id="inny" value="__other_option__"> Inny: <input type="text" name="entry.634915560.other_option_response" id="platf" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-    <br />
-    </p>
+    <div class="form-group">
+        <label class="font-weight-bold">System operacyjny</label> 
+
+        <div class="custom-control custom-radio">
+            <input name="entry.634915560" type="radio" id="linux" class="custom-control-input" value="Linux" aria-required="true" required>
+            <label class="custom-control-label" for="linux">Linux</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.634915560" type="radio" class="custom-control-input" id="windows" value="Windows">
+            <label class="custom-control-label" for="windows">Windows</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.634915560" type="radio" class="custom-control-input" id="mac" value="Mac">
+            <label class="custom-control-label" for="mac">Mac</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.634915560" type="radio" class="custom-control-input" id="android" value="Android">
+            <label class="custom-control-label" for="android">Android</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.634915560" type="radio" class="custom-control-input" id="inny" value="__other_option__">
+            <label class="custom-control-label" for="inny">Inny:</label> <input type="text" name="entry.634915560.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+        </div>
+    </div> 
     
     <br />
     <label>Przeglądarka internetowa</label>
