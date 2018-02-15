@@ -144,8 +144,8 @@ $(document).ready(function(){
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.1077613316" type="radio" class="custom-control-input" id="chrome" value="Chrome">
-            <label class="custom-control-label" for="chrome">Google Chrome</label>
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="chrome" value="Google Chrome">
+            <label class="custom-control-label" for="chrome">Chrome</label>
         </div>
 
         <div class="custom-control custom-radio">
@@ -236,7 +236,7 @@ $(document).ready(function(){
 <!--Opis zgłoszenia-->
     <div class="form-group">
         <label for="entry.523048601" class="font-weight-bold">Opis zgłoszenia</label> 
-        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="autoExpand form-control" aria-required="true" required></textarea>
+        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="autoExpand form-control" placeholder="Co trzeba zrobić, aby pojawił się irytujący element?" aria-required="true" required></textarea>
     </div>
     
 <!--Adres e-mail-->
