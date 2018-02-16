@@ -215,28 +215,38 @@ $(document).ready(function(){
         <label class="font-weight-bold">Bloker</label> 
 
         <div class="custom-control custom-radio">
-            <input name="entry.1847630274" type="radio" id="nanoad" class="custom-control-input" value="Nano Adblocker" aria-required="true" required>
-            <label class="custom-control-label" for="nanoad">Nano Adblocker</label>
+            <input name="entry.1847630274" type="radio" id="NA" class="custom-control-input" value="Nano Adblocker" aria-required="true" required>
+            <label class="custom-control-label" for="NA">Nano Adblocker
+            <img class="img-rbtn" src="/assets/images/Nano.png" alt="Nano">
+            </label>
         </div>
 
         <div class="custom-control custom-radio">
             <input name="entry.1847630274" type="radio" class="custom-control-input" id="uBO" value="uBlock Origin">
-            <label class="custom-control-label" for="uBO">uBlock Origin</label>
+            <label class="custom-control-label" for="uBO">uBlock Origin
+            <img class="img-rbtn" src="/assets/images/uBO.png" alt="uBO">
+            </label>
         </div>
 
         <div class="custom-control custom-radio">
-            <input name="entry.1847630274" type="radio" class="custom-control-input" id="ADG" value="AdGuard">
-            <label class="custom-control-label" for="ADG">AdGuard</label>
+            <input name="entry.1847630274" type="radio" class="custom-control-input" id="AG" value="AdGuard">
+            <label class="custom-control-label" for="AG">AdGuard
+            <img class="img-rbtn" src="/assets/images/AdGuard_logo.png" alt="AG">
+            </label>
         </div>
 
         <div class="custom-control custom-radio">
             <input name="entry.1847630274" type="radio" class="custom-control-input" id="AB" value="AdBlock">
-            <label class="custom-control-label" for="AB">AdBlock</label>
+            <label class="custom-control-label" for="AB">AdBlock
+            <img class="img-rbtn" src="/assets/images/AdBlock.png" alt="AB">
+            </label>
         </div>
 
         <div class="custom-control custom-radio">
             <input name="entry.1847630274" type="radio" class="custom-control-input" id="ABP" value="Adblock Plus">
-            <label class="custom-control-label" for="ABP">Adblock Plus</label>
+            <label class="custom-control-label" for="ABP">Adblock Plus
+            <img class="img-rbtn" src="/assets/images/ABP.png" alt="ABP">
+            </label>
         </div>
 
         <div class="custom-control custom-radio">
