@@ -3,7 +3,7 @@ title: Zgłoszenia
 permalink: issues
 layout: default
 ---
-<script src="/assets/js/autosize_rows_textarea.js"></script> 
+<script src="/assets/js/autosize.min.js"></script> 
 <script>var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
 style="display:none;" onload="if(submitted)
@@ -11,7 +11,8 @@ style="display:none;" onload="if(submitted)
 <script src="/assets/js/browserOSDetect.js"></script> 
 <script>
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
+    $('[data-toggle="tooltip"]').tooltip();
+    autosize($('textarea'));
 });
 </script>
 
@@ -230,14 +231,14 @@ $(document).ready(function(){
 <!--Używane filtry-->
     <div class="form-group">
         <label for="entry.1553187432" class="font-weight-bold">Używane filtry</label> 
-        <textarea id="entry.1553187432" name="entry.1553187432" rows="3" data-min-rows="3" class="autoExpand form-control noresize" aria-describedby="filtersHelp" aria-required="true" required></textarea>
+        <textarea id="entry.1553187432" name="entry.1553187432" rows="3" data-min-rows="3" class="form-control" aria-describedby="filtersHelp" aria-required="true" required></textarea>
         <small id="filtersHelp" class="form-text text-muted">Możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano.</small> 
     </div>
 
 <!--Opis zgłoszenia-->
     <div class="form-group">
         <label for="entry.523048601" class="font-weight-bold">Opis zgłoszenia</label> 
-        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="autoExpand form-control noresize" placeholder="Co trzeba zrobić, aby pojawił się irytujący element?" aria-required="true" required></textarea>
+        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="form-control" placeholder="Co trzeba zrobić, aby pojawił się irytujący element?" aria-required="true" required></textarea>
     </div>
     
 <!--Adres e-mail-->
