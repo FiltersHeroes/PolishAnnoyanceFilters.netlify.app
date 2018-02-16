@@ -49,7 +49,7 @@ header a {
 @import 'bootstrap/utilities/_text';
 @import 'bootstrap/_tooltip';
 @import 'bootstrap/_input-group';
-
+@import 'bootstrap/_reboot';
 
 .inline {
     display: inline;
@@ -62,4 +62,8 @@ header a {
 .img-rbtn {
     margin-right: 5px;
     float: left;
+}
+
+header a.button {
+    box-sizing: content-box;
 }
