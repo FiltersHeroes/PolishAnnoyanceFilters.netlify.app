@@ -8,11 +8,9 @@ $tooltip-bg: gray;
 input {
   &[type="url"] {
     width: 90%;
-    padding: 5px;
   }
   &[type="text"], &[type="email"] {
     width: 70%;
-    padding: 5px;
   }
 }
 
