@@ -230,14 +230,14 @@ $(document).ready(function(){
 <!--Używane filtry-->
     <div class="form-group">
         <label for="entry.1553187432" class="font-weight-bold">Używane filtry</label> 
-        <textarea id="entry.1553187432" name="entry.1553187432" rows="3" data-min-rows="3" class="autoExpand form-control" aria-describedby="filtersHelp" aria-required="true" required></textarea>
+        <textarea id="entry.1553187432" name="entry.1553187432" rows="3" data-min-rows="3" class="autoExpand form-control noresize" aria-describedby="filtersHelp" aria-required="true" required></textarea>
         <small id="filtersHelp" class="form-text text-muted">Możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano.</small> 
     </div>
 
 <!--Opis zgłoszenia-->
     <div class="form-group">
         <label for="entry.523048601" class="font-weight-bold">Opis zgłoszenia</label> 
-        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="autoExpand form-control" placeholder="Co trzeba zrobić, aby pojawił się irytujący element?" aria-required="true" required></textarea>
+        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="autoExpand form-control noresize" placeholder="Co trzeba zrobić, aby pojawił się irytujący element?" aria-required="true" required></textarea>
     </div>
     
 <!--Adres e-mail-->
