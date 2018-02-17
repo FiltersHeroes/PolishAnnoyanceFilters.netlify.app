@@ -34,6 +34,10 @@ $(document).ready(function(){
             <a href="#krok-3" class="btn btn-secondary btn-circle disabled">3</a>
             <p>Krok 3</p>
         </div>
+        <div class="stepwizard-step">
+            <a href="#krok-4" class="btn btn-secondary btn-circle disabled">4</a>
+            <p>Krok 4</p>
+        </div>
     </div>
 </div>
 
@@ -107,12 +111,6 @@ $(document).ready(function(){
         <input id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here" aria-required="true" required="required">
     </div> 
 
-<!--Adres URL do zrzutu ekranu-->
-    <div class="form-group">
-        <label for="entry.449338657" class="font-weight-bold">Adres URL do zrzutu ekranu</label> 
-        <input id="entry.449338657" name="entry.449338657" minlength="5" placeholder="http://www.img.pl/Example.png" type="url" class="form-control here" aria-describedby="entry.449338657HelpBlock" aria-describedby="screenHelp" aria-required="true" required="required">
-        <small id="screenHelp" class="form-text text-muted">Polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>.</small> 
-    </div> 
     <button class="btn btn-primary nextBtn btn-lg pull-right">Dalej</button>
     </div>
     
@@ -295,7 +293,19 @@ $(document).ready(function(){
         <textarea id="entry.1553187432" name="entry.1553187432" rows="5" data-min-rows="5" class="form-control" aria-describedby="filtersHelp" aria-required="true" required="required">1. EasyList&#13;&#10;2. Oficjalne polskie filtry do AdBlocka, uBlocka Origin i AdGuarda&#13;&#10;3. Polskie filtry ciasteczkowe&#13;&#10;4. Polskie filtry elementów irytujących</textarea>
         <small id="filtersHelp" class="form-text text-muted">Możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano.</small> 
     </div>
+    <button class="btn btn-primary prevBtn btn-lg pull-left">Wróć</button>
+    <button class="btn btn-primary nextBtn btn-lg pull-right">Dalej</button>
+</div>
 
+<!--Krok 4-->
+<div class="row setup-content" id="krok-4">
+<!--Adres URL do zrzutu ekranu-->
+    <div class="form-group">
+        <label for="entry.449338657" class="font-weight-bold">Adres URL do zrzutu ekranu</label> 
+        <input id="entry.449338657" name="entry.449338657" minlength="5" placeholder="http://www.img.pl/Example.png" type="url" class="form-control here" aria-describedby="entry.449338657HelpBlock" aria-describedby="screenHelp" aria-required="true" required="required">
+        <small id="screenHelp" class="form-text text-muted">Polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>.</small> 
+    </div> 
+    
 <!--Opis zgłoszenia-->
     <div class="form-group">
         <label for="entry.523048601" class="font-weight-bold">Opis zgłoszenia</label> 
@@ -311,7 +321,7 @@ $(document).ready(function(){
     <button class="btn btn-primary prevBtn btn-lg pull-left">Wróć</button>
     
 <!--Wyślij-->
-    <button type="submit" class="btn btn-success btn-lg pull-right">Wyślij</button>    
+    <button type="submit" class="btn btn-success btn-lg pull-right">Wyślij</button>   
     </div>
 </form>
 
