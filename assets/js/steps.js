@@ -1,4 +1,5 @@
-//Code from https://www.codeply.com/go/Hji7JmSKAl/bootstrap-step_by_step-form-example
+//Fixed and improved code from https://www.codeply.com/go/Hji7JmSKAl/bootstrap-step_by_step-form-example
+
 $(document).ready(function () {
   var navListItems = $('div.setup-panel div a'),
           allWells = $('.setup-content'),

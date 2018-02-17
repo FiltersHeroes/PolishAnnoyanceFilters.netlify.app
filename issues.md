@@ -3,14 +3,14 @@ title: Zgłoszenia
 permalink: issues
 layout: default
 ---
-<script src="/assets/js/steps.js"></script> 
-<script src="/assets/js/checkbox.js"></script> 
+<script src="/assets/js/steps.min.js"></script> 
+<script src="/assets/js/checkbox.min.js"></script> 
 <script src="/assets/js/autosize.min.js"></script> 
 <script>var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
 style="display:none;" onload="if(submitted)
 {window.location='issues/thanks';}"></iframe>
-<script src="/assets/js/browserOSDetect.js"></script> 
+<script src="/assets/js/browserOSDetect.min.js"></script> 
 <script>
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
