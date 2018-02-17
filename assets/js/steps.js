@@ -21,27 +21,26 @@ $(document).ready(function () {
           $target.find('input:eq(0)').focus();
       }
   });
-  
+      
   allPrevBtn.click(function(){
       var curStep = $(this).closest(".setup-content"),
           curStepBtn = curStep.attr("id"),
           prevStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
-
-          prevStepWizard.removeAttr('disabled').trigger('click');
+          prevStepWizard.removeClass('disabled').trigger('click');
   });
 
   allNextBtn.click(function(){
       var curStep = $(this).closest(".setup-content"),
           curStepBtn = curStep.attr("id"),
           nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-          curInputs = curStep.find("input[type='text'],input[type='url']"),
+          curInputs = curStep.find("input[type='text'],input[type='url'],input[type='checkbox'],input[type='radio']"),
           isValid = true;
-
-      $(".form-group").removeClass("is-invalid");
+          $(".form-group").removeClass("is-valid");
+      
       for(var i=0; i<curInputs.length; i++){
           if (!curInputs[i].validity.valid){
               isValid = false;
-              $(curInputs[i]).closest(".form-group").addClass("is-invalid");
+              $(curInputs[i]).closest(".form-group").addClass("is-valid");
           }
       }
 

@@ -4,6 +4,7 @@ permalink: issues
 layout: default
 ---
 <script src="/assets/js/steps.js"></script> 
+<script src="/assets/js/checkbox.js"></script> 
 <script src="/assets/js/autosize.min.js"></script> 
 <script>var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
@@ -48,7 +49,7 @@ $(document).ready(function(){
 <!--Tytuł zgłoszenia-->
     <div class="form-group">
     <label for="title" class="font-weight-bold">Tytuł zgłoszenia</label>
-    <input class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" aria-required="true" required="required"/>
+    <input class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" required="required"/>
     </div>
 
 <!--Tryb(y) zgłoszenia-->
@@ -71,36 +72,36 @@ $(document).ready(function(){
     </div>
 
 <!--Typ(y) elementu(ów)-->
-    <div class="form-group">
+    <div class="form-group type">
     <label class="font-weight-bold">Typ(y) elementu(ów)</label> 
     
       <div class="custom-control custom-checkbox">
-        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="newsletter-type" value="newsletter" aria-required="true" required="required">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="newsletter-type" value="newsletter" required="required">
         <label class="custom-control-label" for="newsletter-type">Newsletter (nie popup)</label>
     </div>
       
       <div class="custom-control custom-checkbox">
-        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="popup-type" value="popup">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="popup-type" value="popup" required="required">
         <label class="custom-control-label" for="popup-type">Popup (wyskakujące okienko)</label>
     </div>
       
       <div class="custom-control custom-checkbox">
-        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="push-type" value="push">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="push-type" value="push" required="required">
         <label class="custom-control-label" for="push-type">Powiadomienie typu webpush</label>
     </div>
 
       <div class="custom-control custom-checkbox">
-        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="scroll_movie-type" value="scrollujący filmik">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="scroll_movie-type" value="scrollujący filmik" required="required">
         <label class="custom-control-label" for="scroll_movie-type">Scrollujący filmik</label>
     </div>
 
       <div class="custom-control custom-checkbox">
-        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="widget-type" value="widget">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="widget-type" value="widget" required="required">
         <label class="custom-control-label" for="widget-type">Widget</label>
     </div>
 
       <div class="custom-control custom-checkbox">
-        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="error-type" value="błąd">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="error-type" value="błąd" required="required">
         <label class="custom-control-label" for="error-type">Błąd</label>
     </div>
     </div>
@@ -108,7 +109,7 @@ $(document).ready(function(){
 <!--Link bezpośredni do strony zawierającej element--> 
     <div class="form-group">
         <label for="entry.412846605" class="font-weight-bold">Link bezpośredni do strony zawierającej element</label> 
-        <input id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here" aria-required="true" required="required">
+        <input id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here" required="required">
     </div> 
 
     <button class="btn btn-primary nextBtn btn-lg pull-right">Dalej</button>
@@ -126,7 +127,7 @@ $(document).ready(function(){
         <label class="font-weight-bold">System operacyjny</label> 
 
         <div class="custom-control custom-radio">
-            <input name="entry.634915560" type="radio" id="linux" class="custom-control-input" value="Linux" aria-required="true" required="required">
+            <input name="entry.634915560" type="radio" id="linux" class="custom-control-input" value="Linux" required="required">
             <label class="custom-control-label" for="linux">Linux
             <img class="img-rbtn" src="https://png.icons8.com/color/24/000000/linux.png" alt="Linux"> 
             </label>
@@ -164,7 +165,7 @@ $(document).ready(function(){
         <label class="font-weight-bold">Przeglądarka internetowa</label> 
 
         <div class="custom-control custom-radio">
-            <input name="entry.1077613316" type="radio" id="firefox" class="custom-control-input" value="Mozilla Firefox" aria-required="true" required="required">
+            <input name="entry.1077613316" type="radio" id="firefox" class="custom-control-input" value="Mozilla Firefox" required="required">
             <label class="custom-control-label" for="firefox">Firefox
             <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/firefox/firefox_24x24.png" alt="Firefox">
             </label>
@@ -228,7 +229,7 @@ $(document).ready(function(){
  <!--Wersja przeglądarki internetowej-->
     <div class="form-group">
         <label for="browser_version" class="font-weight-bold">Wersja przeglądarki internetowej</label>
-        <input class="form-control" id="browser_version" name="entry.1188003910" type="text" placeholder="56.0" aria-required="true" required="required"/>
+        <input class="form-control" id="browser_version" name="entry.1188003910" type="text" placeholder="56.0" required="required"/>
     </div>
     <button class="btn btn-primary prevBtn btn-lg pull-left">Wróć</button>
     <button class="btn btn-primary nextBtn btn-lg pull-right">Dalej</button>
@@ -241,7 +242,7 @@ $(document).ready(function(){
         <label class="font-weight-bold">Bloker</label> 
 
         <div class="custom-control custom-radio">
-            <input name="entry.1847630274" type="radio" id="NA" class="custom-control-input" value="Nano Adblocker" aria-required="true" required="required">
+            <input name="entry.1847630274" type="radio" id="NA" class="custom-control-input" value="Nano Adblocker" required="required">
             <label class="custom-control-label" for="NA">Nano Adblocker
             <img class="img-rbtn" src="/assets/images/Nano.png" alt="Nano">
             </label>
@@ -284,13 +285,13 @@ $(document).ready(function(){
 <!--Wersja blokera-->
     <div class="form-group">
         <label for="blocker_version" class="font-weight-bold">Wersja blokera</label>
-        <input class="form-control" id="blocker_version" name="entry.1171563019" type="text" placeholder="1.0.0.29" aria-required="true" required="required"/>
+        <input class="form-control" id="blocker_version" name="entry.1171563019" type="text" placeholder="1.0.0.29" required="required"/>
     </div>
 
 <!--Używane filtry-->
     <div class="form-group">
         <label for="entry.1553187432" class="font-weight-bold">Używane filtry</label> 
-        <textarea id="entry.1553187432" name="entry.1553187432" rows="5" data-min-rows="5" class="form-control" aria-describedby="filtersHelp" aria-required="true" required="required">1. EasyList&#13;&#10;2. Oficjalne polskie filtry do AdBlocka, uBlocka Origin i AdGuarda&#13;&#10;3. Polskie filtry ciasteczkowe&#13;&#10;4. Polskie filtry elementów irytujących</textarea>
+        <textarea id="entry.1553187432" name="entry.1553187432" rows="5" data-min-rows="5" class="form-control" aria-describedby="filtersHelp" required="required">1. EasyList&#13;&#10;2. Oficjalne polskie filtry do AdBlocka, uBlocka Origin i AdGuarda&#13;&#10;3. Polskie filtry ciasteczkowe&#13;&#10;4. Polskie filtry elementów irytujących</textarea>
         <small id="filtersHelp" class="form-text text-muted">Możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano.</small> 
     </div>
     <button class="btn btn-primary prevBtn btn-lg pull-left">Wróć</button>
@@ -302,20 +303,20 @@ $(document).ready(function(){
 <!--Adres URL do zrzutu ekranu-->
     <div class="form-group">
         <label for="entry.449338657" class="font-weight-bold">Adres URL do zrzutu ekranu</label> 
-        <input id="entry.449338657" name="entry.449338657" minlength="5" placeholder="http://www.img.pl/Example.png" type="url" class="form-control here" aria-describedby="entry.449338657HelpBlock" aria-describedby="screenHelp" aria-required="true" required="required">
+        <input id="entry.449338657" name="entry.449338657" minlength="5" placeholder="http://www.img.pl/Example.png" type="url" class="form-control here" aria-describedby="entry.449338657HelpBlock" aria-describedby="screenHelp" required="required">
         <small id="screenHelp" class="form-text text-muted">Polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>.</small> 
     </div> 
     
 <!--Opis zgłoszenia-->
     <div class="form-group">
         <label for="entry.523048601" class="font-weight-bold">Opis zgłoszenia</label> 
-        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="form-control" placeholder="Co trzeba zrobić, aby pojawił się irytujący element?" aria-required="true" required="required"></textarea>
+        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="form-control" placeholder="Co trzeba zrobić, aby pojawił się irytujący element?" required="required"></textarea>
     </div>
     
 <!--Adres e-mail-->
     <div class="form-group">
         <label for="mail" class="font-weight-bold">Adres e-mail</label>
-        <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="jan@gmail.com" aria-describedby="mailHelp" aria-required="true" required="required">
+        <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="jan@gmail.com" aria-describedby="mailHelp" required="required">
         <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small> 
     </div>
     <button class="btn btn-primary prevBtn btn-lg pull-left">Wróć</button>
