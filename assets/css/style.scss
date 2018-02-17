@@ -50,8 +50,7 @@ header a {
 @import "bootstrap/_tooltip";
 @import "bootstrap/_input-group";
 @import "bootstrap/_reboot";
-@import "smart_wizard";
-@import "smart_wizard_theme_arrows";
+@import "bootstrap/utilities/_float";
 
 .inline {
     display: inline;
@@ -119,10 +118,3 @@ header a.button {
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
 
-.pull-left {
-    float: left;
-}
-
-.pull-right {
-    float: right;
-}
