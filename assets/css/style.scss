@@ -39,17 +39,19 @@ header a {
 @import "bootstrap/mixins/_box-shadow";
 @import "bootstrap/mixins/_gradients";
 @import "bootstrap/mixins/_border-radius";
-@import 'bootstrap/_buttons';
-@import 'bootstrap/_forms';
+@import "bootstrap/_buttons";
+@import "bootstrap/_forms";
 @import "bootstrap/mixins/_reset-text";
-@import 'bootstrap/_custom-forms';
+@import "bootstrap/_custom-forms";
 @import "bootstrap/mixins/_text-truncate";
 @import "bootstrap/mixins/_text-emphasis";
 @import "bootstrap/mixins/_text-hide";
-@import 'bootstrap/utilities/_text';
-@import 'bootstrap/_tooltip';
-@import 'bootstrap/_input-group';
-@import 'bootstrap/_reboot';
+@import "bootstrap/utilities/_text";
+@import "bootstrap/_tooltip";
+@import "bootstrap/_input-group";
+@import "bootstrap/_reboot";
+@import "smart_wizard";
+@import "smart_wizard_theme_arrows";
 
 .inline {
     display: inline;
@@ -68,3 +70,59 @@ header a.button {
     box-sizing: content-box;
 }
 
+.sw-theme-arrows > ul.step-anchor {
+    display: flex;
+}
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -webkit-transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
