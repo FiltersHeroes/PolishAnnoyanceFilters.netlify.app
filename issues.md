@@ -112,7 +112,9 @@ $(document).ready(function(){
         <input id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here" required="required">
     </div> 
 
-    <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+    <div class="clearfix">
+        <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+    </div>
     </div>
     
 <!--Krok 2-->
@@ -231,8 +233,11 @@ $(document).ready(function(){
         <label for="browser_version" class="font-weight-bold">Wersja przeglądarki internetowej</label>
         <input class="form-control" id="browser_version" name="entry.1188003910" type="text" placeholder="56.0" required="required"/>
     </div>
-    <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
-    <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+    
+    <div class="clearfix">
+        <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+        <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+    </div>
 </div>
 
 <!--Krok 3-->
@@ -294,8 +299,10 @@ $(document).ready(function(){
         <textarea id="entry.1553187432" name="entry.1553187432" rows="5" data-min-rows="5" class="form-control" aria-describedby="filtersHelp" required="required">1. EasyList&#13;&#10;2. Oficjalne polskie filtry do AdBlocka, uBlocka Origin i AdGuarda&#13;&#10;3. Polskie filtry ciasteczkowe&#13;&#10;4. Polskie filtry elementów irytujących</textarea>
         <small id="filtersHelp" class="form-text text-muted">Możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano.</small> 
     </div>
-    <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
-    <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+    <div class="clearfix">
+        <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+        <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+    </div>
 </div>
 
 <!--Krok 4-->
@@ -319,10 +326,13 @@ $(document).ready(function(){
         <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="jan@gmail.com" aria-describedby="mailHelp" required="required">
         <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small> 
     </div>
-    <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+    
+    <div class="clearfix">
+        <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
     
 <!--Wyślij-->
-    <button type="submit" class="btn btn-success btn-lg float-right">Wyślij</button>   
+        <button type="submit" class="btn btn-success btn-lg float-right">Wyślij</button>   
+    </div>
     </div>
 </form>
 

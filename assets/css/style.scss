@@ -52,6 +52,7 @@ header a {
 @import "bootstrap/_reboot";
 @import "bootstrap/mixins/_float";
 @import "bootstrap/utilities/_float";
+@import "bootstrap/mixins/_clearfix";
 
 .inline {
     display: inline;
