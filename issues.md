@@ -3,6 +3,12 @@ title: Zgłoszenia
 permalink: issues
 layout: default
 ---
+<noscript>
+  <h2>Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów.
+  Tu znajdziesz <a href="https://www.enable-javascript.com/pl/" target="_blank">
+  instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.</h2>
+  <br/>
+</noscript>
 <script src="/assets/js/steps.min.js"></script> 
 <script src="/assets/js/checkbox.min.js"></script> 
 <script src="/assets/js/autosize.min.js"></script> 
