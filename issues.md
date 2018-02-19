@@ -9,6 +9,7 @@ layout: default
   instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.</h2>
   <br/>
 </noscript>
+<script src="/assets/js/sweet-surprise.js"></script>
 <script src="/assets/js/steps.min.js"></script> 
 <script src="/assets/js/checkbox.min.js"></script> 
 <script src="/assets/js/autosize.min.js"></script> 
@@ -114,7 +115,6 @@ $(document).ready(function(){
         <label for="entry.412846605" class="font-weight-bold">Link bezpośredni do strony zawierającej element</label> 
         <input id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here" required="required">
     </div> 
-
     <div class="clearfix">
         <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
     </div>
@@ -329,7 +329,7 @@ $(document).ready(function(){
         <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="jan@gmail.com" aria-describedby="mailHelp" required="required">
         <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small> 
     </div>
-    
+    <input type="text" id="url" />
     <div class="clearfix">
         <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
     
