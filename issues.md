@@ -9,27 +9,30 @@ layout: default
   instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.</h2>
   <br/>
 </noscript>
-<script src="/assets/js/sweet-surprise.js"></script>
+<script src="/assets/js/sweet-surprise.min.js"></script> 
 <script src="/assets/js/steps.min.js"></script> 
 <script src="/assets/js/checkbox.min.js"></script> 
 <script src="/assets/js/autosize.min.js"></script> 
+<script src="/assets/js/browserOSDetect.min.js"></script> 
 <script>var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
 style="display:none;" onload="if(submitted)
 {window.location='issues/thanks';}"></iframe>
-<script src="/assets/js/browserOSDetect.min.js"></script> 
 <script>
 $(document).ready(function(){
+    $('#usrform').attr('action', 'https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse');
     $('[data-toggle="tooltip"]').tooltip();
     autosize($('textarea'));
 });
 </script>
+
 <div class="border-lblue-solid">
 <p>Przed zgłoszeniem sprawdź czy masz włączone listy: <a href="abp:subscribe?location=https%3A%2F%2Feasylist.to%2Feasylist%2Feasylist.txt&amp;title=EasyList">EasyList</a>, <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fpolish-adblock-filters%2Fadblock.txt&amp;title=Oficjalne%20Polskie%20Filtry%20do%20AdBlocka%2C%20uBlocka%20i%20AdGuarda">Oficjalne Polskie Filtry do AdBlocka, uBlocka i AdGuarda</a> oraz <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fcookies_filters%2Fadblock_cookies.txt&amp;title=Polskie%20Filtry%20Ciasteczkowe">Polskie Filtry Ciasteczkowe</a>. A jeżeli posiadasz uBlocka w wersji niższej niż 1.14.25rc0, to musisz dodatkowo zasubskrybować <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FPolishFiltersTeam%2FPolishAnnoyanceFilters%2Fmaster%2FPPB_uBlock_AdGuard.txt&amp;title=Polskie%20Filtry%20Element%C3%B3w%20Irytuj%C4%85cych%20-%20uzupe%C5%82nienie%20do%20uBlocka%20i%20AdGuarda">Polskie Filtry Elementów Irytujących - uzupełnienie do uBlocka i AdGuarda</a> oraz <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fcookies_filters%2Fcookies_uB_AG.txt&amp;title=Polskie%20Filtry%20Ciasteczkowe%20-%20uzupe%C5%82nienie%20do%20uBlocka%20i%20AdGuarda">Polskie Filtry Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda</a>. Powinieneś również posiadać tylko jedne rozszerzenie blokujące elementy, a jeżeli masz ich kilka, to zostaw tylko jedno, a pozostałe wyłącz albo odinstaluj. Pamiętaj także, by zaktualizować filtry. </p>
 
 <p>Twoje zgłoszenie zostanie opublikowane na GitHubie.</p>
 </div>
 <br/>
+
 <div class="stepwizard">
     <div class="stepwizard-row setup-panel">
         <div class="stepwizard-step">
@@ -51,7 +54,8 @@ $(document).ready(function(){
     </div>
 </div>
 
-<form class="form" id="usrform" action="https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+<form class="form" id="usrform" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+<input type="hidden" name="form-name" value="newIssue" />
 
 <!--Krok 1-->
 <div class="row setup-content" id="krok-1">
@@ -329,7 +333,7 @@ $(document).ready(function(){
         <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="jan@gmail.com" aria-describedby="mailHelp" required="required">
         <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small> 
     </div>
-    <input type="text" id="url" />
+    <input name="email" type="text" id="email" />
     <div class="clearfix">
         <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
     
