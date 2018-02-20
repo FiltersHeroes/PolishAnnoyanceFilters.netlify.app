@@ -9,6 +9,7 @@ layout: default
   instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.</h2>
   <br/>
 </noscript>
+<script src="/assets/js/verify.min.js"></script> 
 <script src="/assets/js/sweet-surprise.min.js"></script> 
 <script src="/assets/js/steps.min.js"></script> 
 <script src="/assets/js/checkbox.min.js"></script> 
@@ -54,15 +55,15 @@ $(document).ready(function(){
     </div>
 </div>
 
-<form class="form" id="usrform" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-<input type="hidden" name="form-name" value="newIssue" />
+<form name="formularz" class="form" id="usrform" method="post" target="hidden_iframe" onsubmit="submitted=true;" netlify>
+<input type="hidden" name="form-name" value="formularz" />
 
 <!--Krok 1-->
 <div class="row setup-content" id="krok-1">
 <!--Tytuł zgłoszenia-->
     <div class="form-group">
     <label for="title" class="font-weight-bold">Tytuł zgłoszenia</label>
-    <input class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" required="required"/>
+    <input pattern=".{5,}" class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" required="required"/>
     </div>
 
 <!--Tryb(y) zgłoszenia-->
@@ -117,7 +118,7 @@ $(document).ready(function(){
 <!--Link bezpośredni do strony zawierającej element--> 
     <div class="form-group">
         <label for="entry.412846605" class="font-weight-bold">Link bezpośredni do strony zawierającej element</label> 
-        <input id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here" required="required">
+        <input pattern=".{12,}" id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here" required="required">
     </div> 
     <div class="clearfix">
         <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
@@ -290,7 +291,7 @@ $(document).ready(function(){
 
         <div class="custom-control custom-radio">
             <input name="entry.1847630274" type="radio" class="custom-control-input" id="inny_bloker" value="__other_option__">
-            <label class="custom-control-label" for="inny_bloker">Inny:</label> <input type="text" class="form-control inline" name="entry.1847630274.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+            <label class="custom-control-label" for="inny_bloker">Inny:</label> <input pattern=".{3,}" type="text" class="form-control inline" name="entry.1847630274.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
         </div>
     </div>
  
@@ -303,7 +304,7 @@ $(document).ready(function(){
 <!--Używane filtry-->
     <div class="form-group">
         <label for="entry.1553187432" class="font-weight-bold">Używane filtry</label> 
-        <textarea id="entry.1553187432" name="entry.1553187432" rows="5" data-min-rows="5" class="form-control" aria-describedby="filtersHelp" required="required">1. EasyList&#13;&#10;2. Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda&#13;&#10;3. Polskie Filtry Ciasteczkowe&#13;&#10;4. Polskie Filtry Elementów Irytujących</textarea>
+        <textarea minlength="5" id="entry.1553187432" name="entry.1553187432" rows="5" data-min-rows="5" class="form-control" aria-describedby="filtersHelp" required="required">1. EasyList&#13;&#10;2. Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda&#13;&#10;3. Polskie Filtry Ciasteczkowe&#13;&#10;4. Polskie Filtry Elementów Irytujących</textarea>
         <small id="filtersHelp" class="form-text text-muted">Możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano.</small> 
     </div>
     <div class="clearfix">
@@ -317,14 +318,14 @@ $(document).ready(function(){
 <!--Adres URL do zrzutu ekranu-->
     <div class="form-group">
         <label for="entry.449338657" class="font-weight-bold">Adres URL do zrzutu ekranu</label> 
-        <input id="entry.449338657" name="entry.449338657" minlength="5" placeholder="http://www.img.pl/Example.png" type="url" class="form-control here" aria-describedby="entry.449338657HelpBlock" aria-describedby="screenHelp" required="required">
+        <input id="entry.449338657" name="entry.449338657" pattern=".{5,}" placeholder="http://www.img.pl/Example.png" type="url" class="form-control here" aria-describedby="entry.449338657HelpBlock" aria-describedby="screenHelp" required="required">
         <small id="screenHelp" class="form-text text-muted">Polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>.</small> 
     </div> 
     
 <!--Opis zgłoszenia-->
     <div class="form-group">
         <label for="entry.523048601" class="font-weight-bold">Opis zgłoszenia</label> 
-        <textarea id="entry.523048601" name="entry.523048601" rows="3" data-min-rows="3" class="form-control" placeholder="Co trzeba zrobić, aby pojawił się irytujący element?" required="required"></textarea>
+        <textarea id="entry.523048601" name="entry.523048601" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Co trzeba zrobić, aby pojawił się irytujący element?" required="required"></textarea>
     </div>
     
 <!--Adres e-mail-->
@@ -333,6 +334,8 @@ $(document).ready(function(){
         <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="jan@gmail.com" aria-describedby="mailHelp" required="required">
         <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small> 
     </div>
+    <div netlify-recaptcha></div>
+    <br/>
     <input name="email" type="text" id="email" />
     <div class="clearfix">
         <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
