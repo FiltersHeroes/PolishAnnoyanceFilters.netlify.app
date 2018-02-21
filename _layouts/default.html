@@ -8,9 +8,9 @@ layout: compress
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/architect-s-daughter" type="text/css"/>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
-    <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
+    <link rel="preload" as="style" href="https://fontlibrary.org/face/architect-s-daughter" media="screen" onload="this.rel='stylesheet'"/>
+    <link rel="preload" as="style" href="/assets/css/style.css" media="screen" onload="this.rel='stylesheet'">
+    <link rel="preload" as="style" href="{{ '/assets/css/print.css' | relative_url }}" media="print" onload="this.rel='stylesheet'">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
