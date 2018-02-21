@@ -9,16 +9,17 @@ layout: default
   instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.</h2>
   <br/>
 </noscript>
+<script>var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='issues/thanks';}"></iframe>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="/assets/js/verify.min.js"></script> 
 <script src="/assets/js/sweet-surprise.min.js"></script> 
 <script src="/assets/js/steps.min.js"></script> 
 <script src="/assets/js/checkbox.min.js"></script> 
 <script src="/assets/js/autosize.min.js"></script> 
 <script src="/assets/js/browserOSDetect.min.js"></script> 
-<script>var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe"
-style="display:none;" onload="if(submitted)
-{window.location='issues/thanks';}"></iframe>
 <script>
 $(document).ready(function(){
     $('#usrform').attr('action', 'https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse');
