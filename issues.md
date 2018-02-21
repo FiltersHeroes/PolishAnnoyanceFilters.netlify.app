@@ -140,28 +140,28 @@ $(document).ready(function(){
         <div class="custom-control custom-radio">
             <input name="entry.634915560" type="radio" id="linux" class="custom-control-input" value="Linux" required="required">
             <label class="custom-control-label" for="linux">Linux
-            <img class="img-rbtn" src="https://png.icons8.com/color/24/000000/linux.png" alt="Linux"> 
+            <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKDSURBVEhLYxiRgBFKUxeoG1uGqhmaP1Q1NP+tZmS+W8XATAsqRTmQ17cXUDW0+KVmZPEfCV+BSlMO1IzNbVz8Q/7rWtj/D0tI/R+fkQe2BOgbTagSygDIgpb2zv9ZhWX/Wzq6/k+cMg3iC6A4VAllQFXfymD5BJf/b7by/L+9Vub/islesGAKgyqhDKjpmSmeXyT159Eq9v/3V7D/f7LH8b+GieVvVSOLxVAllAFLV5+ajVvX//hyq+P/x8db/r95//F/ck7hR1CKAlqkA1VGHlAzttTQtXT4/uT5S7DBMLxj70FoMJmf19LSYoMqJxkw6lraHe6aOOU3suEg/Prdh/9ugWH/gfnjJ9An1VD1pAF1I0t398DwJ89evUYxHIanzJ7/PyQu6beGseUnLS17Hqg24gHQdavWb93xE5vhILz7wOH/yblF/4EW/Fc3so6CaiMOqKh4sGuaWD258+ARVsNB+OLVG/9beyaA4wKYoiqhWokDPw9wxd1bLfB51sw+rIa/ffvq/8urE/839k367+zj+jYlSisBqhU/+H+YXenfAfZ+IP75/yD7/4OzpP9WNLT+f/nmHYoF758f/w+Sb6jx+n9nncTffwfZl0KNwA/+HWSNBmlExjmJmv87J0xBseDD450oaoAO+vrvIJs31Bjc4N8BNl9kjSD8cQf/7wlTuv4+ePLs//OXb/6v3bzt/8IJAR/Q1QEtOAQ1BjcAejUD6Jp/6JqbC1Q/q5tY/dI0s/4CxJ8XtsqchclBXM+e/f8/AxPUGPzg/34eEaBPgoAuWgTU+B6If//bz2kBlQaD33vZ3YDin4GGn/y/n00DKkw6+H+Fge3fEQZeKHfEAQYGABJ33wC6iY/7AAAAAElFTkSuQmCC" alt="Linux"> 
             </label>
         </div>
 
         <div class="custom-control custom-radio">
             <input name="entry.634915560" type="radio" class="custom-control-input" id="windows" value="Windows">
             <label class="custom-control-label" for="windows">Windows
-            <img class="img-rbtn" src="https://png.icons8.com/color/24/000000/windows8.png" alt="Windows">
+            <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE2SURBVEhL7ZUxSwNBFITXu4B/wMLG2r9gY2Hrb7ARa2trK/U32CrZDVgFLNOm0cLG2t5CzG7ERs+5Rx48jrm8QLDLwMfe3szO3cGyFzb6P93PdgZxflClfFLHfFmncofrKcb3RWIFjcruYDg7rGI5bad1LKmK+QnjB4qaPmQtU53yTZXKA3jBW827i+x8GVLGxMKK51ukjImFFc+3SBkTCyueb5EyJhZWPN8iZUwsrHi+RcqYsHOu+/B8i5QxYXte9OH5FiljYp+reL5FyphYWPF8i5QxsbDi+RYpY2JhxfMtUsbEwornW6SMCYfdLXbBBFvtDdc/3UV2vgwpc/X4ux3S5z6O5mMc0eftLZz3YxS84gW+u6UWWb+WmmYrDL/28KAjfPEZxiv5V6T83P4rFqmNVlEIfx/rvRwNAWMoAAAAAElFTkSuQmCC" alt="Windows">
             </label>
         </div>
 
         <div class="custom-control custom-radio">
             <input name="entry.634915560" type="radio" class="custom-control-input" id="mac" value="Mac">
             <label class="custom-control-label" for="mac">Mac
-            <img class="img-rbtn" src="https://png.icons8.com/color/24/000000/mac-os.png" alt="Mac">
+            <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHMSURBVEhL7ZM7S8NQFMeLoKPo4uT7UbW0olbxVZEmDm6C4HdQHBRx083FRx8+WtqC7+QuDn4FN0dHXURwaNLUpNY2VxGp1xs9BZG8lLr5g/+QE87vHA6J458/YezwocqP1DDNHZRKxwQnVzI8vmYQJn4eX0K5dPgRDmhyGDAF5dJBt8/Q0xTogFUo/Z4xDtfSjWdZ9LTIovy4N0HK6YA5ls97xtGTjw6ZZzi8oD1Di30YpC4zvPpaPAecJOvn1Qs6VPpa/3iH8NH0KamAdnO0jb8LrEIHyCyH+0FhjA9lq+mNVT2JUUaPc6+Dh7kRUJijfRl6EqMM7GdJ51b6BtqtKZ6H3poMHzwSbyJDemKf6Y0rpC/xQLzxDPFEZdIaFEn9WpK4tqVzaLfGx+UXu2MKadwQPprtpGMrdQXt1nTFlCU9iVmaNoWCN5GsB4U5QydiTcO6/e2LaQul5L6AUgcac5zhlKAnsUprQHx2EFIGGmPcUWVGT2AV9076CBTWtIelWz2JUej22GX3T9boiQgNzZvii57se5o2hIIncs9Cq31cYanbGRLFxvXkW0tIzLl20meeiLzi3pX2nCEppdXbgmKWyieh5Z+f4nC8AwJVGH0WeQm+AAAAAElFTkSuQmCC" alt="Mac">
             </label>
         </div>
 
         <div class="custom-control custom-radio">
              <input name="entry.634915560" type="radio" class="custom-control-input" id="android" value="Android">
             <label class="custom-control-label" for="android">Android
-            <img class="img-rbtn" src="https://png.icons8.com/color/24/000000/android-os.png" alt="Android">
+            <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVEhL7ZQ9CsJAEIVzAjvxMja7lXoHryHEDdhqZeNBZAOp7NROKysvINjYGEQrnY0TSSbj5g/BIh88mIF5bydLEqehNsqXI0+LGbYfPF8slBZDbKvjrmQHwkJPy4Pny1skLY+gixt02zhWjUnQa0H4Hp7iagThTyOsQ6XlzszgeHngauYYukRFB6R6mMHx8ihfnBOhvLQ84fifABtt4Y43Uc1tzIj6rKRMiRCbqM8KZ8oT9VnhTHmiPiucKU/UZwVezQe823dTJ0Nsoj4r8OUOxlr23zUfSEV9hYm2YgJTKrL1N8xW8MecxmGmpn3prTniQGwzfW1+foD5BcB1rbHN9A01cJwXBKyR6Y4/gYkAAAAASUVORK5CYII=" alt="Android">
             </label>
         </div>
 
