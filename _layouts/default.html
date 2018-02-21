@@ -8,9 +8,10 @@ layout: compress
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="preload" as="style" href="https://fontlibrary.org/face/architect-s-daughter" media="screen" onload="this.rel='stylesheet'"/>
-    <link rel="preload" as="style" href="/assets/css/style.css" media="screen" onload="this.rel='stylesheet'">
-    <link rel="preload" as="style" href="{{ '/assets/css/print.css' | relative_url }}" media="print" onload="this.rel='stylesheet'">
+<script>
+function LoadCssFile(cssPath){var l=document.createElement('link');l.rel='stylesheet';l.href=cssPath;var h=document.getElementsByTagName('head')[0];h.parentNode.insertBefore(l,h)}
+var cb=function(){LoadCssFile('https://fontlibrary.org/face/architect-s-daughter');LoadCssFile('/assets/css/style.css')};var raf=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;if(raf)raf(cb);else window.addEventListener('load',cb)
+</script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
