@@ -15,3 +15,6 @@ google_site_verification: fNut01rhp845fu903ZfwVGKe-vWAz-IecDu7MHZ0bLw
 url: "https://polishannoyancefilters.netlify.com"
 plugins:
   - jekyll-sitemap
+seo:
+    name: Polskie Filtry Elementów Irytujących (Annoyance)
+    links: [ "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters", "https:/certyficate.it/adblock/", "https://filterlists.com/" ]
