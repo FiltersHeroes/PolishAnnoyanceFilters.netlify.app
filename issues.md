@@ -64,20 +64,6 @@ style="display:none;" onload="if(submitted)
     <input pattern=".{5,}" class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" required="required"/>
     </div>
 
-<!--Tryb(y) zgłoszenia-->
-    <div class="form-group">
-    <label class="font-weight-bold">Tryb(y) zgłoszenia</label> 
-      <div class="custom-control custom-checkbox">
-        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="urgent" value="PILNE">
-        <label class="custom-control-label" for="urgent">Pilna sprawa</label>
-      </div>
-      
-      <div class="custom-control custom-checkbox">
-        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="group" value="GRUPA">
-        <label class="custom-control-label" for="group">Grupa stron (kilka serwisów z tej samej grupy, np. Grupa WP)</label>
-      </div>
-    </div>
-
 <!--Typ(y) elementu(ów)-->
     <div class="form-group type">
     <label class="font-weight-bold">Typ(y) elementu(ów)</label> 
@@ -103,14 +89,15 @@ style="display:none;" onload="if(submitted)
     </div>
 
       <div class="custom-control custom-checkbox">
-        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="widget-type" value="widget" required="required">
-        <label class="custom-control-label" for="widget-type">Widget</label>
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="widget-type" value="widżet" required="required">
+        <label class="custom-control-label" for="widget-type">Widżet (inny)</label>
     </div>
 
       <div class="custom-control custom-checkbox">
         <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="error-type" value="błąd" required="required">
         <label class="custom-control-label" for="error-type">Błąd</label>
     </div>
+        
     </div>
     
 <!--Link bezpośredni do strony zawierającej element--> 
@@ -320,20 +307,12 @@ style="display:none;" onload="if(submitted)
         <small id="screenHelp" class="form-text text-muted">Polecane hostingi to <a href="https://imgur.com/">Imgur</a> i <a href="https://screenshots.firefox.com/">Firefox Screenshots</a>.</small> 
     </div> 
     
-<!--Opis zgłoszenia-->
-    <div class="form-group">
-        <label for="entry.523048601" class="font-weight-bold">Opis zgłoszenia</label> 
-        <textarea id="entry.523048601" name="entry.523048601" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Co trzeba zrobić, aby pojawił się irytujący element?" required="required"></textarea>
-    </div>
-    
 <!--Adres e-mail-->
     <div class="form-group">
         <label for="mail" class="font-weight-bold">Adres e-mail</label>
         <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="jan@gmail.com" aria-describedby="mailHelp" required="required">
         <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small> 
     </div>
-    <div netlify-recaptcha></div>
-    <br/>
     <input name="email" type="text" id="email" />
     <div class="clearfix">
         <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
