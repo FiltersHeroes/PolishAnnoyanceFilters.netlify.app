@@ -1,0 +1,336 @@
+---
+title: Zgłoszenia
+permalink: test
+layout: default
+---
+<noscript>
+  <h2>Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów.
+  Tu znajdziesz <a href="https://www.enable-javascript.com/pl/" target="_blank">
+  instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.</h2>
+  <br/>
+</noscript>
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script defer src="/assets/js/verify.min.js"></script> 
+<script defer src="/assets/js/sweet-surprise.min.js"></script> 
+<script defer src="/assets/js/steps.min.js"></script> 
+<script defer src="/assets/js/checkbox.min.js"></script> 
+<script defer src="/assets/js/autosize.min.js"></script> 
+<script defer src="/assets/js/ready.min.js"></script> 
+<script defer src="/assets/js/browserOSDetect.min.js"></script>
+<script>var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='issues/thanks';}"></iframe>
+
+<div class="border-lblue-solid">
+<p>Przed zgłoszeniem sprawdź czy masz włączone listy: <a href="abp:subscribe?location=https%3A%2F%2Feasylist.to%2Feasylist%2Feasylist.txt&amp;title=EasyList">EasyList</a>, <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fpolish-adblock-filters%2Fadblock.txt&amp;title=Oficjalne%20Polskie%20Filtry%20do%20AdBlocka%2C%20uBlocka%20i%20AdGuarda">Oficjalne Polskie Filtry do AdBlocka, uBlocka i AdGuarda</a> oraz <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fcookies_filters%2Fadblock_cookies.txt&amp;title=Polskie%20Filtry%20Ciasteczkowe">Polskie Filtry Ciasteczkowe</a>. A jeżeli posiadasz uBlocka w wersji niższej niż 1.14.25rc0, to musisz dodatkowo zasubskrybować <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FPolishFiltersTeam%2FPolishAnnoyanceFilters%2Fmaster%2FPPB_uBlock_AdGuard.txt&amp;title=Polskie%20Filtry%20Element%C3%B3w%20Irytuj%C4%85cych%20-%20uzupe%C5%82nienie%20do%20uBlocka%20i%20AdGuarda">Polskie Filtry Elementów Irytujących - uzupełnienie do uBlocka i AdGuarda</a> oraz <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fcookies_filters%2Fcookies_uB_AG.txt&amp;title=Polskie%20Filtry%20Ciasteczkowe%20-%20uzupe%C5%82nienie%20do%20uBlocka%20i%20AdGuarda">Polskie Filtry Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda</a>. Powinieneś również posiadać tylko jedne rozszerzenie blokujące elementy, a jeżeli masz ich kilka, to zostaw tylko jedno, a pozostałe wyłącz albo odinstaluj. Pamiętaj także, by zaktualizować filtry. </p>
+
+<p><b>UWAGA!! Filtry te <u>nie blokują</u> reklam zewnętrznych!</b></p>
+
+<p>Twoje zgłoszenie zostanie opublikowane na GitHubie.</p>
+
+</div>
+<br/>
+
+<div class="stepwizard">
+    <div class="stepwizard-row setup-panel">
+        <div class="stepwizard-step">
+            <a href="#krok-1" class="btn btn-primary btn-circle">1</a>
+            <p>Krok 1</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="#krok-2" class="btn btn-secondary btn-circle disabled">2</a>
+            <p>Krok 2</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="#krok-3" class="btn btn-secondary btn-circle disabled">3</a>
+            <p>Krok 3</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="#krok-4" class="btn btn-secondary btn-circle disabled">4</a>
+            <p>Krok 4</p>
+        </div>
+    </div>
+</div>
+
+<form name="formularz" class="form" id="usrform" method="post" target="hidden_iframe" onsubmit="submitted=true;" netlify>
+<input type="hidden" name="form-name" value="formularz" />
+
+<!--Krok 1-->
+<div class="row setup-content" id="krok-1">
+<!--Tytuł zgłoszenia-->
+    <div class="form-group">
+    <label for="title" class="font-weight-bold">Tytuł zgłoszenia</label>
+    <input pattern=".{5,}" class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" required="required"/>
+    </div>
+
+<!--Typ(y) elementu(ów)-->
+    <div class="form-group type">
+    <label class="font-weight-bold">Typ(y) elementu(ów)</label> 
+    
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="newsletter-type" value="newsletter" required="required">
+        <label class="custom-control-label" for="newsletter-type">Newsletter (nie popup)</label>
+    </div>
+      
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="popup-type" value="popup" required="required">
+        <label class="custom-control-label" for="popup-type">Popup (wyskakujące okienko)</label>
+    </div>
+      
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="push-type" value="push" required="required">
+        <label class="custom-control-label" for="push-type">Powiadomienie typu webpush</label>
+    </div>
+    
+    <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="button-type" value="przycisk" required="required">
+        <label class="custom-control-label" for="button-type">Przycisk</label>
+    </div>
+
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="scroll_movie-type" value="scrollujący filmik" required="required">
+        <label class="custom-control-label" for="scroll_movie-type">Scrollujący filmik</label>
+    </div>
+
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="widget-type" value="widżet" required="required">
+        <label class="custom-control-label" for="widget-type">Widżet (inny)</label>
+    </div>
+
+      <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="error-type" value="błąd" required="required">
+        <label class="custom-control-label" for="error-type">Błąd</label>
+    </div>
+        
+    </div>
+    
+<!--Link bezpośredni do strony zawierającej element--> 
+    <div class="form-group">
+        <label for="entry.412846605" class="font-weight-bold">Link bezpośredni do strony zawierającej element</label> 
+        <input pattern=".{12,}" id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here" required="required">
+    </div> 
+    <div class="clearfix">
+        <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+    </div>
+    </div>
+    
+<!--Krok 2-->
+<div class="row setup-content" id="krok-2">
+<!--Przycisk-->
+    <p>
+    <button class="btn wrap" onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
+    </p>
+
+<!--System operacyjny-->
+    <div class="form-group">
+        <label class="font-weight-bold">System operacyjny</label> 
+
+        <div class="custom-control custom-radio">
+            <input name="entry.634915560" type="radio" id="linux" class="custom-control-input" value="Linux" required="required">
+            <label class="custom-control-label" for="linux">Linux
+            <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKDSURBVEhLYxiRgBFKUxeoG1uGqhmaP1Q1NP+tZmS+W8XATAsqRTmQ17cXUDW0+KVmZPEfCV+BSlMO1IzNbVz8Q/7rWtj/D0tI/R+fkQe2BOgbTagSygDIgpb2zv9ZhWX/Wzq6/k+cMg3iC6A4VAllQFXfymD5BJf/b7by/L+9Vub/islesGAKgyqhDKjpmSmeXyT159Eq9v/3V7D/f7LH8b+GieVvVSOLxVAllAFLV5+ajVvX//hyq+P/x8db/r95//F/ck7hR1CKAlqkA1VGHlAzttTQtXT4/uT5S7DBMLxj70FoMJmf19LSYoMqJxkw6lraHe6aOOU3suEg/Prdh/9ugWH/gfnjJ9An1VD1pAF1I0t398DwJ89evUYxHIanzJ7/PyQu6beGseUnLS17Hqg24gHQdavWb93xE5vhILz7wOH/yblF/4EW/Fc3so6CaiMOqKh4sGuaWD258+ARVsNB+OLVG/9beyaA4wKYoiqhWokDPw9wxd1bLfB51sw+rIa/ffvq/8urE/839k367+zj+jYlSisBqhU/+H+YXenfAfZ+IP75/yD7/4OzpP9WNLT+f/nmHYoF758f/w+Sb6jx+n9nncTffwfZl0KNwA/+HWSNBmlExjmJmv87J0xBseDD450oaoAO+vrvIJs31Bjc4N8BNl9kjSD8cQf/7wlTuv4+ePLs//OXb/6v3bzt/8IJAR/Q1QEtOAQ1BjcAejUD6Jp/6JqbC1Q/q5tY/dI0s/4CxJ8XtsqchclBXM+e/f8/AxPUGPzg/34eEaBPgoAuWgTU+B6If//bz2kBlQaD33vZ3YDin4GGn/y/n00DKkw6+H+Fge3fEQZeKHfEAQYGABJ33wC6iY/7AAAAAElFTkSuQmCC" alt="Linux"> 
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.634915560" type="radio" class="custom-control-input" id="windows" value="Windows">
+            <label class="custom-control-label" for="windows">Windows
+            <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE2SURBVEhL7ZUxSwNBFITXu4B/wMLG2r9gY2Hrb7ARa2trK/U32CrZDVgFLNOm0cLG2t5CzG7ERs+5Rx48jrm8QLDLwMfe3szO3cGyFzb6P93PdgZxflClfFLHfFmncofrKcb3RWIFjcruYDg7rGI5bad1LKmK+QnjB4qaPmQtU53yTZXKA3jBW827i+x8GVLGxMKK51ukjImFFc+3SBkTCyueb5EyJhZWPN8iZUwsrHi+RcqYsHOu+/B8i5QxYXte9OH5FiljYp+reL5FyphYWPF8i5QxsbDi+RYpY2JhxfMtUsbEwornW6SMCYfdLXbBBFvtDdc/3UV2vgwpc/X4ux3S5z6O5mMc0eftLZz3YxS84gW+u6UWWb+WmmYrDL/28KAjfPEZxiv5V6T83P4rFqmNVlEIfx/rvRwNAWMoAAAAAElFTkSuQmCC" alt="Windows">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.634915560" type="radio" class="custom-control-input" id="mac" value="Mac">
+            <label class="custom-control-label" for="mac">Mac
+            <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHMSURBVEhL7ZM7S8NQFMeLoKPo4uT7UbW0olbxVZEmDm6C4HdQHBRx083FRx8+WtqC7+QuDn4FN0dHXURwaNLUpNY2VxGp1xs9BZG8lLr5g/+QE87vHA6J458/YezwocqP1DDNHZRKxwQnVzI8vmYQJn4eX0K5dPgRDmhyGDAF5dJBt8/Q0xTogFUo/Z4xDtfSjWdZ9LTIovy4N0HK6YA5ls97xtGTjw6ZZzi8oD1Di30YpC4zvPpaPAecJOvn1Qs6VPpa/3iH8NH0KamAdnO0jb8LrEIHyCyH+0FhjA9lq+mNVT2JUUaPc6+Dh7kRUJijfRl6EqMM7GdJ51b6BtqtKZ6H3poMHzwSbyJDemKf6Y0rpC/xQLzxDPFEZdIaFEn9WpK4tqVzaLfGx+UXu2MKadwQPprtpGMrdQXt1nTFlCU9iVmaNoWCN5GsB4U5QydiTcO6/e2LaQul5L6AUgcac5zhlKAnsUprQHx2EFIGGmPcUWVGT2AV9076CBTWtIelWz2JUej22GX3T9boiQgNzZvii57se5o2hIIncs9Cq31cYanbGRLFxvXkW0tIzLl20meeiLzi3pX2nCEppdXbgmKWyieh5Z+f4nC8AwJVGH0WeQm+AAAAAElFTkSuQmCC" alt="Mac">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+             <input name="entry.634915560" type="radio" class="custom-control-input" id="android" value="Android">
+            <label class="custom-control-label" for="android">Android
+            <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVEhL7ZQ9CsJAEIVzAjvxMja7lXoHryHEDdhqZeNBZAOp7NROKysvINjYGEQrnY0TSSbj5g/BIh88mIF5bydLEqehNsqXI0+LGbYfPF8slBZDbKvjrmQHwkJPy4Pny1skLY+gixt02zhWjUnQa0H4Hp7iagThTyOsQ6XlzszgeHngauYYukRFB6R6mMHx8ihfnBOhvLQ84fifABtt4Y43Uc1tzIj6rKRMiRCbqM8KZ8oT9VnhTHmiPiucKU/UZwVezQe823dTJ0Nsoj4r8OUOxlr23zUfSEV9hYm2YgJTKrL1N8xW8MecxmGmpn3prTniQGwzfW1+foD5BcB1rbHN9A01cJwXBKyR6Y4/gYkAAAAASUVORK5CYII=" alt="Android">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.634915560" type="radio" class="custom-control-input" id="inny" value="__other_option__">
+            <label class="custom-control-label" for="inny">Inny:</label> <input type="text" class="form-control inline" name="entry.634915560.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+        </div>
+    </div> 
+ 
+<!--Przeglądarka internetowa-->
+    <div class="form-group">
+        <label class="font-weight-bold">Przeglądarka internetowa</label> 
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" id="firefox" class="custom-control-input" value="Mozilla Firefox" required="required">
+            <label class="custom-control-label" for="firefox">Firefox
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/firefox/firefox_24x24.png" alt="Firefox">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="waterfox" value="Waterfox">
+            <label class="custom-control-label" for="waterfox">Waterfox
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/waterfox/waterfox_24x24.png" alt="Waterfox">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="chrome" value="Google Chrome">
+            <label class="custom-control-label" for="chrome">Chrome
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/chrome/chrome_24x24.png" alt="Chrome">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="opera" value="Opera">
+            <label class="custom-control-label" for="opera">Opera
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/opera/opera_24x24.png" alt="Opera">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="vivaldi" value="Vivaldi">
+            <label class="custom-control-label" for="vivaldi">Vivaldi
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/vivaldi/vivaldi_24x24.png" alt="Vivaldi"> 
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="edge" value="Microsoft Edge">
+            <label class="custom-control-label" for="edge">Edge
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/edge/edge_24x24.png" alt="Edge">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="yandex" value="Yandex Browser">
+            <label class="custom-control-label" for="yandex">Yandex
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/yandex/yandex_24x24.png" alt="Yandex">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="safari" value="Safari">
+            <label class="custom-control-label" for="safari">Safari
+            <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.3.0/safari/safari_24x24.png" alt="Safari">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1077613316" type="radio" class="custom-control-input" id="inna" value="__other_option__">
+            <label class="custom-control-label" for="inna">Inna:</label> <input type="text" class="form-control inline" name="entry.1077613316.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+        </div>
+    </div> 
+    
+ <!--Wersja przeglądarki internetowej-->
+    <div class="form-group">
+        <label for="browser_version" class="font-weight-bold">Wersja przeglądarki internetowej</label>
+        <input class="form-control" id="browser_version" name="entry.1188003910" type="text" placeholder="56.0" required="required"/>
+    </div>
+    
+    <div class="clearfix">
+        <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+        <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+    </div>
+</div>
+
+<!--Krok 3-->
+<div class="row setup-content" id="krok-3">
+<!--Bloker-->
+    <div class="form-group">
+        <label class="font-weight-bold">Bloker</label> 
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1847630274" type="radio" id="NA" class="custom-control-input" value="Nano Adblocker" required="required">
+            <label class="custom-control-label" for="NA">Nano Adblocker
+            <img class="img-rbtn" src="/assets/images/Nano.png" alt="Nano">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1847630274" type="radio" class="custom-control-input" id="uBO" value="uBlock Origin">
+            <label class="custom-control-label" for="uBO">uBlock Origin
+            <img class="img-rbtn" src="/assets/images/uBO.png" alt="uBO">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1847630274" type="radio" class="custom-control-input" id="AG" value="AdGuard">
+            <label class="custom-control-label" for="AG">AdGuard
+            <img class="img-rbtn" src="/assets/images/AdGuard_logo.png" alt="AG">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1847630274" type="radio" class="custom-control-input" id="AB" value="AdBlock">
+            <label class="custom-control-label" for="AB">AdBlock
+            <img class="img-rbtn" src="/assets/images/AdBlock.png" alt="AB">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1847630274" type="radio" class="custom-control-input" id="ABP" value="Adblock Plus">
+            <label class="custom-control-label" for="ABP">Adblock Plus
+            <img class="img-rbtn" src="/assets/images/ABP.png" alt="ABP">
+            </label>
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input name="entry.1847630274" type="radio" class="custom-control-input" id="inny_bloker" value="__other_option__">
+            <label class="custom-control-label" for="inny_bloker">Inny:</label> <input pattern=".{3,}" type="text" class="form-control inline" name="entry.1847630274.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+        </div>
+    </div>
+ 
+<!--Wersja blokera-->
+    <div class="form-group">
+        <label for="blocker_version" class="font-weight-bold">Wersja blokera</label>
+        <input class="form-control" id="blocker_version" name="entry.1171563019" type="text" placeholder="1.0.0.29" required="required"/>
+    </div>
+
+<!--Używane filtry-->
+    <div class="form-group">
+        <label for="entry.1553187432" class="font-weight-bold">Używane filtry</label> 
+        <textarea minlength="5" id="entry.1553187432" name="entry.1553187432" rows="5" data-min-rows="5" class="form-control" aria-describedby="filtersHelp" required="required">1. EasyList&#13;&#10;2. Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda&#13;&#10;3. Polskie Filtry Ciasteczkowe&#13;&#10;4. Polskie Filtry Elementów Irytujących</textarea>
+        <small id="filtersHelp" class="form-text text-muted">Możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano.</small> 
+    </div>
+    <div class="clearfix">
+        <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+        <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+    </div>
+</div>
+
+<!--Krok 4-->
+<div class="row setup-content" id="krok-4">
+<!--Zrzut ekranu-->
+    <div class="form-group">
+        <label for="entry.449338657" class="font-weight-bold">Zrzut ekranu</label> 
+        <input id="entry.449338657" name="entry.449338657" pattern=".{5,}" placeholder="http://www.img.pl/Example.png" type="hidden" class="form-control here" required="required">
+        <div class="dropzone"></div>
+        <script defer src="/assets/js/imgur.min.js"></script>
+        <script defer src="/assets/js/imgReady.js"></script>
+        <script defer src="/assets/js/imgAdd.js"></script>
+        <script defer src="/assets/js/imgRemove.js"></script>
+    </div> 
+    
+    <p><button class="btn btn-danger" onclick="removeImage()">Usuń zrzut</button></p>
+    
+<!--Adres e-mail-->
+    <div class="form-group">
+        <label for="mail" class="font-weight-bold">Adres e-mail</label>
+        <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="jan@gmail.com" aria-describedby="mailHelp" required="required">
+        <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small> 
+    </div>
+    <input name="email" type="text" id="email" />
+    <div class="clearfix">
+        <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+    
+<!--Wyślij-->
+        <button type="submit" class="btn btn-success btn-lg float-right">Wyślij</button>   
+    </div>
+    </div>
+</form>
+

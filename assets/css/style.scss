@@ -53,6 +53,7 @@ header a {
 @import "bootstrap/mixins/_float";
 @import "bootstrap/utilities/_float";
 @import "bootstrap/mixins/_clearfix";
+@import "imgur";
 
 .inline {
     display: inline;
@@ -170,4 +171,29 @@ header a.button-subscribe {
 
 input#email {
     display: none;
+}
+
+div.dropzone {
+    overflow-wrap: break-word;
+}
+
+div.dropzone > p {
+    text-align: center;
+    line-height: inherit;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.status {
+    padding: 0 !important;
+}
+
+.bg-success {
+    background-color: #dff0d8;
+}
+
+.bg-danger {
+    background-color: #f2dede;
 }
