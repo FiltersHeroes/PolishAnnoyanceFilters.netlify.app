@@ -323,7 +323,7 @@ style="display:none;" onload="if(submitted)
 <!--Dodatkowe informacje mogące mieć znaczenie-->
     <div class="form-group">
         <label for="entry.249974698" class="font-weight-bold">Dodatkowe informacje mogące mieć znaczenie (opcjonalne)</label> 
-        <textarea id="entry.249974698" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Czyli np. etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu."></textarea>
+        <textarea id="entry.249974698" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Coś co nie da się opisać wizualnie, etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu."></textarea>
     </div>   
     
 <!--Adres e-mail-->
