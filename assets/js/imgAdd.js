@@ -22,11 +22,8 @@ var feedback = function (res) {
             dropzone.style.backgroundPosition = 'center';
             var element = document.querySelector(".dropzone p");
             element.style.display='none';
-            
-            //var status=document.getElementsByClassName("status")[0];
-            //status.parentNode.removeChild(status);
-            //$(".imageUploaded").css("background-image",url('+res.data.link+'));
-            //$(".imageUploaded").css("background-repeat",no-repeat);
+            console.log(res);
+            console.log(res.data.deletehash);
         }
     };
 

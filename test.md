@@ -107,8 +107,8 @@ style="display:none;" onload="if(submitted)
     
 <!--Link bezpośredni do strony zawierającej element--> 
     <div class="form-group">
-        <label for="entry.412846605" class="font-weight-bold">Link bezpośredni do strony zawierającej element</label> 
-        <input pattern=".{12,}" id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here" required="required">
+        <label for="entry.412846605" class="font-weight-bold">Link bezpośredni do strony zawierającej element (opcjonalny)</label> 
+        <input pattern=".{12,}" id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here">
     </div> 
     <div class="clearfix">
         <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
@@ -307,8 +307,8 @@ style="display:none;" onload="if(submitted)
 <div class="row setup-content" id="krok-4">
 <!--Zrzut ekranu-->
     <div class="form-group">
-        <label for="entry.449338657" class="font-weight-bold">Zrzut ekranu</label> 
-        <input id="entry.449338657" name="entry.449338657" pattern=".{5,}" placeholder="http://www.img.pl/Example.png" type="hidden" class="form-control here" required="required">
+        <label for="entry.449338657" class="font-weight-bold">Zrzut ekranu (opcjonalny)</label> 
+        <input id="entry.449338657" name="entry.449338657" pattern=".{5,}" placeholder="http://www.img.pl/Example.png" type="hidden" class="form-control here">
         <div class="dropzone"></div>
         <script defer src="/assets/js/imgur.min.js"></script>
         <script defer src="/assets/js/imgReady.js"></script>
@@ -316,15 +316,34 @@ style="display:none;" onload="if(submitted)
         <script defer src="/assets/js/imgRemove.js"></script>
     </div> 
     
-    <p><button class="btn btn-danger" onclick="removeImage()">Usuń zrzut</button></p>
+    
+    <div class="text-center"><p><button class="btn btn-danger" onclick="removeImage()">Usuń zrzut</button></p></div>
+    
+    
+<!--Dodatkowe informacje mogące mieć znaczenie-->
+    <div class="form-group">
+        <label for="entry.249974698" class="font-weight-bold">Dodatkowe informacje mogące mieć znaczenie (opcjonalne)</label> 
+        <textarea id="entry.249974698" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Czyli np. etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu."></textarea>
+    </div>   
     
 <!--Adres e-mail-->
     <div class="form-group">
         <label for="mail" class="font-weight-bold">Adres e-mail</label>
-        <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="jan@gmail.com" aria-describedby="mailHelp" required="required">
+        <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="jan@gmail.com" aria-describedby="mailHelp" required="required" autocomplete="email">
         <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small> 
     </div>
     <input name="email" type="text" id="email" />
+    
+<!--Powiadomienie na e-maila-->
+    <div class="form-group">
+        <label class="font-weight-bold">Powiadomienie na e-maila</label> 
+    
+        <div class="custom-control custom-checkbox">
+            <input name="entry.1177450825" type="checkbox" class="custom-control-input" id="tak" value="TAK">
+            <label class="custom-control-label" for="tak">Chcę otrzymać powiadomienie o wysłanym formularzu z linkiem do statusu zgłoszenia na e-maila</label>
+        </div>
+    </div>
+
     <div class="clearfix">
         <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
     
