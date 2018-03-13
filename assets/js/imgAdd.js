@@ -23,7 +23,6 @@ var feedback = function (res) {
             var element = document.querySelector(".dropzone p");
             element.style.display='none';
             console.log(res);
-            console.log(res.data.deletehash);
         }
     };
 
