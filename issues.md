@@ -93,6 +93,11 @@ style="display:none;" onload="if(submitted)
         <label class="custom-control-label" for="scroll_movie-type">Scrollujący filmik</label>
     </div>
 
+    <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="arrow-type" value="strzałka" required="required">
+        <label class="custom-control-label" for="arrow-type">Strzałka</label>
+    </div>
+    
       <div class="custom-control custom-checkbox">
         <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="widget-type" value="widżet" required="required">
         <label class="custom-control-label" for="widget-type">Widżet (inny)</label>
