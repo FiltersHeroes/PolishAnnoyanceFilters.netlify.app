@@ -10,7 +10,8 @@ layout: default
   <br/>
 </noscript>
 <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script defer src="/assets/js/verify.min.js"></script> 
+<script defer src="/assets/js/verify.min.js"></script>
+<script defer src="/assets/js/freeDays.min.js"></script>
 <script defer src="/assets/js/sweet-surprise.min.js"></script> 
 <script defer src="/assets/js/steps.min.js"></script> 
 <script defer src="/assets/js/checkbox.min.js"></script> 
