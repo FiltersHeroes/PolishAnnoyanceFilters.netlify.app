@@ -24,6 +24,7 @@ header a {
   }
 }
 
+
 /*!
  * Bootstrap v4.0 (http://getbootstrap.com)
  * Copyright 2011-2018 Twitter, Inc.
@@ -53,6 +54,7 @@ header a {
 @import "bootstrap/mixins/_float";
 @import "bootstrap/utilities/_float";
 @import "bootstrap/mixins/_clearfix";
+@import "bootstrap/utilities/_spacing";
 @import "imgur";
 
 .inline {
