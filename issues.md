@@ -24,11 +24,11 @@ style="display:none;" onload="if(submitted)
 {window.location='issues/thanks';}"></iframe>
 
 <div class="border-lblue-solid">
-<p>Przed zgłoszeniem sprawdź czy masz włączone listy: <a href="abp:subscribe?location=https%3A%2F%2Feasylist.to%2Feasylist%2Feasylist.txt&amp;title=EasyList">EasyList</a> i <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fpolish-adblock-filters%2Fadblock.txt&amp;title=Oficjalne%20Polskie%20Filtry%20do%20AdBlocka%2C%20uBlocka%20i%20AdGuarda">Oficjalne Polskie Filtry do AdBlocka, uBlocka i AdGuarda</a>. Powinieneś również posiadać tylko jedne rozszerzenie blokujące elementy, a jeżeli masz ich kilka, to zostaw tylko jedno, a pozostałe wyłącz albo odinstaluj. Pamiętaj także, by zaktualizować filtry. </p>
+<p class="my-1 ml-2">Przed zgłoszeniem sprawdź czy masz włączone listy: <a href="abp:subscribe?location=https%3A%2F%2Feasylist.to%2Feasylist%2Feasylist.txt&amp;title=EasyList">EasyList</a> i <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fpolish-adblock-filters%2Fadblock.txt&amp;title=Oficjalne%20Polskie%20Filtry%20do%20AdBlocka%2C%20uBlocka%20i%20AdGuarda">Oficjalne Polskie Filtry do AdBlocka, uBlocka i AdGuarda</a>. Powinieneś również posiadać tylko jedne rozszerzenie blokujące elementy, a jeżeli masz ich kilka, to zostaw tylko jedno, a pozostałe wyłącz albo odinstaluj. Pamiętaj także, by zaktualizować filtry. </p>
 
-<p><b>UWAGA!! Filtry te <u>nie blokują</u> reklam zewnętrznych ani elementów społecznościowych!</b></p>
+<p class="my-1 ml-2"><b>UWAGA!! Filtry te <u>nie blokują</u> reklam zewnętrznych ani elementów społecznościowych!</b></p>
 
-<p>Twoje zgłoszenie zostanie opublikowane na GitHubie.</p>
+<p class="my-1 ml-2">Twoje zgłoszenie zostanie opublikowane na GitHubie.</p>
 
 </div>
 <br/>
@@ -73,6 +73,11 @@ style="display:none;" onload="if(submitted)
         <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="newsletter-type" value="newsletter" required="required">
         <label class="custom-control-label" for="newsletter-type">Newsletter (nie popup)</label>
     </div>
+    
+    <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="tagLink-type" value="otagowany link wewnętrzny" required="required">
+        <label class="custom-control-label" for="tagLink-type">Otagowany link wewnętrzny (niezgodny z tematem artykułu)</label>
+    </div>
       
       <div class="custom-control custom-checkbox">
         <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="popup-type" value="popup" required="required">
@@ -82,6 +87,11 @@ style="display:none;" onload="if(submitted)
       <div class="custom-control custom-checkbox">
         <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="push-type" value="push" required="required">
         <label class="custom-control-label" for="push-type">Powiadomienie typu webpush</label>
+    </div>
+    
+    <div class="custom-control custom-checkbox">
+        <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="click-type" value="prawy klik" required="required">
+        <label class="custom-control-label" for="click-type">Prawy klik</label>
     </div>
     
     <div class="custom-control custom-checkbox">
