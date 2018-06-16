@@ -310,7 +310,7 @@ style="display:none;" onload="if(submitted)
 <!--Używane filtry-->
     <div class="form-group">
         <label for="entry.1553187432" class="font-weight-bold">Używane filtry</label> 
-        <textarea minlength="5" id="entry.1553187432" name="entry.1553187432" rows="5" data-min-rows="5" class="form-control" aria-describedby="filtersHelp" required="required">1. EasyList&#13;&#10;2. Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda&#13;&#10;3. Polskie Filtry Ciasteczkowe&#13;&#10;4. Polskie Filtry Elementów Irytujących</textarea>
+        <textarea minlength="5" id="entry.1553187432" name="entry.1553187432" rows="5" data-min-rows="5" class="form-control" aria-describedby="filtersHelp" required="required">1. EasyList&#13;&#10;2. Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda&#13;&#10;3. Polskie Filtry Elementów Irytujących</textarea>
         <small id="filtersHelp" class="form-text text-muted">Możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano.</small> 
     </div>
     <div class="clearfix">
