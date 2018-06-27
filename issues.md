@@ -91,7 +91,7 @@ style="display:none;" onload="if(submitted)
     
     <div class="custom-control custom-checkbox">
         <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="click-type" value="prawy klik" required="required">
-        <label class="custom-control-label" for="click-type">Prawy klik</label>
+        <label class="custom-control-label" for="click-type">Zablokowane kliknięcie prawym przyciskiem myszy</label>
     </div>
     
     <div class="custom-control custom-checkbox">
