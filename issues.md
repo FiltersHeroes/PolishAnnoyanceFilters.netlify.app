@@ -81,7 +81,7 @@ style="display:none;" onload="if(submitted)
       
       <div class="custom-control custom-checkbox">
         <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="popup-type" value="popup" required="required">
-        <label class="custom-control-label" for="popup-type">Popup (wyskakujące okienko)</label>
+        <label class="custom-control-label" for="popup-type">Pop-up (wyskakujące okienko)</label>
     </div>
       
       <div class="custom-control custom-checkbox">
