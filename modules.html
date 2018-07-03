@@ -16,7 +16,7 @@ layout: default
   </thead>
   <tbody>
     <tr>
-      <td>Newslettery (bez wyskakujących okienek)</td>
+      <td class="align-middle">Newslettery (bez wyskakujących okienek)</td>
       <td><a class="btn btn-primary" href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FPolishFiltersTeam%2FPolishAnnoyanceFilters%2Fmaster%2FPAF_newsletters.txt&amp;title=PFEI%20-%20Newslettery%20(bez%20wyskakuj%C4%85cych%20okienek)">Subskrybuj</a></td>
       <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#ModalNewsletter">Podgląd</button>
       </td>
@@ -34,9 +34,9 @@ layout: default
 </td>
     </tr>
     <tr>
-      <td>Odblokowanie Kliknięcia Prawym Przyciskiem Myszy</td>
+      <td class="align-middle">Odblokowanie Kliknięcia Prawym Przyciskiem Myszy</td>
       <td><a class="btn btn-primary"  href="ubo:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FPolishFiltersTeam%2FPolishAnnoyanceFilters%2Fmaster%2FPAF_unlocking_right_click.txt&amp;title=PFEI%20-%20Odblokowanie%20Klikni%C4%99cia%20Prawym%20Przyciskiem%20Myszy">Subskrybuj</a></td>
-      <td><a class="btn btn-info" href="https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt" target="_blank">Podgląd</a></td>
+      <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#ModalRightClick">Podgląd</a></td>
       <td>    
       <img src="https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters.netlify.com/master/assets/images/uBO_32.png">
     
@@ -44,9 +44,9 @@ layout: default
     </td>
     </tr>
     <tr>
-      <td>Niezgodne z Tematem Artykułów Otagowane Linki Wewnętrzne</td>
+      <td class="align-middle">Niezgodne z Tematem Artykułów Otagowane Linki Wewnętrzne</td>
       <td><a class="btn btn-primary" href="ubo:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FPolishFiltersTeam%2FPolishAnnoyanceFilters%2Fmaster%2FPAF_tagged_internal_links.txt&amp;title=PFEI%20-%20Niezgodne%20z%20Tematem%20Artyku%C5%82%C3%B3w%20Otagowane%20Linki%20Wewn%C4%99trzne">Subskrybuj</a></td>
-      <td><a class="btn btn-info">Podgląd</a></td>
+      <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#ModalTaggedInternalLink">Podgląd</a></td>
       <td>
         <img src="https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters.netlify.com/master/assets/images/uBO_32.png">
     
@@ -56,18 +56,17 @@ layout: default
   </tbody>
 </table>
 
-      <!-- Modal -->
 <div class="modal fade" id="ModalNewsletter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-dialog modal-vlg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Polskie Filtry Elementów Irytujących - Newslettery</h4>
+        <h4 class="modal-title" id="myModalLabel">Newslettery (bez wyskakujących okienek)</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
-        <iframe src="https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt" width="750px" height="700px" >
+        <iframe src="https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt" width="100%" height="600px" > </iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
@@ -75,3 +74,42 @@ layout: default
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="ModalRightClick" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-vlg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Odblokowanie Kliknięcia Prawym Przyciskiem Myszy</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt" width="100%" height="600px"> </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ModalTaggedInternalLink" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-vlg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Niezgodne z Tematem Artykułów Otagowane Linki Wewnętrzne</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt" width="100%" height="600px" > </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
+

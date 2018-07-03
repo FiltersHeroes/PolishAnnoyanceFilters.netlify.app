@@ -59,6 +59,7 @@ header a {
 @import "bootstrap/_tables";
 @import "bootstrap/_modal";
 @import "bootstrap/_close";
+@import "bootstrap/utilities/_align";
 @import "imgur";
 
 .inline {
@@ -206,4 +207,8 @@ div.status {
 
 h4#myModalLabel {
     margin: 0 auto;
+}
+
+.modal-vlg {
+    max-width: 80%;
 }
