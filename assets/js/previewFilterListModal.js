@@ -60,7 +60,7 @@ function createPreviewModal(id, modalTitle, url, modalURL) {
     $('#' + id).modal('show');
 
     $('#' + id).on('hidden.bs.modal', function () {
-        mainContent.parentNode.removeChild(id);
+        $('#' + id).remove();
     })
 
 }
