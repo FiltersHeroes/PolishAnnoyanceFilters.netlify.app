@@ -24,6 +24,8 @@ function createPreviewModal(id, modalTitle, url, modalURL) {
     var titleText = document.createTextNode(modalTitle);
     a.appendChild(titleText);
     a.setAttribute('href', url);
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener noreferrer');
     title.appendChild(a);
     var smallCloseBtn = document.createElement('button');
     smallCloseBtn.setAttribute('type', 'button');
@@ -34,6 +36,8 @@ function createPreviewModal(id, modalTitle, url, modalURL) {
     var span = document.createElement('span');
     span.setAttribute('aria-hidden', 'true');
     smallCloseBtn.appendChild(span);
+    var x = document.createTextNode("x");
+    smallCloseBtn.appendChild(x);
     var modalBody = document.createElement('div');
     modalBody.setAttribute('class', 'modal-body');
     modalContent.appendChild(modalBody);
@@ -52,6 +56,8 @@ function createPreviewModal(id, modalTitle, url, modalURL) {
     var closeText = document.createTextNode("Zamknij");
     closeBtn.appendChild(closeText);
     modalFooter.appendChild(closeBtn);
+    $('#'+id).modal(show);
+
 }
 
 createPreviewModal ("ModalNewsletter", "Newslettery (bez wyskakujących okienek)", "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt", "https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt");
