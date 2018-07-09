@@ -57,10 +57,11 @@ function createPreviewModal(modalTitle, url, modalURL) {
         closeBtn.appendChild(closeText);
         modalFooter.appendChild(closeBtn);
     }
-    $('.modal').modal('show');
 
-    $('.modal').on('hidden.bs.modal', function () {
-        $('.modal').remove();
+    $('#modalPreview').modal('show');
+
+    $('#modalPreview').on('hidden.bs.modal', function () {
+        $('#modalPreview').remove();
     })
 
 }
