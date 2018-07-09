@@ -58,9 +58,4 @@ function createPreviewModal(id, modalTitle, url, modalURL) {
     }
     $('#' + id).modal('show');
 
-    $(document).ready(function () {
-        $(".close").click(function () {
-            $('#' + id).modal('dispose');
-        });
-    });
 }
