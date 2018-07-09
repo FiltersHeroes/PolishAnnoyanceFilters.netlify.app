@@ -1,5 +1,5 @@
 function createPreviewModal(id, modalTitle, url, modalURL) {
-    if (document.getElementById('"' + id + '"')) {
+    if (document.getElementById('"' + id + '"') == null) {
         var modal = document.createElement('div');
         modal.setAttribute('class', 'modal fade');
         modal.setAttribute('id', id);
@@ -59,7 +59,7 @@ function createPreviewModal(id, modalTitle, url, modalURL) {
     $('#' + id).modal('show');
 
     $(document).ready(function () {
-        $('"#' + id + " .modal-vlg.modal-dialog .modal-content .modal-header .close" + '"').click(function () {
+        $(".close").click(function () {
             $('#' + id).modal('dispose');
         });
     });
