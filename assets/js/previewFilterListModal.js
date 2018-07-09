@@ -6,7 +6,8 @@ function createPreviewModal(id, modalTitle, url, modalURL) {
         modal.setAttribute('tabindex', "-1");
         modal.setAttribute('role', 'dialog');
         modal.setAttribute('aria-labelledby', 'myModalLabel');
-        document.getElementById("main-content").appendChild(modal);
+        var mainContent = document.getElementById("main-content");
+        mainContent.appendChild(modal);
         var modalDialog = document.createElement('div');
         modalDialog.setAttribute('class', 'modal-dialog modal-vlg');
         modalDialog.setAttribute('role', 'document');
@@ -57,5 +58,9 @@ function createPreviewModal(id, modalTitle, url, modalURL) {
         modalFooter.appendChild(closeBtn);
     }
     $('#' + id).modal('show');
+
+    $('#' + id).on('hidden.bs.modal', function () {
+        mainContent.parentNode.removeChild(id);
+    })
 
 }
