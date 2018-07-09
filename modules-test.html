@@ -24,7 +24,7 @@ layout: default
                     <a class="btn btn-primary" href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FPolishFiltersTeam%2FPolishAnnoyanceFilters%2Fmaster%2FPAF_newsletters.txt&amp;title=PFEI%20-%20Newslettery%20(bez%20wyskakuj%C4%85cych%20okienek)">Subskrybuj</a>
                 </td>
                 <td>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#ModalNewsletter">Podgląd</button>
+                    <button type="button" class="btn btn-info" onclick="createPreviewModal('ModalNewsletter', 'Newslettery (bez wyskakujących okienek)', 'https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt', 'https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt');">Podgląd</button>
                 </td>
                 <td>
                     <img src="/assets/images/AdBlock_32.png">
@@ -225,9 +225,6 @@ layout: default
         </tr>
     </table>
 </div>
-<script defer>
-    createPreviewModal("ModalNewsletter", "Newslettery (bez wyskakujących okienek)", "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt", "https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt");
-</script>
 
 
 <br/>
