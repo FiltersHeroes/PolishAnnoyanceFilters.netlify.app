@@ -5,7 +5,7 @@ function createPreviewModal(id, modalTitle, url, modalURL) {
     modal.setAttribute('tabindex', "-1");
     modal.setAttribute('role', 'dialog');
     modal.setAttribute('aria-labelledby', 'myModalLabel');
-    document.getElementById(main-content).appendChild(modal);
+    document.getElementById("main-content").appendChild(modal);
     var modalDialog = document.createElement('div');
     modalDialog.setAttribute('class', 'modal-dialog modal-vlg');
     modalDialog.setAttribute('role', 'document');
