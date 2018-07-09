@@ -1,9 +1,10 @@
 function createPreviewModal(modalTitle, url, modalURL) {
-    if (document.getElementsByClassName("modal") == null) {
+    if (document.getElementById("modalPreview") == null) {
         var modal = document.createElement('div');
         modal.setAttribute('class', 'modal fade');
         modal.setAttribute('tabindex', "-1");
         modal.setAttribute('role', 'dialog');
+        modal.setAttribute('id', 'modalPreview');
         modal.setAttribute('aria-labelledby', 'myModalLabel');
         var mainContent = document.getElementById("main-content");
         mainContent.appendChild(modal);
