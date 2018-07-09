@@ -53,3 +53,5 @@ function createPreviewModal(id, modalTitle, url, modalURL) {
     closeBtn.appendChild(closeText);
     modalFooter.appendChild(closeBtn);
 }
+
+createPreviewModal ("ModalNewsletter", "Newslettery (bez wyskakujących okienek)", "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt", "https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt");
