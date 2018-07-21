@@ -120,7 +120,9 @@ header a.button {
   line-height: 1.428571429;
   border-radius: 15px;
   -webkit-border-radius: 15px;
+  transform: translateZ(0);
   -webkit-transform: translateZ(0);
+  mask-image: radial-gradient(circle, white, black);
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
 
