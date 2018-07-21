@@ -45,6 +45,7 @@ function createPreviewModal(modalTitle, url, modalURL) {
         iframe.setAttribute('src', modalURL);
         iframe.setAttribute('width', '100%');
         iframe.setAttribute('height', '600px');
+        iframe.setAttribute('sandbox', '');
         modalBody.appendChild(iframe);
         var modalFooter = document.createElement('div');
         modalFooter.setAttribute('class', 'modal-footer');
