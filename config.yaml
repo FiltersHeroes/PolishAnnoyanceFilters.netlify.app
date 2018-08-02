@@ -8,7 +8,7 @@ DefaultContentLanguage: pl
 enableEmoji: true
 
 params:
-  use_sass: true
+  use_sass: false
   show_downloads: false
   description: Filtry ukrywające i blokujące wyskakujące okienka, widgety, newslettery, powiadomienia push, strzałki i inne drażniące elementy (Polskie Filtry RODO-Ciasteczkowe są już w nich zawarte).
   gh_repo_owner: PolishFiltersTeam
