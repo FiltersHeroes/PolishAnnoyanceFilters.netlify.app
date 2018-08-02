@@ -1,0 +1,13 @@
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style type="text/css">
+    {{ partial "critical.css" . | safeCSS }}
+</style>
+
+{{ $style := resources.Get "sass/style.scss" | toCSS | minify | fingerprint }}
+
+<script>
+    function LoadCssFile(cssPath){var l=document.createElement('link');l.rel='stylesheet';l.href=cssPath;var h=document.getElementsByTagName('head')[0];h.parentNode.insertBefore(l,h)}
+    var cb=function(){LoadCssFile('{{ $style.Permalink }}')};var raf=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;if(raf)raf(cb);else window.addEventListener('load',cb)
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+    {{ partial "head.html" . }}
+    {{ partial "seo.html" . }}
+</head>
+<body>
+    <header>
+        {{ partial "header.html" . }}
+    </header>
+    <div id="content-wrapper">
+        <div class="inner clearfix">
+            <section id="main-content">
+                <noscript>
+                    <h2>Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów. Tu znajdziesz
+                        <a href="https://www.enable-javascript.com/pl/" target="_blank">
+                            instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.</h2>
+                            <br/>
+                        </noscript>
+                        {{ .Content }}
+                    </section>
+                </div>
+            </div>
+            <footer>
+                {{ partial "footer.html" . }}
+            </footer>
+        </body>
+        </html>

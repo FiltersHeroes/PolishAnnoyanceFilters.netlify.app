@@ -1,7 +1,4 @@
----
----
-
-@import 'jekyll-theme-architect';
+@import 'hugo-theme-architect';
 
 $tooltip-bg: gray;
 
@@ -213,4 +210,57 @@ h4#myModalLabel {
 
 .modal-vlg {
     max-width: 80%;
+}
+
+footer {
+    background: #2e7bcf url(/images/header-bg.jpg) 0 0 repeat-x;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+footer a {
+    color: #9ddcff;
+}
+
+footer a:hover{
+    color: #33ccff
+}
+body {
+    color: #212529;
+    font-size: 1rem;
+}
+
+header h1 {
+    font-size: 57px;
+}
+
+header h2 {
+    font-size: 20px;
+}
+
+#main-content {
+  width: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    header h1 {
+        font-size: 45px;
+    }
+    header h2 {
+        font-size: 24px;
+    }
+    #main-content {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+    header h1 {
+        font-size: 33px;
+    }
+    header h2 {
+        font-size: 18px;
+    }
 }

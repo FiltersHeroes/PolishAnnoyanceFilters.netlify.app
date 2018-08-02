@@ -1,0 +1,17 @@
+
+title: Polskie Filtry Elementów Irytujących
+theme: hugo-architect-theme
+pygmentsCodeFences: true
+pygmentsUseClasses: true
+LanguageCode: pl-PL
+DefaultContentLanguage: pl
+enableEmoji: true
+
+params:
+  use_sass: true
+  show_downloads: false
+  description: Filtry ukrywające i blokujące wyskakujące okienka, widgety, newslettery, powiadomienia push, strzałki i inne drażniące elementy (Polskie Filtry RODO-Ciasteczkowe są już w nich zawarte).
+  gh_repo_owner: PolishFiltersTeam
+  gh_repo_name: PolishAnnoyanceFilters
+  google_site_verification: fNut01rhp845fu903ZfwVGKe-vWAz-IecDu7MHZ0bLw
+  footer_text: 'Paczka ikon systemów operacyjnych została stworzona przez <a href="https://icons8.com">Icons8</a>.'

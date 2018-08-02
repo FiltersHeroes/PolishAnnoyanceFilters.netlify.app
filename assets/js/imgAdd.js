@@ -6,7 +6,7 @@ var feedback = function (res) {
                 p.appendChild(t);
                 status.classList.add('bg-success');
                 status.appendChild(p);
-                
+
             var inputs = document.getElementsByTagName('input');
         for(var i=0; i<inputs.length; i++){
             if(inputs[i].getAttribute('type')=='file'){

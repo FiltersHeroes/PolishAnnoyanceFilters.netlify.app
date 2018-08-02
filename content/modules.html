@@ -1,12 +1,11 @@
 --- 
 title: Moduły 
 permalink: modules
-layout: default 
 ---
 <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-<script defer src="/assets/js/previewFilterListModal.min.js"></script>
+{{< previewFLM >}}
 <div class="table-responsive">
     <table class="table table-striped table-bordered table-white">
         <thead>
@@ -27,15 +26,15 @@ layout: default
                     <button type="button" class="btn btn-info" onclick="createPreviewModal('Newslettery (bez wyskakujących okienek)', 'https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt', 'https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt');">Podgląd</button>
                 </td>
                 <td>
-                    <img src="/assets/images/AdBlock_32.png">
+                    {{< AB >}}
 
-                    <img src="/assets/images/ABP_32.png">
+                    {{< ABP >}}
 
-                    <img src="/assets/images/uBO_32.png">
+                    {{< uBO >}}
 
-                    <img src="/assets/images/Nano_32.png">
+                    {{< NA >}}
 
-                    <img src="/assets/images/AdGuard_logo_32.png">
+                    {{< AG >}}
 
                 </td>
             </tr>
@@ -49,9 +48,9 @@ layout: default
                     <button type="button" class="btn btn-info" onclick="createPreviewModal('Odblokowanie Kliknięcia Prawym Przyciskiem Myszy', 'https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt', 'https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt');">Podgląd</a>
                 </td>
                 <td>
-                    <img src="/assets/images/uBO_32.png">
+                    {{< uBO >}}
 
-                    <img src="/assets/images/Nano_32.png">
+                    {{< NA >}}
                 </td>
             </tr>
 
@@ -64,9 +63,9 @@ layout: default
                     <button type="button" class="btn btn-info" onclick="createPreviewModal('Niezgodne z Tematem Artykułów Otagowane Linki Wewnętrzne', 'https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt', 'https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt');">Podgląd</a>
                 </td>
                 <td>
-                    <img src="/assets/images/uBO_32.png">
+                    {{< uBO >}}
 
-                    <img src="/assets/images/Nano_32.png">
+                    {{< NA >}}
                 </td>
             </tr>
         </tbody>
@@ -79,15 +78,15 @@ layout: default
                 <button type="button" class="btn btn-info" onclick="createPreviewModal('Wyskakujące Okienka', 'https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_pop-ups.txt', 'https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_pop-ups.txt');">Podgląd</button>
             </td>
             <td>
-                <img src="/assets/images/AdBlock_32.png">
+                {{< AB >}}
 
-                <img src="/assets/images/ABP_32.png">
+                {{< ABP >}}
 
-                <img src="/assets/images/uBO_32.png">
+                {{< uBO >}}
 
-                <img src="/assets/images/Nano_32.png">
+                {{< NA >}}
 
-                <img src="/assets/images/AdGuard_logo_32.png">
+                {{< AG >}}
 
             </td>
         </tr>
@@ -101,15 +100,15 @@ layout: default
                 <button type="button" class="btn btn-info" onclick="createPreviewModal('Powiadomienia Web Push', 'https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_push.txt', 'https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_push.txt');">Podgląd</button>
             </td>
             <td>
-                <img src="/assets/images/AdBlock_32.png">
+                {{< AB >}}
 
-                <img src="/assets/images/ABP_32.png">
+                {{< ABP >}}
 
-                <img src="/assets/images/uBO_32.png">
+                {{< uBO >}}
 
-                <img src="/assets/images/Nano_32.png">
+                {{< NA >}}
 
-                <img src="/assets/images/AdGuard_logo_32.png">
+                {{< AG >}}
 
             </td>
         </tr>
@@ -123,15 +122,15 @@ layout: default
                 <button type="button" class="btn btn-info" onclick="createPreviewModal('Scrollujące Filmiki', 'https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt', 'https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt');">Podgląd</button>
             </td>
             <td>
-                <img src="/assets/images/AdBlock_32.png">
+                {{< AB >}}
 
-                <img src="/assets/images/ABP_32.png">
+                {{< ABP >}}
 
-                <img src="/assets/images/uBO_32.png">
+                {{< uBO >}}
 
-                <img src="/assets/images/Nano_32.png">
+                {{< NA >}}
 
-                <img src="/assets/images/AdGuard_logo_32.png">
+                {{< AG >}}
 
             </td>
         </tr>
@@ -145,15 +144,15 @@ layout: default
                 <button type="button" class="btn btn-info" onclick="createPreviewModal('Strzałki', 'https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_arrows.txt', 'https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_arrows.txt');">Podgląd</button>
             </td>
             <td>
-                <img src="/assets/images/AdBlock_32.png">
+                {{< AB >}}
 
-                <img src="/assets/images/ABP_32.png">
+                {{< ABP >}}
 
-                <img src="/assets/images/uBO_32.png">
+                {{< uBO >}}
 
-                <img src="/assets/images/Nano_32.png">
+                {{< NA >}}
 
-                <img src="/assets/images/AdGuard_logo_32.png">
+                {{< AG >}}
 
             </td>
         </tr>
@@ -167,15 +166,15 @@ layout: default
                 <button type="button" class="btn btn-info" onclick="createPreviewModal('Tła Zawierające Autoreklamy', 'https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt', 'https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt');">Podgląd</button>
             </td>
             <td>
-                <img src="/assets/images/AdBlock_32.png">
+                {{< AB >}}
 
-                <img src="/assets/images/ABP_32.png">
+                {{< ABP >}}
 
-                <img src="/assets/images/uBO_32.png">
+                {{< uBO >}}
 
-                <img src="/assets/images/Nano_32.png">
+                {{< NA >}}
 
-                <img src="/assets/images/AdGuard_logo_32.png">
+                {{< AG >}}
 
             </td>
         </tr>
@@ -189,15 +188,15 @@ layout: default
                 <button type="button" class="btn btn-info" onclick="createPreviewModal('Widżety Kontaktowe/Informacji Zwrotnej', 'https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt', 'https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt');">Podgląd</button>
             </td>
             <td>
-                <img src="/assets/images/AdBlock_32.png">
+                {{< AB >}}
 
-                <img src="/assets/images/ABP_32.png">
+                {{< ABP >}}
 
-                <img src="/assets/images/uBO_32.png">
+                {{< uBO >}}
 
-                <img src="/assets/images/Nano_32.png">
+                {{< NA >}}
 
-                <img src="/assets/images/AdGuard_logo_32.png">
+                {{< AG >}}
 
             </td>
         </tr>
@@ -211,15 +210,15 @@ layout: default
                 <button type="button" class="btn btn-info" onclick="createPreviewModal('Inne Widżety', 'https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt', 'https://cdn.rawgit.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt');">Podgląd</button>
             </td>
             <td>
-                <img src="/assets/images/AdBlock_32.png">
+                {{< AB >}}
 
-                <img src="/assets/images/ABP_32.png">
+                {{< ABP >}}
 
-                <img src="/assets/images/uBO_32.png">
+                {{< uBO >}}
 
-                <img src="/assets/images/Nano_32.png">
+                {{< NA >}}
 
-                <img src="/assets/images/AdGuard_logo_32.png">
+                {{< AG >}}
 
             </td>
         </tr>
@@ -231,3 +230,5 @@ layout: default
 <p>
     <b>UWAGA!! Żaden z w/w modułów nie zawiera
         <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fcookies_filters%2Fadblock_cookies.txt&amp;title=Polskie%20Filtry%20Rodo-Ciasteczkowe">Polskich Filtrów RODO-Ciasteczkowych</a>, więc jeżeli przeszkadzają ci te elementy, to możesz je zasubskrybować.</p>
+        
+

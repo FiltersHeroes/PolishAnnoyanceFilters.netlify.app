@@ -1,0 +1,8 @@
+{{ $sweets := resources.Get "js/sweet-surprise.js" }}
+{{ $steps := resources.Get "js/steps.js" }}
+{{ $checkbox := resources.Get "js/checkbox.js" }}
+{{ $autosize := resources.Get "js/autosize.min.js" }}
+{{ $ready := resources.Get "js/ready.js" }}
+{{ $browserOSDetect := resources.Get "js/browserOSDetect.js" }}
+{{ $js := slice $sweets $steps $checkbox $autosize $ready $browserOSDetect | resources.Concat "js/issues_bundle.js" | minify}}
+<script defer src="{{ $js.Permalink }}"></script>

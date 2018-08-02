@@ -1,4 +1,5 @@
-//Fixed and improved code from https://www.codeply.com/go/Hji7JmSKAl/bootstrap-step_by_step-form-example
+/*!Fixed and improved code from https://www.codeply.com/go/Hji7JmSKAl/bootstrap-step_by_step-form-example
+*/
 
 $(document).ready(function () {
   var navListItems = $('div.setup-panel div a'),
@@ -22,7 +23,7 @@ $(document).ready(function () {
           $target.find('input:eq(0)').focus();
       }
   });
-      
+
   allPrevBtn.click(function(){
       var curStep = $(this).closest(".setup-content"),
           curStepBtn = curStep.attr("id"),
@@ -37,7 +38,7 @@ $(document).ready(function () {
           curInputs = curStep.find("input[type='text'],input[type='url'],input[type='checkbox'],input[type='radio'],textarea"),
           isValid = true;
           $(".form-group").removeClass("is-valid");
-      
+
       for(var i=0; i<curInputs.length; i++){
           if (!curInputs[i].validity.valid){
               isValid = false;
