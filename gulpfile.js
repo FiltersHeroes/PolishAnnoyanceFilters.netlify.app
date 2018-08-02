@@ -17,7 +17,7 @@ gulp.task('minify-html', () => {
 
 // Compile SCSS files to CSS
 gulp.task("sass", function () {
-  return gulp.src("themes/hugo-architect-theme/assets/sass/*.scss")
+  return gulp.src("assets/sass/*.scss")
       .pipe(sass({
           outputStyle : "compressed"
       }))

@@ -6,7 +6,6 @@
 </style>
 
 {{ $style := resources.Get "css/style.css" | fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}" media="screen" type="text/css" integrity="{{ $style.Data.Integrity }}">
 
 <script>
     function LoadCssFile(cssPath){var l=document.createElement('link');l.rel='stylesheet';l.href=cssPath;var h=document.getElementsByTagName('head')[0];h.parentNode.insertBefore(l,h)}
