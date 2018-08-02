@@ -1,2 +1,2 @@
-{{ $previewFLM := resources.Get "js/previewFilterListModal.js" | minify }}
-<script defer src="{{ $previewFLM.Permalink }}"></script> 
+{{ $previewFLM := resources.Get "js/previewFilterListModal.js" | minify | fingerprint}}
+<script defer src="{{ $previewFLM.Permalink }}" integrity="{{ $previewFLM.Data.Integrity }}"></script> 
