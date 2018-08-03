@@ -128,7 +128,7 @@ header a.button {
     border-style: solid;
 }
 
-a.button-subscribe {
+a.button-subscribe-filters {
   width: 135px;
   height: 60px;
   padding-top: 22px;
@@ -138,11 +138,11 @@ a.button-subscribe {
   line-height: 1.2;
   color: #fff;
 }
-a.button-subscribe small {
+a.button-subscribe-filters small {
   display: block;
   font-size: 11px;
 }
-header a.button-subscribe {
+header a.button-subscribe-filters {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -152,7 +152,7 @@ header a.button-subscribe {
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-  header a.button-subscribe {
+  header a.button-subscribe-filters {
     position: relative;
     display: inline-block;
     width: auto;
@@ -169,7 +169,7 @@ header a.button-subscribe {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
   }
-  header a.button-subscribe small {
+  header a.button-subscribe-filters small {
     display: inline;
     font-size: 13px;
   }
