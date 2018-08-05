@@ -1,0 +1,10 @@
+<table class="responsive table table-sm table-striped table-bordered table-white">
+    <thead>
+      {{ range $header := .Params -}}
+      <th scope="col" class="text-center font-weight-bold">{{ $header }}</th>
+      {{- end -}}
+    </thead>
+    <tbody>
+      {{ .Inner }}
+    </tbody>
+</table>

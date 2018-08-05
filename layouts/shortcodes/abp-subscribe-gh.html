@@ -1,0 +1,4 @@
+{{ $Location := .Get "location" }}
+{{ $CutBlob := (replaceRE "/blob" "" $Location) }}
+{{ $RawLocation := (replaceRE "github.com" "raw.githubusercontent.com" $CutBlob) }}
+<a class="btn btn-primary" href="abp:subscribe?location={{ $RawLocation }}&amp;title={{.Get "title"}}">Subskrybuj</a>
