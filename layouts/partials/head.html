@@ -9,5 +9,5 @@
 
 <script>
     function LoadCssFile(cssPath){var l=document.createElement('link');l.rel='stylesheet';l.href=cssPath;var h=document.getElementsByTagName('head')[0];h.parentNode.insertBefore(l,h)}
-    var cb=function(){LoadCssFile('{{ $style.Permalink }}')};var raf=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;if(raf)raf(cb);else window.addEventListener('load',cb)
+    var cb=function(){LoadCssFile('https://fontlibrary.org/face/architect-s-daughter');LoadCssFile('{{ $style.Permalink }}')};var raf=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;if(raf)raf(cb);else window.addEventListener('load',cb)
 </script>
