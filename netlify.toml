@@ -1,6 +1,17 @@
-
 [build]
   command = "gulp sass && hugo && gulp minify-html"
 
 [context.production.environment]
   HUGO_VERSION = "0.46"
+
+[[redirects]]
+  from = "http://polishannoyancefilters.netlify.com/*"
+  to = "https://polishannoyancefilters.netlify.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.polishannoyancefilters.netlify.com/*"
+  to = "https://www.polishannoyancefilters.netlify.com/:splat"
+  status = 301
+  force = true
