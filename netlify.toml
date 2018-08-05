@@ -9,9 +9,3 @@
   to = "https://polishannoyancefilters.netlify.com/:splat"
   status = 301
   force = true
-
-[[redirects]]
-  from = "http://www.polishannoyancefilters.netlify.com/*"
-  to = "https://www.polishannoyancefilters.netlify.com/:splat"
-  status = 301
-  force = true
