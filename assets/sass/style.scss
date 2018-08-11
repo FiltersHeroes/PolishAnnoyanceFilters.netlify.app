@@ -57,6 +57,7 @@ header a {
 @import "bootstrap/_modal";
 @import "bootstrap/_close";
 @import "bootstrap/utilities/_align";
+@import "bootstrap/_button-group";
 @import "imgur";
 
 .inline {
@@ -329,4 +330,8 @@ header h2 {
         src: url('/fonts/ArchitectsDaughter.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+.mb-2r {
+    margin-bottom: .2rem;
 }
