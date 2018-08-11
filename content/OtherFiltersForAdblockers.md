@@ -106,6 +106,28 @@ title: Inne filtry do adblokerów
   {{< /table-row >}}
 
   {{< table-row >}}
+    {{% table-cell %}}AdGuard Base filter{{% /table-cell %}}
+    {{< table-cell >}}Reklamy, zawiera również EasyList.{{< /table-cell >}}
+    {{< table-cell >}}{{<filterlist ubo-location="https://filters.adtidy.org/extension/ublock/filters/2.txt" title="AdGuard Base filter" issues="https://github.com/AdguardTeam/AdguardFilters/issues" mail="support@adguard.com" home="http://adguard.com/filters.html#english" form="https://reports.adguard.com/new_issue.html">}}{{< /table-cell >}}
+    {{< table-cell >}}-{{< /table-cell >}}
+    {{< table-cell >}}
+      {{< uBO >}}
+      {{< NA >}}
+    {{< /table-cell >}}
+  {{< /table-row >}}
+
+  {{< table-row >}}
+    {{% table-cell %}}AdGuard Mobile Ads filter{{% /table-cell %}}
+    {{< table-cell >}}Wszystkie znane mobilne sieci reklamowe.{{< /table-cell >}}
+    {{< table-cell >}}{{<filterlist ubo-location="https://filters.adtidy.org/extension/ublock/filters/11.txt" title="AdGuard Mobile Ads filter" issues="https://github.com/AdguardTeam/AdguardFilters/issues" mail="support@adguard.com" home="http://adguard.com/filters.html#mobile" form="https://reports.adguard.com/new_issue.html">}}{{< /table-cell >}}
+    {{< table-cell >}}-{{< /table-cell >}}
+    {{< table-cell >}}
+      {{< uBO >}}
+      {{< NA >}}
+    {{< /table-cell >}}
+  {{< /table-row >}}
+
+  {{< table-row >}}
     {{% table-cell %}}Nano Defender{{% /table-cell %}}
     {{< table-cell >}}Skrypty antyadblockowe.{{< /table-cell >}}
     {{< table-cell >}}{{<filterlist ubo-location="https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt" title="Nano Defender Integration" issues="https://github.com/jspenguin2017/uBlockProtector/issues" home="https://jspenguin2017.github.io/uBlockProtector/">}}{{< /table-cell >}}
@@ -136,9 +158,9 @@ title: Inne filtry do adblokerów
   {{< /table-row >}}
 
   {{< table-row >}}
-    {{% table-cell %}}uBlock Filters – Resource Abuse{{% /table-cell %}}
+    {{% table-cell %}}uBlock filters – Resource Abuse{{% /table-cell %}}
     {{< table-cell >}}Skrypty wydobywające kryptowaluty, powodujące zwiększone zużycie CPU i spowalniające prace komputera.{{< /table-cell >}}
-    {{< table-cell >}}{{<filterlist ubo-location="https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt" title="uBlock Filters – Resource Abuse" issues="https://github.com/uBlockOrigin/uAssets/issues" home="https://github.com/uBlockOrigin/uAssets">}}{{< /table-cell >}}
+    {{< table-cell >}}{{<filterlist ubo-location="https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt" title="uBlock filters – Resource Abuse" issues="https://github.com/uBlockOrigin/uAssets/issues" home="https://github.com/uBlockOrigin/uAssets">}}{{< /table-cell >}}
     {{< table-cell >}}-{{< /table-cell >}}
     {{< table-cell >}}
       {{< uBO >}}
@@ -147,14 +169,13 @@ title: Inne filtry do adblokerów
   {{< /table-row >}}
 
   {{< table-row >}}
-    {{% table-cell %}}AdGuard Annoyances Filter{{% /table-cell %}}
+    {{% table-cell %}}AdGuard Annoyances filter{{% /table-cell %}}
     {{< table-cell >}}Irytujące elementy, w tym powiadomienia o ciasteczkach, widżety stron trzecich i wyskakujące okienka.{{< /table-cell >}}
-    {{< table-cell >}}{{<filterlist ubo-location="https://filters.adtidy.org/extension/ublock/filters/14.txt" title="AdGuard Annoyances Filter" issues="https://github.com/AdguardTeam/AdguardFilters/issues" mail="support@adguard.com" home="https://adguard.com/en/filters.html" form="https://reports.adguard.com/new_issue.html">}}{{< /table-cell >}}
+    {{< table-cell >}}{{<filterlist ubo-location="https://filters.adtidy.org/extension/ublock/filters/14.txt" title="AdGuard Annoyances Filter" issues="https://github.com/AdguardTeam/AdguardFilters/issues" mail="support@adguard.com" home="https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter" form="https://reports.adguard.com/new_issue.html">}}{{< /table-cell >}}
     {{< table-cell >}}-{{< /table-cell >}}
     {{< table-cell >}}
       {{< uBO >}}
       {{< NA >}}
-      {{< AG >}}
     {{< /table-cell >}}
   {{< /table-row >}}
 
