@@ -199,6 +199,8 @@ title: Inne filtry do adblokerów
       {{< NA >}}
     {{< /table-cell >}}
   {{< /table-row >}}
+
+
 {{< /table >}}
 
 `*` Jeżeli korzystasz z **Polskich Filtrów Elementów Irytujących**, to nie dodawaj **Filtrów RODO-Ciasteczkowych**, ponieważ są już one w nich zawarte (*nie dotyczy modułów*).
