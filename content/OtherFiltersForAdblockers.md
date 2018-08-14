@@ -169,17 +169,6 @@ title: Inne filtry do adblokerów
   {{< /table-row >}}
 
   {{< table-row >}}
-    {{% table-cell %}}AdGuard Annoyances filter{{% /table-cell %}}
-    {{< table-cell >}}Irytujące elementy, w tym powiadomienia o ciasteczkach, widżety stron trzecich i wyskakujące okienka.{{< /table-cell >}}
-    {{< table-cell >}}{{<filterlist ubo-location="https://filters.adtidy.org/extension/ublock/filters/14.txt" title="AdGuard Annoyances Filter" issues="https://github.com/AdguardTeam/AdguardFilters/issues" mail="support@adguard.com" home="https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter" form="https://reports.adguard.com/new_issue.html">}}{{< /table-cell >}}
-    {{< table-cell >}}-{{< /table-cell >}}
-    {{< table-cell >}}
-      {{< uBO >}}
-      {{< NA >}}
-    {{< /table-cell >}}
-  {{< /table-row >}}
-
-  {{< table-row >}}
     {{% table-cell %}}uBlock filters – Annoyances{{% /table-cell %}}
     {{< table-cell >}}Irytujące elementy.{{< /table-cell >}}
     {{< table-cell >}}{{<filterlist ubo-location="https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt" title="uBlock filters – Annoyances" issues="https://github.com/uBlockOrigin/uAssets/issues" home="https://github.com/uBlockOrigin/uAssets">}}{{< /table-cell >}}
@@ -196,6 +185,40 @@ title: Inne filtry do adblokerów
     {{< table-cell >}}{{<filterlist ubo-location="https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt" title="Nano filters – Annoyance" issues="https://github.com/NanoAdblocker/NanoFilters/issues" home="https://github.com/NanoAdblocker/NanoFilters">}}{{< /table-cell >}}
     {{< table-cell >}}-{{< /table-cell >}}
     {{< table-cell >}}
+      {{< NA >}}
+    {{< /table-cell >}}
+  {{< /table-row >}}
+
+  {{< table-row >}}
+    {{% table-cell %}}AdGuard Annoyances filter{{% /table-cell %}}
+    {{< table-cell >}}Irytujące elementy, w tym powiadomienia o ciasteczkach, widżety stron trzecich i wyskakujące okienka.{{< /table-cell >}}
+    {{< table-cell >}}{{<filterlist ubo-location="https://filters.adtidy.org/extension/ublock/filters/14.txt" title="AdGuard Annoyances filter" issues="https://github.com/AdguardTeam/AdguardFilters/issues" mail="support@adguard.com" home="https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter" form="https://reports.adguard.com/new_issue.html">}}{{< /table-cell >}}
+    {{< table-cell >}}-{{< /table-cell >}}
+    {{< table-cell >}}
+      {{< uBO >}}
+      {{< NA >}}
+    {{< /table-cell >}}
+  {{< /table-row >}}
+
+  {{< table-row >}}
+    {{% table-cell %}}AdGuard Social Media filter{{% /table-cell %}}
+    {{< table-cell >}}Przyciski polubień i inne rzeczy z mediów społecznościowych.{{< /table-cell >}}
+    {{< table-cell >}}{{<filterlist ubo-location="https://filters.adtidy.org/extension/ublock/filters/4.txt" title="AdGuard Social Media filter" issues="https://github.com/AdguardTeam/AdguardFilters/issues" mail="support@adguard.com" home="https://kb.adguard.com/en/general/adguard-ad-filters#social" form="https://reports.adguard.com/new_issue.html">}}{{< /table-cell >}}
+    {{< table-cell >}}-{{< /table-cell >}}
+    {{< table-cell >}}
+      {{< uBO >}}
+      {{< NA >}}
+    {{< /table-cell >}}
+  {{< /table-row >}}
+
+  {{< table-row >}}
+    {{% table-cell %}}Web Annoyances Ultralist{{% /table-cell %}}
+    {{< table-cell >}}Pływające, scrollujące nagłówki i filmiki, paski społecznościowe, banery aplikacji na smartfony, dokuczliwe ekrany pobierania aplikacji, pływające pudełka nawigacyjne, strzałki, pełnoekranowe nakładki, dokuczliwe subskrypcje oraz rozpraszające elementy.{{< /table-cell >}}
+    {{< table-cell >}}{{<filterlist ubo-location="https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt" title="Web Annoyances Ultralist" issues="https://github.com/yourduskquibbles/webannoyances/issues" chat="https://discord.me/yourduskquibbles" home="https://github.com/yourduskquibbles/webannoyances">}}
+    {{< /table-cell >}}
+    {{< table-cell >}}-{{< /table-cell >}}
+    {{< table-cell >}}
+      {{< uBO >}}
       {{< NA >}}
     {{< /table-cell >}}
   {{< /table-row >}}
