@@ -1,0 +1,96 @@
+<table class="responsive table table-sm table-striped table-bordered table-white">
+	<thead>
+		<tr>
+			<th scope="col" class="text-center font-weight-bold">LISTA</th>
+			<th scope="col" class="text-center font-weight-bold">ELEMENTY</th>
+			<th scope="col" class="text-center font-weight-bold">LINKI</th>
+			<th scope="col" class="text-center font-weight-bold">WYMAGANE</th>
+			<th scope="col" class="text-center font-weight-bold">ZGODNOŚĆ</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{ range $.Site.Data.FilterLists.items }}
+		<tr>
+			<td class="align-middle" data-label="LISTA"><span>{{.title}}</span></td>
+			<td class="align-middle" data-label="ELEMENTY"><span>{{.desc}}</span></td>
+			<td class="align-middle" data-label="LINKI">
+				<span>
+					<div class="btn-group-vertical">
+						<a class="btn btn-primary mb-2r" href="{{.subscribeType}}:subscribe?location={{.subscribe}}&amp;title={{.title}}">Subskrybuj</a>
+
+						<a class="btn btn-info mb-2r" href="{{.subscribe}}" target="_blank" rel="noopener">Podgląd</a>
+
+						{{if .issues}}<a class="btn btn-danger mb-2r" href=""  data-secret="{{.issues | base64Encode}}" onmouseover="this.href = atob(this.dataset.secret);" target="_blank" rel="noopener">Zgłoś problem</a>{{end}}
+
+						{{if .form}}<a class="btn btn-danger mb-2r" href="" data-secret="{{.form | base64Encode}}" onmouseover="this.href = atob(this.dataset.secret);" target="_blank" rel="noopener">Formularz</a>{{end}}
+
+						{{if .chat}}<a class="btn btn-danger mb-2r" href="" data-secret="{{.chat | base64Encode}}" onmouseover="this.href = atob(this.dataset.secret);" target="_blank" rel="noopener">Poczatujmy</a>{{end}}
+
+						{{if .mail}}<a class="btn btn-danger mb-2r" data-secret="{{.mail | base64Encode}}" href="" onmouseover="this.href = 'mailto:' + atob(this.dataset.secret);">Wyślij maila</a>{{end}}
+
+						{{if .donate}}<a class="btn btn-success mb-2r" href="{{.donate}}" target="_blank" rel="noopener">Przekaż datek</a>{{end}}
+
+						{{if .home}}<a class="btn btn-secondary mb-2r" href="{{.home}}" target="_blank" rel="noopener">Strona główna</a>{{ end }}
+					</div>
+				</span>
+			</td>
+			<td class="align-middle" data-label="WYMAGANE">
+				<span>
+					<div class="btn-group-vertical">
+						{{if ne .requiredType "guide"}}
+						{{if .requiredTitle}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredType}}:subscribe?location={{.requiredLocation}}&amp;title={{.requiredTitle}}">{{.requiredTitle}}</a>{{end}}
+						{{else}}
+						{{if .requiredTitle}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredLocation}}" target="_blank" rel="noopener">{{.requiredTitle}}</a>{{end}}
+						{{end}}
+
+						{{if ne .requiredType2 "guide"}}
+						{{if .requiredTitle2}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredType2}}:subscribe?location={{.requiredLocation2}}&amp;title={{.requiredTitle2}}">{{.requiredTitle2}}</a>{{end}}
+						{{else}}
+						{{if .requiredTitle2}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredLocation2}}" target="_blank" rel="noopener">{{.requiredTitle2}}</a>{{end}}
+						{{end}}
+
+						{{if ne .requiredType3 "guide"}}
+						{{if .requiredTitle3}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredType3}}:subscribe?location={{.requiredLocation3}}&amp;title={{.requiredTitle3}}">{{.requiredTitle3}}</a>{{end}}
+						{{else}}
+						{{if .requiredTitle3}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredLocation3}}" target="_blank" rel="noopener">{{.requiredTitle3}}</a>{{end}}
+						{{end}}
+
+						{{if ne .requiredType4 "guide"}}
+						{{if .requiredTitle4}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredType4}}:subscribe?location={{.requiredLocation4}}&amp;title={{.requiredTitle4}}">{{.requiredTitle4}}</a>{{end}}
+						{{else}}
+						{{if .requiredTitle4}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredLocation4}}" target="_blank" rel="noopener">{{.requiredTitle4}}</a>{{end}}
+						{{end}}
+
+						{{if (not .requiredType) (not .requiredType2) (not .requiredType3) (not .requiredType4)}}
+						-
+						{{end}}
+					</div>
+				</span>
+			</td>
+			<td class="align-middle" data-label="ZGODNOŚĆ">
+				<span>
+					{{ if eq .AB "1"}}
+					<img src="/images/AdBlock_32.png" style="width:32px;height:32px">
+					{{end}}
+
+					{{ if eq .ABP "1"}}
+					<img src="/images/ABP_32.png" style="width:32px;height:32px">
+					{{end}}
+
+					{{ if eq .uBO "1"}}
+					<img src="/images/uBO_32.png" style="width:32px;height:32px">
+					{{end}}
+
+					{{ if eq .NA "1"}}
+					<img src="/images/Nano_32.png" style="width:32px;height:32px">
+					{{end}}
+
+					{{ if eq .AG "1"}}
+					<img src="/images/AdGuard_logo_32.png" style="width:32px;height:32px">
+					{{end}}
+				</span>
+			</td>
+		</tr>
+		{{end}}
+	</tbody>
+</table>
