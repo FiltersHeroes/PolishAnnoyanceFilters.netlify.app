@@ -37,25 +37,25 @@
 			<td class="align-middle" data-label="WYMAGANE">
 				<span>
 					<div class="btn-group-vertical">
-						{{if ne .requiredType "guide"}}
+						{{if ne .requiredType "normal"}}
 						{{if .requiredTitle}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredType}}:subscribe?location={{.requiredLocation}}&amp;title={{.requiredTitle}}">{{.requiredTitle}}</a>{{end}}
 						{{else}}
 						{{if .requiredTitle}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredLocation}}" target="_blank" rel="noopener">{{.requiredTitle}}</a>{{end}}
 						{{end}}
 
-						{{if ne .requiredType2 "guide"}}
+						{{if ne .requiredType2 "normal"}}
 						{{if .requiredTitle2}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredType2}}:subscribe?location={{.requiredLocation2}}&amp;title={{.requiredTitle2}}">{{.requiredTitle2}}</a>{{end}}
 						{{else}}
 						{{if .requiredTitle2}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredLocation2}}" target="_blank" rel="noopener">{{.requiredTitle2}}</a>{{end}}
 						{{end}}
 
-						{{if ne .requiredType3 "guide"}}
+						{{if ne .requiredType3 "normal"}}
 						{{if .requiredTitle3}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredType3}}:subscribe?location={{.requiredLocation3}}&amp;title={{.requiredTitle3}}">{{.requiredTitle3}}</a>{{end}}
 						{{else}}
 						{{if .requiredTitle3}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredLocation3}}" target="_blank" rel="noopener">{{.requiredTitle3}}</a>{{end}}
 						{{end}}
 
-						{{if ne .requiredType4 "guide"}}
+						{{if ne .requiredType4 "normal"}}
 						{{if .requiredTitle4}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredType4}}:subscribe?location={{.requiredLocation4}}&amp;title={{.requiredTitle4}}">{{.requiredTitle4}}</a>{{end}}
 						{{else}}
 						{{if .requiredTitle4}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredLocation4}}" target="_blank" rel="noopener">{{.requiredTitle4}}</a>{{end}}
