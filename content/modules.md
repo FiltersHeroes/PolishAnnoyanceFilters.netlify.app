@@ -128,4 +128,4 @@ title: Moduły
 
 {{< /table >}}
 
-**UWAGA!! Żaden z w/w modułów nie zawiera [Polskich Filtrów Rodo-Ciasteczkowych](abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fcookies_filters%2Fadblock_cookies.txt&amp;title=Polskie%20Filtry%20Rodo-Ciasteczkowe), więc jeżeli przeszkadzają ci te elementy, to powinieneś je zasubskrybować oraz zainstalować [skrypt uzupełniający](https://greasyfork.org/pl/scripts/369153-supplement-for-filterlist-polish-gdpr-cookies-filters-supplement-for-ublock-adguard) dla Greasymonkey, Tampermonkey lub Violentmonkey (w przypadku posiadania AdGuarda nie jest wymagany, wystarczy tylko lista AdGuard Annoyances, znana również jako Filtr irytujących elementów).**
+**UWAGA!! Żaden z w/w modułów nie zawiera [Polskich Filtrów Rodo-Ciasteczkowych](abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fcookies_filters%2Fadblock_cookies.txt&amp;title=Polskie%20Filtry%20Rodo-Ciasteczkowe), więc jeżeli przeszkadzają ci te elementy, to powinieneś je zasubskrybować.**
