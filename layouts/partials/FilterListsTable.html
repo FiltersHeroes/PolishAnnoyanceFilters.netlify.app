@@ -20,9 +20,9 @@
 
 						<a class="btn btn-info mb-2r" href="{{.subscribe}}" target="_blank" rel="noopener">Podgląd</a>
 
-						{{if .issues}}<a class="btn btn-danger mb-2r" href=""  data-secret="{{.issues | base64Encode}}" onmouseover="this.href = atob(this.dataset.secret);" target="_blank" rel="noopener">Zgłoś problem</a>{{end}}
+						{{if .issues}}<a class="btn btn-danger mb-2r" href="{{.issues}}" target="_blank" rel="noopener">Zgłoś problem</a>{{end}}
 
-						{{if .form}}<a class="btn btn-danger mb-2r" href="" data-secret="{{.form | base64Encode}}" onmouseover="this.href = atob(this.dataset.secret);" target="_blank" rel="noopener">Formularz</a>{{end}}
+						{{if .form}}<a class="btn btn-danger mb-2r" href="{{.form}}" target="_blank" rel="noopener">Formularz</a>{{end}}
 
 						{{if .chat}}<a class="btn btn-danger mb-2r" href="" data-secret="{{.chat | base64Encode}}" onmouseover="this.href = atob(this.dataset.secret);" target="_blank" rel="noopener">Poczatujmy</a>{{end}}
 
