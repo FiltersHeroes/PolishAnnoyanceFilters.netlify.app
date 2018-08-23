@@ -1,5 +1,5 @@
 [build]
-  command = "gulp sass && hugo && gulp minify-html"
+  command = "gulp sass && hugo --minify"
 
 [context.production.environment]
   HUGO_VERSION = "0.47.1"
