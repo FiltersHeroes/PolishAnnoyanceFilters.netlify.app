@@ -2,7 +2,7 @@
   command = "gulp sass && hugo && gulp minify-html"
 
 [context.production.environment]
-  HUGO_VERSION = "0.46"
+  HUGO_VERSION = "0.47.1"
 
 [[redirects]]
   from = "http://polishannoyancefilters.netlify.com/*"
