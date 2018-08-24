@@ -26,7 +26,7 @@ function browserOSDetect() {
     else if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
         opera.checked = true;
         fullVersion = nAgt.substring(verOffset+6);
-    if ((verOffset=nAgt.indexOf("Version"))!=-1)
+        if ((verOffset=nAgt.indexOf("Version"))!=-1)
         fullVersion = nAgt.substring(verOffset+8);
     }
     else if ((verOffset=nAgt.indexOf("Vivaldi"))!=-1) {
@@ -50,7 +50,7 @@ function browserOSDetect() {
     else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
         safari.checked = true;
         fullVersion = nAgt.substring(verOffset+7);
-    if ((verOffset=nAgt.indexOf("Version"))!=-1)
+        if ((verOffset=nAgt.indexOf("Version"))!=-1)
         fullVersion = nAgt.substring(verOffset+8);
     }
     else if ((verOffset=nAgt.indexOf("Waterfox"))!=-1) {
@@ -64,7 +64,7 @@ function browserOSDetect() {
     }
     // In most other browsers, "name/version" is at the end of userAgent
     else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) <
-            (verOffset=nAgt.lastIndexOf('/')) )
+    (verOffset=nAgt.lastIndexOf('/')) )
     {
         fullVersion = nAgt.substring(verOffset+1);
         inna.checked=true;
@@ -76,7 +76,7 @@ function browserOSDetect() {
     if ((ix=fullVersion.indexOf(" "))!=-1){
         fullVersion=fullVersion.substring(0,ix);
     }
-        document.getElementById('browser_version').value = fullVersion;
+    document.getElementById('browser_version').value = fullVersion;
 
     var linux = document.getElementById('linux');
     var windows = document.getElementById('windows');
