@@ -1,0 +1,50 @@
+<table class="responsive table table-sm table-striped table-bordered table-white">
+	<thead>
+		<tr>
+			<th scope="col" class="text-center font-weight-bold">MODUŁ</th>
+			<th scope="col" class="text-center font-weight-bold">SUBSKRYBUJ</th>
+			<th scope="col" class="text-center font-weight-bold">PODGLĄD</th>
+			<th scope="col" class="text-center font-weight-bold">ZGODNOŚĆ</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{ range $.Site.Data.Modules.items }}
+		<tr>
+			<td class="align-middle" data-label="MODUŁ"><span>{{.title}}</span></td>
+			<td class="align-middle" data-label="SUBSKRYBUJ">
+				<span>
+					<a class="btn btn-primary mb-2r" href="{{.subscribeType}}:subscribe?location={{.subscribe}}&amp;title=PFEI - {{.title}}">Subskrybuj</a>
+				</span>
+			</td>
+			<td class="align-middle" data-label="PODGLĄD">
+				<span>
+					<a class="btn btn-info mb-2r" href="{{.subscribe}}" target="_blank" rel="noopener">Podgląd</a>
+				</span>
+			</td>
+			<td class="align-middle" data-label="ZGODNOŚĆ">
+				<span>
+					{{ if eq .AB "1"}}
+					<img src="/images/AdBlock_32.png" style="width:32px;height:32px">
+					{{end}}
+
+					{{ if eq .ABP "1"}}
+					<img src="/images/ABP_32.png" style="width:32px;height:32px">
+					{{end}}
+
+					{{ if eq .uBO "1"}}
+					<img src="/images/uBO_32.png" style="width:32px;height:32px">
+					{{end}}
+
+					{{ if eq .NA "1"}}
+					<img src="/images/Nano_32.png" style="width:32px;height:32px">
+					{{end}}
+
+					{{ if eq .AG "1"}}
+					<img src="/images/AdGuard_logo_32.png" style="width:32px;height:32px">
+					{{end}}
+				</span>
+			</td>
+		</tr>
+		{{end}}
+	</tbody>
+</table>
