@@ -99,8 +99,8 @@ AG = "1"
 
 [[items]]
 title = "AdGuard Base filter"
-desc = "Reklamy, zawiera również EasyList."
-subscribe = "https://filters.adtidy.org/extension/ublock/filters/2.txt"
+desc = "Reklamy."
+subscribe = "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt"
 subscribeType = "ubo"
 issues = "https://github.com/AdguardTeam/AdguardFilters/issues"
 mail = "support@adguard.com"
@@ -136,7 +136,7 @@ NA = "1"
 
 [[items]]
 title = "NoCoin Filter List"
-desc = "Skrypty wydobywające kryptowaluty, powodujące zwiększone zużycie CPU i spowalniające prace komputera."
+desc = "Skrypty wydobywające kryptowaluty, powodujące zwiększone zużycie CPU i spowalniające pracę komputera."
 subscribe = "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
 subscribeType = "abp"
 issues = "https://github.com/hoshsadiq/adblock-nocoin-list/issues"
@@ -149,7 +149,7 @@ AG = "1"
 
 [[items]]
 title = "uBlock filters – Resource Abuse"
-desc = "Skrypty wydobywające kryptowaluty, powodujące zwiększone zużycie CPU i spowalniające prace komputera."
+desc = "Skrypty wydobywające kryptowaluty, powodujące zwiększone zużycie CPU i spowalniające pracę komputera."
 subscribe = "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt"
 subscribeType = "abp"
 issues = "https://github.com/uBlockOrigin/uAssets/issues"
