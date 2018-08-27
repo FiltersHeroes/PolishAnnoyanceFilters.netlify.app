@@ -1,3 +1,17 @@
+<input type="search" id="search" class="light-table-filter" data-table="table" placeholder="Szukaj..">
+<select type="search" class="select-table-filter custom-select" data-table="table">
+	<option value="">Dowolna kategoria</option>
+	<option value="polskie">Polskie</option>
+    <option value="bezpieczeństwo">Bezpieczeństwo</option>
+	<option value="reklamy">Reklamy</option>
+	<option value="anty-Adblock">Anty-Adblock</option>
+	<option value="społecznościowe">Społecznościowe</option>
+	<option value="ciasteczka">🍪 i polityka prywatności/RODO</option>
+	<option value="irytujące">Irytujące</option>
+	<option value="sponsorowane">Sponsorowane</option>
+	<option value="RSS">RSS</option>
+	<option value="e-commerce">E-commerce</option>
+<select>
 <table class="responsive table table-sm table-striped table-bordered table-white">
 	<thead>
 		<tr>
@@ -6,6 +20,7 @@
 			<th scope="col" class="text-center font-weight-bold">LINKI</th>
 			<th scope="col" class="text-center font-weight-bold">WYMAGANE</th>
 			<th scope="col" class="text-center font-weight-bold">ZGODNOŚĆ</th>
+			<th scope="col" class="text-center font-weight-bold" style="display: none;">Kategoria</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -92,7 +107,15 @@
 					{{end}}
 				</span>
 			</td>
+			<td class="align-middle" data-label="KATEGORIA" style="display: none;">
+				<span>
+					{{.category}}
+				</span>
+			</td>
 		</tr>
 		{{end}}
 	</tbody>
 </table>
+
+{{ $js := resources.Get "js/lightTableFilterDropdown.js" | minify | fingerprint}}
+<script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
