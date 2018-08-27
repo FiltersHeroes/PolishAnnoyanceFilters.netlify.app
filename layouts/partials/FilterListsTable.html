@@ -12,14 +12,14 @@
 	<option value="RSS">RSS</option>
 	<option value="e-commerce">E-commerce</option>
 <select>
-<table class="responsive table table-sm table-striped table-bordered table-white">
+<table class="responsive table table-sm table-striped table-bordered table-white sortable-theme" data-sortable>
 	<thead>
 		<tr>
-			<th scope="col" class="text-center font-weight-bold">LISTA</th>
-			<th scope="col" class="text-center font-weight-bold">ELEMENTY</th>
-			<th scope="col" class="text-center font-weight-bold">LINKI</th>
-			<th scope="col" class="text-center font-weight-bold">WYMAGANE</th>
-			<th scope="col" class="text-center font-weight-bold">ZGODNOŚĆ</th>
+			<th scope="col" class="text-center font-weight-bold" >LISTA</th>
+			<th scope="col" class="text-center font-weight-bold" >ELEMENTY</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">LINKI</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">WYMAGANE</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">ZGODNOŚĆ</th>
 			<th scope="col" class="text-center font-weight-bold" style="display: none;">Kategoria</th>
 		</tr>
 	</thead>
@@ -117,5 +117,8 @@
 	</tbody>
 </table>
 
-{{ $js := resources.Get "js/lightTableFilterDropdown.js" | minify | fingerprint}}
+
+{{ $filterSearch := resources.Get "js/lightTableFilterDropdown.js" | minify | fingerprint}}
+{{ $sort := resources.Get "js/sortable.min.js" | fingerprint}}
+{{ $js := slice $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint}}
 <script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
