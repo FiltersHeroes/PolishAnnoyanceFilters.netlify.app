@@ -1,20 +1,20 @@
 <input type="search" id="search" class="light-table-filter" data-table="table" placeholder="Szukaj...">
 <div>
-<select id="multiple" class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 categories" data-attribute="category" multiple="multiple" value="polskie" title="Wybierz kategorię..." data-style="btn-outline-primary" data-actions-box="true">
-    <option value="bezpieczeństwo" data-icon="icon-dropdown security-icon">Bezpieczeństwo</option>
-	<option value="reklamy" data-icon="icon-dropdown ads-icon">Reklamy</option>
-	<option value="anty-adblock" data-icon="icon-dropdown adblockDetect-icon">Anty-Adblock</option>
-	<option value="społecznościowe" data-icon="icon-dropdown socialCategory-icon">Społecznościowe</option>
-	<option value="ciasteczka">🍪 Komunikaty dot. ciasteczek/RODO</option>
-	<option value="irytujące" data-icon="icon-dropdown annoyance-icon">Elementy irytujące</option>
-	<option value="RSS" data-icon="icon-dropdown rss-icon">RSS</option>
-	<option value="sponsorowane" data-icon="icon-dropdown sponsor-icon">Sponsorowane</option>
-	<option value="e-handel" data-icon="icon-dropdown ecommerce-icon">E-handel</option>
-</select>
-<select id="multiple" class="selectpicker ddlFilterTableRow mb-3 origin" data-attribute="lang" multiple="multiple" title="Wybierz pochodzenie..." data-style="btn-outline-primary" data-actions-box="true" data-container="body">
-				<option value="pl">Polskie</option>
-				<option value="zagraniczne">Zagraniczne</option>
-</select>
+	<select id="multiple" class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 categories" data-attribute="category" multiple="multiple" value="polskie" title="Wybierz kategorię..." data-style="btn-outline-primary" data-actions-box="true">
+		<option value="bezpieczeństwo" data-icon="icon-dropdown security-icon">Bezpieczeństwo</option>
+		<option value="reklamy" data-icon="icon-dropdown ads-icon">Reklamy</option>
+		<option value="anty-adblock" data-icon="icon-dropdown adblockDetect-icon">Anty-Adblock</option>
+		<option value="społecznościowe" data-icon="icon-dropdown socialCategory-icon">Społecznościowe</option>
+		<option value="ciasteczka">🍪 Komunikaty dot. ciasteczek/RODO</option>
+		<option value="irytujące" data-icon="icon-dropdown annoyance-icon">Elementy irytujące</option>
+		<option value="RSS" data-icon="icon-dropdown rss-icon">RSS</option>
+		<option value="sponsorowane" data-icon="icon-dropdown sponsor-icon">Sponsorowane</option>
+		<option value="e-handel" data-icon="icon-dropdown ecommerce-icon">E-handel</option>
+	</select>
+	<select id="multiple" class="selectpicker ddlFilterTableRow mb-3 origin" data-attribute="lang" multiple="multiple" title="Wybierz pochodzenie..." data-style="btn-outline-primary" data-actions-box="true" data-container="body">
+		<option value="pl">Polskie</option>
+		<option value="zagraniczne">Zagraniczne</option>
+	</select>
 </div>
 
 <table class="responsive table table-sm table-striped table-bordered table-white sortable-theme" data-sortable>
@@ -53,6 +53,9 @@
 
 						{{if .home}}<a class="btn btn-secondary mb-2r" href="{{.home}}" target="_blank" rel="noopener">Strona główna</a>{{ end }}
 					</div>
+				</span>
+				<span style="display: none;">
+					{{.subscribe}}
 				</span>
 			</td>
 			<td class="align-middle" data-label="WYMAGANE">
