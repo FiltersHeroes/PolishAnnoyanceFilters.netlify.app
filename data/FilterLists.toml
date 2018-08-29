@@ -16,7 +16,8 @@ ABP = "1"
 uBO = "1"
 NA = "1"
 AG = "1"
-category = "reklamy, polskie"
+category = "reklamy"
+lang = "pl"
 
 [[items]]
 title = "Polskie Filtry Społecznościowe (Social)"
@@ -41,7 +42,8 @@ ABP = "1"
 uBO = "1"
 NA = "1"
 AG = "1"
-category="społecznościowe, polskie"
+category = "społecznościowe"
+lang = "pl"
 
 [[items]]
 title = "Polskie Filtry RSS"
@@ -68,7 +70,8 @@ ABP = "1"
 uBO = "1"
 NA = "1"
 AG = "1"
-category="RSS, polskie"
+category = "RSS"
+lang = "pl"
 
 [[items]]
 title = "KAD - Przekręty"
@@ -84,7 +87,8 @@ ABP = "0"
 uBO = "1"
 NA = "1"
 AG = "1"
-category="bezpieczeństwo, polskie"
+category = "bezpieczeństwo"
+lang = "pl"
 
 [[items]]
 title = "AlleBlock"
@@ -100,7 +104,8 @@ ABP = "1"
 uBO = "1"
 NA = "1"
 AG = "1"
-category="bezpieczeństwo, sponsorowane, e-handel, polskie"
+category="bezpieczeństwo, sponsorowane, e-handel"
+lang = "pl"
 
 [[items]]
 title = "AdGuard Base filter"

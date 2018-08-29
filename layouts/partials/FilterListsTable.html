@@ -1,17 +1,22 @@
-<input type="search" id="search" class="light-table-filter" data-table="table" placeholder="Szukaj..">
-<select type="search" class="select-table-filter custom-select" data-table="table">
-	<option value="">Dowolna kategoria</option>
-	<option value="polskie">Polskie</option>
-    <option value="bezpieczeństwo">Bezpieczeństwo</option>
-	<option value="reklamy">Reklamy</option>
-	<option value="anty-Adblock">Anty-Adblock</option>
-	<option value="społecznościowe">Społecznościowe</option>
-	<option value="ciasteczka">🍪 i polityka prywatności/RODO</option>
-	<option value="irytujące">Irytujące</option>
-	<option value="RSS">RSS</option>
-	<option value="sponsorowane">Sponsorowane</option>
-	<option value="e-handel">E-handel</option>
-<select>
+<input type="search" id="search" class="light-table-filter" data-table="table" placeholder="Szukaj...">
+<div>
+<select id="multiple" class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 categories" data-attribute="category" multiple="multiple" value="polskie" title="Wybierz kategorię..." data-style="btn-outline-primary" data-actions-box="true">
+    <option value="bezpieczeństwo" data-icon="icon-dropdown security-icon">Bezpieczeństwo</option>
+	<option value="reklamy" data-icon="icon-dropdown ads-icon">Reklamy</option>
+	<option value="anty-adblock" data-icon="icon-dropdown adblockDetect-icon">Anty-Adblock</option>
+	<option value="społecznościowe" data-icon="icon-dropdown socialCategory-icon">Społecznościowe</option>
+	<option value="ciasteczka">🍪 Komunikaty dot. ciasteczek/RODO</option>
+	<option value="irytujące" data-icon="icon-dropdown annoyance-icon">Elementy irytujące</option>
+	<option value="RSS" data-icon="icon-dropdown rss-icon">RSS</option>
+	<option value="sponsorowane" data-icon="icon-dropdown sponsor-icon">Sponsorowane</option>
+	<option value="e-handel" data-icon="icon-dropdown ecommerce-icon">E-handel</option>
+</select>
+<select id="multiple" class="selectpicker ddlFilterTableRow mb-3 origin" data-attribute="lang" multiple="multiple" title="Wybierz pochodzenie..." data-style="btn-outline-primary" data-actions-box="true" data-container="body">
+				<option value="pl">Polskie</option>
+				<option value="zagraniczne">Zagraniczne</option>
+</select>
+</div>
+
 <table class="responsive table table-sm table-striped table-bordered table-white sortable-theme" data-sortable>
 	<thead>
 		<tr>
@@ -20,12 +25,11 @@
 			<th scope="col" class="text-center font-weight-bold" data-sortable="false">LINKI</th>
 			<th scope="col" class="text-center font-weight-bold" data-sortable="false">WYMAGANE</th>
 			<th scope="col" class="text-center font-weight-bold" data-sortable="false">ZGODNOŚĆ</th>
-			<th scope="col" class="text-center font-weight-bold" style="display: none;">Kategoria</th>
 		</tr>
 	</thead>
 	<tbody>
 		{{ range $.Site.Data.FilterLists.items }}
-		<tr>
+		<tr class="Row" data-category="{{.category}}" data-lang="{{ if .lang }} {{.lang}} {{else}}zagraniczne{{end}}">
 			<td class="align-middle" data-label="LISTA"><span>{{.title}}</span></td>
 			<td class="align-middle" data-label="ELEMENTY"><span>{{.desc}}</span></td>
 			<td class="align-middle" data-label="LINKI">
@@ -107,18 +111,17 @@
 					{{end}}
 				</span>
 			</td>
-			<td class="align-middle" data-label="KATEGORIA" style="display: none;">
-				<span>
-					{{.category}}
-				</span>
-			</td>
 		</tr>
 		{{end}}
 	</tbody>
 </table>
 
-
-{{ $filterSearch := resources.Get "js/lightTableFilterDropdown.js" | minify | fingerprint}}
-{{ $sort := resources.Get "js/sortable.min.js" | fingerprint}}
-{{ $js := slice $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint}}
+<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+{{ $bootstrapBundle := resources.Get "js/bootstrap.bundle.min.js" }}
+{{ $selectFilter := resources.Get "js/multipleSelectFilter.js" }}
+{{ $select := resources.Get "js/bootstrap-select.min.js" }}
+{{ $selectPolish := resources.Get "js/bootstrap-select-translations/defaults-pl_PL.min.js" }}
+{{ $filterSearch := resources.Get "js/lightTableFilterDropdown.js" }}
+{{ $sort := resources.Get "js/sortable.min.js" }}
+{{ $js := slice $bootstrapBundle $selectFilter $select $selectPolish $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
 <script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
