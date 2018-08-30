@@ -23,10 +23,10 @@ header a {
 
 
 /*!
- * Bootstrap v4.0 (http://getbootstrap.com)
+ * Bootstrap v4.1.3 (http://getbootstrap.com)
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+*/
 @import 'bootstrap/_functions';
 @import 'bootstrap/_variables';
 @import "bootstrap/mixins/_breakpoints";
@@ -58,11 +58,11 @@ header a {
 @import "bootstrap/_close";
 @import "bootstrap/utilities/_align";
 @import "bootstrap/_button-group";
-@import "imgur";
-@import "bootstrap-select";
 @import "bootstrap/mixins/_caret";
 @import "bootstrap/mixins/_nav-divider";
 @import "bootstrap/_dropdown";
+@import "imgur";
+@import "bootstrap-select/bootstrap-select";
 
 .inline {
     display: inline;
