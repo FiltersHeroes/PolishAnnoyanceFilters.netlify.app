@@ -48,3 +48,6 @@
 		{{end}}
 	</tbody>
 </table>
+
+{{ $theme := resources.Get "js/setTheme.js" | minify }}
+<script defer src="{{ $theme.Permalink }}" integrity="{{ $theme.Data.Integrity }}"></script>

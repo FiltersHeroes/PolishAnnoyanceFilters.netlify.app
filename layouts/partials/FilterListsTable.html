@@ -15,6 +15,13 @@
 		<option value="pl">Polskie</option>
 		<option value="zagraniczne">Zagraniczne</option>
 	</select>
+	<select class="selectpicker ddlFilterTableRow mb-3 adblockers" data-attribute="adblockers" multiple="multiple" title="Wybierz adblockera..." data-style="btn-outline-primary" data-max-options="1">
+		<option value="AB" data-icon="icon-dropdown AB-icon">AdBlock</option>
+		<option value="ABP" data-icon="icon-dropdown ABP-icon">Adblock Plus</option>
+		<option value="uBO" data-icon="icon-dropdown uBO-icon">uBlock Origin</option>
+		<option value="NA" data-icon="icon-dropdown NA-icon">Nano Adblocker</option>
+		<option value="AG" data-icon="icon-dropdown AG-icon">AdGuard</option>
+	</select>
 </div>
 
 <table class="responsive table table-sm table-striped table-bordered table-white sortable-theme" data-sortable>
@@ -29,7 +36,7 @@
 	</thead>
 	<tbody>
 		{{ range $.Site.Data.FilterLists.items }}
-		<tr class="Row" data-category="{{.category}}" data-lang="{{ if .lang }} {{.lang}} {{else}}zagraniczne{{end}}">
+		<tr class="Row" data-category="{{.category}}" data-lang="{{ if .lang }} {{.lang}} {{else}}zagraniczne{{end}}" data-adblockers="{{ .adblockers }}">
 			<td class="align-middle" data-label="LISTA"><span>{{.title}}</span></td>
 			<td class="align-middle" data-label="ELEMENTY"><span>{{.desc}}</span></td>
 			<td class="align-middle" data-label="LINKI">
@@ -93,23 +100,23 @@
 			</td>
 			<td class="align-middle" data-label="ZGODNOŚĆ">
 				<span>
-					{{ if eq .AB "1"}}
+					{{ if findRE "AB" .adblockers }}
 					<img src="/images/AdBlock_32.png" style="width:32px;height:32px">
 					{{end}}
 
-					{{ if eq .ABP "1"}}
+					{{ if findRE "ABP" .adblockers }}
 					<img src="/images/ABP_32.png" style="width:32px;height:32px">
 					{{end}}
 
-					{{ if eq .uBO "1"}}
+					{{ if findRE "uBO" .adblockers }}
 					<img src="/images/uBO_32.png" style="width:32px;height:32px">
 					{{end}}
 
-					{{ if eq .NA "1"}}
+					{{ if findRE "NA" .adblockers }}
 					<img src="/images/Nano_32.png" style="width:32px;height:32px">
 					{{end}}
 
-					{{ if eq .AG "1"}}
+					{{ if findRE "AG" .adblockers }}
 					<img src="/images/AdGuard_logo_32.png" style="width:32px;height:32px">
 					{{end}}
 				</span>
@@ -126,5 +133,6 @@
 {{ $selectPolish := resources.Get "js/bootstrap-select-translations/defaults-pl_PL.min.js" }}
 {{ $filterSearch := resources.Get "js/light-table-filter.min.js" }}
 {{ $sort := resources.Get "js/sortable.min.js" }}
-{{ $js := slice $bootstrapBundle $selectFilter $select $selectPolish $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
+{{ $theme := resources.Get "js/setTheme.js" }}
+{{ $js := slice $theme $bootstrapBundle $selectFilter $select $selectPolish $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
 <script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
