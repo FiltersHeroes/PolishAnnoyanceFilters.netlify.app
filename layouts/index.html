@@ -20,7 +20,7 @@
                         <ul id="switcher">
                             <li id="darkLightButton" class="darkButton" title="Ciemna / jasna wersja strony"></li>
                         </ul>
-                        {{ $theme := resources.Get "js/setTheme.js" | minify }}
+                        {{ $theme := resources.Get "js/setTheme.js" | minify | fingerprint }}
                         <script defer src="{{ $theme.Permalink }}" integrity="{{ $theme.Data.Integrity }}"></script>
                         {{ .Content }}
                     </section>

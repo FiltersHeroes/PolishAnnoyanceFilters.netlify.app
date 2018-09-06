@@ -23,23 +23,23 @@
 			</td>
 			<td class="align-middle" data-label="ZGODNOŚĆ">
 				<span>
-					{{ if eq .AB "1"}}
+					{{ if findRE "AB" .adblocker }}
 					<img src="/images/AdBlock_32.png" style="width:32px;height:32px">
 					{{end}}
 
-					{{ if eq .ABP "1"}}
+					{{ if findRE "AB" .adblocker }}
 					<img src="/images/ABP_32.png" style="width:32px;height:32px">
 					{{end}}
 
-					{{ if eq .uBO "1"}}
+					{{ if findRE "AB" .adblocker }}
 					<img src="/images/uBO_32.png" style="width:32px;height:32px">
 					{{end}}
 
-					{{ if eq .NA "1"}}
+					{{ if findRE "AB" .adblocker }}
 					<img src="/images/Nano_32.png" style="width:32px;height:32px">
 					{{end}}
 
-					{{ if eq .AG "1"}}
+					{{ if findRE "AB" .adblocker }}
 					<img src="/images/AdGuard_logo_32.png" style="width:32px;height:32px">
 					{{end}}
 				</span>
@@ -49,5 +49,5 @@
 	</tbody>
 </table>
 
-{{ $theme := resources.Get "js/setTheme.js" | minify }}
+{{ $theme := resources.Get "js/setTheme.js" | minify | fingerprint }}
 <script defer src="{{ $theme.Permalink }}" integrity="{{ $theme.Data.Integrity }}"></script>
