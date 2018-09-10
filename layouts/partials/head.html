@@ -6,9 +6,14 @@
     {{ partial "critical.css" . | safeCSS }}
 </style>
 
-{{ $style := resources.Get "css/style.css" | fingerprint }}
-
+{{ if eq .Site.Params.use_sass true }}
+{{ $style := resources.Get "sass/style.scss" | toCSS | fingerprint }}
 <link rel="preload" href="{{ $style.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.rel='stylesheet'">
+{{ else }}
+{{ $style := resources.Get "css/style.css" | fingerprint }}
+<link rel="preload" href="{{ $style.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.rel='stylesheet'">
+{{ end }}
+
 
 <script>
 {{ "/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */" | safeJS }}
