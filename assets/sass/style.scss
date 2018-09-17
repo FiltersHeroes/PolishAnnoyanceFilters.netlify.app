@@ -546,3 +546,7 @@ input.form-control.dark-mode {
     border-color: #4b7bb94b;
     color: white;
 }
+
+#main-content > p {
+    overflow-wrap: break-word;
+}
