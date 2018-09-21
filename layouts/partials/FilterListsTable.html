@@ -46,6 +46,12 @@
 
 						<a class="btn btn-info mb-2r" href="{{.subscribe}}" target="_blank" rel="noopener">Podgląd</a>
 
+						{{if .uBO_supp}}<a class="btn btn-info mb-2r" href="{{.uBO_supp}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla uBO">Podgląd uBO</a>{{end}}
+
+						{{if .AG_supp}}<a class="btn btn-info mb-2r" href="{{.AG_supp}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla AdGuarda">Podgląd AG</a>{{end}}
+
+						{{if .supp}}<a class="btn btn-info mb-2r" href="{{.supp}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla uBO i AdGuarda">Podgląd uzup.</a>{{end}}
+
 						{{if .modules}}<a class="btn btn-modules mb-2r" href="{{.modules}}" target="_blank" rel="noopener">Moduły</a>{{end}}
 
 						{{if .issues}}<a class="btn btn-danger mb-2r" href="{{.issues}}" target="_blank" rel="noopener">Zgłoś problem</a>{{end}}

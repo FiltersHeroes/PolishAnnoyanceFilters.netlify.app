@@ -14,6 +14,8 @@ requiredType = "abp"
 adblocker = "AB, ABP, uBO, NA, AG"
 category = "reklamy"
 lang = "pl"
+uBO_supp = "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt"
+AG_supp = "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_adguard.txt"
 
 [[items]]
 title = "Polskie Filtry Społecznościowe (Social)"
@@ -36,6 +38,7 @@ requiredType3 = "abp"
 adblocker = "AB, ABP, uBO, NA, AG"
 category = "społecznościowe"
 lang = "pl"
+supp = "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/social_filters_uB_AG.txt"
 
 [[items]]
 title = "Polskie Filtry RSS"
