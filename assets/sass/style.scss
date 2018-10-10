@@ -357,7 +357,8 @@ header h2 {
     padding: 12px 50px 12px 10px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
-    width: 93%;
+    width: 100%;
+    box-sizing : border-box;
 }
 
 .categories {
@@ -375,7 +376,6 @@ header h2 {
         padding: 12px 50px 12px 10px;
         border: 1px solid #ddd;
         margin-bottom: 12px;
-        width: 81%;
     }
 
     .categories {
