@@ -216,7 +216,7 @@ adblocker = "AB, ABP, uBO, NA, AG"
 
 [[items]]
 title = "EasyList Polish"
-desc = "Reklamy zewnętrzne, wewnętrzne i wiele innych."
+desc = "Reklamy zewnętrzne."
 subscribe = "https://easylist-downloads.adblockplus.org/easylistpolish.txt"
 subscribeType = "abp"
 issues = "https://github.com/easylistpolish/easylistpolish/issues"
