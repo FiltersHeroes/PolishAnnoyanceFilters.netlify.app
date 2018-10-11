@@ -54,7 +54,8 @@ header h2 {
 
 .inner {
   position: relative;
-  width: calc(100% - 100px);
+  width: calc(70% + 150px);
+  max-width: 1260px;
   margin: 0 auto;
 }
 
