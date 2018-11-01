@@ -47,12 +47,6 @@ subscribeType = "abp"
 adblocker = "uBO, NA, AG"
 
 [[items]]
-title = "Odblokowanie Kliknięcia Prawym Przyciskiem Myszy"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt"
-subscribeType = "ubo"
-adblocker = "uBO, NA"
-
-[[items]]
 title = "Inne Widżety"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
 subscribeType = "abp"
