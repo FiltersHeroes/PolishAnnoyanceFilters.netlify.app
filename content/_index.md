@@ -5,7 +5,8 @@ Do poprawnego działania listy wymagane są:
 
 * [EasyList](abp:subscribe?location=https%3A%2F%2Feasylist.to%2Feasylist%2Feasylist.txt&title=EasyList)
 * [Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda](abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fpolish-adblock-filters%2Fadblock.txt&title=Oficjalne%20Polskie%20Filtry%20do%20AdBlocka%2C%20uBlocka%20i%20AdGuarda)
-* [Skrypt uzupełniający](https://greasyfork.org/pl/scripts/369153-supplement-for-filterlist-polish-gdpr-cookies-filters-supplement-for-ublock-adguard), który jest kompatybilny z *Violentmonkey*, *Tampermonkey* i *Greasemonkey*, a my rekomendujemy *Violentmonkey*. Jest on głównie uzupełnieniem do listy **Polskie Filtry RODO-Ciasteczkowe - Uzupełnienie do uBlocka i AdGuarda** i zajmuje się tym, czego nie da się załatwić regułą w uBlocku Origin. Jednakże jeśli korzystasz z AdBlocka/ABP, to oczywiście również możesz zainstalować ten skrypt. Natomiast, w przypadku posiadania *Nano Adblockera*, zamiast instalowania skryptu, można po prostu włączyć listę **Nano filters – Annoyance​​​​​​​​​**, a w przypadku *AdGuarda* - **AdGuard's Annoyance List**.
+
+Jeżeli irytują was komunikaty dot. :cookie: i RODO, to opcjonalnie możecie zainstalować również rozszerzenie **Polska Ciasteczkowa Zgoda**, które automatycznie je akceptuje (tylko to, co nie da rady załatwić regułą w uBO). Instrukcja jak to zrobić jest dostępna na [https://github.com/PolishFiltersTeam/PolishCookieConsent#jak-zainstalowa%C4%87](https://github.com/PolishFiltersTeam/PolishCookieConsent#jak-zainstalowa%C4%87).
 
 ## Uwagi
 * Najlepszy efekt uzyskasz, importując listę do [uBlocka Origin](https://github.com/gorhill/uBlock/releases) lub [Nano Adblockera](https://github.com/NanoAdblocker/NanoCore/releases).
