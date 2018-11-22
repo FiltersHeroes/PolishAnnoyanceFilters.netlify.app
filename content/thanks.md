@@ -3,5 +3,12 @@ title: Zgłoszenia - podziękowania
 url: /issues/thanks/
 ---
 
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
 ### Dziękujemy za wypełnienie formularza :smile: !
-#### [Kliknij tutaj, jeśli chcesz wypełnić nowy formularz.](/issues/)
+
+<button onclick="goBack()">Wypełnij nowy formularz</button>
