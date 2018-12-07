@@ -87,7 +87,7 @@ mail = "blablabla@alleblock.pl"
 home = "https://alleblock.pl/"
 donate = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RN7R64TJLWQW6"
 adblocker = "AB, ABP, uBO, NA, AG"
-category="bezpieczeństwo, sponsorowane, e-handel"
+category = "bezpieczeństwo, sponsorowane, e-handel"
 lang = "pl"
 
 [[items]]
@@ -100,7 +100,7 @@ mail = "support@adguard.com"
 form = "https://reports.adguard.com/new_issue.html"
 home = "http://adguard.com/filters.html#english"
 adblocker = "uBO, NA"
-category="reklamy"
+category = "reklamy"
 
 [[items]]
 title = "AdGuard Mobile Ads Filter"
@@ -112,7 +112,7 @@ mail = "support@adguard.com"
 form = "https://reports.adguard.com/new_issue.html"
 home = "http://adguard.com/filters.html#mobile"
 adblocker = "uBO, NA"
-category="reklamy"
+category = "reklamy"
 
 [[items]]
 title = "Polskie Filtry Anty-Adblockowe"
@@ -127,7 +127,8 @@ requiredLocation2 = "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter
 requiredTitle2 = "Polskie Filtry"
 requiredType2 = "abp"
 adblocker = "AB, ABP, uBO, NA, AG"
-category="anty-adblock"
+category = "anty-adblock"
+supp = "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock-suplement.txt"
 
 [[items]]
 title = "Nano Defender"
@@ -140,7 +141,7 @@ requiredType = "normal"
 requiredTitle = "Instrukcja instalacji"
 requiredLocation = "https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-zainstalowa%C4%87-Nano-Defender-na-Firefoksie,-Waterfoksie-albo-%28Chr%29Operze%3F"
 adblocker = "uBO, NA"
-category="anty-adblock"
+category = "anty-adblock"
 
 [[items]]
 title = "NoCoin Filter List"
@@ -150,7 +151,7 @@ subscribeType = "abp"
 issues = "https://github.com/hoshsadiq/adblock-nocoin-list/issues"
 home = "https://github.com/hoshsadiq/adblock-nocoin-list"
 adblocker = "AB, ABP, uBO, NA, AG"
-category="bezpieczeństwo"
+category = "bezpieczeństwo"
 
 [[items]]
 title = "uBlock filters – Resource Abuse"
@@ -160,7 +161,7 @@ subscribeType = "abp"
 issues = "https://github.com/uBlockOrigin/uAssets/issues"
 home = "https://github.com/uBlockOrigin/uAssets"
 adblocker = "uBO, NA"
-category="bezpieczeństwo"
+category = "bezpieczeństwo"
 
 [[items]]
 title = "uBlock filters – Annoyances"
@@ -170,7 +171,7 @@ subscribeType = "ubo"
 issues = "https://github.com/uBlockOrigin/uAssets/issues"
 home = "https://github.com/uBlockOrigin/uAssets"
 adblocker = "uBO, NA"
-category="irytujące, ciasteczka"
+category = "irytujące, ciasteczka"
 
 [[items]]
 title = "Nano filters – Annoyance"
@@ -180,7 +181,7 @@ subscribeType = "ubo"
 issues = "https://github.com/NanoAdblocker/NanoFilters/issues"
 home = "https://github.com/NanoAdblocker/NanoFilters"
 adblocker = "uBO, NA"
-category="irytujące, ciasteczka"
+category = "irytujące, ciasteczka"
 
 [[items]]
 title = "AdGuard Annoyances filter"
@@ -192,7 +193,7 @@ mail = "support@adguard.com"
 form = "https://reports.adguard.com/new_issue.html"
 home = "https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter"
 adblocker = "uBO, NA"
-category="irytujące, ciasteczka"
+category = "irytujące, ciasteczka"
 
 [[items]]
 title = "AdGuard Social Media filter"
@@ -204,7 +205,7 @@ mail = "support@adguard.com"
 form = "https://reports.adguard.com/new_issue.html"
 home = "https://kb.adguard.com/en/general/adguard-ad-filters#social"
 adblocker = "uBO, NA"
-category="społecznościowe"
+category = "społecznościowe"
 
 [[items]]
 title = "Web Annoyances Ultralist"
