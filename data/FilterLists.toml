@@ -115,6 +115,21 @@ adblocker = "uBO, NA"
 category="reklamy"
 
 [[items]]
+title = "Polskie Filtry Anty-Adblockowe"
+desc = "Skrypty antyadblockowe."
+subscribe = "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock.txt"
+subscribeType = "abp"
+issues = "https://github.com/olegwukr/polish-privacy-filters/issues"
+requiredLocation = "https://easylist.to/easylist/easylist.txt"
+requiredTitle = "EasyList"
+requiredType = "abp"
+requiredLocation2 = "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt"
+requiredTitle2 = "Polskie Filtry"
+requiredType2 = "abp"
+adblocker = "AB, ABP, uBO, NA, AG"
+category="anty-adblock"
+
+[[items]]
 title = "Nano Defender"
 desc = "Skrypty antyadblockowe."
 subscribe = "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
