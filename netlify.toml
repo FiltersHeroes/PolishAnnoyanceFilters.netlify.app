@@ -2,7 +2,7 @@
   command = "gulp sass && hugo --minify"
 
 [build.environment]
-  HUGO_VERSION = "0.51"
+  HUGO_VERSION = "0.52"
 
 [[redirects]]
   from = "http://polishannoyancefilters.netlify.com/*"
