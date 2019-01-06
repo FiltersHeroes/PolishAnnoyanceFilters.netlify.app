@@ -13,13 +13,74 @@ textarea = document.querySelectorAll("textarea.form-control"),
 m = localStorage.getItem("dark-mode");
 
 if(m == "true") {
+    switchDark();
+}
+
+if (t)
+{
+    t.addEventListener("click", function(){
+        if(d.classList.contains("dark-mode")) {
+            d.classList.remove("dark-mode");
+            localStorage.setItem("dark-mode", "false");
+            if(border){
+                border.classList.add("border-lblue-solid");
+                border.classList.remove("border-dark-mode");
+            }
+
+            if(form){
+                form.classList.remove("dark-mode");
+            }
+
+            if(table){
+                table.classList.remove("table-dark");
+                table.classList.add("table-white");
+            }
+
+            if(h2){
+                for (i = 0; i < h2.length; i++) {
+                    h2[i].classList.remove("dark-mode");
+                }
+            }
+
+            for (i = 0; i < input_form.length; i++) {
+                if(input_form){
+                    input_form[i].classList.remove("dark-mode");
+                }
+            }
+
+            for (i = 0; i < checkbox.length; i++) {
+                if(checkbox){
+                    checkbox[i].classList.remove("checkbox-dark-mode");
+                }
+            }
+
+            for (i = 0; i < radio.length; i++) {
+                if(radio){
+                    radio[i].classList.remove("radio-dark-mode");
+                }
+            }
+
+            for (i = 0; i < textarea.length; i++) {
+                if(textarea){
+                    textarea[i].classList.remove("ta-dark-mode");
+                }
+            }
+
+            for (i = 0; i < ua.length; i++) {
+                if(ua){
+                    ua[i].classList.remove("ua-dark-mode");
+                }
+            }
+        } else {
+            localStorage.setItem("dark-mode", "true");
+            switchDark();
+        }
+    });
+}
+
+function switchDark()
+{
     d.classList.add("dark-mode");
-
-    if(t){
-        t.classList.remove("darkButton");
-        t.classList.add("whiteButton");
-    }
-
     if(table){
         table.classList.remove("table-white");
 		table.classList.add("table-dark");
@@ -69,27 +130,4 @@ if(m == "true") {
             ua[i].classList.add("ua-dark-mode");
         }
     }
-}
-
-if (t)
-{
-    t.addEventListener("click", function(){
-        if(d.classList.contains("dark-mode")) {
-            d.classList.remove("dark-mode");
-            t.classList.remove("whiteButton");
-            t.classList.add("darkButton");
-            localStorage.setItem("dark-mode", "false");
-            for (i = 0; i < h2.length; i++) {
-                h2[i].classList.remove("dark-mode");
-            }
-        } else {
-            d.classList.add("dark-mode");
-            t.classList.remove("darkButton");
-            t.classList.add("whiteButton");
-            localStorage.setItem("dark-mode", "true");
-            for (i = 0; i < h2.length; i++) {
-                h2[i].classList.add("dark-mode");
-            }
-        }
-    });
 }

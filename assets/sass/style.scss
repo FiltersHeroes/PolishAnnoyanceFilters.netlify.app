@@ -456,28 +456,23 @@ header h2 {
     background-image: url(data:image/png;base64,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);
 }
 
-#switcher {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 
-#switcher li {
-    float: left;
-    width: 30px;
-    height: 30px;
-    margin: 0 15px 15px 0;
-    border-radius: 30px;
-    border: 3px solid black;
-}
 
-.whiteButton {
-    background: white;
-}
 
-.darkButton {
-    background: #12171a;
+
+#darkLightButton
+{
+    background-image: url("/images/iconContrastWhite.png");
+    color: #fff;
+    font-weight: bold;
+    margin-right: 30px;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    bottom: -6px;
+    border-radius: 100%;
+    float: right;
 }
 
 body.dark-mode {

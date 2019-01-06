@@ -17,17 +17,14 @@
                             instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.</h2>
                             <br/>
                         </noscript>
-                        <ul id="switcher">
-                            <li id="darkLightButton" class="darkButton" title="Ciemna / jasna wersja strony"></li>
-                        </ul>
                         {{ $theme := resources.Get "js/setTheme.js" | minify | fingerprint }}
                         <script defer src="{{ $theme.Permalink }}" integrity="{{ $theme.Data.Integrity }}"></script>
-                        {{ .Content }}
-                    </section>
+                            {{ .Content }}
+                        </section>
+                    </div>
                 </div>
-            </div>
-            <footer>
-                {{ partial "footer.html" . }}
-            </footer>
-        </body>
+                <footer>
+                    {{ partial "footer.html" . }}
+                </footer>
+            </body>
 </html>
