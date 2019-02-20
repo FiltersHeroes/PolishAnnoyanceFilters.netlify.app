@@ -27,3 +27,5 @@ Formularz (nie wymaga rejestracji) => https://polishannoyancefilters.netlify.com
 GitHub => https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues
 
 Discord => https://discord.me/polskiefiltry
+
+Reddit => https://www.reddit.com/r/PolishFiltersTeam/
