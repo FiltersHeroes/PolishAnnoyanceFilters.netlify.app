@@ -6,7 +6,7 @@ Do poprawnego działania listy wymagane są:
 * [EasyList](abp:subscribe?location=https%3A%2F%2Feasylist.to%2Feasylist%2Feasylist.txt&title=EasyList)
 * [Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda](abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fpolish-adblock-filters%2Fadblock.txt&title=Oficjalne%20Polskie%20Filtry%20do%20AdBlocka%2C%20uBlocka%20i%20AdGuarda)
 
-Jeżeli irytują ciebie komunikaty dot. :cookie: i RODO, to opcjonalnie możesz zainstalować również rozszerzenie **Polska Ciasteczkowa Zgoda**, które automatycznie je akceptuje (tylko to, co nie da rady załatwić regułą w uBO). Instrukcja jak to zrobić jest dostępna na [https://github.com/PolishFiltersTeam/PolishCookieConsent#jak-zainstalowa%C4%87](https://github.com/PolishFiltersTeam/PolishCookieConsent#jak-zainstalowa%C4%87).
+Jeżeli irytują ciebie komunikaty dot. :cookie: i RODO, to opcjonalnie możesz zainstalować również rozszerzenie **Polska Ciasteczkowa Zgoda**, które automatycznie je akceptuje (tylko to, co nie da rady załatwić regułą w uBO). Instrukcja jak to zrobić jest dostępna na [https://github.com/PolishFiltersTeam/PolishCookieConsent#jak-zainstalować](https://github.com/PolishFiltersTeam/PolishCookieConsent#jak-zainstalowa%C4%87).
 
 ## Uwagi
 * Najlepszy efekt uzyskasz, importując listę do [uBlocka Origin](https://github.com/gorhill/uBlock/releases) lub [Nano Adblockera](https://github.com/NanoAdblocker/NanoCore/releases).
