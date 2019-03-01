@@ -1,6 +1,6 @@
 [[items]]
 title = "Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda"
-desc = "Reklamy zewnętrzne, linki afiliacyjne."
+desc = "Reklamy zewnętrzne i linki afiliacyjne."
 subscribe = "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt"
 subscribeType = "abp"
 issues = "https://github.com/MajkiIT/polish-ads-filter/issues"
