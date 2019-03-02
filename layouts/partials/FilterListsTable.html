@@ -58,6 +58,8 @@
 
 						{{if .form}}<a class="btn btn-danger mb-2r" href="{{.form}}" target="_blank" rel="noopener">Formularz</a>{{end}}
 
+						{{with .forum}}<a class="btn btn-danger mb-2r" href="{{.}}" target="_blank" rel="noopener">Forum</a>{{end}}
+
 						{{if .chat}}<a class="btn btn-danger mb-2r" href="" data-secret="{{.chat | base64Encode}}" onmouseover="this.href = atob(this.dataset.secret);" target="_blank" rel="noopener">Poczatujmy</a>{{end}}
 
 						{{if .mail}}<a class="btn btn-danger mb-2r" data-secret="{{.mail | base64Encode}}" href="" onmouseover="this.href = 'mailto:' + atob(this.dataset.secret);">Wyślij maila</a>{{end}}
