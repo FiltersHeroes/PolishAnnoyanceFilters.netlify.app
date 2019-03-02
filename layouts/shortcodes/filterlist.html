@@ -22,6 +22,10 @@
 <a class="btn btn-danger mb-2r" href="{{.Get "form"}}" target="_blank" rel="noopener">Formularz</a>
 {{end}}
 
+{{with .Get "forum"}}
+<a class="btn btn-danger mb-2r" href="{{.}}" target="_blank" rel="noopener">Forum</a>
+{{end}}
+
 {{if .Get "mail"}}
 <a class="btn btn-danger mb-2r" data-mail="{{.Get "mail"  | base64Encode}}" href="" onmouseover="this.href = 'mailto:' + atob(this.dataset.mail);">Wyślij maila</a>
 {{end}}
