@@ -475,15 +475,6 @@ header h2 {
     float: right;
 }
 
-body.dark-mode {
-    background: #12171a;
-    color: white;
-}
-
-#main-content h2.dark-mode {
-    color: deepskyblue;
-}
-
 .AB-icon {
     background-image: url("/images/AdBlock_32.png")
 }
@@ -504,46 +495,6 @@ body.dark-mode {
     background-image: url("/images/AdGuard_logo_32.png")
 }
 
-form.dark-mode {
-    background: #0c2c554b;
-    color: white;
-}
-
-.border-dark-mode
-{
-    border-color: deepskyblue;
-    border-style: solid;
-}
-
-input.form-control.dark-mode {
-    background: #0c2c554b;
-    color: white;
-    border-color: rgb(27, 64, 78);
-}
-
-.checkbox-dark-mode input[type="checkbox"] + label::before
-{
-    background-color: #4b7bb94b;
-    border-color: #4b7bb94b;
-}
-
-.ua-dark-mode {
-    background: #0c2c554b;
-    color: white;
-    border-color: rgb(27, 64, 78);
-}
-
-.radio-dark-mode input[type="radio"] + label::before
-{
-    background-color: #4b7bb94b;
-    border-color: #4b7bb94b;
-}
-
-.ta-dark-mode {
-    background-color: #4b7bb94b;
-    border-color: #4b7bb94b;
-    color: white;
-}
 
 #main-content > p {
     overflow-wrap: break-word;
@@ -563,24 +514,4 @@ input.form-control.dark-mode {
 
 .swal2-confirm:hover{
     text-decoration: none;
-}
-
-.dark-mode #swal2-content {
-    color: #737f8a;
-}
-
-.dark-mode .swal2-popup .swal2-title {
-    color: #afbac4;
-}
-
-.dark-mode .swal2-popup {
-    background: #000000;
-}
-
-.dark-mode .swal2-popup .swal2-styled:focus {
-    box-shadow: none !important;
-}
-
-.dark-mode .swal2-container.swal2-shown {
-    background-color: rgba(150,150,150,.1);
 }

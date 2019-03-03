@@ -134,7 +134,7 @@
 	</tbody>
 </table>
 
-<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+{{ $jquery := resources.Get "js/jquery-3.3.1.slim.js" }}
 {{ $bootstrapBundle := resources.Get "js/bootstrap.bundle.min.js" }}
 {{ $selectFilter := resources.Get "js/multipleSelectFilter.js" }}
 {{ $select := resources.Get "js/bootstrap-select.min.js" }}
@@ -142,5 +142,5 @@
 {{ $filterSearch := resources.Get "js/light-table-filter.min.js" }}
 {{ $sort := resources.Get "js/sortable.min.js" }}
 {{ $theme := resources.Get "js/setTheme.js" }}
-{{ $js := slice $theme $bootstrapBundle $selectFilter $select $selectPolish $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
+{{ $js := slice $jquery $theme $bootstrapBundle $selectFilter $select $selectPolish $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
 <script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>

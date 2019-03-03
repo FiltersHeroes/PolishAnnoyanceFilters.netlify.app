@@ -1,0 +1,69 @@
+.dark-mode #swal2-content {
+    color: #737f8a;
+}
+
+.dark-mode .swal2-popup .swal2-title {
+    color: #afbac4;
+}
+
+.dark-mode .swal2-popup {
+    background: #000000;
+}
+
+.dark-mode .swal2-popup .swal2-styled:focus {
+    box-shadow: none !important;
+}
+
+.dark-mode .swal2-container.swal2-shown {
+    background-color: rgba(150,150,150,.1);
+}
+
+body.dark-mode {
+    background: #12171a;
+    color: white;
+}
+
+.dark-mode #main-content h2 {
+    color: deepskyblue;
+}
+
+.dark-mode form{
+    background: #0c2c554b;
+    color: white;
+}
+
+.dark-mode .border-lblue-solid
+{
+    border-color: deepskyblue;
+    border-style: solid;
+}
+
+.dark-mode input.form-control {
+    background: #0c2c554b;
+    color: white;
+    border-color: rgb(27, 64, 78);
+}
+
+.dark-mode .custom-checkbox input[type="checkbox"] + label::before
+{
+    background-color: #4b7bb94b;
+    border-color: #4b7bb94b;
+}
+
+.dark-mode .ua {
+    background: #0c2c554b;
+    color: white;
+    border-color: rgb(27, 64, 78);
+}
+
+.dark-mode .custom-radio input[type="radio"] + label::before
+{
+    background-color: #4b7bb94b;
+    border-color: #4b7bb94b;
+}
+
+.dark-mode textarea.form-control  {
+    background-color: #4b7bb94b;
+    border-color: #4b7bb94b;
+    color: white;
+}
