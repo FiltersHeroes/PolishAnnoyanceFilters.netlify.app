@@ -1,5 +1,6 @@
 #  PolishAnnoyanceFilters.netlify.com
 [![Deploys](https://www.netlify.com/img/global/badges/netlify-color-bg.svg)](https://www.netlify.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d9158f35-1022-4c68-97a6-9c36a6f67b02/deploy-status)](https://app.netlify.com/sites/polishannoyancefilters/deploys)
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=PolishAnnoyanceFilters.netlify.com)](https://polishannoyancefilters.netlify.com/)
 
 Strona Polskich Filtrów Elementów Irytujących
