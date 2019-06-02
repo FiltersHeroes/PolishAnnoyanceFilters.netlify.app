@@ -15,6 +15,7 @@ function browserOSDetect() {
     var edge = document.getElementById('edge');
     var yandex = document.getElementById('yandex');
     var safari = document.getElementById('safari');
+    var kiwi = document.getElementById('kiwi');
     var inna = document.getElementById('inna');
 
     // In Opera 15+, the true version is after "OPR/"
@@ -40,6 +41,10 @@ function browserOSDetect() {
     else if ((verOffset=nAgt.indexOf("Edge"))!=-1) {
         fullVersion = nAgt.substring(verOffset+8);
         edge.checked = true;
+    }
+    else if ((verOffset=nAgt.indexOf("Mobile Safari")!=-1) && (verOffset=nAgt.indexOf("Chrome")!=-1)) {
+        fullVersion = nAgt.substring(nAgt.indexOf("Chrome")+7);
+        kiwi.checked = true;
     }
     // In Chrome, the true version is after "Chrome"
     else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
