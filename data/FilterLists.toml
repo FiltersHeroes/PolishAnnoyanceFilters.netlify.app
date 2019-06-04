@@ -217,7 +217,7 @@ subscribeType = "ubo"
 issues = "https://github.com/yourduskquibbles/webannoyances/issues"
 home = "https://github.com/yourduskquibbles/webannoyances"
 chat = "https://discord.me/yourduskquibbles"
-adblocker = "uBO, NA"
+adblocker = "uBO, NA, AG"
 modules = "https://github.com/yourduskquibbles/webannoyances/tree/master/filters"
 category = "irytujące, społecznościowe"
 
