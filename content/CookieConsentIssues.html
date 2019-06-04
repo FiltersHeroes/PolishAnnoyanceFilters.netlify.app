@@ -5,8 +5,7 @@ title: Zgłoszenia dot. Polskiej Ciasteczkowej Zgody
 {{< issues_bundle_CC >}}
 <script>var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
-style="display:none;" onload="if(submitted)
-{window.location='/issues/thanks/';}"></iframe>
+style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zostało wysłane na GitHuba!", text: "Dziękujemy za wypełnienie formularza 😊", type: "success", confirmButtonText: "Wypełnij nowy formularz"}).then((result)=>{if(result.value){document.getElementById("usrform").reset();location.reload();}})}'></iframe>
 
 <div class="border-lblue-solid" id="border">
     <p class="my-1 ml-2">Przed zgłoszeniem sprawdź, czy masz aktualną wersję rozszerzenia.</p>
