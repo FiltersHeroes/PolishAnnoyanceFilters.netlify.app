@@ -47,7 +47,7 @@ subscribeType = "abp"
 adblocker = "uBO, NA, AG"
 
 [[items]]
-title = "Inne Widżety"
+title = "Inne Elementy"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
 subscribeType = "abp"
 adblocker = "AB, ABP, uBO, NA, AG"
