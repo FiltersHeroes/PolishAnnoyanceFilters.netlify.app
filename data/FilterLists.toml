@@ -131,6 +131,7 @@ requiredType2 = "abp"
 adblocker = "AB, ABP, uBO, NA, AG"
 category = "anty-adblock"
 supp = "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock-suplement.txt"
+lang = "pl"
 
 [[items]]
 title = "Nano Defender"
