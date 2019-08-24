@@ -22,5 +22,5 @@ Jeżeli irytują ciebie komunikaty dot. :cookie: i RODO, to opcjonalnie możesz 
 
 Formularz (nie wymaga rejestracji) => [https://polishannoyancefilters.netlify.com/issues/](/issues/)<br/>
 GitHub => https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues<br/>
-Discord => https://discord.me/polskiefiltry<br/>
 Reddit => https://www.reddit.com/r/PolishFiltersTeam/<br/>
+Discord => https://discord.me/polskiefiltry<br/>
