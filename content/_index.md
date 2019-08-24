@@ -15,7 +15,7 @@ Jeżeli irytują ciebie komunikaty dot. :cookie: i RODO, to opcjonalnie możesz 
 * Poradnik pt. „[Jak zablokować autoodtwarzanie filmików?](https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/wiki/Jak-zablokowa%C4%87-autoodtwarzanie-filmik%C3%B3w%3F)"
 * Moduły [https://polishannoyancefilters.netlify.com/modules/](/modules/)<details> 
   <summary>rozwiń</summary>
-   **Nowość!!!** Jeżeli lubisz jakieś elementy i nie chcesz by były blokowane lub ukrywane, to mamy dla ciebie dobrą wiadomość - od teraz Polskie Filtry Elementów Irytujących są modularne, a to oznacza, że nie musisz aktywować pełnego pakietu, możesz wybrać co chcesz, by było blokowane lub ukrywane. A listę aktualnie dostępnych modułów znajdziesz na</details>
+   **Nowość!!!** Jeżeli lubisz jakieś elementy i nie chcesz by były blokowane lub ukrywane, to mamy dla ciebie dobrą wiadomość - od teraz Polskie Filtry Elementów Irytujących są modularne, a to oznacza, że nie musisz aktywować pełnego pakietu, możesz wybrać co chcesz, by było blokowane lub ukrywane. A listę aktualnie dostępnych modułów znajdziesz na [https://polishannoyancefilters.netlify.com/modules/](/modules/)</details>
 
 
 ## Zgłoszenia
