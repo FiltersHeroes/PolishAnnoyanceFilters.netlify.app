@@ -100,7 +100,13 @@
 						{{if .requiredTitle4}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredLocation4}}" target="_blank" rel="noopener">{{.requiredTitle4}}</a>{{end}}
 						{{end}}
 
-						{{if (not .requiredType) (not .requiredType2) (not .requiredType3) (not .requiredType4)}}
+						{{if ne .requiredType5 "normal"}}
+						{{if .requiredTitle5}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredType5}}:subscribe?location={{.requiredLocation5}}&amp;title={{.requiredTitle5}}">{{.requiredTitle5}}</a>{{end}}
+						{{else}}
+						{{if .requiredTitle5}}<a class="btn btn-outline-primary mb-2r" href="{{.requiredLocation5}}" target="_blank" rel="noopener">{{.requiredTitle5}}</a>{{end}}
+						{{end}}
+
+						{{if (not .requiredType) (not .requiredType2) (not .requiredType3) (not .requiredType4) (not .requiredType5)}}
 						-
 						{{end}}
 					</div>

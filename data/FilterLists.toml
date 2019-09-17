@@ -40,12 +40,12 @@ lang = "pl"
 supp = "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/social_filters_uB_AG.txt"
 
 [[items]]
-title = "Polskie Filtry RSS"
-desc = "Przyciski RSS i sekcje zawierające przyciski RSS."
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishRSSFilters/master/polish_rss_filters.txt"
+title = "Polski Antyirytujący Dodatek Specjalny"
+desc = "Elementy RSS oraz resztki po ukrytych newsletterach złączonych z elementami społecznościowymi na polskojęzycznych stronach."
+subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement/master/polish_rss_filters.txt"
 subscribeType = "abp"
-issues = "https://github.com/PolishFiltersTeam/PolishRSSFilters/issues"
-home = "https://github.com/PolishFiltersTeam/PolishRSSFilters"
+issues = "https://github.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement/issues"
+home = "https://github.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement"
 requiredLocation = "https://easylist.to/easylist/easylist.txt"
 requiredTitle = "EasyList"
 requiredType = "abp"
@@ -59,7 +59,7 @@ requiredLocation4 = "https://easylist-downloads.adblockplus.org/fanboy-social.tx
 requiredTitle4 = "Fanboy's Social"
 requiredType4 = "abp"
 adblocker = "AB, ABP, uBO, NA, AG"
-category = "RSS"
+category = "RSS, irytujące, społecznościowe"
 lang = "pl"
 
 [[items]]
