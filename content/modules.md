@@ -7,4 +7,4 @@ type: Modules
 
 **Jeśli subskrybujesz pełną listę [PFEI](https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt), to nie subskrybuj tych modułów bądź dezaktywuj główną listę w ustawieniach rozszerzenia.**
 
-**Jeśli widzisz jakiś błąd, nie wachaj się go zgłosić za pomocą [formularza](https://polishannoyancefilters.netlify.com/issues/) bądź na oficialnym trackerze błędów [github](https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues)**.
+**Jeśli widzisz jakiś błąd, nie wachaj się go zgłosić za pomocą [Formularza](https://polishannoyancefilters.netlify.com/issues/) bądź na oficjalnym trackerze błędów [Github](https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues)**.
