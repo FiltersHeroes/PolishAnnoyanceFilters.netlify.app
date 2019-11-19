@@ -1,0 +1,35 @@
+[[items]]
+function = "addToStorage - dodaje wartości do local storage"
+argument = "storageKey - klucz"
+argument2 = "storageValue - wartość"
+
+[[items]]
+function = "bakeCookie - wypieka smakowite 🍪"
+argument = "cookieName - nazwa ciasteczka"
+argument2 = "cookieValue - wartość ciasteczka"
+argument3 = "expiresDays - liczba dni, po których ciasteczko wygasa"
+
+[[items]]
+function = "clickInteractive - klika element, jeżeli ciasteczko nie zostało ustawione, a dokument został już załadowany, ale sub-zasoby takie jak obrazy, arkusze stylów i ramki jeszcze nie"
+argument = "element - selektor"
+argument2 = "cookieName - nazwa ciasteczka"
+
+[[items]]
+function = "clickTimeout - klika element, gdy już będzie dostępny"
+argument = "element - selektor"
+
+[[items]]
+function = "clickComplete - klika element, jeżeli ciasteczko nie zostało ustawione, a strona została już w pełni załadowana"
+argument = "element - selektor"
+argument2 = "cookieName - nazwa ciasteczka"
+
+[[items]]
+function = "clickCompleteText - klika element, który zawiera dany tekst, gdy już będzie dostępny"
+argument = "element - selektor"
+argument2 = "text - tekst"
+
+[[items]]
+function = "redirect - przekierowuje z danej strony (jeżeli ma być to dokładny adres strony, to z przodu adresu należy dopisać znak równości) na inną (opcjonalny warunek - ciasteczko nie zostało ustawione)"
+argument = "redirectPoint - cel przekierowania"
+argument2 = "pathName - jeżeli do celu przekierowania niezbędna jest ścieżka, która jest inna dla każdej z podstron, to wtedy wpisujemy „true\", w przeciwnym przypadku nic"
+argument3 = "cookieName - nazwa ciasteczka"

@@ -1,0 +1,33 @@
+<table class="responsive table table-sm table-striped table-bordered table-white">
+	<thead>
+		<tr>
+			<th scope="col" class="text-center font-weight-bold">FUNKCJA</th>
+			<th scope="col" class="text-center font-weight-bold">ARGUMENTY</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{ range $.Site.Data.CookieConsentSyntax.items }}
+		<tr>
+			<td class="align-middle" data-label="FUNKCJA"><span>{{.function}}</span></td>
+			<td class="align-middle" data-label="ARGUMENTY">
+				<p>
+						{{.argument}}
+				</p>
+				{{if .argument2}}
+				<p>
+								{{.argument2}}
+				</p>
+				{{end}}
+				{{if .argument3}}
+				<p>
+						{{.argument3}}
+				</p>
+				{{end}}
+			</td>
+		</tr>
+		{{end}}
+	</tbody>
+</table>
+
+{{ $theme := resources.Get "js/setTheme.js" | minify | fingerprint }}
+<script defer src="{{ $theme.Permalink }}" integrity="{{ $theme.Data.Integrity }}"></script>
