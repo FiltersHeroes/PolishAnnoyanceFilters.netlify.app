@@ -8,7 +8,7 @@ function browserOSDetect() {
     var nameOffset,verOffset,ix;
 
     var firefox = document.getElementById('firefox');
-    var waterfox = document.getElementById('waterfox');
+    var waterfoxClassic = document.getElementById('waterfoxClassic');
     var chrome = document.getElementById('chrome');
     var opera = document.getElementById('opera');
     var vivaldi = document.getElementById('vivaldi');
@@ -60,7 +60,7 @@ function browserOSDetect() {
     }
     else if ((verOffset=nAgt.indexOf("Waterfox"))!=-1) {
         fullVersion = nAgt.substring(verOffset+9);
-        waterfox.checked = true;
+        waterfoxClassic.checked = true;
     }
     // In Firefox, the true version is after "Firefox"
     else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
