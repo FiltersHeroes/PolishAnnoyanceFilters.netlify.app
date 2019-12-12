@@ -31,5 +31,5 @@ argument2 = "text - tekst"
 [[items]]
 function = "redirect - przekierowuje z danej strony (jeżeli ma być to dokładny adres strony, to z przodu adresu należy dopisać znak równości) na daną podstronę (opcjonalny warunek - ciasteczko nie zostało ustawione)"
 argument = "redirectPoint - cel przekierowania"
-argument2 = "pathName - jeżeli do celu przekierowania niezbędna jest ścieżka, która jest inna dla każdej z podstron, to wtedy wpisujemy „true\", w przeciwnym przypadku nic"
+argument2 = "path - jeżeli do celu przekierowania niezbędna jest ścieżka, która jest inna dla każdej z podstron, to wtedy wpisujemy „true\", w przeciwnym przypadku nic"
 argument3 = "cookieName - nazwa ciasteczka"
