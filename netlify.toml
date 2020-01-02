@@ -2,13 +2,7 @@
   command = "hugo --minify"
 
 [build.environment]
-  HUGO_VERSION = "0.56.3"
-
-[[redirects]]
-  from = "http://polishannoyancefilters.netlify.com/*"
-  to = "https://polishannoyancefilters.netlify.com/:splat"
-  status = 301
-  force = true
+  HUGO_VERSION = "0.60.1"
 
 [context.deploy-preview]
   command = "hugo -b $DEPLOY_PRIME_URL"
