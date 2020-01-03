@@ -416,6 +416,9 @@ issues = "https://github.com/mmotti/pihole-regex/issues"
 home = "https://github.com/mmotti/pihole-regex"
 adblocker = "Ph"
 category = "reklamy, prywatność"
+requiredType = "normal"
+requiredTitle = "Instrukcja instalacji"
+requiredLocation = "https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md"
 
 [[items]]
 title = "Peter Lowe's Hosts"
