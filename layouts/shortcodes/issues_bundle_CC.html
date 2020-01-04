@@ -1,4 +1,6 @@
 {{ $jquery := resources.Get "/js/jquery.js" }}
+{{ $valid := resources.Get "/js/jquery.validate.min.js" }}
+{{ $validpl := resources.Get "/js/jquery-validation-translations/messages_pl.min.js" }}
 {{ $theme := resources.Get "/js/setTheme.js" }}
 {{ $sweets := resources.Get "/js/sweet-surprise.js" }}
 {{ $steps := resources.Get "/js/steps.js" }}
@@ -7,5 +9,5 @@
 {{ $ready := resources.Get "/js/ready_CC.js" }}
 {{ $browserOSDetect := resources.Get "/js/browserOSDetect.js" }}
 {{ $swal := resources.Get "/js/sweetalert2.min.js" }}
-{{ $js := slice $jquery $theme $sweets $steps $checkbox $autosize $ready $browserOSDetect $swal | resources.Concat "/js/issues_bundle_CC.js" | minify | fingerprint}}
+{{ $js := slice $jquery $theme $valid $validpl $sweets $steps $checkbox $autosize $ready $browserOSDetect $swal | resources.Concat "/js/issues_bundle_CC.js" | minify | fingerprint}}
 <script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>

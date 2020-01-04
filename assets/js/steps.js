@@ -39,6 +39,8 @@ $(document).ready(function () {
         isValid = true;
         $(".form-group").removeClass("is-valid");
 
+        $("#usrform").valid();
+
         for(var i=0; i<curInputs.length; i++){
             if (!curInputs[i].validity.valid){
                 isValid = false;

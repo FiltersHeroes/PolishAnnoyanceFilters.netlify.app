@@ -11,7 +11,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
 
     <p class="my-1 ml-2"><b>UWAGA!! Filtry te <u>nie blokują</u> reklam zewnętrznych ani elementów społecznościowych oraz nie zajmują się zdejmowaniem mechanizmów antyadblockowych!</b></p>
 
-    <p class="my-1 ml-2">Twoje zgłoszenie zostanie przekazane do Google (<a href="https://policies.google.com/privacy?gl=US&hl=pl">polityka prywatności Google</a>), a następnie opublikowane na GitHubie (<a href="https://help.github.com/articles/github-privacy-statement/">polityka prywatności GitHuba</a>).</p>
+    <p class="my-1 ml-2">Twoje zgłoszenie zostanie przekazane do Google (<a href="https://policies.google.com/privacy?gl=US&hl=pl" target="_blank" rel="noopener">polityka prywatności Google</a>), a następnie opublikowane na GitHubie (<a href="https://help.github.com/articles/github-privacy-statement/" target="_blank" rel="noopener">polityka prywatności GitHuba</a>).</p>
 
 </div>
 <br/>
@@ -43,7 +43,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
         <!--Tytuł zgłoszenia-->
         <div class="form-group">
             <label for="title" class="font-weight-bold">Tytuł zgłoszenia</label>
-            <input pattern=".{5,}" class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" required="required"/>
+            <input minlength="5" class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" required="required"/>
         </div>
 
         <!--Typ(y) elementu(ów)-->
@@ -100,10 +100,10 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
         <!--Link bezpośredni do strony zawierającej element-->
         <div class="form-group">
             <label for="entry.412846605" class="font-weight-bold">Link bezpośredni do strony zawierającej element (opcjonalny)</label>
-            <input pattern=".{12,}" id="entry.412846605" name="entry.412846605" minlength="5" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here">
+            <input id="entry.412846605" name="entry.412846605" minlength="7" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here">
         </div>
         <div class="clearfix">
-            <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+            <button class="btn btn-primary nextBtn btn-lg float-right" type="button">Dalej</button>
         </div>
     </div>
 
@@ -111,7 +111,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
     <div class="row setup-content" id="krok-2">
         <!--Przycisk-->
         <p>
-            <button class="btn wrap ua" onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
+            <button type="button" class="btn wrap ua" onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
         </p>
 
         <!--System operacyjny-->
@@ -247,7 +247,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
 
         <div class="clearfix">
             <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
-            <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+            <button class="btn btn-primary nextBtn btn-lg float-right" type="button">Dalej</button>
         </div>
     </div>
 
@@ -294,7 +294,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
 
             <div class="custom-control custom-radio">
                 <input name="entry.1847630274" type="radio" class="custom-control-input" id="inny_bloker" value="__other_option__">
-                <label class="custom-control-label" for="inny_bloker">Inny:</label> <input pattern=".{3,}" type="text" class="form-control inline" name="entry.1847630274.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                <label class="custom-control-label" for="inny_bloker">Inny:</label> <input minlength="3" type="text" class="form-control inline" name="entry.1847630274.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
             </div>
         </div>
 
@@ -312,7 +312,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
         </div>
         <div class="clearfix">
             <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
-            <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+            <button class="btn btn-primary nextBtn btn-lg float-right" type="button">Dalej</button>
         </div>
     </div>
 
@@ -339,7 +339,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
         <!--Adres e-mail-->
         <div class="form-group">
             <label for="mail" class="font-weight-bold">Adres e-mail</label>
-            <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="example@gmail.com" aria-describedby="mailHelp" required="required" autocomplete="email">
+            <input class="form-control" id="mail" name="emailAddress" type="email" placeholder="example@gmail.com" aria-describedby="mailHelp" required="required" autocomplete="email">
             <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small>
         </div>
         <input name="email" type="text" id="email" />

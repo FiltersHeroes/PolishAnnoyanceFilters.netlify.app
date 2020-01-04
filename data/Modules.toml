@@ -1,53 +1,44 @@
 [[items]]
 title = "Newslettery (bez wyskakujących okienek)"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt"
-subscribeType = "abp"
-adblocker = "AB, ABP, uBO, NA, AG"
+adblocker = "ABP"
 
 [[items]]
 title = "Powiadomienia Web Push"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_push.txt"
-subscribeType = "abp"
-adblocker = "AB, ABP, uBO, NA, AG"
+adblocker = "ABP"
 
 [[items]]
 title = "Scrollujące Filmiki"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt"
-subscribeType = "abp"
-adblocker = "AB, ABP, uBO, NA, AG"
+adblocker = "ABP"
 
 [[items]]
 title = "Strzałki"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_arrows.txt"
-subscribeType = "abp"
-adblocker = "AB, ABP, uBO, NA, AG"
+adblocker = "ABP"
 
 [[items]]
 title = "Tła Zawierajace Autoreklamy"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt"
-subscribeType = "abp"
-adblocker = "AB, ABP, uBO, NA, AG"
+adblocker = "ABP"
 
 [[items]]
 title = "Wyskakujące Okienka"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_pop-ups.txt"
-subscribeType = "abp"
-adblocker = "AB, ABP, uBO, NA, AG"
+adblocker = "ABP"
 
 [[items]]
 title = "Widżety Kontaktowe/Informacji Zwrotnej"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt"
-subscribeType = "abp"
-adblocker = "AB, ABP, uBO, NA, AG"
+adblocker = "ABP"
 
 [[items]]
 title = "Niezgodne z Tematem Artykułów Otagowane Linki Wewnętrzne"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt"
-subscribeType = "abp"
-adblocker = "uBO, NA, AG"
+adblocker = "uBO, AG"
 
 [[items]]
 title = "Inne Elementy"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
-subscribeType = "abp"
-adblocker = "AB, ABP, uBO, NA, AG"
+adblocker = "ABP"

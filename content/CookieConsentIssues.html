@@ -9,7 +9,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
 <div class="border-lblue-solid" id="border">
     <p class="my-1 ml-2">Przed zgłoszeniem sprawdź, czy masz aktualną wersję rozszerzenia.</p>
 
-    <p class="my-1 ml-2">Twoje zgłoszenie zostanie przekazane do Google (<a href="https://policies.google.com/privacy?gl=US&hl=pl">polityka prywatności Google</a>), a następnie opublikowane na GitHubie (<a href="https://help.github.com/articles/github-privacy-statement/">polityka prywatności GitHuba</a>).</p>
+    <p class="my-1 ml-2">Twoje zgłoszenie zostanie przekazane do Google (<a href="https://policies.google.com/privacy?gl=US&hl=pl" target="_blank" rel="noopener">polityka prywatności Google</a>), a następnie opublikowane na GitHubie (<a href="https://help.github.com/articles/github-privacy-statement/" target="_blank" rel="noopener">polityka prywatności GitHuba</a>).</p>
 </div>
 <br/>
 
@@ -38,7 +38,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
         <!--Tytuł zgłoszenia-->
         <div class="form-group">
             <label for="title" class="font-weight-bold">Tytuł zgłoszenia</label>
-            <input pattern=".{5,}" class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" required="required"/>
+            <input minlength="5" class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" required="required"/>
         </div>
 
         <!--Typ(y) problemu(ów)-->
@@ -61,7 +61,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
             </div>
         </div>
         <div class="clearfix">
-            <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+            <button type="button" class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
         </div>
     </div>
 
@@ -204,8 +204,8 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
         </div>
 
         <div class="clearfix">
-            <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
-            <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+            <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+            <button type="button" class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
         </div>
     </div>
 

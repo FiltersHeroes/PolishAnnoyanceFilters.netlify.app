@@ -44,9 +44,9 @@
 	</thead>
 	<tbody>
 		{{ range $.Site.Data.FilterLists.items }}
-		<tr class="Row" data-category="{{.category}}" data-lang="{{ if .lang }} {{.lang}} {{else}}zagraniczne{{end}}" data-adblocker="{{ if findRE .adblocker "hosts"}}hosts, Ph{{ else }}{{ .adblocker }}{{end}}">
+		<tr class="Row" data-category="{{.category}}" data-lang="{{ if .lang }} {{.lang}} {{else}}zagraniczne{{end}}" data-adblocker="{{ if findRE .adblocker "hosts"}}hosts, Ph{{ else if findRE "ABP" .adblocker }}AB, ABP, uBO, NA, AG{{ else if (findRE "uBO, AG" .adblocker ) and not (findRE "ABP" .adblocker) and not (findRE "NA" .adblocker)}}uBO, NA, AG{{else if (findRE "uBO" .adblocker )}}uBO, NA{{else}}{{.adblocker}}{{end}}">
 			<td class="align-middle" data-label="LISTA"><span>{{.title}}</span></td>
-			<td class="align-middle" data-label="ELEMENTY"><span>{{.desc | $.Page.RenderString }}</span></td>
+			<td class="align-middle" data-label="ELEMENTY"><span>{{ .desc | $.Page.RenderString }}</span></td>
 			<td class="align-middle" data-label="LINKI">
 				<span>
 					<div class="btn-group-vertical">

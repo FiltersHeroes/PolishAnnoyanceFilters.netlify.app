@@ -13,7 +13,7 @@
 			<td class="align-middle" data-label="MODUŁ"><span>{{.title}}</span></td>
 			<td class="align-middle" data-label="SUBSKRYBUJ">
 				<span>
-					<a class="btn btn-primary mb-2r" href="{{.subscribeType}}:subscribe?location={{.subscribe}}&amp;title=PFEI - {{.title}}">Subskrybuj</a>
+					<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title=PFEI - {{.title}}">Subskrybuj</a>
 				</span>
 			</td>
 			<td class="align-middle" data-label="PODGLĄD">
@@ -23,24 +23,25 @@
 			</td>
 			<td class="align-middle" data-label="ZGODNOŚĆ">
 				<span>
-					{{ if findRE "AB" .adblocker }}
-					<img src="/images/AdBlock.svg" title="AdBlock" style="width:32px;height:32px">
-					{{end}}
-
 					{{ if findRE "ABP" .adblocker }}
-					<img src="/images/ABP_32.png" title="Adblock Plus" style="width:32px;height:32px">
+					<a href="https://getadblock.com/" target="_blank" rel="noopener"><img src="/images/AdBlock.svg" style="width:32px;height:32px" title="AdBlock"></a>
+					<a href="https://adblockplus.org/" target="_blank" rel="noopener"><img src="/images/ABP_32.png" style="width:32px;height:32px" title="Adblock Plus"></a>
+					<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener"><img src="/images/uBO_32.png" style="width:32px;height:32px" title="uBlock Origin"></a>
+					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="/images/Nano_32.png" style="width:32px;height:32px" title="Nano Adblocker"></a>
+					<a href="https://adguard.com/" target="_blank" rel="noopener"><img src="/images/AdGuard_logo_32.png" style="width:32px;height:32px" title="AdGuard"></a>
 					{{end}}
 
-					{{ if findRE "uBO" .adblocker }}
-					<img src="/images/uBO_32.png" title="uBlock Origin" style="width:32px;height:32px">
+					{{ if (findRE "uBO" .adblocker) and not (findRE "ABP" .adblocker) and not (findRE "NA" .adblocker) }}
+					<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener"><img src="/images/uBO_32.png" style="width:32px;height:32px" title="uBlock Origin"></a>
+					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="/images/Nano_32.png" style="width:32px;height:32px" title="Nano Adblocker"></a>
 					{{end}}
 
-					{{ if findRE "NA" .adblocker }}
-					<img src="/images/Nano_32.png" title="Nano Adblocker" style="width:32px;height:32px">
+					{{ if (findRE "NA" .adblocker) and not (findRE "ABP" .adblocker) }}
+					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="/images/Nano_32.png" style="width:32px;height:32px" title="Nano Adblocker"></a>
 					{{end}}
 
-					{{ if findRE "AG" .adblocker }}
-					<img src="/images/AdGuard_logo_32.png" title="AdGuard" style="width:32px;height:32px">
+					{{ if (findRE "AG" .adblocker) and not (findRE "ABP" .adblocker) }}
+					<a href="https://adguard.com/" target="_blank" rel="noopener"><img src="/images/AdGuard_logo_32.png" style="width:32px;height:32px" title="AdGuard"></a>
 					{{end}}
 				</span>
 			</td>
