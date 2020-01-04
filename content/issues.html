@@ -37,9 +37,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
     </div>
 </div>
 
-<form name="formularz" class="form" id="usrform" method="post" target="hidden_iframe" onsubmit="submitted=true;" netlify>
-    <input type="hidden" name="form-name" value="formularz" />
-
+<form name="formularz" class="form" id="usrform" method="post" target="hidden_iframe" onsubmit="submitted=true;">
     <!--Krok 1-->
     <div class="row setup-content" id="krok-1">
         <!--Tytuł zgłoszenia-->
@@ -248,7 +246,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
         </div>
 
         <div class="clearfix">
-            <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+            <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
             <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
         </div>
     </div>
@@ -313,7 +311,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
             <small id="filtersHelp" class="form-text text-muted">Możesz po prostu zamieścić link do <a href="https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopi%C4%99-zapasow%C4%85-ustawie%C5%84-uBlocka-Origin-lub-Nano-Adblockera">kopii zapasowej</a> ustawień uBlocka/Nano.</small>
         </div>
         <div class="clearfix">
-            <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+            <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
             <button class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
         </div>
     </div>
@@ -357,7 +355,7 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
         </div>
 
         <div class="clearfix">
-            <button class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+            <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
 
             <!--Wyślij-->
             <button type="submit" class="btn btn-success btn-lg float-right">Wyślij</button>
