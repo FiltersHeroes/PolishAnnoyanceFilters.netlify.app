@@ -295,7 +295,6 @@ header h2 {
     }
 
     table.responsive td {
-        border: collapse;
         display: -webkit-flex;
         display: flex;
         -webkit-flex-direction: row;
@@ -308,7 +307,7 @@ header h2 {
         max-width: 100%;
     }
 
-    table.responsive td span {
+    table.responsive td span,  table.responsive td .span{
         display: block;
         overflow-wrap: break-word;
         flex: 2 1 100%;
@@ -326,6 +325,7 @@ header h2 {
         padding: 0.5rem;
         overflow-wrap: break-word;
     }
+
 }
 
 @font-face {

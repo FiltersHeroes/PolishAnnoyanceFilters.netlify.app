@@ -48,7 +48,7 @@
 			<td class="align-middle" data-label="LISTA"><span>{{.title}}</span></td>
 			<td class="align-middle" data-label="ELEMENTY"><span>{{ .desc | $.Page.RenderString }}</span></td>
 			<td class="align-middle" data-label="LINKI">
-				<span>
+				<div class="span">
 					<div class="btn-group-vertical">
 						{{ if not (findRE .adblocker "hosts|Ph" ) }}
 						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title={{.title}}">Subskrybuj</a>
@@ -78,13 +78,13 @@
 
 						{{with .home}}<a class="btn btn-secondary mb-2r" href="{{.}}" target="_blank" rel="noopener">Strona główna</a>{{ end }}
 					</div>
-				</span>
+				</div>
 				<span style="display: none;">
 					{{.subscribe}}
 				</span>
 			</td>
 			<td class="align-middle" data-label="WYMAGANE">
-				<span>
+				<div class="span">
 					<div class="btn-group-vertical">
 						{{if ne .requiredType "normal"}}
 						{{if .requiredTitle}}<a class="btn btn-outline-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation}}&amp;title={{.requiredTitle}}">{{.requiredTitle}}</a>{{end}}
@@ -120,7 +120,7 @@
 						-
 						{{end}}
 					</div>
-				</span>
+				</div>
 			</td>
 			<td class="align-middle" data-label="ZGODNOŚĆ">
 				<span>
