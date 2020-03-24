@@ -10,4 +10,4 @@
 {{ $browserOSDetect := resources.Get "/js/browserOSDetect.js" }}
 {{ $swal := resources.Get "/js/sweetalert2.min.js" }}
 {{ $js := slice $jquery $theme $valid $validpl $sweets $steps $checkbox $autosize $ready $browserOSDetect $swal | resources.Concat "/js/issues_bundle_CC.js" | minify | fingerprint}}
-<script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+<script defer src="{{ $js.Permalink | relURL }}" integrity="{{ $js.Data.Integrity }}"></script>

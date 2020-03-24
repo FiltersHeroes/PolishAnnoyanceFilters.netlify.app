@@ -174,4 +174,4 @@
 {{ $sort := resources.Get "js/sortable.min.js" }}
 {{ $theme := resources.Get "js/setTheme.js" }}
 {{ $js := slice $jquery $theme $bootstrapBundle $selectFilter $select $selectPolish $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
-<script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+<script defer src="{{ $js.Permalink | relURL }}" integrity="{{ $js.Data.Integrity }}"></script>
