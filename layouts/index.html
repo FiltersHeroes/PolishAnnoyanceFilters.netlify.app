@@ -5,6 +5,10 @@
     {{ partial "seo.html" . }}
 </head>
 <body>
+    {{ $bs_switch := resources.Get "js/bootstrap-switch-button.min.js" }}
+    {{ $dark_sw := resources.Get "js/dark-mode-switch.js" }}
+    {{ $darkSet := slice $bs_switch $dark_sw | resources.Concat "/js/darkSet.js" | minify | fingerprint }}
+    <script defer src="{{ $darkSet.Permalink | relURL }}" integrity="{{ $darkSet.Data.Integrity }}"></script>
     <header>
         {{ partial "header.html" . }}
     </header>
@@ -17,10 +21,8 @@
                             instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.</h2>
                             <br/>
                         </noscript>
-                        {{ $theme := resources.Get "js/setTheme.js" | minify | fingerprint }}
-                        <script defer src="{{ $theme.Permalink | relURL }}" integrity="{{ $theme.Data.Integrity }}"></script>
-                            {{ .Content }}
-                        </section>
+            {{ .Content }}
+            </section>
                     </div>
                 </div>
                 <footer>

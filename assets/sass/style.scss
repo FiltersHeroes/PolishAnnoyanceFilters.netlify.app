@@ -469,10 +469,6 @@ header h2 {
     background-image: url(/images/AGHome.svg)
 }
 
-.dark-mode .filter-option .AGHome-icon {
-    filter: invert(1);
-}
-
 .Blokada-icon {
     background-image: url(/images/Blokada.png)
 }
@@ -495,21 +491,6 @@ header h2 {
 
 .pf-icon {
     background-image: url(/images/pfBlockerNG.jpg)
-}
-
-#darkLightButton
-{
-    background-image: url("/images/iconContrastWhite.png");
-    color: #fff;
-    font-weight: bold;
-    margin-right: 30px;
-    position: relative;
-    width: 24px;
-    height: 24px;
-    background-repeat: no-repeat;
-    bottom: -6px;
-    border-radius: 100%;
-    float: right;
 }
 
 .AB-icon {
@@ -556,6 +537,27 @@ header h2 {
     text-decoration: none;
 }
 
-.dark-mode img[src="/images/AGHome.svg"]{
-    filter: invert(1);
+@import "bootstrap-switch-button";
+
+.switch.round,
+.switch-on.round,
+.switch-off.round {
+    border-radius: 20rem;
+}
+
+@import "dark-theme";
+
+.actions-btn {
+    background: #17a2b8;
+    border: none !important;
+    color: white;
+}
+
+.actions-btn:hover {
+    background: #138496;
+    color: white;
+}
+
+input#search:focus {
+    border-color: rgba(0,191,255,.8);
 }

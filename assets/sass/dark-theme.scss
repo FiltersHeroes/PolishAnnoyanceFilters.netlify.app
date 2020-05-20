@@ -1,69 +1,124 @@
-.dark-mode #swal2-content {
-    color: #737f8a;
-}
-
-.dark-mode .swal2-popup .swal2-title {
-    color: #afbac4;
-}
-
-.dark-mode .swal2-popup {
-    background: #000000;
-}
-
-.dark-mode .swal2-popup .swal2-styled:focus {
-    box-shadow: none !important;
-}
-
-.dark-mode .swal2-container.swal2-shown {
-    background-color: rgba(150,150,150,.1);
-}
-
-body.dark-mode {
+// @media (prefers-color-scheme: dark) {
+body[data-theme="dark"] {
+    color: white;
     background: #12171a;
-    color: white;
-}
 
-.dark-mode #main-content h2 {
-    color: deepskyblue;
-}
+    table, .bootstrap-select .dropdown-menu.inner, .bootstrap-select .dropdown-item, .bootstrap-select .dropdown-menu {
+        color: #fff;
+        background-color: #222;
+    }
 
-.dark-mode form{
-    background: #0c2c554b;
-    color: white;
-}
+    .table-light th, .table-light td, .table-light thead th, #search, .td-search-input.form-control:focus, .form-control {
+        border-color: #353535;
+    }
 
-.dark-mode .border-lblue-solid
-{
-    border-color: deepskyblue;
-    border-style: solid;
-}
+    .table-light.table-striped tbody tr:nth-of-type(2n+1),
+    .td-content > table.table-light tbody tr:nth-of-type(2n+1),
+    .td-box .row.section > table.table-light tbody tr:nth-of-type(2n+1) {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
 
-.dark-mode input.form-control {
-    background: #0c2c554b;
-    color: white;
-    border-color: rgb(27, 64, 78);
-}
+    .dropdown-item:hover, .dropdown-item:focus {
+        background: rgba(255, 255, 255, 0.2);
+    }
 
-.dark-mode .custom-checkbox input[type="checkbox"] + label::before
-{
-    background-color: #4b7bb94b;
-    border-color: #4b7bb94b;
-}
+    table:not(class) thead th, .td-content > table thead th, table:not(class) .td-box .row.section > table thead th, table:not(class) th, .td-content > table th, .td-box .rowsection > table th, table:not(class) td, .td-content > table td, table:not(class) .td-box .row.section > table td {
+        border-color: #353535;
+    }
 
-.dark-mode .ua {
-    background: #0c2c554b;
-    color: white;
-    border-color: rgb(27, 64, 78);
-}
+    table:not(class) {
+        display: inline-table;
+    }
 
-.dark-mode .custom-radio input[type="radio"] + label::before
-{
-    background-color: #4b7bb94b;
-    border-color: #4b7bb94b;
-}
+    .table-striped tbody tr:nth-of-type(odd), .td-content > table tbody tr:nth-of-type(odd), .td-box .row.section > table tbody tr:nth-of-type(odd) {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
 
-.dark-mode textarea.form-control  {
-    background-color: #4b7bb94b;
-    border-color: #4b7bb94b;
-    color: white;
+    pre {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    #swal2-content {
+        color: #737f8a;
+    }
+
+    .swal2-popup .swal2-title {
+        color: #afbac4;
+    }
+
+    .swal2-popup {
+        background: #000000;
+    }
+
+    .swal2-popup .swal2-styled:focus {
+        box-shadow: none;
+    }
+
+    .swal2-container.swal2-shown {
+        background-color: rgba(150,150,150,.1);
+    }
+
+    #main-content h2 {
+        color: deepskyblue;
+    }
+
+    form{
+        background: #0c2c554b;
+        color: white;
+    }
+
+    .border-lblue-solid
+    {
+        border-color: deepskyblue;
+        border-style: solid;
+    }
+
+    input.form-control {
+        background: #0c2c554b;
+        color: white;
+        border-color: rgb(27, 64, 78);
+    }
+
+    .custom-checkbox input[type="checkbox"] + label::before
+    {
+        background-color: #4b7bb94b;
+        border-color: #4b7bb94b;
+    }
+
+    .ua {
+        background: #0c2c554b;
+        color: white;
+        border-color: rgb(27, 64, 78);
+    }
+
+    .custom-radio input[type="radio"] + label::before
+    {
+        background-color: #4b7bb94b;
+        border-color: #4b7bb94b;
+    }
+
+    textarea.form-control  {
+        background-color: #4b7bb94b;
+        border-color: #4b7bb94b;
+        color: white;
+    }
+
+    img[src="/images/AGHome.svg"]{
+        filter: invert(1);
+    }
+
+    .filter-option .AGHome-icon {
+        filter: invert(1);
+    }
+
+    .actions-btn, .actions-btn:hover {
+        color: black;
+    }
+
+    .notify {
+        background: black !important;
+        border-color: black !important;
+        color: white;
+    }
 }

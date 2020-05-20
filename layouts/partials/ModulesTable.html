@@ -49,6 +49,3 @@
 		{{end}}
 	</tbody>
 </table>
-
-{{ $theme := resources.Get "js/setTheme.js" | minify | fingerprint }}
-<script defer src="{{ $theme.Permalink | relURL }}" integrity="{{ $theme.Data.Integrity }}"></script>
