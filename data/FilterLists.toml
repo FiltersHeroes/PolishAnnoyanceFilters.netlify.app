@@ -72,18 +72,6 @@ category = "bezpieczeństwo"
 lang = "pl"
 
 [[items]]
-title = "KAD - Whitelista Stron Kontrowersyjnych"
-desc = "Odblokowane [kontrowersyjne strony](https://github.com/PolishFiltersTeam/KAD/issues/649)."
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/gh-pages/assets/other/kadfakewhitelist.txt"
-issues = "https://github.com/PolishFiltersTeam/KAD/issues"
-form = "https://kadantiscam.netlify.app/#contact"
-mail = "polishjarvis@gmail.com"
-home = "https://kadantiscam.netlify.app/"
-adblocker = "uBO, AG"
-category = "bezpieczeństwo"
-lang = "pl"
-
-[[items]]
 title = "AlleBlock"
 desc = "Zbędne, uciążliwe i potencjalnie niebezpieczne elementy - reklamy, artykuły sponsorowane, czy skrypty śledzące działania użytkowników na Allegro, Ceneo, eBay, OLX i Sprzedajemy."
 subscribe = "https://alleblock.pl/alleblock/alleblock.txt"
