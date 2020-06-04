@@ -6,7 +6,7 @@ pygmentsUseClasses: true
 LanguageCode: pl-PL
 DefaultContentLanguage: pl
 enableEmoji: true
-baseURL: https://polishannoyancefilters.netlify.com/
+baseURL: https://polishannoyancefilters.netlify.app/
 
 params:
   use_sass: true
