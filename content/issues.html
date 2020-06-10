@@ -4,7 +4,7 @@ title: Zgłoszenia
 {{< issues_bundle >}}
 <script>var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
-style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zostało wysłane na GitHuba!", text: "Dziękujemy za wypełnienie formularza 😊", type: "success", confirmButtonText: "Wypełnij nowy formularz"}).then((result)=>{if(result.value){document.getElementById("usrform").reset();location.reload();}})}'></iframe>
+style="display:none;" onload='if(submitted){localStorage.setItem("submittedTime", new Date());}'></iframe>
 
 <div class="border-lblue-solid" id="border">
     <p class="my-1 ml-2">Przed zgłoszeniem <a href="javascript:checkAdblocker()">sprawdź, czy masz włączone Polskie Filtry Elementów Irytujących</a> oraz inne wymagane listy: <a href="abp:subscribe?location=https%3A%2F%2Feasylist.to%2Feasylist%2Feasylist.txt&amp;title=EasyList">EasyList</a>, <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fpolish-adblock-filters%2Fadblock.txt&amp;title=Oficjalne%20Polskie%20Filtry%20do%20AdBlocka%2C%20uBlocka%20i%20AdGuarda">Oficjalne Polskie Filtry do AdBlocka, uBlocka i AdGuarda</a> i <a href="abp:subscribe?location=https%3A%2F%2Fwww.i-dont-care-about-cookies.eu%2Fabp%2F&amp;amp;title=I%20don%27t%20care%20about%20cookies">I don’t care about cookies</a> oraz rozszerzenie <a href="https://github.com/PolishFiltersTeam/PolishCookieConsent#jak-zainstalowa%C4%87" target="_blank" rel="noopener">Polska Ciasteczkowa Zgoda</a>. Powinieneś również posiadać tylko jedne rozszerzenie blokujące elementy, a jeżeli masz ich kilka, to zostaw tylko jedno, a pozostałe wyłącz albo odinstaluj. Pamiętaj także, by zaktualizować filtry. </p>
