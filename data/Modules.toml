@@ -39,7 +39,7 @@ subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyance
 adblocker = "uBO, AG"
 
 [[items]]
-title = "Powrotowe Tytuły - „Wróć do…”"
+title = "Powrotowe Tytuły („Wróć do…”)"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_comeback_titles.txt"
 adblocker = "uBO, AG"
 
