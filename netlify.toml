@@ -4,17 +4,5 @@
 [build.environment]
   HUGO_VERSION = "0.72.0"
 
-[[redirects]]
-  from = "https://www.polishannoyancefilters.netlify.app/*"
-  to = "https://polishannoyancefilters.netlify.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://polishannoyancefilters.netlify.app/otherfiltersforadblockers/"
-  to = "https://majkiit.github.io/polish-ads-filter/"
-  status = 301
-  force = true
-
 [context.deploy-preview]
   command = "hugo -b $DEPLOY_PRIME_URL"
