@@ -44,6 +44,11 @@ subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyance
 adblocker = "uBO, AG"
 
 [[items]]
+title = "Prenumeraty i E-wydania Gazet"
+subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_e_newspaper.txt"
+adblocker = "ABP"
+
+[[items]]
 title = "Inne Elementy"
 subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
 adblocker = "ABP"
