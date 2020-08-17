@@ -118,28 +118,6 @@ category = "prywatność"
 adblocker = "ABP"
 lang = "pl"
 
-
-[[items]]
-title = "Polskie Filtry Wewnętrzne"
-desc = "Reklamy wewnętrzne, pływające nagłówki, prenumeraty premium, donacje.."
-subscribe = "https://cdn.statically.io/gh/KonoromiHimaries/PolishSubFilters/master/internal-filters/wewnetrzne.txt"
-chat = "https://riot.im/app/#/room/!IPhdjtOfWxVbiddKOo:matrix.org?via=matrix.org"
-home = "https://github.com/KonoromiHimaries/PolishSubFilters"
-requiredLocation = "https://easylist.to/easylist/easylist.txt"
-requiredTitle = "EasyList"
-requiredType = "ubo"
-requiredLocation2 = "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt"
-requiredTitle2 = "Polskie Filtry"
-requiredType2 = "ubo"
-requiredLocation3 = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
-requiredTitle3 = "PF EI"
-requiredType3 = "ubo"
-donate = "https://user-images.githubusercontent.com/5884000/42411462-87a8844c-81fc-11e8-8c4c-a2b8a7e4560a.png"
-modules = "https://github.com/KonoromiHimaries/PolishSubFilters/tree/master/internal-filters"
-category = "reklamy, bezpieczeństwo, sponsorowane, e-handel, irytujące, mobilne"
-adblocker = "uBO, AG"
-lang = "pl"
-
 [[items]]
 title = "AdGuard Base filter"
 desc = "Reklamy."
