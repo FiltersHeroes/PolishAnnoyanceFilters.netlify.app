@@ -37,7 +37,7 @@ function createuBOModal(url) {
         var modalBody = document.createElement('div');
         modalBody.setAttribute('class', 'modal-body');
         modalContent.appendChild(modalBody);
-        modalBody.innerHTML = '<p>W miejsce 3 wklej adres z listą filtrów </p>'+'<code ><input type="text" id="manualSubscribe" readonly="true" value="'+url+'"</input></code><button class="btn btn-light" style="margin-left: 10px;" onclick="copyToClipBoard();"><i class="icon-copy"></i></button><pre><img src="/images/uBO_add1.png" alt="ubo" title="klikamy w przycisk ustawień"><img src="/images/uBO_add2.png" alt="ubo-settings" title="aktywujemy zakładkę zewnętrzne filtry, przewijamy stronę do końca i wklejamy link z filtrami do pola na dole, potem klikamy zastosuj"></pre>';
+        modalBody.innerHTML = '<p>W miejsce 3 wklej adres z listą filtrów </p>'+'<code ><input type="text" id="manualSubscribe" readonly="true" value="'+url+'"</input></code><button class="btn btn-light" style="margin-left: 10px;" onclick="copyToClipBoard();"><i class="icon-copy" title="kopiuj link"></i></button><pre><img src="/images/uBO_add1.png" alt="ubo" title="klikamy w przycisk ustawień"><img src="/images/uBO_add2.png" alt="ubo-settings" title="aktywujemy zakładkę listy filtrów, przewijamy stronę do końca i wklejamy link z listą do pola na dole, potem klikamy zastosuj"></pre>';
         var modalFooter = document.createElement('div');
         modalFooter.setAttribute('class', 'modal-footer');
         modalContent.appendChild(modalFooter);
@@ -58,13 +58,14 @@ function createuBOModal(url) {
 
 }
 
-//var pafDetect = true;
+var pafDetect = true;
 if((typeof(pafDetect) != 'undefined') && pafDetect === true) {
-    for(var i in document.querySelectorAll("a[href]")){
-        if(document.querySelectorAll("a[href]")[i].href && document.querySelectorAll("a[href]")[i].href.match('^abp:subscribe')) {
-            document.querySelectorAll("a[href]")[i].onclick = function()
+    let a = document.querySelectorAll("a[href]");
+    for(var i in a){
+        if(a[i].href && a[i].href.match('^abp:subscribe')) {
+            a[i].onclick = function()
             {
-                createuBOModal(this.href.replace("abp:subscribe?location=", "").replace(/%3A%2F%2F/i, "://").split(/%2F/i).join("/").replace(/&(amp;)?title=.*$/,""));
+                createuBOModal(decodeURIComponent(this.href).replace("abp:subscribe?location=", "").replace(/&(amp;)?title=.*$/,""));
                 return false;
             };
         }
