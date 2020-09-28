@@ -29,6 +29,11 @@
 	</div>
 	<footer>
 		{{ partial "footer.html" . }}
+		{{ $jquery := resources.Get "js/jquery.slim.js" }}
+		{{ $uBO := resources.Get "js/add-uBO-FL.js" }}
+		{{ $bootstrapBundle := resources.Get "js/bootstrap.bundle.min.js" }}
+		{{ $uBObundle := slice $jquery $uBO $bootstrapBundle | resources.Concat "/js/bundleForuBO.js" | minify | fingerprint }}
+		<script defer src="{{ $uBObundle.Permalink | relURL }}" integrity="{{ $uBObundle.Data.Integrity }}"></script>
 	</footer>
 </body>
 </html>
