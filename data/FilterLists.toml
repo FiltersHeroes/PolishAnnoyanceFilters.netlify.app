@@ -141,18 +141,6 @@ adblocker = "uBO"
 category = "reklamy"
 
 [[items]]
-title = "Nano Defender"
-desc = "Skrypty antyadblockowe."
-subscribe = "https://gitcdn.xyz/repo/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
-issues = "https://github.com/jspenguin2017/uBlockProtector/issues"
-home = "https://jspenguin2017.github.io/uBlockProtector/"
-requiredType = "normal"
-requiredTitle = "Instrukcja instalacji"
-requiredLocation = "https://majkiit.github.io/polish-ads-filter/docs/advanced/install-nano-defender/"
-adblocker = "uBO"
-category = "anty-adblock"
-
-[[items]]
 title = "NoCoin Filter List"
 desc = "Skrypty wydobywające kryptowaluty, powodujące zwiększone zużycie CPU i spowalniające pracę komputera."
 subscribe = "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
@@ -177,15 +165,6 @@ subscribe = "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filte
 issues = "https://github.com/uBlockOrigin/uAssets/issues"
 home = "https://github.com/uBlockOrigin/uAssets"
 adblocker = "uBO"
-category = "irytujące, ciasteczka"
-
-[[items]]
-title = "Nano filters – Annoyance"
-desc = "Irytujące elementy, w tym komunikaty dot. ciasteczek, natrętne wiadomości donacyjne, anty-kopiowanie, anty-zaznaczanie i anty-klikanie."
-subscribe = "https://gitcdn.xyz/repo/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt"
-issues = "https://github.com/NanoAdblocker/NanoFilters/issues"
-home = "https://github.com/NanoAdblocker/NanoFilters"
-adblocker = "NA"
 category = "irytujące, ciasteczka"
 
 [[items]]
