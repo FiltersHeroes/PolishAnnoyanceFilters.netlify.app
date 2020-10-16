@@ -20,7 +20,6 @@
 		<option value="AB" data-icon="icon-dropdown AB-icon">AdBlock</option>
 		<option value="ABP" data-icon="icon-dropdown ABP-icon">Adblock Plus</option>
 		<option value="uBO" data-icon="icon-dropdown uBO-icon">uBlock Origin</option>
-		<option value="NA" data-icon="icon-dropdown NA-icon">Nano Adblocker</option>
 		<option value="AG" data-icon="icon-dropdown AG-icon">AdGuard</option>
 		<option value="Ph" data-icon="icon-dropdown Ph-icon">Pi-hole</option>
 		<option value="hosts" data-icon="icon-dropdown AA-icon">AdAway</option>
@@ -129,17 +128,11 @@
 					<a href="https://getadblock.com/" target="_blank" rel="noopener"><img src="/images/AdBlock.svg" style="width:32px;height:32px" title="AdBlock"></a>
 					<a href="https://adblockplus.org/" target="_blank" rel="noopener"><img src="/images/ABP_32.png" style="width:32px;height:32px" title="Adblock Plus"></a>
 					<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener"><img src="/images/uBO_32.png" style="width:32px;height:32px" title="uBlock Origin"></a>
-					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="/images/Nano_32.png" style="width:32px;height:32px" title="Nano Adblocker"></a>
 					<a href="https://adguard.com/" target="_blank" rel="noopener"><img src="/images/AdGuard_logo_32.png" style="width:32px;height:32px" title="AdGuard"></a>
 					{{end}}
 
 					{{ if and (findRE "uBO" .adblocker) (not (findRE "ABP" .adblocker)) (not (findRE "NA" .adblocker)) }}
 					<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener"><img src="/images/uBO_32.png" style="width:32px;height:32px" title="uBlock Origin"></a>
-					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="/images/Nano_32.png" style="width:32px;height:32px" title="Nano Adblocker"></a>
-					{{end}}
-
-					{{ if and (findRE "NA" .adblocker) (not (findRE "ABP" .adblocker)) }}
-					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="/images/Nano_32.png" style="width:32px;height:32px" title="Nano Adblocker"></a>
 					{{end}}
 
 					{{ if and (findRE "AG" .adblocker) (not (findRE "ABP" .adblocker)) }}
