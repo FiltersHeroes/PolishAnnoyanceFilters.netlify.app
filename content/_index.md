@@ -10,7 +10,7 @@ Do poprawnego działania listy wymagane są:
 Jeżeli irytują ciebie komunikaty dot. :cookie: i RODO, to opcjonalnie możesz zainstalować również rozszerzenie **Polska Ciasteczkowa Zgoda**, które automatycznie je akceptuje (tylko to, co nie da rady załatwić regułą w uBO). Instrukcja jak to zrobić jest dostępna na [github.com/PolishFiltersTeam/PolishCookieConsent#jak-zainstalować](https://github.com/PolishFiltersTeam/PolishCookieConsent#jak-zainstalowa%C4%87).
 
 ## Uwagi
-* Najlepszy efekt uzyskasz, importując listę do [uBlocka Origin](https://github.com/gorhill/uBlock/releases) lub [Nano Adblockera](https://github.com/NanoAdblocker/NanoCore/releases).
+* Najlepszy efekt uzyskasz, importując listę do [uBlocka Origin](https://github.com/gorhill/uBlock/releases) lub [AdGuarda](https://github.com/AdguardTeam/AdguardBrowserExtension#installation).
 
 * Nasza lista filtrów nie zajmuje się elementami społecznościowymi ani reklamami zewnętrznymi.
 
