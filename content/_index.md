@@ -19,7 +19,7 @@ Jeżeli irytują ciebie komunikaty dot. :cookie: i RODO, to opcjonalnie możesz 
 
 ## Polecane
 * Poradnik pt. „[Jak zablokować autoodtwarzanie filmików?](https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/wiki/Jak-zablokowa%C4%87-autoodtwarzanie-filmik%C3%B3w%3F)"
-* [Inne filtry do adblokerów](/otherfiltersforadblockers/)
+* [Inne filtry do adblokerów](https://majkiit.github.io/polish-ads-filter/)
 
 ## Zgłoszenia
 
