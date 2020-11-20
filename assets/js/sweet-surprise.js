@@ -1,7 +1,6 @@
 $(document).ready(function() {
     if (window.history.replaceState) {
         document.getElementById("usrform").reset();
-        window.history.replaceState(null, null, window.location.href);
     }
 
     isPrivateMode().then(function(isPrivate) {
@@ -182,7 +181,7 @@ $(document).ready(function() {
                 return false;
         }
         else if (error == 1) {
-            Swal.fire({title: "Brzydkie słowo!", text: "Wpisałeś wulgaryzm 😞", icon: "warning", confirmButtonText: "Wypełnij nowy formularz"}).then((result)=>{if(result.value){document.getElementById("usrform").reset();location.reload();}})
+            Swal.fire({title: "Zgłoszenie zostało wysłane na GitHuba!", text: "Wpisałeś wulgaryzm 😞", icon: "warning", confirmButtonText: "Wypełnij nowy formularz"}).then((result)=>{if(result.value){document.getElementById("usrform").reset();location.reload();}})
         }
         else if (error == 2) {
             Swal.fire({title: "Wyrok administratora", text: "Wpisałeś wulgaryzmy. Być może jesteś trollem albo miałeś zły dzień, ale to nie jest najlepsze wyjście z takiej sytuacji. W związku z czym, dostajesz bana na 2 dni 😞", icon: "error", confirmButtonText: "OK"}).then((result)=>{if(result.value){document.getElementById("usrform").reset();location.reload();}})
