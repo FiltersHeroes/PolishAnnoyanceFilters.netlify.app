@@ -10,5 +10,6 @@
 {{ $swal := resources.Get "/js/sweetalert2.min.js" }}
 {{ $uBO := resources.Get "js/add-uBO-FL.js" }}
 {{ $bootstrapBundle := resources.Get "js/bootstrap.bundle.min.js" }}
-{{ $js := slice $jquery $valid $validpl $sweets $steps $checkbox $autosize $swal $ready $browserOSDetect $uBO $bootstrapBundle | resources.Concat "/js/issues_bundle.js" | minify | fingerprint}}
+{{ $privateMode := resources.Get "js/is-private-mode.js" }}
+{{ $js := slice $jquery $valid $validpl $sweets $steps $checkbox $autosize $swal $ready $browserOSDetect $uBO $bootstrapBundle $privateMode | resources.Concat "/js/issues_bundle.js" | minify | fingerprint}}
 <script defer src="{{ $js.Permalink | relURL }}" integrity="{{ $js.Data.Integrity }}"></script>
