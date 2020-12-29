@@ -1,5 +1,6 @@
 @import 'hugo-theme-architect';
 
+$enable-responsive-font-sizes: true;
 $tooltip-bg: gray;
 
 input {
@@ -23,12 +24,14 @@ header a {
 
 
 /*!
-* Bootstrap v4.1.3 (http://getbootstrap.com)
+* Bootstrap v4.5.3 (http://getbootstrap.com)
 * Copyright 2011-2018 Twitter, Inc.
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
 @import 'bootstrap/_functions';
 @import 'bootstrap/_variables';
+@import "bootstrap/vendor/_rfs";
+@import "bootstrap/mixins/_deprecate";
 @import "bootstrap/mixins/_breakpoints";
 @import "bootstrap/mixins/_hover";
 @import "bootstrap/mixins/_buttons";
@@ -559,11 +562,13 @@ input#search:focus {
 }
 
 .icon-copy {
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAbUlEQVRIiWNgGE7Am4GB4QkDA8N/MjFB8JgCw4mygGiFpAAmahtIigXkxsljBgYGT2wGogcRJXHyiBgLyI0TFH0DGgejFoxaMFIsYEFiM9LCggENoidQmpyK5zExlnsykFeiPmJgYPAgxoKhAQAobmMW+E0ohwAAAABJRU5ErkJggg==");
+    background-image: url("/images/clipboard.svg");
     display: inline-block;
     height: 24px;
     width: 24px;
     vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #uBOmodal {
@@ -572,4 +577,8 @@ input#search:focus {
 
 #uBOmodal pre {
     border: none;
+}
+
+#manualSubscribe {
+    display: inline-block;
 }
