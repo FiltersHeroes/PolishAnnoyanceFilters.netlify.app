@@ -1,4 +1,6 @@
 function createuBOModal(url) {
+    if(localStorage.getItem('showManualSubscribe') !== "false")
+    {
         Swal.fire({
             title: 'Ręczna subskrypcja listy filtrów',
             html:
@@ -17,6 +19,7 @@ function createuBOModal(url) {
                 localStorage.setItem('showManualSubscribe', 'false')
             }
         })
+    }
 }
 
 var pafDetect = true;
