@@ -32,7 +32,7 @@ function checkAdblocker(){
 
 	if((typeof(pafDetect) != 'undefined') && pafDetect === true)
 	{
-		Swal.fire("Wspaniale!", "Masz aktywny uBlock Origin lub Nano Adblocker z Polskimi Filtrami Elementów Irytujących 😊", "success");
+		Swal.fire("Wspaniale!", "Masz aktywny uBlock Origin z Polskimi Filtrami Elementów Irytujących 😊", "success");
 	}
 	else if(pafadguard.offsetHeight == 0)
 	{
