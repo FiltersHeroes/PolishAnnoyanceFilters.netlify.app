@@ -22,7 +22,7 @@ function createuBOModal(url) {
     }
 }
 
-var pafDetect = true;
+var pafDetect;
 if((typeof(pafDetect) != 'undefined') && pafDetect === true) {
     let a = document.querySelectorAll("a[href]");
     for(var i in a){
