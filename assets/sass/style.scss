@@ -544,8 +544,6 @@ header h2 {
     border-radius: 20rem;
 }
 
-@import "dark-theme";
-
 .actions-btn {
     background: #17a2b8;
     border: none !important;
@@ -587,4 +585,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@import "easymde";
+
+@import "dark-theme";
+
+button.table {
+    color: unset;
 }
