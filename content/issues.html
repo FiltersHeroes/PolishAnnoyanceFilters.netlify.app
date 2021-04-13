@@ -316,7 +316,6 @@ style="display:none;" onload='if(submitted){localStorage.setItem("submittedTime"
         <div class="form-group">
             <label for="userFilters" class="font-weight-bold">Używane filtry</label>
             <textarea minlength="5" id="userFilters" name="entry.1553187432" rows="5" data-min-rows="5" class="form-control" aria-describedby="filtersHelp" required="required">1. EasyList&#13;&#10;2. Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda&#13;&#10;3. Polskie Filtry Elementów Irytujących</textarea>
-            <small id="filtersHelp" class="form-text text-muted">Możesz po prostu zamieścić link do <a href="https://majkiit.github.io/polish-ads-filter/docs/basic/ubo-backup/">kopii zapasowej</a> ustawień uBlocka Origin.</small>
         </div>
         <div class="clearfix">
             <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
@@ -326,24 +325,6 @@ style="display:none;" onload='if(submitted){localStorage.setItem("submittedTime"
 
     <!--Krok 4-->
     <div class="row setup-content" id="krok-4">
-        <!--Zrzut ekranu-->
-        <div class="form-group">
-            <label class="font-weight-bold">Zrzut ekranu (opcjonalny)</label>
-            <input id="entry.449338657" name="entry.449338657" type="hidden" class="form-control here">
-            <div class="dropzone"></div>
-            {{< imgur_bundle >}}
-        </div>
-
-
-        <div class="text-center"><p><button class="btn btn-danger" onclick="removeImage()">Usuń zrzut</button></p></div>
-
-
-        <!--Dodatkowe informacje mogące mieć znaczenie-->
-        <div class="form-group" id="additionalInfo">
-            <label for="additionalInfoTA" class="font-weight-bold">Dodatkowe informacje mogące mieć znaczenie (opcjonalne)</label>
-            <textarea id="additionalInfoTA" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Coś co nie da się opisać wizualnie, etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu."></textarea>
-        </div>
-
         <!--Pseudonim-->
         <div class="form-group">
             <label for="nickname" class="font-weight-bold">Pseudonim</label>
@@ -357,6 +338,12 @@ style="display:none;" onload='if(submitted){localStorage.setItem("submittedTime"
             <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small>
         </div>
         <input name="email" type="text" id="email" />
+
+        <!--Dodatkowe informacje mogące mieć znaczenie-->
+        <div class="form-group" id="additionalInfo">
+            <label for="additionalInfoTA" class="font-weight-bold">Dodatkowe informacje mogące mieć znaczenie (opcjonalne)</label>
+            <textarea id="additionalInfoTA" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Zrzuty ekranu, etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu."></textarea>
+        </div>
 
         <!--Powiadomienie na e-maila-->
         <div class="form-group">

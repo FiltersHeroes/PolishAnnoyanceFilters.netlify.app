@@ -594,3 +594,7 @@ footer {
 button.table {
     color: unset;
 }
+
+$fa-font-path:   "/fonts";
+@import "fontawesome/fontawesome";
+@import "fontawesome/solid";

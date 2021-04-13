@@ -1,17 +1,31 @@
 $(document).ready(function () {
 	// Dodatkowe informacje
 	var additional_easyMDE = new EasyMDE({
+		autoDownloadFontAwesome: false,
+		autoRefresh: { delay: 300 },
 		autosave: {
 			enabled: true,
 			uniqueId: "additionalInfoTA",
 			delay: 1000,
 			submit_delay: 5000,
+			text: "Zapisano: ",
+			timeFormat: {
+				locale: 'pl',
+			},
+		},
+		imageTexts: {
+			sbInit: 'Przeciągnij i upuść zrzuty ekranu, aby wysłać je na imgur.',
+			sbOnDragEnter: 'Upuść obraz, aby go przesłać na imgur.',
+			sbOnDrop: 'Wysyłanie obrazu #images_names#',
+			sbProgress: 'Wysyłanie #file_name#: #progress#%',
+			sbOnUploaded: 'Wysłano #image_name#'
 		},
 		element: document.getElementById('additionalInfoTA'),
 		forceSync: true,
 		hideIcons: ["side-by-side", "fullscreen"],
-		showIcons: ["code", "table"],
+		showIcons: ["code", "table", "upload-image"],
 		spellChecker: false,
+		status: ["autosave", "upload-image"],
 		uploadImage: true,
 		imageUploadFunction: function (file, onSuccess, onError) {
 			var headers = new Headers({
@@ -38,17 +52,30 @@ $(document).ready(function () {
 
 	// Używane filtry
 	var userFilters_easyMDE = new EasyMDE({
+		autoDownloadFontAwesome: false,
+		autoRefresh: { delay: 300 },
 		autosave: {
 			enabled: true,
 			uniqueId: "userFiltersTA",
 			delay: 1000,
 			submit_delay: 5000,
+			text: "Zapisano o ",
+			timeFormat: {
+				locale: 'pl',
+			},
 		},
 		element: document.getElementById('userFilters'),
 		forceSync: true,
-		hideIcons: ["side-by-side", "fullscreen", "bold", "italic", "heading", "image", "quote"],
-		showIcons: ["code"],
-		spellChecker: false
+		hideIcons: ["side-by-side", "fullscreen", "bold", "italic", "image", "quote"],
+		promptURLs: true,
+		showIcons: ["code", "table"],
+		spellChecker: false,
+		status: ["autosave", {
+			className: "filtersHelp",
+			defaultValue: function(el) {
+				el.innerHTML = 'Możesz po prostu zamieścić link do <a href="https://majkiit.github.io/polish-ads-filter/docs/basic/ubo-backup/" target="_blank" rel="noopener">kopii zapasowej</a> ustawień uBlocka Origin.';
+			},
+		}]
 	});
 
 	$('#usrform').attr('action', 'https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse');

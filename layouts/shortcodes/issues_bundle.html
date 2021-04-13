@@ -4,7 +4,6 @@
 {{ $sweets := resources.Get "/js/sweet-surprise.js" }}
 {{ $steps := resources.Get "/js/steps.js" }}
 {{ $checkbox := resources.Get "/js/checkbox.js" }}
-{{ $autosize := resources.Get "/js/autosize.min.js" }}
 {{ $easymde := resources.Get "/js/easymde.min.js" }}
 {{ $ready := resources.Get "/js/ready.js" }}
 {{ $browserOSDetect := resources.Get "/js/browserOSDetect.js" }}
@@ -12,5 +11,5 @@
 {{ $uBO := resources.Get "js/add-uBO-FL.js" }}
 {{ $bootstrapBundle := resources.Get "js/bootstrap.bundle.min.js" }}
 {{ $privateMode := resources.Get "js/is-private-mode.js" }}
-{{ $js := slice $jquery $valid $validpl $sweets $steps $checkbox $autosize $easymde $swal $ready $browserOSDetect $uBO $bootstrapBundle $privateMode | resources.Concat "/js/issues_bundle.js" | minify | fingerprint}}
+{{ $js := slice $jquery $valid $validpl $sweets $steps $checkbox $easymde $swal $ready $browserOSDetect $uBO $bootstrapBundle $privateMode | resources.Concat "/js/issues_bundle.js" | minify | fingerprint}}
 <script defer src="{{ $js.Permalink | relURL }}" integrity="{{ $js.Data.Integrity }}"></script>

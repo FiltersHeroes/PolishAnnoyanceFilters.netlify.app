@@ -1,6 +1,0 @@
-{{ $imgur := resources.Get "/js/imgur.min.js" }}
-{{ $imgReady := resources.Get "/js/imgReady.js" }}
-{{ $imgAdd := resources.Get "/js/imgAdd.js" }}
-{{ $imgRemove := resources.Get "/js/imgRemove.js" }}
-{{ $js := slice $imgur $imgReady $imgAdd $imgRemove | resources.Concat "/js/imgur_bundle.js" | minify | fingerprint}}
-<script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script> 

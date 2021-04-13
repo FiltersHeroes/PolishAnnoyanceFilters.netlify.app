@@ -213,22 +213,10 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
 
     <!--Krok 3-->
     <div class="row setup-content" id="krok-3">
-        <!--Zrzut ekranu-->
-        <div class="form-group">
-            <label class="font-weight-bold">Zrzut ekranu (opcjonalny)</label>
-            <input id="entry.449338657" name="entry.449338657" type="hidden" class="form-control here">
-            <div class="dropzone"></div>
-
-            {{< imgur_bundle >}}
-
-        </div>
-
-        <div class="text-center"><p><button class="btn btn-danger" onclick="removeImage()">Usuń zrzut</button></p></div>
-
         <!--Dodatkowe informacje mogące mieć znaczenie-->
         <div class="form-group">
-            <label for="entry.249974698" class="font-weight-bold">Dodatkowe informacje mogące mieć znaczenie (opcjonalne)</label>
-            <textarea id="entry.249974698" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Coś co nie da się opisać wizualnie, etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu."></textarea>
+            <label for="additionalInfoTA" class="font-weight-bold">Dodatkowe informacje mogące mieć znaczenie (opcjonalne)</label>
+            <textarea id="additionalInfoTA" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Zrzuty ekranu, etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu."></textarea>
         </div>
 
         <!--Pseudonim-->
