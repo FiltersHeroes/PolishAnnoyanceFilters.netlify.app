@@ -213,12 +213,6 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
 
     <!--Krok 3-->
     <div class="row setup-content" id="krok-3">
-        <!--Dodatkowe informacje mogące mieć znaczenie-->
-        <div class="form-group">
-            <label for="additionalInfoTA" class="font-weight-bold">Dodatkowe informacje mogące mieć znaczenie (opcjonalne)</label>
-            <textarea id="additionalInfoTA" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Zrzuty ekranu, etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu."></textarea>
-        </div>
-
         <!--Pseudonim-->
         <div class="form-group">
             <label for="nickname" class="font-weight-bold">Pseudonim</label>
@@ -232,6 +226,12 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
             <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small>
         </div>
         <input name="email" type="text" id="email" />
+
+        <!--Dodatkowe informacje mogące mieć znaczenie-->
+        <div class="form-group">
+            <label for="additionalInfoTA" class="font-weight-bold">Dodatkowe informacje mogące mieć znaczenie (opcjonalne)</label>
+            <textarea id="additionalInfoTA" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Zrzuty ekranu, etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu."></textarea>
+        </div>
 
         <!--Powiadomienie na e-maila-->
         <div class="form-group">

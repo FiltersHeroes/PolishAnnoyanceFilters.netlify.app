@@ -1,5 +1,5 @@
 /*!
-* sweetalert2 v10.12.5
+* sweetalert2 v10.16.0
 * Released under the MIT License.
 */
 
@@ -564,7 +564,6 @@
 }
 
 .swal2-validation-message {
-  display: none;
   align-items: center;
   justify-content: center;
   margin: 0 -2.7em;
@@ -599,6 +598,7 @@
   margin: 1.25em auto 1.875em;
   border: 0.25em solid transparent;
   border-radius: 50%;
+  border-color: #000;
   font-family: inherit;
   line-height: 5em;
   cursor: default;
