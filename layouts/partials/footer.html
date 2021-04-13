@@ -1,7 +1,16 @@
-<div class="form-check float-right mr-4">
-    <input type="checkbox" class="form-check-input" id="darkSwitch" data-toggle="switchbutton" data-onlabel="Tryb ciemny" data-offlabel="Tryb jasny" data-style="round"/>
-    <label class="form-check-label" for="darkSwitch"></label>
+<div>
+    <div id="foot-text" class="text-center">
+        {{ $.Page.RenderString .Site.Params.footer_text }}
+        <div>{{ i18n "ThisPageWasGeneratedBy" }} <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo {{ hugo.Version }}</a>, {{ i18n "using" }} <a href="https://github.com/hawkeye116477/hugo-architect-theme" target="_blank" rel="noopener">{{ i18n "theArchitectTheme" }}</a>, {{ i18n "originallyCreatedBy" }} <a href="https://github.com/pages-themes" target="_blank" rel="noopener">GitHub</a> {{ i18n "and" }} {{ i18n "portedToHugoBy" }} <a href="https://github.com/hawkeye116477" target="_blank" rel="noopener">hawkeye116477</a>.</div>
+    </div>
+    <div class="float-left ml-5 mt-3">
+        <a href="https://www.netlify.com">
+            <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+        </a>
+    </div>
+    <div class="form-check float-right mr-4 mt-3">
+        <input type="checkbox" class="form-check-input" id="darkSwitch" data-toggle="switchbutton" data-onlabel="Tryb ciemny" data-offlabel="Tryb jasny" data-style="round" data-onstyle="dark"/>
+        <label class="form-check-label" for="darkSwitch"></label>
+    </div>
 </div>
-{{ $.Page.RenderString .Site.Params.footer_text }}
 
-<div>{{ i18n "ThisPageWasGeneratedBy" }} <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo {{ hugo.Version }}</a>, {{ i18n "using" }} <a href="https://github.com/hawkeye116477/hugo-architect-theme" target="_blank" rel="noopener">{{ i18n "theArchitectTheme" }}</a>, {{ i18n "originallyCreatedBy" }} <a href="https://github.com/pages-themes" target="_blank" rel="noopener">GitHub</a> {{ i18n "and" }} {{ i18n "portedToHugoBy" }} <a href="https://github.com/hawkeye116477" target="_blank" rel="noopener">hawkeye116477</a>.</div>
