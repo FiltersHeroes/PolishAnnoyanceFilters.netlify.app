@@ -3,10 +3,10 @@ title: Polskie Filtry Elementów Irytujących
 theme: hugo-architect-theme
 pygmentsCodeFences: true
 pygmentsUseClasses: true
-LanguageCode: pl-PL
 DefaultContentLanguage: pl
 enableEmoji: true
 baseURL: https://polishannoyancefilters.netlify.app/
+disablePathToLower: true
 
 params:
   use_sass: true

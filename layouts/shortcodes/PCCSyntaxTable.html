@@ -1,4 +1,4 @@
-<table class="responsive table table-sm table-striped table-bordered table-white">
+<table class="table table-sm table-striped table-bordered table-white">
 	<thead>
 		<tr>
 			<th scope="col" class="text-center font-weight-bold">FUNKCJA</th>
@@ -6,7 +6,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		{{ range $.Site.Data.CookieConsentSyntax.items }}
+    {{ range (index $.Site.Data (.Get "dataset")).items }}
 		<tr>
 			<td class="align-middle" data-label="FUNKCJA"><span>{{.function}}</span></td>
 			<td class="align-middle" data-label="ARGUMENTY">

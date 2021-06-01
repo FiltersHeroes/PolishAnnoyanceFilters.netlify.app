@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html lang="{{ .Site.Language.Lang | default "en-us" }}">
 <head>
     {{ partial "head.html" . }}
     {{ partial "seo.html" . }}
@@ -27,6 +27,12 @@
             </div>
             <footer>
                 {{ partial "footer.html" . }}
+                {{ $jquery := resources.Get "js/jquery.slim.js" }}
+                {{ $swal := resources.Get "js/sweetalert2.min.js" }}
+                {{ $uBO := resources.Get "js/add-uBO-FL.js" }}
+                {{ $bootstrapBundle := resources.Get "js/bootstrap.bundle.min.js" }}
+                {{ $uBObundle := slice $jquery $swal $uBO $bootstrapBundle | resources.Concat "/js/bundleForuBO.js" | minify | fingerprint }}
+                <script defer src="{{ $uBObundle.Permalink | relURL }}" integrity="{{ $uBObundle.Data.Integrity }}"></script>
             </footer>
         </body>
         </html>

@@ -12,3 +12,19 @@
   to = "https://majkiit.github.io/polish-ads-filter/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/cookieconsentoldsyntax"
+  to = "/PolishCookieConsent/old-syntax"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cookieconsentsyntax"
+  to = "/PolishCookieConsent/syntax"
+  status = 301
+
+[[redirects]]
+  from = "/cookieconsentissues"
+  to = "/PolishCookieConsent/issues"
+  status = 301

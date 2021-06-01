@@ -1,6 +1,5 @@
 ---
 title: Składnia Polskiej Ciasteczkowej Zgody
-type: CookieConsentSyntax
 ---
 
 ### Nowa składnia Polskiej Ciasteczkowej Zgody, obowiązująca od wersji 1.43.5 (stara składnia jest dostępna [tutaj](/cookieconsentoldsyntax)).
@@ -10,3 +9,4 @@ Filtry należy zapisywać wg schematu: `domena.com##+js(funkcja, arg, arg2)` lub
 Jeżeli chcemy zastosować tę samą funkcję z tymi samymi argumentami do paru domen, to wtedy domeny należy oddzielić przecinkiem, np. `domena.com,domena2.com,domena.org##+js(funkcja, arg, arg2)`.
 
 **Dostępne są następujące funkcje:**
+{{< PCCSyntaxTable dataset="CookieConsentSyntax" >}}

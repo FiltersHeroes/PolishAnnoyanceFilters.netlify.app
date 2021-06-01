@@ -64,7 +64,7 @@ header a {
 @import "bootstrap/mixins/_caret";
 @import "bootstrap/mixins/_nav-divider";
 @import "bootstrap/_dropdown";
-@import "bootstrap-select";
+// @import "bootstrap-select";
 
 .inline {
     display: inline;
@@ -405,12 +405,12 @@ header h2 {
     width: initial;
 }
 
-.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary,
-.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary:focus,
-.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary:active,
-{
-    color: rgba(0, 191, 255, 0.8);
-}
+// .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary,
+// .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary:focus,
+// .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-outline-primary:active
+// {
+//     color: rgba(0, 191, 255, 0.8);
+// }
 
 .icon-dropdown:before {
     content: "\00a0";
