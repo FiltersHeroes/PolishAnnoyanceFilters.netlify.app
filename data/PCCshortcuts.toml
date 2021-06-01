@@ -1,0 +1,139 @@
+[[items]]
+PC = "Ctrl-Spacja"
+Mac = "Cmd-Spacja"
+function = "Automatycznie uzupełnij nazwę funkcji."
+
+[[items]]
+PC = "Ctrl-/"
+Mac = "Cmd-/"
+function = "Zakomentuj/odkomentuj bieżącą linię lub parę zaznaczonych linii z wykorzystaniem `#`."
+
+[[items]]
+PC = "Ctrl-A"
+Mac = "Cmd-A"
+function = "Zaznacz całą zawartość edytora."
+
+[[items]]
+PC = "Ctrl-D"
+Mac = "Cmd-D"
+function = "Usuń całą linię pod kursorem, łącznie z nową linią na końcu."
+
+[[items]]
+PC = "Ctrl-Z"
+Mac = "Cmd-Z"
+function = "Cofnij ostatnią zmianę."
+
+[[items]]
+PC = "Ctrl-Y"
+Mac = "Cmd-Y"
+function = "Przywróć ostatnią zmianę."
+
+[[items]]
+PC = "Ctrl-U"
+Mac = "Cmd-U"
+function = "Cofnij ostatnią zmianę dla zaznaczenia lub jeśli na początku historii nie ma zmian dokonanych jedynie dla zaznaczenia - cofnij ostatnią zmianę dla całego tekstu."
+
+[[items]]
+PC = "Alt-U"
+Mac = "Shift-Cmd-U"
+function = "Przywróć ostatnią zmianę dla zaznaczenia lub jeżeli nie pozostała żadna zmiana dla zaznaczenia - przywróć ostatnią zmianę dla całego tekstu."
+
+[[items]]
+PC = "Ctrl-Home"
+Mac = "Cmd-Home"
+function = "Przesuń kursor na początek dokumentu."
+
+[[items]]
+PC = "Ctrl-End"
+Mac = "Cmd-End"
+function = "Przesuń kursor na koniec dokumentu."
+
+[[items]]
+PC = "Home"
+Mac = "Home"
+function = "Przesuń kursor na początek bieżącej linii."
+
+[[items]]
+PC = "End"
+Mac = "End"
+function = "Przesuń kursor na koniec bieżącej linii."
+
+[[items]]
+PC = "▲"
+Mac = "Ctrl-P"
+function = "Przesuń kursor o jedną linię w górę."
+
+[[items]]
+PC = "▼"
+Mac = "Ctrl-P"
+function = "Przesuń kursor o jedną linię w dół."
+
+[[items]]
+PC = "Page Up"
+Mac = "Shift-Ctrl-V"
+function = "Przesuń kursor, przewijając widok dokumentu w górę o jeden ekran."
+
+[[items]]
+PC = "Page Down"
+Mac = "Ctrl-V"
+function = "Przesuń kursor, przewijając widok dokumentu w dół o jeden ekran."
+
+[[items]]
+PC = "◀"
+Mac = "Ctrl-B"
+function = "Przesuń kursor w lewo o 1 znak, a jeżeli jesteś na początku linii, to przenieś do poprzedniej."
+
+[[items]]
+PC = "▶"
+Mac = "Ctrl-F"
+function = "Przesuń kursor w prawo 1 znak, a jeżeli jesteś na końcu linii, to przenieś do następnej."
+
+[[items]]
+PC = "Ctrl-◀"
+Mac = "Alt-◀"
+function = "Przejdź na lewo od grupy przed kursorem. Grupa to odcinek znaków tworzących słowa, odcinek znaków interpunkcyjnych, nowa linia lub odcinek więcej niż jednego białego znaku."
+
+[[items]]
+PC = "Ctrl-▶"
+Mac = "Alt-▶"
+function = "Przejdź na prawo od grupy przed kursorem (zobacz powyżej)."
+
+[[items]]
+PC = "Backspace"
+Mac = "Ctrl-H"
+function = "Usuń znak przed kursorem."
+
+[[items]]
+PC = "Delete"
+Mac = "Ctrl-D"
+function = "Usuń znak po kursorze."
+
+[[items]]
+PC = "Ctrl-Backspace"
+Mac = "Alt-Backspace"
+function = "Usuń znaki po lewej stronie grupy przed kursorem."
+
+[[items]]
+PC = "Ctrl-Delete"
+Mac = "Alt-Delete"
+function = "Usuń początek grupy po kursorze."
+
+[[items]]
+PC = "Ctrl-]"
+Mac = "Alt-]"
+function = "Zrób wcięcie dla bieżącej linii lub zaznaczenia."
+
+[[items]]
+PC = "Ctrl-["
+Mac = "Alt-["
+function = "Usuń wcięcie dla bieżącej linii lub zaznaczenia."
+
+[[items]]
+PC = "Ctrl-S"
+Mac = "Cmd-S"
+function = "Zapisz i zatwierdź zmiany, jeżeli jakieś są."
+
+[[items]]
+PC = "Ctrl-F"
+Mac = "Cmd-F"
+function = "Znajdź ciąg."

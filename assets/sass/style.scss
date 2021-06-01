@@ -597,3 +597,10 @@ button.table {
 $fa-font-path:   "/fonts";
 @import "fontawesome/fontawesome";
 @import "fontawesome/solid";
+
+@import "keyboard";
+
+.PCCkeyboard .key {
+    display: inline-flex;
+    align-items: center;
+}
