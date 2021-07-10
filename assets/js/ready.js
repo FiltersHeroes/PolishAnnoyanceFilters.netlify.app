@@ -101,13 +101,11 @@ $(document).ready(function () {
 			$(element).removeClass("is-invalid");
 		}
 	});
-
 });
 
 function checkAdblocker() {
 	var annoyance = document.querySelector("#pafdetect");
 	var pafadguard = document.querySelector('#pafadguard');
-
 	if ((typeof (pafDetect) != 'undefined') && pafDetect === true) {
 		Swal.fire("Wspaniale!", "Masz aktywny uBlock Origin z Polskimi Filtrami Elementów Irytujących 😊", "success");
 	}

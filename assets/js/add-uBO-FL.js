@@ -22,8 +22,8 @@ function createuBOModal(url) {
     }
 }
 
-var pafDetect = true;
-if((typeof(pafDetect) != 'undefined') && pafDetect === true) {
+var pafDetect2 = true;
+if((typeof(pafDetect2) != 'undefined') && pafDetect2 === true) {
     let a = document.querySelectorAll("a[href]");
     for(var i in a){
         if(a[i].href && a[i].href.match('^abp:subscribe')) {
