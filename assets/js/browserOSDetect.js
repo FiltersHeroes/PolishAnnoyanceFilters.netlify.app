@@ -60,13 +60,13 @@ function browserOSDetect() {
         if ((verOffset=nAgt.indexOf("Version"))!=-1)
         fullVersion = nAgt.substring(verOffset+8);
     }
-    else if ((verOffset=nAgt.indexOf("Waterfox"))!=-1 && parseFloat(fullVersion) < parseFloat("57.0")) {
+    else if ((verOffset=nAgt.indexOf("Waterfox"))!=-1) {
         fullVersion = nAgt.substring(verOffset+9);
-        waterfoxClassic.checked = true;
-    }
-    else if ((verOffset=nAgt.indexOf("Waterfox"))!=-1 && parseFloat(fullVersion) > parseFloat("57.0")) {
-        fullVersion = nAgt.substring(verOffset+9);
-        waterfoxCurrent.checked = true;
+        if (parseFloat(fullVersion) < parseFloat("57.0")) {
+            waterfoxClassic.checked = true;
+        } else {
+            waterfoxCurrent.checked = true;
+        }
     }
     else if ((verOffset=nAgt.indexOf("Basilisk"))!=-1) {
         fullVersion = nAgt.substring(verOffset+9);
