@@ -16,6 +16,8 @@ function browserOSDetect() {
     var yandex = document.getElementById('yandex');
     var safari = document.getElementById('safari');
     var kiwi = document.getElementById('kiwi');
+    var basilisk = document.getElementById('basilisk');
+    var paleMoon = document.getElementById('moon');
     var inna = document.getElementById('inna');
 
     // In Opera 15+, the true version is after "OPR/"
@@ -58,9 +60,21 @@ function browserOSDetect() {
         if ((verOffset=nAgt.indexOf("Version"))!=-1)
         fullVersion = nAgt.substring(verOffset+8);
     }
-    else if ((verOffset=nAgt.indexOf("Waterfox"))!=-1) {
+    else if ((verOffset=nAgt.indexOf("Waterfox"))!=-1 && parseFloat(fullVersion) < parseFloat("57.0")) {
         fullVersion = nAgt.substring(verOffset+9);
         waterfoxClassic.checked = true;
+    }
+    else if ((verOffset=nAgt.indexOf("Waterfox"))!=-1 && parseFloat(fullVersion) > parseFloat("57.0")) {
+        fullVersion = nAgt.substring(verOffset+9);
+        waterfoxCurrent.checked = true;
+    }
+    else if ((verOffset=nAgt.indexOf("Basilisk"))!=-1) {
+        fullVersion = nAgt.substring(verOffset+9);
+        basilisk.checked = true;
+    }
+    else if ((verOffset=nAgt.indexOf("PaleMoon"))!=-1) {
+        fullVersion = nAgt.substring(verOffset+9);
+        moon.checked = true;
     }
     // In Firefox, the true version is after "Firefox"
     else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
