@@ -17,7 +17,7 @@ function browserOSDetect() {
     var safari = document.getElementById('safari');
     var kiwi = document.getElementById('kiwi');
     var basilisk = document.getElementById('basilisk');
-    var paleMoon = document.getElementById('moon');
+    var moon = document.getElementById('moon');
     var inna = document.getElementById('inna');
 
     // In Opera 15+, the true version is after "OPR/"
