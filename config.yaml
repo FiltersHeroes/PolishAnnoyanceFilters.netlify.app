@@ -12,8 +12,8 @@ params:
   use_sass: true
   show_downloads: false
   description: Filtry ukrywające i blokujące wyskakujące okienka, widgety, newslettery, powiadomienia push, strzałki i inne drażniące elementy (Polskie Filtry RODO-Ciasteczkowe są już w nich zawarte).
-  gh_repo_owner: PolishFiltersTeam
+  gh_repo_owner: FiltersHeroes
   gh_repo_name: PolishAnnoyanceFilters
   google_site_verification: fNut01rhp845fu903ZfwVGKe-vWAz-IecDu7MHZ0bLw
   footer_text: 'Paczka ikon systemów operacyjnych i kategorii została stworzona przez [Icons8](https://icons8.com). Czcionka Architects Daughter jest na licencji [SIL OFL](/fonts/SIL_OFL.txt).'
-  author: Polish Filters Team
+  author: Filters Heroes

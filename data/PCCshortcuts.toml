@@ -1,7 +1,7 @@
-[[items]]
-PC = "Ctrl-Spacja"
-Mac = "Cmd-Spacja"
-function = "Automatycznie uzupełnij nazwę funkcji."
+# [[items]]
+# PC = "Ctrl-Spacja"
+# Mac = "Cmd-Spacja"
+# function = "Automatycznie uzupełnij nazwę funkcji."
 
 [[items]]
 PC = "Ctrl-/"
