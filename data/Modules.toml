@@ -1,54 +1,54 @@
 [[items]]
 title = "Newslettery (bez wyskakujących okienek)"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt"
+subscribe = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_newsletters.txt"
 adblocker = "ABP"
 
 [[items]]
 title = "Powiadomienia Web Push"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_push.txt"
+subscribe = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_push.txt"
 adblocker = "ABP"
 
 [[items]]
 title = "Scrollujące Filmiki"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt"
+subscribe = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt"
 adblocker = "ABP"
 
 [[items]]
 title = "Strzałki"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_arrows.txt"
+subscribe = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_arrows.txt"
 adblocker = "ABP"
 
 [[items]]
 title = "Tła Zawierajace Autoreklamy"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt"
+subscribe = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt"
 adblocker = "ABP"
 
 [[items]]
 title = "Wyskakujące Okienka"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_pop-ups.txt"
+subscribe = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_pop-ups.txt"
 adblocker = "ABP"
 
 [[items]]
 title = "Widżety Kontaktowe/Informacji Zwrotnej"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt"
+subscribe = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt"
 adblocker = "ABP"
 
 [[items]]
 title = "Niezgodne z Tematem Artykułów Otagowane Linki Wewnętrzne"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt"
+subscribe = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt"
 adblocker = "uBO, AG"
 
 [[items]]
 title = "Powrotowe Tytuły („Wróć do…”)"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_comeback_titles.txt"
+subscribe = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_comeback_titles.txt"
 adblocker = "uBO, AG"
 
 [[items]]
 title = "Prenumeraty i E-wydania Gazet"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_e_newspaper.txt"
+subscribe = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_e_newspaper.txt"
 adblocker = "ABP"
 
 [[items]]
 title = "Inne Elementy"
-subscribe = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
+subscribe = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
 adblocker = "ABP"
