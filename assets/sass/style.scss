@@ -604,3 +604,15 @@ $fa-font-path:   "/fonts";
     display: inline-flex;
     align-items: center;
 }
+
+/*!
+* flag-icons v4.1.4
+* Copyright 2013 Panayiotis Lipiridis
+* Licensed under MIT (https://github.com/lipis/flag-icons/blob/main/LICENSE)
+*/
+@import "flag-icons";
+
+#languageSelector .btn {
+    border: 1px solid #dbdbdb;
+    background: url(/images/subscribe-button.png) no-repeat;
+}

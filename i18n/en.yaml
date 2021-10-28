@@ -1,0 +1,70 @@
+- id: followFiltersOn
+  translation: "Follow filters on"
+- id: onGitHub
+  translation: "GitHub"
+- id: subscribeFilters
+  translation: "Subscribe filters"
+- id: darkMode
+  translation: Dark mode
+- id: lightMode
+  translation: "Light mode"
+- id: function
+  translation: "Function"
+- id: checkBeforeSubmit
+  translation: "Before submitting, check if you have the latest version of **Polish Cookie Consent**."
+- id: issueWillBeForwarded
+  translation: "Your issue will be forwarded to Google"
+- id: GooglePrivacy
+  translation: "Google policy privacy"
+- id: thenPublished
+  translation: "and then published on GitHub"
+- id: GHPrivacy
+  translation: "GitHub policy privacy"
+- id: issueTitle
+  translation: Issue title
+- id: improvement
+  translation: Improvement
+- id: question
+  translation: Question
+- id: bug
+  translation: Bug
+- id: problemType
+  translation: Problem type(s)
+- id: step1
+  translation: Step 1
+- id: step2
+  translation: Step 2
+- id: step3
+  translation: Step 3
+- id: detectUA
+  translation: Detect User-Agent to fill in the „operating system" and „web browser" fields for me
+- id: next
+  translation: Next
+- id: previous
+  translation: Previous
+- id: OS
+  translation: Operating System
+- id: webBrowser
+  translation: Web browser
+- id: otherOS
+  translation: Other
+- id: otherBrowser
+  translation: Other
+- id: webBrowserVersion
+  translation: Web browser version
+- id: nickname
+  translation: Nickname
+- id: email
+  translation: E-mail adress
+- id: emailTip
+  translation: Your email address will only be shared with the owners of the repository.
+- id: additionalInfo
+  translation: Additional information that may be relevant (optional)
+- id: additionalInfoPlaceholder
+  translation: Screenshots, steps to reproduce the problem (which led to the error) or your method of solving the problem.
+- id: send
+  translation: Send
+- id: emailNotification
+  translation: E-mail notification
+- id: emailNotificationLabel
+  translation: I want to receive e-mail notification about a submitted form with a link to the status of the issue

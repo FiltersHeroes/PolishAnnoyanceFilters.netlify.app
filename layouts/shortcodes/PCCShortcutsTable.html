@@ -3,11 +3,12 @@
 		<tr>
 			<th scope="col" class="text-center font-weight-bold">PC</th>
 			<th scope="col" class="text-center font-weight-bold">Mac</th>
-			<th scope="col" class="text-center font-weight-bold">Funkcja</th>
+			<th scope="col" class="text-center font-weight-bold">{{ i18n "function" }}</th>
 		</tr>
 	</thead>
 	<tbody>
-		{{ range $.Site.Data.PCCshortcuts.items }}
+        {{ $type := printf "PCCshortcuts_%s" .Site.Home.Lang }}
+        {{ range (index $.Site.Data $type).items }}
 		<tr>
 			<td class="align-middle" data-label="PC">
 				<span class="key">

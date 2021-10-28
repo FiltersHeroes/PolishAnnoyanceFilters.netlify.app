@@ -1,18 +1,28 @@
----
-title: Zgłoszenia dot. Polskiej Ciasteczkowej Zgody
-type: Issues
----
-{{< issues_bundle_CC >}}
+{{ $jquery := resources.Get "/js/jquery.js" }}
+{{ $valid := resources.Get "/js/jquery.validate.min.js" }}
+{{ $validpl := resources.Get "/js/jquery-validation-translations/messages_pl.min.js" }}
+{{ $sweets := resources.Get "/js/sweet-surprise.js" }}
+{{ $steps := resources.Get "/js/steps.js" }}
+{{ $checkbox := resources.Get "/js/checkbox.js" }}
+{{ $easymde := resources.Get "/js/easymde.min.js" }}
+{{ $ready := resources.Get "/js/ready_CC.js" }}
+{{ $browserOSDetect := resources.Get "/js/browserOSDetect.js" }}
+{{ $swal := resources.Get "/js/sweetalert2.min.js" }}
+{{ $uBO := resources.Get "js/add-uBO-FL.js" }}
+{{ $bootstrapBundle := resources.Get "js/bootstrap.bundle.min.js" }}
+{{ $privateMode := resources.Get "js/is-private-mode.js" }}
+{{ $js := slice $jquery $valid $validpl $sweets $steps $checkbox $easymde $ready $browserOSDetect $swal $uBO $bootstrapBundle $privateMode | resources.Concat "/js/issues_bundle_CC.js" | minify | fingerprint}}
+<script defer src="{{ $js.Permalink | relURL }}" integrity="{{ $js.Data.Integrity }}"></script>
 <script>var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
 style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zostało wysłane na GitHuba!", text: "Dziękujemy za wypełnienie formularza 😊", type: "success", confirmButtonText: "Wypełnij nowy formularz"}).then((result)=>{if(result.value){document.getElementById("usrform").reset();location.reload();}})}'></iframe>
 
 <div class="border-lblue-solid" id="border">
-    <p class="my-1 ml-2">Przed zgłoszeniem sprawdź, czy masz aktualną wersję <strong>Polskiej Ciasteczkowej Zgody</strong>.</p>
+    <p class="my-1 ml-2">{{i18n "checkBeforeSubmit" | markdownify }}</p>
 
-    <p class="my-1 ml-2">Twoje zgłoszenie zostanie przekazane do Google (<a href="https://policies.google.com/privacy?gl=US&hl=pl" target="_blank" rel="noopener">polityka prywatności Google</a>), a następnie opublikowane na GitHubie (<a href="https://help.github.com/articles/github-privacy-statement/" target="_blank" rel="noopener">polityka prywatności GitHuba</a>).</p>
+    <p class="my-1 ml-2">{{ i18n "issueWillBeForwarded" }} (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">{{ i18n "GooglePrivacy" }}</a>), {{ i18n "thenPublished" }} (<a href="https://help.github.com/articles/github-privacy-statement/" target="_blank" rel="noopener">{{ i18n "GHPrivacy" }}</a>).</p>
 
-    <p class="my-1 ml-2"><strong>UWAGA!!!</strong> Tutaj przyjmujemy jedynie zgłoszenia błędów, dot. ulepszeń i pytania. Natomiast jeżeli chcesz zaraportować nowy element, to zapraszamy na <a href="https://polishannoyancefilters.netlify.app/issues/" target="_blank" rel="noopener">polishannoyancefilters.netlify.app/issues/</a> lub <a href="https://github.com/MajkiIT/polish-ads-filter/issues" target="_blank" rel="noopener">github.com/MajkiIT/polish-ads-filter/issues</a>, jednakże przed tą czynnością upewnij się, że masz najnowszą wersję list filtrów - <a href="abp:subscribe?location=https%3a%2f%2fraw.githubusercontent.com%2fMajkiIT%2fpolish-ads-filter%2fmaster%2fcookies_filters%2fadblock_cookies.txt&amp;title=Polskie%20Filtry%20RODO-Ciasteczkowe">Polskie Filtry Rodo-Ciasteczkowe</a> / <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FFiltersHeroes%2FPolishAnnoyanceFilters%2Fmaster%2FPPB.txt&amp;title=Polskie%20Filtry%20Element%c3%b3w%20Irytuj%c4%85cych">Elementów Irytujących</a> i <a href="abp:subscribe?location=https%3A%2F%2Fwww.i-dont-care-about-cookies.eu%2Fabp%2F&amp;amp;title=I%20don%27t%20care%20about%20cookies">I don't care about cookies</a> oraz odpowiedni blocker (zalecany <a href="https://github.com/gorhill/uBlock#installation" target="_blank" rel="noopener">uBlock Origin</a> / <a href="https://github.com/AdguardTeam/AdguardBrowserExtension#installation" target="_blank" rel="noopener">AdGuard</a>).</p>
+    {{ i18n "borderCC_last" | safeHTML }}
 </div>
 <br/>
 
@@ -20,15 +30,15 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
     <div class="stepwizard-row setup-panel">
         <div class="stepwizard-step">
             <a href="#krok-1" class="btn btn-primary btn-circle">1</a>
-            <p>Krok 1</p>
+            <p>{{ i18n "step1" }}</p>
         </div>
         <div class="stepwizard-step">
             <a href="#krok-2" class="btn btn-secondary btn-circle disabled">2</a>
-            <p>Krok 2</p>
+            <p>{{ i18n "step2" }}</p>
         </div>
         <div class="stepwizard-step">
             <a href="#krok-3" class="btn btn-secondary btn-circle disabled">3</a>
-            <p>Krok 3</p>
+            <p>{{ i18n "step3" }}</p>
         </div>
     </div>
 </div>
@@ -40,31 +50,31 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
     <div class="row setup-content" id="krok-1">
         <!--Tytuł zgłoszenia-->
         <div class="form-group">
-            <label for="title" class="font-weight-bold">Tytuł zgłoszenia</label>
-            <input minlength="5" class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" required="required"/>
+            <label for="title" class="font-weight-bold">{{ i18n "issueTitle" }}</label>
+            <input minlength="5" class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="example.com" required="required"/>
         </div>
 
         <!--Typ(y) problemu(ów)-->
         <div class="form-group type">
-            <label class="font-weight-bold">Typ(y) problemu(ów)</label>
+            <label class="font-weight-bold">{{ i18n "problemType" }}</label>
 
             <div class="custom-control custom-checkbox">
                 <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="question-type" value="pytanie" required="required">
-                <label class="custom-control-label" for="question-type">Pytanie</label>
+                <label class="custom-control-label" for="question-type">{{ i18n "question"}}</label>
             </div>
 
             <div class="custom-control custom-checkbox">
                 <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="enhancement-type" value="widżet" required="required">
-                <label class="custom-control-label" for="enhancement-type">Ulepszenie</label>
+                <label class="custom-control-label" for="enhancement-type">{{ i18n "improvement" }}</label>
             </div>
 
             <div class="custom-control custom-checkbox">
                 <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="error-type" value="błąd" required="required">
-                <label class="custom-control-label" for="error-type">Błąd</label>
+                <label class="custom-control-label" for="error-type">{{ i18n "bug" }}</label>
             </div>
         </div>
         <div class="clearfix">
-            <button type="button" class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+            <button type="button" class="btn btn-primary nextBtn btn-lg float-right">{{ i18n "next" }}</button>
         </div>
     </div>
 
@@ -72,12 +82,12 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
     <div class="row setup-content" id="krok-2">
         <!--Przycisk-->
         <p>
-            <button type="button" class="btn wrap ua" onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
+            <button type="button" class="btn wrap ua" onclick="browserOSDetect()">{{ i18n "detectUA" }}</button>
         </p>
 
         <!--System operacyjny-->
         <div class="form-group">
-            <label class="font-weight-bold">System operacyjny</label>
+            <label class="font-weight-bold">{{ i18n "OS" }}</label>
 
             <div class="custom-control custom-radio">
                 <input name="entry.634915560" type="radio" id="linux" class="custom-control-input" value="Linux" required="required">
@@ -109,13 +119,13 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
 
             <div class="custom-control custom-radio">
                 <input name="entry.634915560" type="radio" class="custom-control-input" id="inny" value="__other_option__">
-                <label class="custom-control-label" for="inny">Inny:</label> <input type="text" class="form-control inline" name="entry.634915560.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                <label class="custom-control-label" for="inny">{{ i18n "otherOS" }}:</label> <input type="text" class="form-control inline" name="entry.634915560.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
             </div>
         </div>
 
         <!--Przeglądarka internetowa-->
         <div class="form-group">
-            <label class="font-weight-bold">Przeglądarka internetowa</label>
+            <label class="font-weight-bold">{{ i18n "webBrowser" }}</label>
 
             <div class="custom-control custom-radio">
                 <input name="entry.1077613316" type="radio" id="firefox" class="custom-control-input" value="Mozilla Firefox" required="required">
@@ -210,19 +220,19 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
 
             <div class="custom-control custom-radio">
                 <input name="entry.1077613316" type="radio" class="custom-control-input" id="inna" value="__other_option__">
-                <label class="custom-control-label" for="inna">Inna:</label> <input type="text" class="form-control inline" name="entry.1077613316.other_option_response" aria-label="Inna odpowiedź"/>
+                <label class="custom-control-label" for="inna">{{ i18n "otherBrowser" }}:</label> <input type="text" class="form-control inline" name="entry.1077613316.other_option_response" aria-label="Inna odpowiedź"/>
             </div>
         </div>
 
         <!--Wersja przeglądarki internetowej-->
         <div class="form-group">
-            <label for="browser_version" class="font-weight-bold">Wersja przeglądarki internetowej</label>
+            <label for="browser_version" class="font-weight-bold">{{ i18n "webBrowserVersion" }}</label>
             <input class="form-control" id="browser_version" name="entry.1188003910" type="text" placeholder="56.0" required="required"/>
         </div>
 
         <div class="clearfix">
-            <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
-            <button type="button" class="btn btn-primary nextBtn btn-lg float-right">Dalej</button>
+            <button type="button" class="btn btn-primary prevBtn btn-lg float-left">{{ i18n "previous" }}</button>
+            <button type="button" class="btn btn-primary nextBtn btn-lg float-right">{{ i18n "next" }}</button>
         </div>
     </div>
 
@@ -230,39 +240,40 @@ style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zosta
     <div class="row setup-content" id="krok-3">
         <!--Pseudonim-->
         <div class="form-group">
-            <label for="nickname" class="font-weight-bold">Pseudonim</label>
-            <input class="form-control" id="nickname" name="entry.16169312" type="text" placeholder="wesolyromek123" required="required" autocomplete="nickname">
+            <label for="nickname" class="font-weight-bold">{{ i18n "nickname" }}</label>
+            <input class="form-control" id="nickname" name="entry.16169312" type="text" placeholder="funnyguest123" required="required" autocomplete="nickname">
         </div>
 
         <!--Adres e-mail-->
         <div class="form-group">
-            <label for="mail" class="font-weight-bold">Adres e-mail</label>
+            <label for="mail" class="font-weight-bold">{{ i18n "email" }}</label>
             <input class="form-control" id="mail" name="emailAddress" type="text" placeholder="example@gmail.com" aria-describedby="mailHelp" required="required" autocomplete="email">
-            <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small>
+            <small id="mailHelp" class="form-text text-muted">{{ i18n "emailTip" }}</small>
         </div>
         <input name="email" type="text" id="email" />
 
         <!--Dodatkowe informacje mogące mieć znaczenie-->
         <div class="form-group">
-            <label for="additionalInfoTA" class="font-weight-bold">Dodatkowe informacje mogące mieć znaczenie (opcjonalne)</label>
-            <textarea id="additionalInfoTA" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Zrzuty ekranu, etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu."></textarea>
+            <label for="additionalInfoTA" class="font-weight-bold">{{ i18n "additionalInfo" }}</label>
+            {{ $placeholderT := printf "placeholder=%q" (i18n "additionalInfoPlaceholder") | safeHTMLAttr }}
+            <textarea id="additionalInfoTA" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" {{ $placeholderT }}></textarea>
         </div>
 
         <!--Powiadomienie na e-maila-->
         <div class="form-group">
-            <label class="font-weight-bold">Powiadomienie na e-maila</label>
+            <label class="font-weight-bold">{{ i18n "emailNotification" }}</label>
 
             <div class="custom-control custom-checkbox">
                 <input name="entry.1177450825" type="checkbox" class="custom-control-input" id="tak" value="TAK">
-                <label class="custom-control-label" for="tak">Chcę otrzymać powiadomienie o wysłanym formularzu z linkiem do statusu zgłoszenia na e-maila</label>
+                <label class="custom-control-label" for="tak">{{ i18n "emailNotificationLabel" }}</label>
             </div>
         </div>
 
         <div class="clearfix">
-            <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+            <button type="button" class="btn btn-primary prevBtn btn-lg float-left">{{ i18n "previous" }}</button>
 
             <!--Wyślij-->
-            <button type="submit" class="btn btn-success btn-lg float-right">Wyślij</button>
+            <button type="submit" class="btn btn-success btn-lg float-right">{{ i18n "send" }}</button>
         </div>
     </div>
 </form>

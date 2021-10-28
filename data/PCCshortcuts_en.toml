@@ -1,0 +1,139 @@
+# [[items]]
+# PC = "Ctrl-Spacja"
+# Mac = "Cmd-Spacja"
+# function = "Automatycznie uzupełnij nazwę funkcji."
+
+[[items]]
+PC = "Ctrl-/"
+Mac = "Cmd-/"
+function = "Comment/uncomment current line or selected lines with `#` sign."
+
+[[items]]
+PC = "Ctrl-A"
+Mac = "Cmd-A"
+function = "Select the whole content of the editor."
+
+[[items]]
+PC = "Ctrl-D"
+Mac = "Cmd-D"
+function = "Deletes the whole line under the cursor, including newline at the end."
+
+[[items]]
+PC = "Ctrl-Z"
+Mac = "Cmd-Z"
+function = "Undo the last change."
+
+[[items]]
+PC = "Ctrl-Y"
+Mac = "Cmd-Y"
+function = "Redo the last undone change."
+
+[[items]]
+PC = "Ctrl-U"
+Mac = "Cmd-U"
+function = "Undo the last change to the selection, or if there are no selection-only changes at the top of the history, undo the last change."
+
+[[items]]
+PC = "Alt-U"
+Mac = "Shift-Cmd-U"
+function = "Redo the last change to the selection, or the last text change if no selection changes remain."
+
+[[items]]
+PC = "Ctrl-Home"
+Mac = "Cmd-Home"
+function = "Move the cursor to the start of the document."
+
+[[items]]
+PC = "Ctrl-End"
+Mac = "Cmd-End"
+function = "Move the cursor to the end of the document."
+
+[[items]]
+PC = "Home"
+Mac = "Home"
+function = "Move to the start of the text on the line, or if we are already there, to the actual start of the line (including whitespace)."
+
+[[items]]
+PC = "End"
+Mac = "End"
+function = "Move to the end of the line."
+
+[[items]]
+PC = "▲"
+Mac = "Ctrl-P"
+function = "Move the cursor up one line."
+
+[[items]]
+PC = "▼"
+Mac = "Ctrl-P"
+function = "Move down one line."
+
+[[items]]
+PC = "Page Up"
+Mac = "Shift-Ctrl-V"
+function = "Move the cursor up one screen, and scroll up by the same distance."
+
+[[items]]
+PC = "Page Down"
+Mac = "Ctrl-V"
+function = "Move the cursor down one screen, and scroll down by the same distance."
+
+[[items]]
+PC = "◀"
+Mac = "Ctrl-B"
+function = "Move the cursor one character left, going to the previous line when hitting the start of line."
+
+[[items]]
+PC = "▶"
+Mac = "Ctrl-F"
+function = "Move the cursor one character right, going to the next line when hitting the end of line."
+
+[[items]]
+PC = "Ctrl-◀"
+Mac = "Alt-◀"
+function = "Move to the left of the group before the cursor. A group is a stretch of word characters, a stretch of punctuation characters, a newline, or a stretch of more than one whitespace character."
+
+[[items]]
+PC = "Ctrl-▶"
+Mac = "Alt-▶"
+function = "Move to the right of the group after the cursor (see above)."
+
+[[items]]
+PC = "Backspace"
+Mac = "Ctrl-H"
+function = "Delete the character before the cursor."
+
+[[items]]
+PC = "Delete"
+Mac = "Ctrl-D"
+function = "Delete the character after the cursor."
+
+[[items]]
+PC = "Ctrl-Backspace"
+Mac = "Alt-Backspace"
+function = "Delete to the left of the group before the cursor."
+
+[[items]]
+PC = "Ctrl-Delete"
+Mac = "Alt-Delete"
+function = "Delete to the start of the group after the cursor."
+
+[[items]]
+PC = "Ctrl-]"
+Mac = "Alt-]"
+function = "Indent the current line or selection by one indent unit."
+
+[[items]]
+PC = "Ctrl-["
+Mac = "Alt-["
+function = "Dedent the current line or selection by one indent unit."
+
+[[items]]
+PC = "Ctrl-S"
+Mac = "Cmd-S"
+function = "Save and apply the changes, if any."
+
+[[items]]
+PC = "Ctrl-F"
+Mac = "Cmd-F"
+function = "Find a string."
