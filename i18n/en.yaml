@@ -15,11 +15,11 @@
 - id: issueWillBeForwarded
   translation: "Your issue will be forwarded to Google"
 - id: GooglePrivacy
-  translation: "Google policy privacy"
+  translation: "Google privacy policy"
 - id: thenPublished
   translation: "and then published on GitHub"
 - id: GHPrivacy
-  translation: "GitHub policy privacy"
+  translation: "GitHub privacy policy"
 - id: issueTitle
   translation: Issue title
 - id: improvement
@@ -55,7 +55,7 @@
 - id: nickname
   translation: Nickname
 - id: email
-  translation: E-mail adress
+  translation: E-mail address
 - id: emailTip
   translation: Your email address will only be shared with the owners of the repository.
 - id: additionalInfo
