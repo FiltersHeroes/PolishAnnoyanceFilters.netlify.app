@@ -1,18 +1,3 @@
-{{ $jquery := resources.Get "/js/jquery.js" }}
-{{ $valid := resources.Get "/js/jquery.validate.min.js" }}
-{{ $validpl := resources.Get "/js/jquery-validation-translations/messages_pl.min.js" }}
-{{ $sweets := resources.Get "/js/sweet-surprise.js" }}
-{{ $steps := resources.Get "/js/steps.js" }}
-{{ $checkbox := resources.Get "/js/checkbox.js" }}
-{{ $easymde := resources.Get "/js/easymde.min.js" }}
-{{ $ready := resources.Get "/js/ready_CC.js" }}
-{{ $browserOSDetect := resources.Get "/js/browserOSDetect.js" }}
-{{ $swal := resources.Get "/js/sweetalert2.min.js" }}
-{{ $uBO := resources.Get "js/add-uBO-FL.js" }}
-{{ $bootstrapBundle := resources.Get "js/bootstrap.bundle.min.js" }}
-{{ $privateMode := resources.Get "js/is-private-mode.js" }}
-{{ $js := slice $jquery $valid $validpl $sweets $steps $checkbox $easymde $ready $browserOSDetect $swal $uBO $bootstrapBundle $privateMode | resources.Concat "/js/issues_bundle_CC.js" | minify | fingerprint}}
-<script defer src="{{ $js.Permalink | relURL }}" integrity="{{ $js.Data.Integrity }}"></script>
 <script>var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
 style="display:none;" onload='if(submitted){Swal.fire({title: "Zgłoszenie zostało wysłane na GitHuba!", text: "Dziękujemy za wypełnienie formularza 😊", type: "success", confirmButtonText: "Wypełnij nowy formularz"}).then((result)=>{if(result.value){document.getElementById("usrform").reset();location.reload();}})}'></iframe>
