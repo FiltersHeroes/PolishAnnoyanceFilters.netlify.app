@@ -1,6 +1,5 @@
 ---
 title: Polityka prywatności Polskiej Ciasteczkowej Zgody
-draft: true
 ---
 
 Polska Ciasteczkowa Zgoda nie zbiera żadnych danych.
