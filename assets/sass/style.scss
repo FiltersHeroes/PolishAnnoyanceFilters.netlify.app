@@ -613,6 +613,7 @@ $fa-font-path:   "/fonts";
 @import "flag-icons";
 
 #languageSelector .btn {
-    border: 1px solid #dbdbdb;
-    background: url(/images/subscribe-button.png) no-repeat;
+    border: 3px solid #dbdbdb;
+    background-color: transparent;
+    border-radius: 15px 5px 5px 5px;
 }
