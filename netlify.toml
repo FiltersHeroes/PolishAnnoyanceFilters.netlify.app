@@ -17,7 +17,6 @@
   from = "/cookieconsentoldsyntax"
   to = "/PolishCookieConsent/old-syntax"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/cookieconsentsyntax"
@@ -26,5 +25,11 @@
 
 [[redirects]]
   from = "/cookieconsentissues"
-  to = "/PolishCookieConsent/issues"
+  to = "https://www.reddit.com/r/PolishCookieConsent/"
   status = 301
+
+[[redirects]]
+  from = "/PolishCookieConsent/issues"
+  to = "https://www.reddit.com/r/PolishCookieConsent/"
+  status = 301
+  force = true
