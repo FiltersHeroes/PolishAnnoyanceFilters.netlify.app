@@ -1,5 +1,6 @@
 ---
 title: Stara składnia Polskiej Ciasteczkowej Zgody
+type: PolishCookieConsent
 ---
 
 ### Stara składnia Polskiej Ciasteczkowej Zgody, obowiązująca do wersji 1.43.0 (nowa składnia jest dostępna [tutaj](/cookieconsentsyntax)).

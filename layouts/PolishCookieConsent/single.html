@@ -2,7 +2,7 @@
 <html lang="{{ .Site.Language.Lang | default "en-us" }}">
 <head>
     <style>
-        {{ $criticalStyle := resources.Get "critical_css/index.css" }}
+        {{ $criticalStyle := resources.Get ( printf "critical_css/PCC_%s.css" .File.ContentBaseName ) }}
         {{ $darkStyle := resources.Get "sass/dark-theme.scss" | toCSS | minify }}
         {{ $criticalSet := slice $criticalStyle $darkStyle | resources.Concat "/css/critical.css" }}
         {{ $criticalSet.Content | safeCSS }}
@@ -27,18 +27,18 @@
                             instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.</h2>
                             <br/>
                         </noscript>
-            {{ .Content }}
-            </section>
-                    </div>
+                        {{ .Content }}
+                    </section>
                 </div>
-                <footer>
-                    {{ $jquery := resources.Get "js/jquery.slim.js" }}
-                    {{ $swal := resources.Get "js/sweetalert2.min.js" }}
-                    {{ $uBO := resources.Get "js/add-uBO-FL.js" }}
-                    {{ $bootstrapBundle := resources.Get "js/bootstrap.bundle.min.js" }}
-                    {{ $uBObundle := slice $jquery $swal $uBO $bootstrapBundle | resources.Concat "/js/bundleForuBO.js" | minify | fingerprint }}
-                    <script defer src="{{ $uBObundle.Permalink | relURL }}" integrity="{{ $uBObundle.Data.Integrity }}"></script>
-                    {{ partial "footer.html" . }}
-                </footer>
-            </body>
-</html>
+            </div>
+            <footer>
+                {{ partial "footer.html" . }}
+                {{ $jquery := resources.Get "js/jquery.slim.js" }}
+                {{ $swal := resources.Get "js/sweetalert2.min.js" }}
+                {{ $uBO := resources.Get "js/add-uBO-FL.js" }}
+                {{ $bootstrapBundle := resources.Get "js/bootstrap.bundle.min.js" }}
+                {{ $uBObundle := slice $jquery $swal $uBO $bootstrapBundle | resources.Concat "/js/bundleForuBO.js" | minify | fingerprint }}
+                <script defer src="{{ $uBObundle.Permalink | relURL }}" integrity="{{ $uBObundle.Data.Integrity }}"></script>
+            </footer>
+        </body>
+        </html>

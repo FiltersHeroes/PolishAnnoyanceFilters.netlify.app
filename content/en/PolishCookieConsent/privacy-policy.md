@@ -1,5 +1,6 @@
 ---
 title: Privacy policy for Polish Cookie Consent extension
+type: PolishCookieConsent
 ---
 
 Polish Cookie Consent doesn't collect any data of any kind.

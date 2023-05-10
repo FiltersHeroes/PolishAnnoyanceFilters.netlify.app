@@ -1,5 +1,6 @@
 ---
 title: Polish Cookie Consent Syntax
+type: PolishCookieConsent
 ---
 
 ### Polish Cookie Consent Syntax (applicable from the 1.43.5 version).

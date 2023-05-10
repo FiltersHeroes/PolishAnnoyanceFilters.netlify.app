@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang | default " en-us" }}">
+<html lang="{{ .Site.Language.Lang | default "en-us" }}">
 
 <head>
+    <style>
+        {{ $criticalStyle := resources.Get "critical_css/issues.css" }}
+        {{ $darkStyle := resources.Get "sass/dark-theme.scss" | toCSS | minify }}
+        {{ $criticalSet := slice $criticalStyle $darkStyle | resources.Concat "/css/critical.css" }}
+        {{ $criticalSet.Content | safeCSS }}
+    </style>
     {{ partial "head.html" . }}
     {{ partial "seo.html" . }}
 </head>
