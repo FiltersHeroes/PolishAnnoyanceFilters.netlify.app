@@ -9,13 +9,12 @@ function browserOSDetect() {
 
     var firefox = document.getElementById('firefox');
     var waterfoxClassic = document.getElementById('waterfoxClassic');
+    var waterfoxCurrent = document.getElementById('waterfoxCurrent');
     var chrome = document.getElementById('chrome');
     var opera = document.getElementById('opera');
     var vivaldi = document.getElementById('vivaldi');
     var edge = document.getElementById('edge');
-    var yandex = document.getElementById('yandex');
     var safari = document.getElementById('safari');
-    var kiwi = document.getElementById('kiwi');
     var basilisk = document.getElementById('basilisk');
     var moon = document.getElementById('moon');
     var inna = document.getElementById('inna');
@@ -36,17 +35,12 @@ function browserOSDetect() {
         fullVersion = nAgt.substring(verOffset+8);
         vivaldi.checked = true;
     }
-    else if ((verOffset=nAgt.indexOf("YaBrowser"))!=-1) {
-        fullVersion = nAgt.substring(verOffset+10);
-        yandex.checked = true;
-    }
     else if ((verOffset=nAgt.indexOf("Edge"))!=-1) {
         fullVersion = nAgt.substring(verOffset+8);
         edge.checked = true;
     }
     else if ((verOffset=nAgt.indexOf("Mobile Safari")!=-1) && (verOffset=nAgt.indexOf("Chrome")!=-1)) {
         fullVersion = nAgt.substring(nAgt.indexOf("Chrome")+7);
-        kiwi.checked = true;
     }
     // In Chrome, the true version is after "Chrome"
     else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
