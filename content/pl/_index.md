@@ -5,7 +5,7 @@ Do poprawnego działania listy wymagane są:
 
 * [EasyList](abp:subscribe?location=https%3A%2F%2Feasylist.to%2Feasylist%2Feasylist.txt&title=EasyList)
 * [Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda](abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fpolish-adblock-filters%2Fadblock.txt&title=Oficjalne%20Polskie%20Filtry%20do%20AdBlocka%2C%20uBlocka%20i%20AdGuarda)
-* [I don't care about cookies](abp:subscribe?location=https%3A%2F%2Fwww.i-dont-care-about-cookies.eu%2Fabp%2F&amp;title=I%20don%27t%20care%20about%20cookies)
+* [EasyList - Cookie Notices](abp:subscribe?location=https%3A%2F%2Fsecure.fanboy.co.nz%2Ffanboy-cookiemonster.txt&amp;title=EasyList%20-%20Cookie%20Notices)
 
 Jeżeli irytują ciebie komunikaty dot. :cookie: i RODO, to opcjonalnie możesz zainstalować również rozszerzenie **Polska Ciasteczkowa Zgoda**, które automatycznie je akceptuje (tylko to, co nie da rady załatwić regułą w uBO). Instrukcja jak to zrobić jest dostępna na [github.com/FiltersHeroes/PolishCookieConsent#jak-zainstalować](https://github.com/FiltersHeroes/PolishCookieConsent#jak-zainstalowa%C4%87).
 
