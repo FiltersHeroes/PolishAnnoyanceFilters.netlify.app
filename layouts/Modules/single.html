@@ -11,10 +11,10 @@
 	{{ partial "seo.html" . }}
 </head>
 <body>
-	{{ $bs_switch := resources.Get "js/bootstrap-switch-button.min.js" }}
+    {{ $bs_switch := resources.Get "js/bootstrap5-toggle.ecmas.js" }}
     {{ $dark_sw := resources.Get "js/dark-mode-switch.js" }}
     {{ $darkSet := slice $bs_switch $dark_sw | resources.Concat "/js/darkSet.js" | minify | fingerprint }}
-    <script defer src="{{ $darkSet.Permalink | relURL }}" integrity="{{ $darkSet.Data.Integrity }}"></script>
+    <script src="{{ $darkSet.Permalink | relURL }}" integrity="{{ $darkSet.Data.Integrity }}"></script>
 	<header>
 		{{ partial "header.html" . }}
 	</header>

@@ -536,11 +536,11 @@ header h2 {
     text-decoration: none;
 }
 
-@import "bootstrap-switch-button";
+@import "bootstrap5-toggle";
 
-.switch.round,
-.switch-on.round,
-.switch-off.round {
+.toggle.round,
+.toggle-on.round,
+.toggle-off.round {
     border-radius: 20rem;
 }
 
@@ -623,6 +623,6 @@ $fa-font-path:   "/fonts";
     width: auto;
 }
 
-.switch-group {
+.toggle-group {
     white-space: nowrap;
 }

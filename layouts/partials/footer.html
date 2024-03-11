@@ -9,9 +9,9 @@
         </a>
     </div>
     <div class="form-check float-right mr-4 mt-3">
-        {{ $onLabel := printf "data-onlabel=%q" (i18n "darkMode") | safeHTMLAttr }}
-        {{ $offLabel := printf "data-offlabel=%q" (i18n "lightMode") | safeHTMLAttr }}
-        <input type="checkbox" class="form-check-input" id="darkSwitch" data-toggle="switchbutton" {{$onLabel}} {{$offLabel}} data-style="round" data-onstyle="dark"/>
+        {{ $onLabel := printf "data-on=%q" (i18n "darkMode") | safeHTMLAttr }}
+        {{ $offLabel := printf "data-off=%q" (i18n "lightMode") | safeHTMLAttr }}
+        <input type="checkbox" class="form-check-input" id="darkSwitch" data-toggle="toggle" {{$onLabel}} {{$offLabel}} data-style="round" data-onstyle="dark" data-offstyle="light"/>
         <label class="form-check-label" for="darkSwitch"></label>
     </div>
 </div>
