@@ -150,14 +150,7 @@ function submitForm(form) {
         new Date().getFullYear() == new Date(localStorage.getItem("submittedTime")).getFullYear() &&
         new Date().getMinutes() - new Date(localStorage.getItem("submittedTime")).getMinutes() < 3) {
         form.setAttribute('action', '/');
-        var elementName;
-        if (document.querySelector("#usrform")) {
-            elementName = "zgłoszenia";
-        }
-        else {
-            elementName = "komentarze"
-        }
-        Swal.fire("Zbyt często wysyłasz " + elementName + " !", "Musisz odczekać co najmniej 3 minuty przed wysłaniem kolejnych 😞", "error");
+        Swal.fire("Zbyt często wysyłasz zgłoszenia!", "Musisz odczekać co najmniej 3 minuty przed wysłaniem kolejnych 😞", "error");
         return false;
     }
     else if (error == 2) {
