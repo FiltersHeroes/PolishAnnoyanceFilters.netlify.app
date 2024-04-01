@@ -1,0 +1,8 @@
+{{ $isPrivate := resources.Get "/js/form/detectIncognito.min.js" }}
+{{ $easyMde := resources.Get "/js/form/easymde.min.js" }}
+{{ $browserOSDetect := resources.Get "/js/form/browserOSDetect.js" }}
+{{ $validate := resources.Get "/js/form/just-validate.production.min.js" }}
+{{ $multiStep := resources.Get "/js/form/multi-step-form.js" }}
+{{ $custom := resources.Get "/js/form/z_custom.js" }}
+{{ $jss := slice $easyMde $isPrivate $browserOSDetect $validate $multiStep $custom | resources.Concat "/js/issues/issues_bundle.js" | minify | fingerprint}}
+<script async src="{{ $jss.Permalink | relURL }}" integrity="{{ $jss.Data.Integrity }}"></script>

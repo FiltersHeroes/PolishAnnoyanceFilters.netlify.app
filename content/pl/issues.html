@@ -1,13 +1,8 @@
 ---
 title: Zgłoszenia
-type: Issues
+type: simple
 ---
-{{< issues_bundle >}}
-<script>var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe"
-style="display:none;" onload='if(submitted){localStorage.setItem("submittedTime", new Date());}'></iframe>
-
-<div class="border-lblue-solid" id="border">
+<div class="border border-primary p-2" id="border">
     <p class="my-1 ml-2">Przed zgłoszeniem <a href="javascript:checkAdblocker()">sprawdź, czy masz włączone Polskie Filtry Elementów Irytujących</a> oraz inne wymagane listy: <a href="abp:subscribe?location=https%3A%2F%2Feasylist.to%2Feasylist%2Feasylist.txt&amp;title=EasyList">EasyList</a>, <a href="abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2FMajkiIT%2Fpolish-ads-filter%2Fmaster%2Fpolish-adblock-filters%2Fadblock.txt&amp;title=Oficjalne%20Polskie%20Filtry%20do%20AdBlocka%2C%20uBlocka%20i%20AdGuarda">Oficjalne Polskie Filtry do AdBlocka, uBlocka i AdGuarda</a> i <a href="abp:subscribe?location=https%3A%2F%2Fsecure.fanboy.co.nz%2Ffanboy-cookiemonster.txt&amp;title=EasyList%20-%20Cookie%20Notices">EasyList – Cookie Notices</a> oraz rozszerzenie <a href="https://github.com/FiltersHeroes/PolishCookieConsent#jak-zainstalowa%C4%87" target="_blank" rel="noopener">Polska Ciasteczkowa Zgoda</a>. Powinieneś również posiadać tylko jedne rozszerzenie blokujące elementy, a jeżeli masz ich kilka, to zostaw tylko jedno, a pozostałe wyłącz albo odinstaluj. Pamiętaj także, by zaktualizować filtry. </p>
 
     <p class="my-1 ml-2"><b>UWAGA!! Filtry te <u>nie blokują</u> reklam zewnętrznych ani elementów społecznościowych oraz nie zajmują się zdejmowaniem mechanizmów antyadblockowych!</b></p>
@@ -15,368 +10,369 @@ style="display:none;" onload='if(submitted){localStorage.setItem("submittedTime"
     <p class="my-1 ml-2">Twoje zgłoszenie zostanie przekazane do Google (<a href="https://policies.google.com/privacy?gl=US&hl=pl" target="_blank" rel="noopener">polityka prywatności Google</a>), a następnie opublikowane na GitHubie (<a href="https://help.github.com/articles/github-privacy-statement/" target="_blank" rel="noopener">polityka prywatności GitHuba</a>).</p>
 
 </div>
-<br/>
 
-<div class="stepwizard">
-    <div class="stepwizard-row setup-panel">
-        <div class="stepwizard-step">
-            <a href="#krok-1" class="btn btn-primary btn-circle">1</a>
-            <p>Krok 1</p>
+<form name="formularz" class="form" id="annoyanceIssuesForm" method="post" data-src="https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse">
+
+    <!-- Progress Bar  -->
+    <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        <div class="progress-step progress-step-active btn" data-title="Krok 1">
         </div>
-        <div class="stepwizard-step">
-            <a href="#krok-2" class="btn btn-secondary btn-circle disabled">2</a>
-            <p>Krok 2</p>
+        <div class="progress-step btn " data-title="Krok 2">
         </div>
-        <div class="stepwizard-step">
-            <a href="#krok-3" class="btn btn-secondary btn-circle disabled">3</a>
-            <p>Krok 3</p>
+        <div class="progress-step btn" data-title="Krok 3">
         </div>
-        <div class="stepwizard-step">
-            <a href="#krok-4" class="btn btn-secondary btn-circle disabled">4</a>
-            <p>Krok 4</p>
+        <div class="progress-step btn" data-title="Krok 4">
         </div>
     </div>
-</div>
-
-<form name="formularz" class="form" id="usrform" method="post" target="hidden_iframe" onsubmit="submitted=true;">
     <!--Krok 1-->
-    <div class="row setup-content" id="krok-1">
+    <div class="form-step form-step-active" id="step-1">
         <!--Tytuł zgłoszenia-->
-        <div class="form-group">
-            <label for="title" class="font-weight-bold">Tytuł zgłoszenia</label>
+        <div class="mb-3">
+            <label for="title" class="fw-bold">Tytuł zgłoszenia</label>
             <input minlength="5" class="form-control form-control-lg" id="title" name="entry.1884702034" type="text" placeholder="strona.pl" required="required"/>
         </div>
 
         <!--Typ(y) elementu(ów)-->
-        <div class="form-group type">
-            <label class="font-weight-bold">Typ(y) elementu(ów)</label>
+        <div class="mb-3 type">
+            <label class="fw-bold">Typ(y) elementu(ów)</label>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="popup-type" value="popup" required="required">
-                <label class="custom-control-label" for="popup-type">Wyskakujące okienko (popup)</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="popup-type" value="popup">
+                <label class="form-check-label" for="popup-type">Wyskakujące okienko (popup)</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="newsletter-type" value="newsletter" required="required">
-                <label class="custom-control-label" for="newsletter-type">Newsletter (nie popup)</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="newsletter-type" value="newsletter">
+                <label class="form-check-label" for="newsletter-type">Newsletter (nie popup)</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="push-type" value="push" required="required">
-                <label class="custom-control-label" for="push-type">Powiadomienie typu webpush (nie „zgoda na geolokalizację”)</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="push-type" value="push">
+                <label class="form-check-label" for="push-type">Powiadomienie typu webpush (nie „zgoda na geolokalizację”)</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="scroll_movie-type" value="scrollujący filmik" required="required">
-                <label class="custom-control-label" for="scroll_movie-type">Scrollujący filmik</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="scroll_movie-type" value="scrollujący filmik">
+                <label class="form-check-label" for="scroll_movie-type">Scrollujący filmik</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="comeback_title-element-type" value="powrotowy tytuł" required="required">
-                <label class="custom-control-label" for="comeback_title-element-type">Tytuł strony zachęcający do powrotu („Wróć do…”)</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="comeback_title-element-type" value="powrotowy tytuł">
+                <label class="form-check-label" for="comeback_title-element-type">Tytuł strony zachęcający do powrotu („Wróć do…”)</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="newspaper_subscription-type" value="prenumerata" required="required">
-                <label class="custom-control-label" for="newspaper_subscription-type">Prenumeraty i E-wydania Gazet</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="newspaper_subscription-type" value="prenumerata">
+                <label class="form-check-label" for="newspaper_subscription-type">Prenumeraty i E-wydania Gazet</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="feedback-type" value="widżet kontaktowy/feedback" required="required">
-                <label class="custom-control-label" for="feedback-type">Widżet kontaktowy/informacji zwrotnej</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="feedback-type" value="widżet kontaktowy/feedback">
+                <label class="form-check-label" for="feedback-type">Widżet kontaktowy/informacji zwrotnej</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="arrow-type" value="strzałka" required="required">
-                <label class="custom-control-label" for="arrow-type">Strzałka</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="arrow-type" value="strzałka">
+                <label class="form-check-label" for="arrow-type">Strzałka</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="tagLink-type" value="otagowany link wewnętrzny" required="required">
-                <label class="custom-control-label" for="tagLink-type">Otagowany link wewnętrzny (niezgodny z tematem artykułu)</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="tagLink-type" value="otagowany link wewnętrzny">
+                <label class="form-check-label" for="tagLink-type">Otagowany link wewnętrzny (niezgodny z tematem artykułu)</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="background-type" value="tło autopromocyjne" required="required">
-                <label class="custom-control-label" for="background-type">Tło zawierające autopromocję (wewnętrzną reklamę)</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="background-type" value="tło autopromocyjne">
+                <label class="form-check-label" for="background-type">Tło zawierające autopromocję (wewnętrzną reklamę)</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="other-element-type" value="inny element" required="required">
-                <label class="custom-control-label" for="other-element-type">Inny element (np. widget „następny artykuł”)</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="other-element-type" value="inny element">
+                <label class="form-check-label" for="other-element-type">Inny element (np. widget „następny artykuł”)</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1334297973" type="checkbox" class="custom-control-input" id="error-type" value="błąd" required="required">
-                <label class="custom-control-label" for="error-type">Błąd</label>
+            <div class="form-check">
+                <input name="entry.1334297973" type="checkbox" class="form-check-input" id="error-type" value="błąd">
+                <label class="form-check-label" for="error-type">Błąd</label>
             </div>
 
         </div>
 
         <!--Link bezpośredni do strony zawierającej element-->
-        <div class="form-group">
-            <label for="entry.412846605" class="font-weight-bold">Link bezpośredni do strony zawierającej element (opcjonalny)</label>
+        <div class="mb-3">
+            <label for="entry.412846605" class="fw-bold">Link bezpośredni do strony zawierającej element (opcjonalny)</label>
             <input id="entry.412846605" name="entry.412846605" minlength="7" placeholder="http://www.strona.pl/recenzja" type="url" class="form-control here">
         </div>
         <div class="clearfix">
-            <button class="btn btn-primary nextBtn btn-lg float-right" type="button">Dalej</button>
+            <button class="btn btn-primary btn-next btn-lg float-end" type="button">Dalej</button>
         </div>
     </div>
 
     <!--Krok 2-->
-    <div class="row setup-content" id="krok-2">
+    <div class="form-step" id="step-2">
         <!--Przycisk-->
         <p>
-            <button type="button" class="btn wrap ua" onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
+            <button type="button" class="btn wrap ua btn-outline-primary" onclick="browserOSDetect()">Wykryj User-Agent, by uzupełnić pola „system operacyjny" i „przeglądarka internetowa" za mnie</button>
         </p>
 
         <!--System operacyjny-->
-        <div class="form-group">
-            <label class="font-weight-bold">System operacyjny</label>
+        <div class="mb-3" id="osRadio">
+            <label class="fw-bold">System operacyjny</label>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.634915560" type="radio" id="linux" class="custom-control-input" value="Linux" required="required">
-                <label class="custom-control-label" for="linux">Linux
+            <div class="form-check">
+                <input name="entry.634915560" type="radio" id="linux" class="form-check-input" value="Linux">
+                <label class="form-check-label" for="linux">Linux
                     <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKDSURBVEhLYxiRgBFKUxeoG1uGqhmaP1Q1NP+tZmS+W8XATAsqRTmQ17cXUDW0+KVmZPEfCV+BSlMO1IzNbVz8Q/7rWtj/D0tI/R+fkQe2BOgbTagSygDIgpb2zv9ZhWX/Wzq6/k+cMg3iC6A4VAllQFXfymD5BJf/b7by/L+9Vub/islesGAKgyqhDKjpmSmeXyT159Eq9v/3V7D/f7LH8b+GieVvVSOLxVAllAFLV5+ajVvX//hyq+P/x8db/r95//F/ck7hR1CKAlqkA1VGHlAzttTQtXT4/uT5S7DBMLxj70FoMJmf19LSYoMqJxkw6lraHe6aOOU3suEg/Prdh/9ugWH/gfnjJ9An1VD1pAF1I0t398DwJ89evUYxHIanzJ7/PyQu6beGseUnLS17Hqg24gHQdavWb93xE5vhILz7wOH/yblF/4EW/Fc3so6CaiMOqKh4sGuaWD258+ARVsNB+OLVG/9beyaA4wKYoiqhWokDPw9wxd1bLfB51sw+rIa/ffvq/8urE/839k367+zj+jYlSisBqhU/+H+YXenfAfZ+IP75/yD7/4OzpP9WNLT+f/nmHYoF758f/w+Sb6jx+n9nncTffwfZl0KNwA/+HWSNBmlExjmJmv87J0xBseDD450oaoAO+vrvIJs31Bjc4N8BNl9kjSD8cQf/7wlTuv4+ePLs//OXb/6v3bzt/8IJAR/Q1QEtOAQ1BjcAejUD6Jp/6JqbC1Q/q5tY/dI0s/4CxJ8XtsqchclBXM+e/f8/AxPUGPzg/34eEaBPgoAuWgTU+B6If//bz2kBlQaD33vZ3YDin4GGn/y/n00DKkw6+H+Fge3fEQZeKHfEAQYGABJ33wC6iY/7AAAAAElFTkSuQmCC" alt="Linux" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.634915560" type="radio" class="custom-control-input" id="windows" value="Windows">
-                <label class="custom-control-label" for="windows">Windows
+            <div class="form-check">
+                <input name="entry.634915560" type="radio" class="form-check-input" id="windows" value="Windows">
+                <label class="form-check-label" for="windows">Windows
                     <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE2SURBVEhL7ZUxSwNBFITXu4B/wMLG2r9gY2Hrb7ARa2trK/U32CrZDVgFLNOm0cLG2t5CzG7ERs+5Rx48jrm8QLDLwMfe3szO3cGyFzb6P93PdgZxflClfFLHfFmncofrKcb3RWIFjcruYDg7rGI5bad1LKmK+QnjB4qaPmQtU53yTZXKA3jBW827i+x8GVLGxMKK51ukjImFFc+3SBkTCyueb5EyJhZWPN8iZUwsrHi+RcqYsHOu+/B8i5QxYXte9OH5FiljYp+reL5FyphYWPF8i5QxsbDi+RYpY2JhxfMtUsbEwornW6SMCYfdLXbBBFvtDdc/3UV2vgwpc/X4ux3S5z6O5mMc0eftLZz3YxS84gW+u6UWWb+WmmYrDL/28KAjfPEZxiv5V6T83P4rFqmNVlEIfx/rvRwNAWMoAAAAAElFTkSuQmCC" alt="Windows" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.634915560" type="radio" class="custom-control-input" id="mac" value="macOS">
-                <label class="custom-control-label" for="mac">macOS
+            <div class="form-check">
+                <input name="entry.634915560" type="radio" class="form-check-input" id="mac" value="macOS">
+                <label class="form-check-label" for="mac">macOS
                     <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHMSURBVEhL7ZM7S8NQFMeLoKPo4uT7UbW0olbxVZEmDm6C4HdQHBRx083FRx8+WtqC7+QuDn4FN0dHXURwaNLUpNY2VxGp1xs9BZG8lLr5g/+QE87vHA6J458/YezwocqP1DDNHZRKxwQnVzI8vmYQJn4eX0K5dPgRDmhyGDAF5dJBt8/Q0xTogFUo/Z4xDtfSjWdZ9LTIovy4N0HK6YA5ls97xtGTjw6ZZzi8oD1Di30YpC4zvPpaPAecJOvn1Qs6VPpa/3iH8NH0KamAdnO0jb8LrEIHyCyH+0FhjA9lq+mNVT2JUUaPc6+Dh7kRUJijfRl6EqMM7GdJ51b6BtqtKZ6H3poMHzwSbyJDemKf6Y0rpC/xQLzxDPFEZdIaFEn9WpK4tqVzaLfGx+UXu2MKadwQPprtpGMrdQXt1nTFlCU9iVmaNoWCN5GsB4U5QydiTcO6/e2LaQul5L6AUgcac5zhlKAnsUprQHx2EFIGGmPcUWVGT2AV9076CBTWtIelWz2JUej22GX3T9boiQgNzZvii57se5o2hIIncs9Cq31cYanbGRLFxvXkW0tIzLl20meeiLzi3pX2nCEppdXbgmKWyieh5Z+f4nC8AwJVGH0WeQm+AAAAAElFTkSuQmCC" alt="macOS" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.634915560" type="radio" class="custom-control-input" id="android" value="Android">
-                <label class="custom-control-label" for="android">Android
+            <div class="form-check">
+                <input name="entry.634915560" type="radio" class="form-check-input" id="android" value="Android">
+                <label class="form-check-label" for="android">Android
                     <img class="img-rbtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVEhL7ZQ9CsJAEIVzAjvxMja7lXoHryHEDdhqZeNBZAOp7NROKysvINjYGEQrnY0TSSbj5g/BIh88mIF5bydLEqehNsqXI0+LGbYfPF8slBZDbKvjrmQHwkJPy4Pny1skLY+gixt02zhWjUnQa0H4Hp7iagThTyOsQ6XlzszgeHngauYYukRFB6R6mMHx8ihfnBOhvLQ84fifABtt4Y43Uc1tzIj6rKRMiRCbqM8KZ8oT9VnhTHmiPiucKU/UZwVezQe823dTJ0Nsoj4r8OUOxlr23zUfSEV9hYm2YgJTKrL1N8xW8MecxmGmpn3prTniQGwzfW1+foD5BcB1rbHN9A01cJwXBKyR6Y4/gYkAAAAASUVORK5CYII=" alt="Android" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.634915560" type="radio" class="custom-control-input" id="inny" value="__other_option__">
-                <label class="custom-control-label" for="inny">Inny:</label> <input type="text" class="form-control inline" name="entry.634915560.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+            <div class="input-group">
+                <div class="d-flex align-items-center">
+                    <input name="entry.634915560" type="radio" class="form-check-input" id="inny" value="__other_option__">
+                    <label class="form-check-label mx-2" for="inny">Inny:</label> 
+                    <input type="text" class="form-control form-control-sm" name="entry.634915560.other_option_response" aria-label="Inna odpowiedź" />
+                </div>
             </div>
         </div>
 
         <!--Przeglądarka internetowa-->
-        <div class="form-group">
-            <label class="font-weight-bold">Przeglądarka internetowa</label>
+        <div class="mb-3" id="browserRadio">
+            <label class="fw-bold">Przeglądarka internetowa</label>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" id="firefox" class="custom-control-input" value="Mozilla Firefox" required="required">
-                <label class="custom-control-label" for="firefox">Firefox
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" id="firefox" class="form-check-input" value="Mozilla Firefox">
+                <label class="form-check-label" for="firefox">Firefox
                     <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/73.0.2/firefox/firefox_24x24.png" alt="Firefox" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="waterfoxClassic" value="Waterfox Classic">
-                <label class="custom-control-label" for="waterfoxClassic">Waterfox Classic
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="waterfoxClassic" value="Waterfox Classic">
+                <label class="form-check-label" for="waterfoxClassic">Waterfox Classic
                     <img class="img-rbtn" src="/images/WF_Classic.png" alt="Waterfox Classic" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="waterfoxCurrent" value="Waterfox G">
-                <label class="custom-control-label" for="waterfoxCurrent">Waterfox G
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="waterfoxCurrent" value="Waterfox G">
+                <label class="form-check-label" for="waterfoxCurrent">Waterfox G
                     <img class="img-rbtn" src="/images/WF_G3.png" alt="Waterfox Current" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="basilisk" value="Basilisk">
-                <label class="custom-control-label" for="basilisk">Basilisk
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="basilisk" value="Basilisk">
+                <label class="form-check-label" for="basilisk">Basilisk
                     <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/73.0.2/basilisk/basilisk_24x24.png" alt="Basilisk" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="moon" value="Pale Moon">
-                <label class="custom-control-label" for="moon">Pale Moon
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="moon" value="Pale Moon">
+                <label class="form-check-label" for="moon">Pale Moon
                     <img class="img-rbtn" src="/images/PaleMoon.png" alt="Pale Moon" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="chrome" value="Google Chrome">
-                <label class="custom-control-label" for="chrome">Chrome
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="chrome" value="Google Chrome">
+                <label class="form-check-label" for="chrome">Chrome
                     <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/73.0.2/chrome/chrome_24x24.png" alt="Chrome" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="opera" value="Opera">
-                <label class="custom-control-label" for="opera">Opera
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="opera" value="Opera">
+                <label class="form-check-label" for="opera">Opera
                     <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/73.0.2/opera/opera_24x24.png" alt="Opera" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="vivaldi" value="Vivaldi">
-                <label class="custom-control-label" for="vivaldi">Vivaldi
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="vivaldi" value="Vivaldi">
+                <label class="form-check-label" for="vivaldi">Vivaldi
                     <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/73.0.2/vivaldi/vivaldi_24x24.png" alt="Vivaldi" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="edge" value="Microsoft Edge">
-                <label class="custom-control-label" for="edge">Edge
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="edge" value="Microsoft Edge">
+                <label class="form-check-label" for="edge">Edge
                     <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/73.0.2/edge/edge_24x24.png" alt="Edge" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="lemur" value="Lemur Browser">
-                <label class="custom-control-label" for="lemur">Lemur
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="lemur" value="Lemur Browser">
+                <label class="form-check-label" for="lemur">Lemur
                     <img class="img-rbtn" src="/images/lemur_24.png" alt="Lemur" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="kiwi" value="Kiwi Browser">
-                <label class="custom-control-label" for="kiwi">Kiwi
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="kiwi" value="Kiwi Browser">
+                <label class="form-check-label" for="kiwi">Kiwi
                     <img class="img-rbtn" src="/images/Kiwi.png" alt="Kiwi" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="brave" value="Brave Browser">
-                <label class="custom-control-label" for="brave">Brave
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="brave" value="Brave Browser">
+                <label class="form-check-label" for="brave">Brave
                     <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/73.0.2/brave/brave_24x24.png" alt="Brave" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="safari" value="Safari">
-                <label class="custom-control-label" for="safari">Safari
+            <div class="form-check">
+                <input name="entry.1077613316" type="radio" class="form-check-input" id="safari" value="Safari">
+                <label class="form-check-label" for="safari">Safari
                     <img class="img-rbtn" src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/73.0.2/safari/safari_24x24.png" alt="Safari" style="width: 24px; height: 24px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1077613316" type="radio" class="custom-control-input" id="inna" value="__other_option__">
-                <label class="custom-control-label" for="inna">Inna:</label> <input type="text" class="form-control inline" name="entry.1077613316.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+            <div class="input-group">
+                <div class="d-flex align-items-center">
+                    <input name="entry.1077613316" type="radio" class="form-check-input" id="inna" value="__other_option__">
+                    <label class="form-check-label mx-2" for="inna">Inna:</label> 
+                    <input type="text" class="form-control form-control-sm" name="entry.1077613316.other_option_response" aria-label="Inna odpowiedź" />
+                </div>
             </div>
         </div>
 
         <!--Wersja przeglądarki internetowej-->
-        <div class="form-group">
-            <label for="browser_version" class="font-weight-bold">Wersja przeglądarki internetowej</label>
+        <div class="mb-3">
+            <label for="browser_version" class="fw-bold">Wersja przeglądarki internetowej</label>
             <input class="form-control" id="browser_version" name="entry.1188003910" type="text" placeholder="56.0" required="required"/>
         </div>
 
         <div class="clearfix">
-            <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
-            <button class="btn btn-primary nextBtn btn-lg float-right" type="button">Dalej</button>
+            <button type="button" class="btn btn-primary btn-prev btn-lg float-start">Wróć</button>
+            <button class="btn btn-primary btn-next btn-lg float-end" type="button">Dalej</button>
         </div>
     </div>
 
     <!--Krok 3-->
-    <div class="row setup-content" id="krok-3">
+    <div class="form-step" id="step-3">
         <!--Bloker-->
-        <div class="form-group">
-            <label class="font-weight-bold">Bloker</label>
+        <div class="mb-3" id="blockerRadio">
+            <label class="fw-bold">Bloker</label>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1847630274" type="radio" class="custom-control-input" id="uBO" value="uBlock Origin">
-                <label class="custom-control-label" for="uBO">uBlock Origin
+            <div class="form-check">
+                <input name="entry.1847630274" type="radio" class="form-check-input" id="uBO" value="uBlock Origin">
+                <label class="form-check-label" for="uBO">uBlock Origin
                     <img class="img-rbtn" src="/images/uBO.png" alt="uBO" style="width: 22px; height: 22px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1847630274" type="radio" class="custom-control-input" id="AG" value="AdGuard">
-                <label class="custom-control-label" for="AG">AdGuard
+            <div class="form-check">
+                <input name="entry.1847630274" type="radio" class="form-check-input" id="AG" value="AdGuard">
+                <label class="form-check-label" for="AG">AdGuard
                     <img class="img-rbtn" src="/images/AdGuard_logo.png" alt="AG" style="width: 22px; height: 22px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1847630274" type="radio" class="custom-control-input" id="AB" value="AdBlock">
-                <label class="custom-control-label" for="AB">AdBlock
+            <div class="form-check">
+                <input name="entry.1847630274" type="radio" class="form-check-input" id="AB" value="AdBlock">
+                <label class="form-check-label" for="AB">AdBlock
                     <img class="img-rbtn" src="/images/AdBlock.svg" alt="AB" style="width: 22px; height: 22px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1847630274" type="radio" class="custom-control-input" id="ABP" value="Adblock Plus">
-                <label class="custom-control-label" for="ABP">Adblock Plus
+            <div class="form-check">
+                <input name="entry.1847630274" type="radio" class="form-check-input" id="ABP" value="Adblock Plus">
+                <label class="form-check-label" for="ABP">Adblock Plus
                     <img class="img-rbtn" src="/images/ABP.png" alt="ABP" style="width: 22px; height: 22px">
                 </label>
             </div>
 
-            <div class="custom-control custom-radio">
-                <input name="entry.1847630274" type="radio" class="custom-control-input" id="inny_bloker" value="__other_option__">
-                <label class="custom-control-label" for="inny_bloker">Inny:</label> <input minlength="3" type="text" class="form-control inline" name="entry.1847630274.other_option_response" aria-label="Inna odpowiedź" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+            <div class="input-group">
+                <div class="d-flex align-items-center">
+                    <input name="entry.1847630274" type="radio" class="form-check-input" id="inny_bloker" value="__other_option__">
+                    <label class="form-check-label mx-2" for="inny_bloker">Inny:</label> 
+                    <input minlength="3" type="text" class="form-control form-control-sm" name="entry.1847630274.other_option_response" aria-label="Inna odpowiedź" />
+                </div>
             </div>
         </div>
 
         <!--Wersja blokera-->
-        <div class="form-group">
-            <label for="blocker_version" class="font-weight-bold">Wersja blokera</label>
+        <div class="mb-3">
+            <label for="blocker_version" class="fw-bold">Wersja blokera</label>
             <input class="form-control" id="blocker_version" name="entry.1171563019" type="text" placeholder="1.0.0.29" required="required"/>
         </div>
 
         <!--Używane filtry-->
-        <div class="form-group">
-            <label for="userFilters" class="font-weight-bold">Używane filtry</label>
+        <div class="mb-3">
+            <label for="userFilters" class="fw-bold">Używane filtry</label>
             <textarea minlength="5" id="userFilters" name="entry.1553187432" rows="5" data-min-rows="5" class="form-control" aria-describedby="filtersHelp" required="required">1. EasyList&#13;&#10;2. EasyList - Cookie Notices.&#13;&#10;3. Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda&#13;&#10;4. Polskie Filtry Elementów Irytujących</textarea>
         </div>
         <div class="clearfix">
-            <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
-            <button class="btn btn-primary nextBtn btn-lg float-right" type="button">Dalej</button>
+            <button type="button" class="btn btn-primary btn-prev btn-lg float-start">Wróć</button>
+            <button class="btn btn-primary btn-next btn-lg float-end" type="button">Dalej</button>
         </div>
     </div>
 
     <!--Krok 4-->
-    <div class="row setup-content" id="krok-4">
+    <div class="form-step" id="step-4">
         <!--Pseudonim-->
-        <div class="form-group">
-            <label for="nickname" class="font-weight-bold">Pseudonim</label>
+        <div class="mb-3">
+            <label for="nickname" class="fw-bold">Pseudonim</label>
             <input class="form-control" id="nickname" name="entry.770287256" type="text" placeholder="wesolyromek123" required="required" autocomplete="nickname">
         </div>
 
         <!--Adres e-mail-->
-        <div class="form-group">
-            <label for="mail" class="font-weight-bold">Adres e-mail</label>
+        <div class="mb-3">
+            <label for="mail" class="fw-bold">Adres e-mail</label>
             <input class="form-control" id="mail" name="emailAddress" type="email" placeholder="example@gmail.com" aria-describedby="mailHelp" required="required" autocomplete="email">
             <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small>
         </div>
         <input name="email" type="text" id="email" />
 
         <!--Dodatkowe informacje mogące mieć znaczenie-->
-        <div class="form-group" id="additionalInfo">
-            <label for="additionalInfoTA" class="font-weight-bold">Dodatkowe informacje mogące mieć znaczenie (opcjonalne)</label>
+        <div class="mb-3" id="additionalInfo">
+            <label for="additionalInfoTA" class="fw-bold">Dodatkowe informacje mogące mieć znaczenie (opcjonalne)</label>
             <textarea id="additionalInfoTA" name="entry.249974698" minlength="5" rows="3" data-min-rows="3" class="form-control" placeholder="Zrzuty ekranu, etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu."></textarea>
         </div>
 
         <!--Powiadomienie na e-maila-->
-        <div class="form-group">
-            <label class="font-weight-bold">Powiadomienie na e-maila</label>
+        <div class="mb-3">
+            <label class="fw-bold">Powiadomienie na e-maila</label>
 
-            <div class="custom-control custom-checkbox">
-                <input name="entry.1177450825" type="checkbox" class="custom-control-input" id="tak" value="TAK">
-                <label class="custom-control-label" for="tak">Chcę otrzymać powiadomienie o wysłanym formularzu z linkiem do statusu zgłoszenia na e-maila</label>
+            <div class="form-check">
+                <input name="entry.1177450825" type="checkbox" class="form-check-input" id="tak" value="TAK">
+                <label class="form-check-label" for="tak">Chcę otrzymać powiadomienie o wysłanym formularzu z linkiem do statusu zgłoszenia na e-maila</label>
             </div>
         </div>
 
         <div class="clearfix">
-            <button type="button" class="btn btn-primary prevBtn btn-lg float-left">Wróć</button>
+            <button type="button" class="btn btn-primary btn-prev btn-lg float-start">Wróć</button>
 
             <!--Wyślij-->
-            <button type="submit" class="btn btn-success btn-lg float-right">Wyślij</button>
+            <button type="submit" class="btn btn-success btn-lg float-end">Wyślij</button>
         </div>
     </div>
 </form>
 <div id="pafdetect"></div>
 <div id="pafadguard"></div>
+{{< issuesBundle >}}

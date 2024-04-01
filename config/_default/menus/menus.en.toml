@@ -1,0 +1,16 @@
+[[main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 1
+
+[[social]]
+  name = "GitHub"
+  pre = "fab fa-github"
+  url = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters"
+  weight = 20
+
+[[social]]
+  name = "RSS"
+  pre = "fas fa-rss"
+  url = "/index.xml"
+  weight = 30

@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="container-fluid p-0 bg-secondary bg-opacity-10">
+    <div class="container-xxl p-4 px-xxl-0 {{ if site.Params.home.fullCover }} fullcover{{ end }} d-flex flex-column">
+        <div class="row justify-content-center flex-fill">
+            <div class="col-12 col-md">
+                {{ .Content | safeHTML }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

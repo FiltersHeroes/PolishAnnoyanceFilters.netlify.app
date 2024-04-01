@@ -1,0 +1,45 @@
+<table class="responsive table table-sm table-striped table-bordered">
+	<thead>
+		<tr>
+			<th scope="col" class="text-center font-weight-bold">MODUŁ</th>
+			<th scope="col" class="text-center font-weight-bold">SUBSKRYBUJ</th>
+			<th scope="col" class="text-center font-weight-bold">PODGLĄD</th>
+			<th scope="col" class="text-center font-weight-bold">ZGODNOŚĆ</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{ range $.Site.Data.Modules.items }}
+		<tr>
+			<td class="align-middle text-center" data-label="MODUŁ"><span>{{.title}}</span></td>
+			<td class="align-middle text-center" data-label="SUBSKRYBUJ">
+				<span>
+					<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title=PFEI - {{.title}}">Subskrybuj</a>
+				</span>
+			</td>
+			<td class="align-middle text-center" data-label="PODGLĄD">
+				<span>
+					<a class="btn btn-info mb-2r" href="{{.subscribe}}" target="_blank" rel="noopener">Podgląd</a>
+				</span>
+			</td>
+			<td class="align-middle text-center" data-label="ZGODNOŚĆ">
+				<span>
+					{{ if findRE "ABP" .adblocker }}
+					<a href="https://getadblock.com/" target="_blank" rel="noopener"><img src="/images/AdBlock.svg" style="width:32px;height:32px" title="AdBlock"></a>
+					<a href="https://adblockplus.org/" target="_blank" rel="noopener"><img src="/images/ABP_32.png" style="width:32px;height:32px" title="Adblock Plus"></a>
+					<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener"><img src="/images/uBO_32.png" style="width:32px;height:32px" title="uBlock Origin"></a>
+					<a href="https://adguard.com/" target="_blank" rel="noopener"><img src="/images/AdGuard_logo_32.png" style="width:32px;height:32px" title="AdGuard"></a>
+					{{end}}
+
+					{{ if and (findRE "uBO" .adblocker) (not (findRE "ABP" .adblocker)) }}
+					<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener"><img src="/images/uBO_32.png" style="width:32px;height:32px" title="uBlock Origin"></a>
+					{{end}}
+
+					{{ if and (findRE "AG" .adblocker) (not (findRE "ABP" .adblocker)) }}
+					<a href="https://adguard.com/" target="_blank" rel="noopener"><img src="/images/AdGuard_logo_32.png" style="width:32px;height:32px" title="AdGuard"></a>
+					{{end}}
+				</span>
+			</td>
+		</tr>
+		{{end}}
+	</tbody>
+</table> 

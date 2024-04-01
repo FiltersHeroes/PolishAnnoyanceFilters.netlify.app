@@ -1,9 +1,8 @@
 ---
 title: Polish Cookie Consent Syntax
-type: PolishCookieConsent
+type: simple
 ---
-
-### Polish Cookie Consent Syntax (applicable from the 1.43.5 version).
+## Polish Cookie Consent Syntax (applicable from the 1.43.5 version). {class="display-6 border-bottom border-info mb-3 text-center"}
 
 Filters should be written according to the scheme: `domain.com##+js(function, arg, arg2)` or `/^regex/##+js(function, arg, arg2)`.
 

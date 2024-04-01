@@ -1,0 +1,71 @@
+.stepwizard-step p {
+    margin-top: 10px;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+@import "wizard";
+
+.invalid-feedback.just-validate-error-label {
+    display: block;
+}
+
+.img-rbtn {
+    margin-right: 5px;
+    float: left;
+}
+
+.navbar-brand {
+    white-space: normal;
+}
+
+form #email {
+    display: none !important;
+}
+
+#pafdetect, #pafadguard {
+    height: 1px;
+    position: absolute;
+    left: -3000px;
+}
+
+@import "responsiveTables";
+@import "keyboard";
+
+.PCCkeyboard .key {
+    display: inline-flex;
+    align-items: center;
+}
+
+@import "easymde";
+
+.editor-toolbar .table {
+    width: auto;
+}
+
+@import "custom-dark";

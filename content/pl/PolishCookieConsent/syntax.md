@@ -1,9 +1,8 @@
 ---
 title: Składnia Polskiej Ciasteczkowej Zgody
-type: PolishCookieConsent
+type: simple
 ---
-
-### Nowa składnia Polskiej Ciasteczkowej Zgody, obowiązująca od wersji 1.43.5 (stara składnia jest dostępna [tutaj](/cookieconsentoldsyntax)).
+## Nowa składnia Polskiej Ciasteczkowej Zgody, obowiązująca od wersji 1.43.5 (stara składnia jest dostępna [tutaj](/PolishCookieConsent/old-syntax/)). {class="display-6 border-bottom border-info mb-3 text-center"}
 
 Filtry należy zapisywać wg schematu: `domena.com##+js(funkcja, arg, arg2)` lub `/^regex/##+js(funkcja, arg, arg2)`.
 
