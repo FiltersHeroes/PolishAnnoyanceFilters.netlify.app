@@ -137,7 +137,7 @@ function submitForm(form) {
 
     txtInput.value = txtInput.replace(new RegExp(badWords.join("|"), "gi"), "[beep]");
 
-    let txtSubmit = "Zgłoszenie zostało wysłane na GitHuba.";
+    let txtSubmit = "Zgłoszenie zostało zamieszczone na ";
 
     let banEnd;
     if (document.querySelector('input[type="text"]#email').value.length > 0 || document.cookie.indexOf('ban=') !== -1) {
@@ -197,30 +197,32 @@ function submitForm(form) {
         var additionalInfo_answer = "";
         if (form_additionalInfo != "") {
             additionalInfo_answer = `### Dodatkowe informacje mogące mieć znaczenie
-            ${form_additionalInfo}
+${form_additionalInfo}
             `
         }
 
 
         var form_issueBody = `<!--### Typ elementu lub problemu
-        ${form_labels_combined}
-        -->
+${form_labels_combined}
+-->
 
-        ### Moja konfiguracja
-        **System operacyjny**: ${form_os}
-        **Przeglądarka internetowa**: ${form_browser} ${form_browser_version}
-        **Bloker**: ${form_blocker} ${form_blocker_version}
-        **Używane listy filtrów**:
-        ${form_used_filterlists}
-
-        ${directLink_answer}
-
-        ${additionalInfo_answer}
+### Moja konfiguracja
+**System operacyjny**: ${form_os}
+**Przeglądarka internetowa**: ${form_browser} ${form_browser_version}
+**Bloker**: ${form_blocker} ${form_blocker_version}
+**Używane listy filtrów**:
+${form_used_filterlists}
 
 
-        ---
-        Zgłoszenie opublikowane anonimowo przez użytkownika **${form_nickname}**
-        `
+${directLink_answer}
+
+
+${additionalInfo_answer}
+
+
+---
+Zgłoszenie opublikowane anonimowo przez użytkownika **${form_nickname}**
+`
 
         const formJsonData = {
             "repo": "PolishAnnoyanceFilters",
