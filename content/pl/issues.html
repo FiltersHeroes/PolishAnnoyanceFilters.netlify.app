@@ -11,7 +11,7 @@ type: simple
 
 </div>
 
-<form name="formularz" class="form" id="annoyanceIssuesForm" method="post" data-src="https://docs.google.com/forms/d/e/1FAIpQLSfMGeBhePTjTP9YOeuKo0YgbOrOg9l6x_5XTV47kLBbOPN1wQ/formResponse">
+<form name="formularz" class="form" id="annoyanceIssuesForm" method="post" data-src="https://filtersheroes.pages.dev/api/create-issue">
 
     <!-- Progress Bar  -->
     <div class="progressbar">
@@ -342,9 +342,9 @@ type: simple
         </div>
 
         <!--Adres e-mail-->
-        <div class="mb-3">
+        <div class="mb-3 d-none">
             <label for="mail" class="fw-bold">Adres e-mail</label>
-            <input class="form-control" id="mail" name="emailAddress" type="email" placeholder="example@gmail.com" aria-describedby="mailHelp" required="required" autocomplete="email">
+            <input class="form-control" id="mail" name="emailAddress" type="email" placeholder="example@gmail.com" aria-describedby="mailHelp" autocomplete="email">
             <small id="mailHelp" class="form-text text-muted">Twój adres e-mail zostanie udostępniony jedynie dla właścicieli repozytorium.</small>
         </div>
         <input name="email" type="text" id="email" />
@@ -356,7 +356,7 @@ type: simple
         </div>
 
         <!--Powiadomienie na e-maila-->
-        <div class="mb-3">
+        <div class="mb-3 d-none">
             <label class="fw-bold">Powiadomienie na e-maila</label>
 
             <div class="form-check">

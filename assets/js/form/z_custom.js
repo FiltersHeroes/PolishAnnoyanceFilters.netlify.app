@@ -167,23 +167,94 @@ function submitForm(form) {
     }
     else {
         const formData = new FormData(form);
-        try {
-            var formURL = form.getAttribute("data-src");
-            fetch(formURL, {
-                mode: 'no-cors',
-                method: "POST",
-                body: formData,
-            }).then(function (response) {
-                if (response) {
-                    Swal.fire({ title: "Sukces 😊", text: txtSubmit, icon: "success", confirmButtonText: "Wypełnij nowy formularz" }).then((result) => { if (result.value) { form.reset(); location.reload(); } });
+        var form_issueTitle = formData.get("entry.1884702034");
+        var form_labels = formData.getAll("entry.1334297973");
+        var form_labels_combined = form_labels.join(", ");
+        var form_directlink = formData.get("entry.412846605");
+        var form_os = formData.get("entry.634915560");
+        if (form_os == "__other_option__") {
+            form_os = formData.get("entry.634915560.other_option_response");
+        }
+        var form_browser = formData.get("entry.1077613316");
+        if (form_browser == "__other_option__") {
+            form_browser = formData.get("entry.1077613316.other_option_response");
+        }
+        var form_browser_version = formData.get("entry.1188003910");
+        var form_blocker = formData.get("entry.1847630274");
+        if (form_blocker == "__other_option__") {
+            form_blocker = formData.get("entry.1847630274.other_option_response");
+        }
+        var form_blocker_version = formData.get("entry.1171563019");
+        var form_used_filterlists = formData.get("entry.1553187432");
+        var form_nickname = formData.get("entry.770287256");
+        var form_additionalInfo = formData.get("entry.249974698");
+
+        var directLink_answer = "";
+        if (form_directlink != "") {
+            directLink_answer = "### Link bezpośredni\n ```markdown\n" + form_directlink + "\n\n```\n\n";
+        }
+
+        var additionalInfo_answer = "";
+        if (form_additionalInfo != "") {
+            additionalInfo_answer = `### Dodatkowe informacje mogące mieć znaczenie
+            ${form_additionalInfo}
+            `
+        }
+
+
+        var form_issueBody = `<!--### Typ elementu lub problemu
+        ${form_labels_combined}
+        -->
+
+        ### Moja konfiguracja
+        **System operacyjny**: ${form_os}
+        **Przeglądarka internetowa**: ${form_browser} ${form_browser_version}
+        **Bloker**: ${form_blocker} ${form_blocker_version}
+        **Używane listy filtrów**:
+        ${form_used_filterlists}
+
+        ${directLink_answer}
+
+        ${additionalInfo_answer}
+
+
+        ---
+        Zgłoszenie opublikowane anonimowo przez użytkownika **${form_nickname}**
+        `
+
+        const formJsonData = {
+            "repo": "PolishAnnoyanceFilters",
+            "title": form_issueTitle,
+            "body": form_issueBody,
+            "labels": form_labels
+        };
+
+        var formURL = form.getAttribute("data-src");
+        fetch(formURL, {
+            method: "POST",
+            body: JSON.stringify(formJsonData),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            }
+        })
+            .then((response) => response.text())
+            .then((text) => {
+                if (text.includes("https://github.com")) {
+                    txtSubmit += `<a href="${text}" target="_blank" rel="noopener">${text}</a>.`
+                    Swal.fire({ title: "Sukces 😊", html: txtSubmit, icon: "success", confirmButtonText: "Wypełnij nowy formularz" }).then((result) => { if (result.value) { form.reset(); location.reload(); } });
                     localStorage.setItem("submittedTime", new Date());
                 }
+                else {
+                    console.log(text);
+                    Swal.fire({ title: "Porażka 😔", text: "Wystąpił błąd w trakcie wysyłania formularza", icon: "error", confirmButtonText: "Spróbuj ponownie" })
+                        .then((result) => { if (result.value) { submitForm(form); } });
+                }
+            })
+            .catch((error) => {
+                console.error(error);
+                Swal.fire({ title: "Porażka 😔", text: "Wystąpił błąd w trakcie wysyłania formularza", icon: "error", confirmButtonText: "Spróbuj ponownie" })
+                    .then((result) => { if (result.value) { submitForm(form); } });
             });
-        } catch (e) {
-            Swal.fire({ title: "Porażka 😊", text: "Wystąpił błąd w trakcie wysyłania formularza", icon: "error", confirmButtonText: "Spróbuj ponownie" })
-                .then((result) => { if (result.value) { submitForm(form) } });
-            console.error(e);
-        }
     }
 }
 
@@ -448,16 +519,6 @@ window.addEventListener('load', function () {
                     {
                         rule: 'minLength',
                         value: 3,
-                    },
-                ]
-            ).addField(
-                "#mail",
-                [
-                    {
-                        rule: 'required',
-                    },
-                    {
-                        rule: 'email',
                     },
                 ]
             );
