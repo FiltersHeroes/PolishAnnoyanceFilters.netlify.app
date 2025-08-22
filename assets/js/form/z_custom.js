@@ -512,6 +512,7 @@ window.addEventListener('load', function () {
         multiStepForm.run();
         form.addEventListener("submit", function (event) {
             event.preventDefault();
+            document.querySelector('#formSubmitBtn').disabled = true;
             validate.addField(
                 "#nickname",
                 [
