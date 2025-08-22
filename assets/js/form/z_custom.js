@@ -249,13 +249,13 @@ Zgłoszenie opublikowane anonimowo przez użytkownika **${form_nickname}**
                 else {
                     console.log(text);
                     Swal.fire({ title: "Porażka 😔", text: "Wystąpił błąd w trakcie wysyłania formularza", icon: "error", confirmButtonText: "Spróbuj ponownie" })
-                        .then((result) => { if (result.value) { submitForm(form); } });
+                        .then((result) => { if (result.value) { form.classList.remove("is-submitting"); submitForm(form); } });
                 }
             })
             .catch((error) => {
                 console.error(error);
                 Swal.fire({ title: "Porażka 😔", text: "Wystąpił błąd w trakcie wysyłania formularza", icon: "error", confirmButtonText: "Spróbuj ponownie" })
-                    .then((result) => { if (result.value) { submitForm(form); } });
+                    .then((result) => { if (result.value) { form.classList.remove("is-submitting"); submitForm(form); } });
             });
     }
 }
@@ -513,23 +513,26 @@ window.addEventListener('load', function () {
         form.addEventListener("submit", function (event) {
             event.preventDefault();
             document.querySelector('#formSubmitBtn').disabled = true;
-            validate.addField(
-                "#nickname",
-                [
-                    {
-                        rule: 'required',
-                    },
-                    {
-                        rule: 'minLength',
-                        value: 3,
-                    },
-                ]
-            );
-            validate.revalidate().then((isValid) => {
-                if (isValid) {
-                    submitForm(form);
-                }
-            });
+            if (!form.classList.contains('is-submitting')) {
+                form.classList.add("is-submitting");
+                validate.addField(
+                    "#nickname",
+                    [
+                        {
+                            rule: 'required',
+                        },
+                        {
+                            rule: 'minLength',
+                            value: 3,
+                        },
+                    ]
+                );
+                validate.revalidate().then((isValid) => {
+                    if (isValid) {
+                        submitForm(form);
+                    }
+                });
+            }
         });
     }
 });
