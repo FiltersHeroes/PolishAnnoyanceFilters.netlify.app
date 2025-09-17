@@ -2,7 +2,7 @@
 title: Stara składnia Polskiej Ciasteczkowej Zgody
 type: simple
 ---
-## Stara składnia Polskiej Ciasteczkowej Zgody, obowiązująca do wersji 1.43.0 (nowa składnia jest dostępna [tutaj](/PolishCookieConsent/syntax/)). {class="display-6 border-bottom border-info mb-3 text-center"}
+## Stara składnia Polskiej Ciasteczkowej Zgody, obowiązująca do wersji 1.43.0 (nowa składnia jest dostępna [tutaj](/PolishCookieConsent/syntax/)). {class="display-6 border-bottom border-primary mb-3 text-center"}
 
 Filtry należy zapisywać wg schematu: `domena.com(funkcja, arg, arg2)`.
 

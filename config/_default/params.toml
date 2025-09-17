@@ -1,8 +1,6 @@
 [main]
     separator = "|"
     description = "Filtry ukrywające i blokujące wyskakujące okienka, widgety, newslettery, powiadomienia push, strzałki i inne drażniące elementy (Polskie Filtry RODO-Ciasteczkowe są już w nich zawarte)."
-    enableDarkMode = true
-    modes = ["light", "dark"]
     canonifyAssetsURLs = true
     footerBelowFold = false
     loading = "lazy"
@@ -10,6 +8,9 @@
     [main.externalLinks]
         cue = false
         tab = true
+    [main.colorMode]
+        enabled = true
+        modes = ["light", "dark"]
 
 [modules]
     [modules.bootstrap]
@@ -56,12 +57,14 @@
     overlayMode = "dark"
     horizontal = false
     offset = "5.5rem"
-    search = false
-    searchModal = false
     breadcrumb = true
     toc = true
     sidebar = true
     size = "md"
+    [navigation.search]
+        enabled = false
+        modal = true
+
 
 [messages]
     placement = "bottom-right"

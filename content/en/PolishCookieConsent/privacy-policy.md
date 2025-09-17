@@ -2,7 +2,7 @@
 title: Privacy policy for Polish Cookie Consent extension
 type: simple
 ---
-## Privacy policy for Polish Cookie Consent extension {class="display-6 border-bottom border-info mb-3 text-center"}
+## Privacy policy for Polish Cookie Consent extension {class="display-6 border-bottom border-primary mb-3 text-center"}
 
 Polish Cookie Consent doesn't collect any data of any kind.
 

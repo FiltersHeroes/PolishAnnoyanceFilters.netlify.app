@@ -2,7 +2,7 @@
 title: Polityka prywatności Polskiej Ciasteczkowej Zgody
 type: simple
 ---
-## Polityka prywatności Polskiej Ciasteczkowej Zgody {class="display-6 border-bottom border-info mb-3 text-center"}
+## Polityka prywatności Polskiej Ciasteczkowej Zgody {class="display-6 border-bottom border-primary mb-3 text-center"}
 
 Polska Ciasteczkowa Zgoda nie zbiera żadnych danych.
 
