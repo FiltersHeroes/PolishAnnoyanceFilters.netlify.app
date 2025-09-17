@@ -13,6 +13,8 @@
         modes = ["light", "dark"]
 
 [modules]
+    [modules.GoogleAnalytics]
+        integration = "none"
     [modules.bootstrap]
         integration = "core"
         excludeSCSS = true
