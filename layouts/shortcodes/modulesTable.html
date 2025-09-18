@@ -46,7 +46,7 @@
 						{{ $thirdMirror := printf "%s"
 						(.subscribe
 						| replaceRE "^https?://raw.githubusercontent.com" "https://filtersheroes.gitlab.io/AssetsMirror"
-						| replaceRE "FiltersHeroes/PolishAnnoyanceFilters/master" ""
+						| replaceRE "FiltersHeroes/PolishAnnoyanceFilters/master/" ""
 						)
 						}}
 						{{ $btnThirdHref := printf "abp:subscribe?location=%s&title=%s"
