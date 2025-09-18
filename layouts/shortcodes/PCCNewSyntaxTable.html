@@ -1,0 +1,23 @@
+<table class="table table-sm table-striped table-bordered table-white">
+	<thead>
+		<tr>
+			<th scope="col" class="text-center font-weight-bold">{{ i18n "function" }}</th>
+			<th scope="col" class="text-center font-weight-bold">{{ i18n "arguments" }}</th>
+		</tr>
+	</thead>
+	<tbody>
+	{{ $lang := $.Site.Language.Lang }}
+	{{ $functions_i18n := index site.Data $lang "PCC_functions" }}
+	{{ $dataset := index $.Site.Data (.Get "dataset") }}
+    {{ range $key, $val := $dataset.functions }}
+		<tr>
+			<td class="align-middle" data-label='{{ i18n "function" }}'><span>{{ $key}} -  {{ index $functions_i18n (print $key "Function") }} </span></td>
+			<td class="align-middle" data-label='{{ i18n "arguments" }}'>
+				{{ range $val.args }}
+    			 <p>{{ replace .name "Optional" "" }} - {{ (index $functions_i18n (print .name "Arg") | markdownify ) }} </p>
+    			{{ end }}
+			</td>
+		</tr>
+		{{end}}
+	</tbody>
+</table>

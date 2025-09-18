@@ -2,25 +2,77 @@
 	<thead>
 		<tr>
 			<th scope="col" class="text-center font-weight-bold">MODUŁ</th>
-			<th scope="col" class="text-center font-weight-bold">SUBSKRYBUJ</th>
-			<th scope="col" class="text-center font-weight-bold">PODGLĄD</th>
+			<th scope="col" class="text-center font-weight-bold">LINKI</th>
+			<th scope="col" class="text-center font-weight-bold">LINKI ALTERNATYWNE</th>
 			<th scope="col" class="text-center font-weight-bold">ZGODNOŚĆ</th>
 		</tr>
 	</thead>
 	<tbody>
 		{{ range $.Site.Data.Modules.items }}
 		<tr>
+			{{ $btnHref := printf "abp:subscribe?location=%s&title=PFEI - %s" .subscribe .title }}
 			<td class="align-middle text-center" data-label="MODUŁ"><span>{{.title}}</span></td>
-			<td class="align-middle text-center" data-label="SUBSKRYBUJ">
-				<span>
-					<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title=PFEI - {{.title}}">Subskrybuj</a>
-				</span>
+			<td class="align-middle text-center" data-label="LINKI">
+				<div class="span">
+					<div class="btn-group-vertical">
+						{{ partial "assets/button.html" (dict "justify" "center" "spacing" "false" "color" "primary" "icon" "fas file-import" "title" "Subskrybuj" "order" "first" "href" ($btnHref | safeURL) ) }}
+						{{ partial "assets/button.html" (dict "justify" "center" "spacing" "false" "color" "info" "outline" "true" "icon" "fas eye" "title" "Podgląd" "order" "first" "href" (.subscribe | safeURL) ) }}
+					</div>
+				</div>
 			</td>
-			<td class="align-middle text-center" data-label="PODGLĄD">
-				<span>
-					<a class="btn btn-info mb-2r" href="{{.subscribe}}" target="_blank" rel="noopener">Podgląd</a>
-				</span>
+			<td class="align-middle text-center" data-label="LINKI ALTERNATYWNE">
+				<div class="btn-group-vertical">
+					<div class="btn-group">
+						{{ $firstMirror := printf "%s"
+						(.subscribe
+						| replaceRE "^https?://raw.githubusercontent.com" "https://cdn.jsdelivr.net/gh"
+						| replaceRE "/master/" "@master/"
+						| replaceRE "/main/" "@main/"
+						)
+						}}
+						{{ $btnOneHref := printf "abp:subscribe?location=%s&title=%s"
+						($firstMirror)
+						(.title)
+						}}
+						{{ $secondMirror := printf "%s"
+						(.subscribe
+						| replaceRE "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh"
+						)
+						}}
+						{{ $btnSecondHref := printf "abp:subscribe?location=%s&title=%s"
+						($secondMirror)
+						(.title)
+						}}
+						{{ $thirdMirror := printf "%s"
+						(.subscribe
+						| replaceRE "^https?://raw.githubusercontent.com" "https://filtersheroes.gitlab.io/AssetsMirror"
+						| replaceRE "FiltersHeroes/PolishAnnoyanceFilters/master" ""
+						)
+						}}
+						{{ $btnThirdHref := printf "abp:subscribe?location=%s&title=%s"
+						($thirdMirror)
+						(.title)
+						}}
+						{{ partial "assets/button.html" (dict "class" "dropdown-toggle" "justify" "center" "spacing" "false" "color"
+						"primary" "icon" "fas file-import" "title" "Subskrybuj" "order" "first" "dropdown" true ) }}
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="{{$btnOneHref | safeURL}}">jsDelivr</a></li>
+							<li><a class="dropdown-item" href="{{$btnSecondHref | safeURL}}">Statically</a></li>
+							<li><a class="dropdown-item" href="{{$btnThirdHref | safeURL}}">GitLab</a></li>
+						</ul>
+					</div>
+					<div class="btn-group">
+						{{ partial "assets/button.html" (dict "class" "dropdown-toggle" "justify" "center" "spacing" "false" "color"
+						"info" "outline" "true" "icon" "fas eye" "title" "Podgląd" "order" "first" "dropdown" true ) }}
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="{{$firstMirror | safeURL}}">jsDelivr</a></li>
+							<li><a class="dropdown-item" href="{{$secondMirror | safeURL}}">Statically</a></li>
+							<li><a class="dropdown-item" href="{{$thirdMirror | safeURL}}">GitLab</a></li>
+						</ul>
+					</div>
+				</div>
 			</td>
+
 			<td class="align-middle text-center" data-label="ZGODNOŚĆ">
 				<span>
 					{{ if findRE "ABP" .adblocker }}
