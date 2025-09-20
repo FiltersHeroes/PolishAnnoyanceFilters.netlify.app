@@ -6,6 +6,8 @@ type: simple
 
 Filtry należy zapisywać wg schematu: `domena.com##+js(funkcja, arg, arg2)` lub `/^regex/##+js(funkcja, arg, arg2)`.
 
+A jeżeli chcemy wyłączyć jakiś pojedynczy filtr dla danej strony, to wtedy używamy następującego schematu: `domena.com#@#+js(funkcja, arg, arg2)` (dostepne od wersji 1.45.0).
+
 Jeżeli chcemy zastosować tę samą funkcję z tymi samymi argumentami do paru domen, to wtedy domeny należy oddzielić przecinkiem, np. `domena.com,domena2.com,domena.org##+js(funkcja, arg, arg2)`.
 
 **Dostępne są następujące funkcje:**

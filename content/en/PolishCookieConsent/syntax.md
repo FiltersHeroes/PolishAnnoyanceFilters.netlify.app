@@ -6,6 +6,8 @@ type: simple
 
 Filters should be written according to the scheme: `domain.com##+js(function, arg, arg2)` or `/^regex/##+js(function, arg, arg2)`.
 
+And if we want to disable a single filter for a given page, we use the following scheme: `domain.com#@#+js(function, arg, arg2)` (available since 1.45.0 version).
+
 If we want to apply the same function with the same arguments to several domains, then domains should be separated with a comma, e.g. `domain.com,domain2.com,domain.org##+js(function, arg, arg2)`.
 
 **The following functions are available:**
