@@ -6,7 +6,7 @@
 [[items]]
 PC = "Ctrl-/"
 Mac = "Cmd-/"
-function = "Zakomentuj/odkomentuj bieżącą linię lub parę zaznaczonych linii z wykorzystaniem `#`."
+function = "Zakomentuj/odkomentuj bieżącą linię lub zaznaczone linie z wykorzystaniem `#`."
 
 [[items]]
 PC = "Ctrl-A"
@@ -21,7 +21,7 @@ function = "Odznacz całą zawartość edytora."
 [[items]]
 PC = "Shift-Ctrl-K"
 Mac = 'Shift-Cmd-K'
-function = "Usuń wybraną linię lub linie."
+function = "Usuń bieżącą linię lub zaznaczone linie."
 
 [[items]]
 PC = 'Shift-Ctrl-\'
@@ -101,12 +101,12 @@ function = "Przesuń kursor w prawo 1 znak, a jeżeli jesteś na końcu linii, t
 [[items]]
 PC = "Alt-▲"
 Mac = "Alt-▲"
-function = "Przesuń wybraną linię lub linie o jedną pozycję do góry"
+function = "Przesuń bieżącą linię lub zaznaczone linie o jedną pozycję do góry."
 
 [[items]]
 PC = "Alt-▼"
 Mac = "Alt-▼"
-function = "Przesuń wybraną linię lub linie o jedną pozycję do dołu"
+function = "Przesuń bieżącą linię lub zaznaczone linie o jedną pozycję do dołu."
 
 [[items]]
 PC = "Ctrl-◀"
@@ -151,12 +151,12 @@ function = "Usuń wcięcie dla bieżącej linii lub zaznaczenia."
 [[items]]
 PC = "Shift-Alt-▲"
 Mac = "Shift-Alt-▲"
-function = "Skopiuj wybraną linię lub linie. Pozostaw zaznaczenie w górnej kopii."
+function = "Skopiuj bieżącą linię lub zaznaczone linie. Pozostaw zaznaczenie w górnej kopii."
 
 [[items]]
 PC = "Shift-Alt-▼"
 Mac = "Shift-Alt-▼"
-function = "Skopiuj wybrane linię lub linie. Pozostaw zaznaczenie w dolnej kopii."
+function = "Skopiuj bieżącą linię lub zaznaczone linie. Pozostaw zaznaczenie w dolnej kopii."
 
 [[items]]
 PC = "Ctrl-S"

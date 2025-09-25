@@ -101,12 +101,12 @@ function = "Move the cursor one character right, going to the next line when hit
 [[items]]
 PC = "Alt-▲"
 Mac = "Alt-▲"
-function = "Move selected line(s) up one line"
+function = "Move selected line(s) up one line."
 
 [[items]]
 PC = "Alt-▼"
 Mac = "Alt-▼"
-function = "Move selected line(s) down one line"
+function = "Move selected line(s) down one line."
 
 [[items]]
 PC = "Ctrl-◀"
