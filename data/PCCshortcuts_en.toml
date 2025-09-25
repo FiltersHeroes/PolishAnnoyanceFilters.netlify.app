@@ -21,7 +21,12 @@ function = "Deselect the whole content of the editor."
 [[items]]
 PC = "Shift-Ctrl-K"
 Mac = 'Shift-Cmd-K'
-function = "Deletes selected line(s)."
+function = "Delete selected line(s)."
+
+[[items]]
+PC = 'Shift-Ctrl-\'
+Mac = 'Shift-Cmd-\'
+function = "Move the selection to the bracket matching the one it is currently on, if any."
 
 [[items]]
 PC = "Ctrl-Z"
@@ -94,6 +99,16 @@ Mac = "Ctrl-F"
 function = "Move the cursor one character right, going to the next line when hitting the end of line."
 
 [[items]]
+PC = "Alt-▲"
+Mac = "Alt-▲"
+function = "Move selected line(s) up one line"
+
+[[items]]
+PC = "Alt-▼"
+Mac = "Alt-▼"
+function = "Move selected line(s) down one line"
+
+[[items]]
 PC = "Ctrl-◀"
 Mac = "Alt-◀"
 function = "Move to the left of the group before the cursor. A group is a stretch of word characters, a stretch of punctuation characters, a newline, or a stretch of more than one whitespace character."
@@ -132,6 +147,16 @@ function = "Indent the current line or selection by one indent unit."
 PC = "Ctrl-["
 Mac = "Cmd-["
 function = "Dedent the current line or selection by one indent unit."
+
+[[items]]
+PC = "Shift-Alt-▲"
+Mac = "Shift-Alt-▲"
+function = "Create a copy of the selected line(s). Keep the selection in the top copy."
+
+[[items]]
+PC = "Shift-Alt-▼"
+Mac = "Shift-Alt-▼"
+function = "Create a copy of the selected line(s). Keep the selection in the bottom copy."
 
 [[items]]
 PC = "Ctrl-S"

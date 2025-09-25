@@ -12,27 +12,21 @@
 		<tr>
 			<td class="align-middle" data-label="PC">
 				<span class="key">
-					{{ if in .PC "-"}}
-					<kbd class="kbc-button">{{ index (split .PC "-") 0}}</kbd>
-					-
-					<kbd class="kbc-button">{{ index (split .PC "-") 1}}</kbd>
-					{{ else }}
-					<kbd class="kbc-button">{{.PC}}</kbd>
+					{{ $PCkeys := split .PC "-" }}
+					{{ range $index, $key := $PCkeys }}
+					<kbd class="kbc-button">{{ $key }}</kbd>{{ if lt (add $index 1) (len $PCkeys) }}-{{ end }}
 					{{ end }}
 				</span>
 			</td>
 			<td class="align-middle" data-label="Mac">
 				<span class="key">
-					{{ if in .Mac "-"}}
-					<kbd class="kbc-button">{{ index (split .Mac "-") 0}}</kbd>
-					-
-					<kbd class="kbc-button">{{ index (split .Mac "-") 1}}</kbd>
-					{{ else }}
-					<kbd class="kbc-button">{{.Mac}}</kbd>
+					{{ $Mackeys := split .Mac "-" }}
+					{{ range $index, $key := $Mackeys }}
+					<kbd class="kbc-button">{{ $key }}</kbd>{{ if lt (add $index 1) (len $Mackeys) }}-{{ end }}
 					{{ end }}
 				</span>
 			</td>
-			<td class="align-middle" data-label="Funkcja"><span>{{.function | markdownify }}</span></td>
+			<td class="align-middle" data-label='{{ i18n "function" }}'><span>{{.function | markdownify }}</span></td>
 		</tr>
 		{{end}}
 	</tbody>

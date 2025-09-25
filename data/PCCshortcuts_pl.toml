@@ -24,6 +24,11 @@ Mac = 'Shift-Cmd-K'
 function = "Usuń wybraną linię lub linie."
 
 [[items]]
+PC = 'Shift-Ctrl-\'
+Mac = 'Shift-Cmd-\'
+function = "Przenieś zaznaczenie do nawiasu odpowiadającego temu, w którym się obecnie znajduje, jeśli taki istnieje."
+
+[[items]]
 PC = "Ctrl-Z"
 Mac = "Cmd-Z"
 function = "Cofnij ostatnią zmianę."
@@ -94,6 +99,16 @@ Mac = "Ctrl-F"
 function = "Przesuń kursor w prawo 1 znak, a jeżeli jesteś na końcu linii, to przenieś do następnej."
 
 [[items]]
+PC = "Alt-▲"
+Mac = "Alt-▲"
+function = "Przesuń wybraną linię lub linie o jedną pozycję do góry"
+
+[[items]]
+PC = "Alt-▼"
+Mac = "Alt-▼"
+function = "Przesuń wybraną linię lub linie o jedną pozycję do dołu"
+
+[[items]]
 PC = "Ctrl-◀"
 Mac = "Alt-◀"
 function = "Przejdź na lewo od grupy przed kursorem. Grupa to odcinek znaków tworzących słowa, odcinek znaków interpunkcyjnych, nowa linia lub odcinek więcej niż jednego białego znaku."
@@ -132,6 +147,16 @@ function = "Zrób wcięcie dla bieżącej linii lub zaznaczenia."
 PC = "Ctrl-["
 Mac = "Cmd-["
 function = "Usuń wcięcie dla bieżącej linii lub zaznaczenia."
+
+[[items]]
+PC = "Shift-Alt-▲"
+Mac = "Shift-Alt-▲"
+function = "Skopiuj wybraną linię lub linie. Pozostaw zaznaczenie w górnej kopii."
+
+[[items]]
+PC = "Shift-Alt-▼"
+Mac = "Shift-Alt-▼"
+function = "Skopiuj wybrane linię lub linie. Pozostaw zaznaczenie w dolnej kopii."
 
 [[items]]
 PC = "Ctrl-S"
