@@ -14,9 +14,14 @@ Mac = "Cmd-A"
 function = "Zaznacz całą zawartość edytora."
 
 [[items]]
-PC = "Ctrl-D"
-Mac = "Cmd-D"
-function = "Usuń całą linię pod kursorem, łącznie z nową linią na końcu."
+PC = "Esc"
+Mac = "Esc"
+function = "Odznacz całą zawartość edytora."
+
+[[items]]
+PC = "Shift-Ctrl-K"
+Mac = 'Shift-Cmd-K'
+function = "Usuń wybraną linię lub linie."
 
 [[items]]
 PC = "Ctrl-Z"
@@ -65,17 +70,17 @@ function = "Przesuń kursor o jedną linię w górę."
 
 [[items]]
 PC = "▼"
-Mac = "Ctrl-P"
+Mac = "Ctrl-N"
 function = "Przesuń kursor o jedną linię w dół."
 
 [[items]]
 PC = "Page Up"
-Mac = "Shift-Ctrl-V"
+Mac = "Ctrl-▲"
 function = "Przesuń kursor, przewijając widok dokumentu w górę o jeden ekran."
 
 [[items]]
 PC = "Page Down"
-Mac = "Ctrl-V"
+Mac = "Ctrl-▼"
 function = "Przesuń kursor, przewijając widok dokumentu w dół o jeden ekran."
 
 [[items]]
@@ -120,12 +125,12 @@ function = "Usuń początek grupy po kursorze."
 
 [[items]]
 PC = "Ctrl-]"
-Mac = "Alt-]"
+Mac = "Cmd-]"
 function = "Zrób wcięcie dla bieżącej linii lub zaznaczenia."
 
 [[items]]
 PC = "Ctrl-["
-Mac = "Alt-["
+Mac = "Cmd-["
 function = "Usuń wcięcie dla bieżącej linii lub zaznaczenia."
 
 [[items]]

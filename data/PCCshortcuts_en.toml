@@ -14,9 +14,14 @@ Mac = "Cmd-A"
 function = "Select the whole content of the editor."
 
 [[items]]
-PC = "Ctrl-D"
-Mac = "Cmd-D"
-function = "Deletes the whole line under the cursor, including newline at the end."
+PC = "Esc"
+Mac = "Esc"
+function = "Deselect the whole content of the editor."
+
+[[items]]
+PC = "Shift-Ctrl-K"
+Mac = 'Shift-Cmd-K'
+function = "Deletes selected line(s)."
 
 [[items]]
 PC = "Ctrl-Z"
@@ -65,17 +70,17 @@ function = "Move the cursor up one line."
 
 [[items]]
 PC = "▼"
-Mac = "Ctrl-P"
+Mac = "Ctrl-N"
 function = "Move down one line."
 
 [[items]]
 PC = "Page Up"
-Mac = "Shift-Ctrl-V"
+Mac = "Ctrl-▲"
 function = "Move the cursor up one screen, and scroll up by the same distance."
 
 [[items]]
 PC = "Page Down"
-Mac = "Ctrl-V"
+Mac = "Ctrl-▼"
 function = "Move the cursor down one screen, and scroll down by the same distance."
 
 [[items]]
@@ -120,12 +125,12 @@ function = "Delete to the start of the group after the cursor."
 
 [[items]]
 PC = "Ctrl-]"
-Mac = "Alt-]"
+Mac = "Cmd-]"
 function = "Indent the current line or selection by one indent unit."
 
 [[items]]
 PC = "Ctrl-["
-Mac = "Alt-["
+Mac = "Cmd-["
 function = "Dedent the current line or selection by one indent unit."
 
 [[items]]
