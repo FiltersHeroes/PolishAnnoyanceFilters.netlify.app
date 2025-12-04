@@ -5,6 +5,7 @@
     footerBelowFold = false
     loading = "lazy"
     breakpoint = "md"
+    netlifyBadge = true
     [main.externalLinks]
         cue = false
         tab = true
